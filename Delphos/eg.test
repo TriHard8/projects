@@ -1,0 +1,6 @@
+use_onload = true;
+egPersistence = ( 
+  {
+    maximumNumberOfRequests = 400000;
+    maximumNumberOfSecurityRegistrations = 2000;
+  } );

@@ -1,0 +1,15 @@
+BM Birmingham
+CA Caliente
+DB Daytona%20Beach
+SP Derby%20Lane
+EB Ebro%20Greyhound
+FL Flagler
+IG Iowa%20Greyhound%20Park
+MO Mobile
+OP Orange%20Park
+PB Palm%20Beach
+PE Pensacola
+SN Sanford%20Orlando
+SL Southland
+TS TriState
+WD Wheeling

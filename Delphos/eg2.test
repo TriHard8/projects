@@ -1,0 +1,144 @@
+use_onload = true;
+egPersistence = ( 
+  {
+    maximumNumberOfRequests = 400000;
+    maximumNumberOfSecurityRegistrations = 2000;
+  } );
+clients = ( 
+  {
+    name = "admin";
+    updateQueueSize = 16;
+  }, 
+  {
+    name = "inactivity";
+    updateQueueSize = 16;
+  } );
+egOms = ( 
+  {
+    enabled = true;
+  } );
+huge_page_pool_pagecount = 6000;
+messageLogging = ( 
+  {
+    autoRollover = false;
+  } );
+exchanges = ( 
+  {
+    name = "CME_ABN";
+    gateway = "EG_GATEWAY_CME_ILINK";
+    primaryIP = "205.209.219.143";
+    primaryPort = 9675;
+    connectAtStartup = true;
+    account = "36341";
+    password = "ergyp";
+    senderCompID = "LY04T4N";
+    senderSubID = "RDB1";
+    targetCompID = "CME";
+    targetSubID = "G";
+    senderLocationID = "US,IL";
+    heartbeatInterval = 30;
+    maxConnectAttempts = 1;
+    debug = false;
+    maxRequestHandles = 200000;
+    requestTimeoutInterval = 5;
+    applicationSystemName = "Execution Gateway";
+    applicationSystemVendor = "Redline";
+    applicationSystemVersion = "1.0.0";
+    multipleModificationsInFlight = true;
+    selfMatchPreventionID = "4652732";
+    rateLimitNewMessagesPerSecond = 2000;
+    rateLimitModifyMessagesPerSecond = 2000;
+    rateLimitMessagesPerInterval = 40000;
+    rateLimitIntervalMilliseconds = 10000;
+  }, 
+  {
+    name = "CME_NEWEDGE";
+    gateway = "EG_GATEWAY_CME_ILINK";
+    primaryIP = "205.209.217.55";
+    primaryPort = 9938;
+    connectAtStartup = true;
+    account = "15067704";
+    password = "hiney";
+    senderCompID = "72Y2KMN";
+    senderSubID = "RDB1";
+    targetCompID = "CME";
+    targetSubID = "G";
+    senderLocationID = "US,IL";
+    heartbeatInterval = 30;
+    maxConnectAttempts = 1;
+    debug = false;
+    maxRequestHandles = 200000;
+    requestTimeoutInterval = 5;
+    applicationSystemName = "Execution Gateway";
+    applicationSystemVendor = "Redline";
+    applicationSystemVersion = "1.0.0";
+    multipleModificationsInFlight = true;
+    selfMatchPreventionID = "4652732";
+    rateLimitNewMessagesPerSecond = 2000;
+    rateLimitModifyMessagesPerSecond = 2000;
+    rateLimitMessagesPerInterval = 40000;
+    rateLimitIntervalMilliseconds = 10000;
+  }, 
+  {
+    name = "ICEFIX";
+    gateway = "EG_GATEWAY_FUT_ICE_FIX";
+    primaryIP = "63.247.112.193";
+    primaryPort = 80;
+    connectAtStartup = true;
+    senderCompID = "7049";
+    senderSubID = "95";
+    targetCompID = "ICE";
+    onBehalfOfCompID = "7049|1040";
+    onBehalfOfSubID = "a-fx|a-fx";
+    onBehalfOfLocationID = "DAU|7049";
+    clearingFirm = "UNUSED";
+    clearingAccount = "UNUSED";
+    clientID = "7049";
+    username = "arbmarqos1";
+    password = "T@ORTS2012";
+    applicationUsername = "a-fx";
+    applicationPassword = "T@ORTS2012";
+    heartbeatInterval = 30;
+    maxConnectAttempts = 1;
+    debug = false;
+    maxRequestHandles = 400000;
+    reconnectOnLogout = false;
+    resetSequenceNumbersOnLogout = true;
+    requestTimeoutInterval = 5;
+    rateLimitNewMessagesPerSecond = 2000;
+    rateLimitModifyMessagesPerSecond = 2000;
+    rateLimitMessagesPerInterval = 40000;
+    rateLimitIntervalMilliseconds = 10000;
+  }, 
+  {
+    name = "ICEFIX_NEWEDGE";
+    gateway = "EG_GATEWAY_FUT_ICE_FIX";
+    primaryIP = "63.247.112.194";
+    primaryPort = 80;
+    connectAtStartup = true;
+    senderCompID = "7049";
+    senderSubID = "103";
+    targetCompID = "ICE";
+    onBehalfOfCompID = "7049|1040";
+    onBehalfOfSubID = "2-fx|2-fx";
+    onBehalfOfLocationID = "DAU|7049";
+    clearingFirm = "3372";
+    clearingAccount = "15067705";
+    clientID = "7049";
+    username = "arbmarqos2";
+    password = "T@ORTS2012";
+    applicationUsername = "2-fx";
+    applicationPassword = "T@ORTS2012";
+    heartbeatInterval = 30;
+    maxConnectAttempts = 1;
+    debug = false;
+    maxRequestHandles = 200000;
+    reconnectOnLogout = false;
+    resetSequenceNumbersOnLogout = true;
+    requestTimeoutInterval = 5;
+    rateLimitNewMessagesPerSecond = 2000;
+    rateLimitModifyMessagesPerSecond = 2000;
+    rateLimitMessagesPerInterval = 40000;
+    rateLimitIntervalMilliseconds = 10000;
+  } );
+realtime_processor_pool = ( 2, 4 );
