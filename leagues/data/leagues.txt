@@ -1,0 +1,5 @@
+league,league_team_site
+NBA,http://www.espn.com/nba/players
+NFL,http://www.espn.com/nfl/players
+NHL,http://www.espn.com/nhl/players
+MLB,http://www.espn.com/mlb/players
