@@ -2,9 +2,10 @@
 
 import requests
 import bs4 as bs
+import my_utils as my
 
 roster_prefix = "http://www.espn.com"
-data_dir = "/home/trihard8/repos/projects/leagues/data/"
+data_dir = "{0}/data/".format(my.up_x_dir(my.get_script_directory(), 1))
 leagues = ["NBA","NFL","NHL","MLB"]
 
 league_ofile = open("{0}leagues.txt".format(data_dir), 'w')
@@ -27,7 +28,7 @@ for league in leagues:
 
         team_ofile.write("{0},{1}\n".format(pot[1].text, "{0}{1}".format(roster_prefix, pot[1].a['href'])))
     
-        print("{0},{1}".format(pot[1].text, "{0}{1}".format(roster_prefix, pot[1].a['href'])))
+#        print("{0},{1}".format(pot[1].text, "{0}{1}".format(roster_prefix, pot[1].a['href'])))
 
 league_ofile.close()
 team_ofile.close()
