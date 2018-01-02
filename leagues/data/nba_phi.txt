@@ -1,0 +1,16 @@
+1,Justin Anderson,SG,24,6-6,230,Virginia,1579440
+0,Jerryd Bayless,PG,29,6-3,200,Arizona,9000000
+35,Trevor Booker,PF,30,6-8,228,Clemson,9125000
+33,Robert Covington,SF,27,6-9,225,Tennessee State,16698103
+21,Joel Embiid,C,23,7-0,250,Kansas,6100266
+20,Markelle Fultz,PG,19,6-4,200,Washington,7026240
+22,Richaun Holmes,PF,24,6-10,235,Bowling Green,1471382
+5,Amir Johnson,PF,30,6-9,240,,11000000
+30,Furkan Korkmaz,SG,20,6-7,190,,1465920
+7,Timothe Luwawu-Cabarrot,SG,22,6-6,200,,1386600
+14,James Michael McAdoo,SF,24,6-9,230,North Carolina,
+12,T.J. McConnell,PG,25,6-2,190,Arizona,1471382
+00,Jacob Pullen,PG,28,6-1,200,Kansas State,
+17,JJ Redick,SF,33,6-4,200,Duke,23000000
+9,Dario Saric,PF,23,6-10,223,,2422560
+25,Ben Simmons,PG,21,6-10,230,LSU,6168840

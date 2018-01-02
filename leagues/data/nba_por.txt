@@ -1,0 +1,16 @@
+8,Al-Farouq Aminu,PF,27,6-9,220,Wake Forest,7319035
+2,Wade Baldwin IV,PG,21,6-4,202,Vanderbilt,
+33,Zach Collins,C,20,7-0,230,Gonzaga,3057240
+5,Pat Connaughton,SG,24,6-5,210,Notre Dame,1471382
+17,Ed Davis,PF,28,6-10,245,North Carolina,6352531
+4,Maurice Harkless,SF,24,6-9,220,St. John's,10162922
+10,Jake Layman,SF,23,6-9,210,Maryland,1312611
+11,Meyers Leonard,C,25,7-1,255,Illinois,9904495
+0,Damian Lillard,PG,27,6-3,195,Weber State,26153057
+3,CJ McCollum,SG,26,6-3,190,Lehigh,23962573
+6,Shabazz Napier,PG,26,6-1,175,Connecticut,2361360
+27,Jusuf Nurkic,C,23,7-0,280,,2947305
+50,Caleb Swanigan,PF,20,6-8,250,Purdue,1465920
+1,Evan Turner,SG,29,6-7,220,Ohio State,17131148
+21,Noah Vonleh,PF,22,6-9,245,Indiana,3505233
+23,CJ Wilcox,SG,26,6-5,195,Washington,

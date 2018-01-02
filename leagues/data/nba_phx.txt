@@ -1,0 +1,17 @@
+35,Dragan Bender,PF,20,7-1,225,,4468800
+1,Devin Booker,SG,21,6-6,210,Kentucky,2319360
+2,Isaiah Canaan,PG,26,6-0,201,Murray State,1413192
+4,Tyson Chandler,C,35,7-1,240,,13000000
+0,Marquese Chriss,PF,20,6-10,240,Washington,3073800
+30,Troy Daniels,SG,26,6-4,205,Virginia Commonwealth,3408520
+3,Jared Dudley,SF,32,6-7,240,Boston College,10000000
+23,Danuel House Jr.,SF,24,6-7,220,Texas A&M;,543471
+20,Josh Jackson,SF,20,6-8,200,Kansas,5090040
+11,Brandon Knight,PG,26,6-3,195,Kentucky,13618750
+21,Alex Len,C,24,7-1,250,Maryland,4187599
+14,Greg Monroe,C,27,6-11,265,Georgetown,17884176
+25,Alec Peters,PF,22,6-9,235,Valparaiso,
+32,Davon Reed,SG,22,6-6,210,Miami (FL),815615
+8,Tyler Ulis,PG,21,5-10,160,Kentucky,1312611
+12,TJ Warren,SF,24,6-8,215,North Carolina State,3152931
+15,Alan Williams,PF,24,6-8,265,UC Santa Barbara,6000000

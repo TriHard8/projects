@@ -1,0 +1,17 @@
+31,Ron Baker,SG,24,6-4,220,Wichita State,4328000
+8,Michael Beasley,SF,28,6-9,235,Kansas State,1471382
+21,Damyean Dotson,SG,23,6-5,210,Houston,1100000
+3,Tim Hardaway Jr.,SF,25,6-6,205,Michigan,16500000
+14,Willy Hernangomez,C,23,6-11,240,,1435750
+4,Isaiah Hicks,PF,23,6-9,242,North Carolina,
+55,Jarrett Jack,PG,34,6-3,200,Georgia Tech,1471382
+00,Enes Kanter,C,25,6-11,245,Kentucky,17884176
+2,Luke Kornet,PF,22,7-1,250,Vanderbilt,
+5,Courtney Lee,SG,32,6-5,200,Western Kentucky,11747890
+20,Doug McDermott,SF,25,6-8,219,Creighton,3294994
+13,Joakim Noah,C,32,6-11,230,Florida,17765000
+11,Frank Ntilikina,PG,19,6-5,190,,3501120
+9,Kyle O'Quinn,C,27,6-10,250,Norfolk State,4087500
+6,Kristaps Porzingis,PF,22,7-3,240,,4503600
+1,Ramon Sessions,PG,31,6-3,190,Nevada,1471382
+42,Lance Thomas,SF,29,6-8,235,Duke,6655325

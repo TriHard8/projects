@@ -1,0 +1,17 @@
+00,Darrell Arthur,PF,29,6-9,235,Kansas,7464912
+5,Will Barton,SG,26,6-6,190,Memphis,3533333
+25,Malik Beasley,SG,21,6-5,196,Florida State,1700640
+21,Wilson Chandler,SF,30,6-9,225,DePaul,12016854
+3,Torrey Craig,SG,27,6-6,215,USC Upstate,
+35,Kenneth Faried,PF,28,6-8,228,Morehead State,12921348
+14,Gary Harris,SG,23,6-4,210,Michigan State,2550055
+41,Juan Hernangomez,PF,22,6-9,230,,2076840
+22,Richard Jefferson,SF,37,6-7,233,Arizona,1454756
+15,Nikola Jokic,C,22,6-10,250,,1471382
+20,Tyler Lydon,PF,21,6-9,220,Syracuse,1579440
+7,Trey Lyles,PF,22,6-10,234,Kentucky,2441400
+4,Paul Millsap,PF,32,6-8,246,Louisiana Tech,31269231
+11,Monte Morris,PG,22,6-3,175,Iowa State,
+0,Emmanuel Mudiay,PG,21,6-5,200,,3381480
+27,Jamal Murray,PG,20,6-4,207,Kentucky,3355320
+24,Mason Plumlee,C,27,6-11,255,Duke,14041096

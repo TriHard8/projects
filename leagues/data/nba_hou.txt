@@ -1,0 +1,16 @@
+33,Ryan Anderson,PF,29,6-10,240,California,19578455
+1,Trevor Ariza,SF,32,6-8,215,UCLA,7420912
+28,Tarik Black,PF,26,6-9,250,Kansas,3290000
+6,Bobby Brown,PG,33,6-2,175,Cal State Fullerton,1471382
+15,Clint Capela,C,23,6-10,240,,2334528
+10,Eric Gordon,SG,29,6-4,215,Indiana,12943020
+13,James Harden,PG,28,6-5,220,Arizona State,28299399
+42,Nene Hilario,C,35,6-11,250,,3477600
+2,Demetrius Jackson,PG,23,6-1,201,Notre Dame,
+12,Luc Mbah a Moute,PF,31,6-8,230,UCLA,1471382
+21,Chinanu Onuaku,C,21,6-10,245,Louisville,1312611
+3,Chris Paul,PG,32,6-0,175,Wake Forest,24599495
+9,Zhou Qi,PF,21,7-1,210,,815615
+4,PJ Tucker,SF,32,6-6,245,Texas,7590035
+0,Briante Weber,PG,24,6-2,165,Virginia Commonwealth,
+5,Troy Williams,SF,22,6-7,218,Indiana,1471382

@@ -1,0 +1,16 @@
+45,Kadeem Allen,SG,24,6-3,200,Arizona,
+46,Aron Baynes,C,31,6-10,260,Washington State,4328000
+26,Jabari Bird,SG,23,6-6,198,California,
+7,Jaylen Brown,SG,21,6-7,225,California,4956480
+20,Gordon Hayward,SF,27,6-8,226,Butler,29727900
+42,Al Horford,PF,31,6-10,245,Florida,27734406
+11,Kyrie Irving,PG,25,6-3,193,Duke,18868626
+8,Shane Larkin,PG,25,5-11,175,Miami (FL),1471382
+13,Marcus Morris,PF,28,6-9,235,Kansas,5000000
+28,Abdel Nader,SF,24,6-6,230,Iowa State,1167333
+37,Semi Ojeleye,PF,23,6-7,235,SMU,1291892
+12,Terry Rozier,PG,23,6-2,190,Louisville,1988520
+36,Marcus Smart,PG,23,6-4,220,Oklahoma State,4538020
+0,Jayson Tatum,SF,19,6-8,205,Duke,5645400
+27,Daniel Theis,PF,25,6-9,243,,815615
+30,Guerschon Yabusele,PF,22,6-8,260,,2247480

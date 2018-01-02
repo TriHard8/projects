@@ -1,0 +1,17 @@
+2,Jordan Bell,PF,22,6-9,224,Oregon,815615
+25,Chris Boucher,PF,24,6-10,200,Oregon,
+18,Omri Casspi,SF,29,6-9,225,,1471382
+4,Quinn Cook,PG,24,6-2,179,Duke,
+30,Stephen Curry,PG,29,6-3,190,Davidson,34382550
+35,Kevin Durant,SF,29,6-9,240,Texas,25000000
+23,Draymond Green,PF,27,6-7,230,Michigan State,16400000
+9,Andre Iguodala,SF,33,6-6,215,Arizona,14814815
+15,Damian Jones,C,22,7-0,245,Vanderbilt,1312611
+34,Shaun Livingston,PG,32,6-7,192,,7692308
+5,Kevon Looney,SF,21,6-9,220,UCLA,1471382
+0,Patrick McCaw,SG,22,6-7,185,UNLV,1312611
+1,JaVale McGee,C,29,7-0,270,Nevada,1471382
+27,Zaza Pachulia,C,33,6-11,270,,3477600
+11,Klay Thompson,SG,27,6-7,215,Washington State,17826150
+3,David West,PF,37,6-9,250,Xavier,1471382
+6,Nick Young,SG,32,6-7,210,USC,5192000

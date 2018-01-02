@@ -1,0 +1,17 @@
+2,Lonzo Ball,PG,20,6-6,190,UCLA,6286560
+17,Vander Blue,SG,25,6-5,200,Marquette,
+66,Andrew Bogut,C,33,7-0,260,Utah,1471382
+3,Corey Brewer,SF,31,6-9,186,Florida,7579366
+31,Thomas Bryant,C,20,6-10,248,Indiana,815615
+1,Kentavious Caldwell-Pope,SG,24,6-5,205,Georgia,17745894
+4,Alex Caruso,SG,23,6-5,186,Texas A&M;,
+6,Jordan Clarkson,PG,25,6-5,194,Missouri,11562500
+9,Luol Deng,SF,32,6-9,220,Duke,17190000
+10,Tyler Ennis,PG,23,6-3,194,Syracuse,1524305
+5,Josh Hart,SG,22,6-5,215,Villanova,1394520
+14,Brandon Ingram,SF,20,6-9,190,Duke,5519400
+0,Kyle Kuzma,PF,22,6-9,220,Utah,1423560
+11,Brook Lopez,C,29,7-0,268,Stanford,22642650
+7,Larry Nance Jr.,PF,24,6-9,230,Wyoming,1471382
+30,Julius Randle,PF,23,6-9,250,Kentucky,4149242
+40,Ivica Zubac,C,20,7-1,240,,1312611

@@ -1,0 +1,16 @@
+13,Ike Anigbogu,C,19,6-10,262,UCLA,950000
+44,Bojan Bogdanovic,SF,28,6-8,230,,10500000
+2,Darren Collison,PG,30,6-2,185,UCLA,10000000
+25,Al Jefferson,C,32,6-10,280,,9769821
+6,Cory Joseph,PG,26,6-3,190,Texas,7630000
+22,T.J. Leaf,PF,20,6-10,230,UCLA,2028360
+4,Victor Oladipo,SG,25,6-4,210,Indiana,21000000
+0,Alex Poythress,SF,24,6-9,235,Kentucky,
+40,Glenn Robinson III,SG,23,6-7,215,Michigan,1524305
+11,Domantas Sabonis,C,21,6-10,252,Gonzaga,2550000
+1,Lance Stephenson,SG,27,6-6,230,Cincinnati,4180000
+5,Edmond Sumner,PG,21,6-5,188,Xavier,
+33,Myles Turner,C,21,6-11,255,Texas,2569920
+12,Damien Wilkins,SG,37,6-6,217,Georgia,1471382
+3,Joe Young,PG,25,6-2,185,Oregon,1471382
+21,Thaddeus Young,PF,29,6-8,230,Georgia Tech,14996348

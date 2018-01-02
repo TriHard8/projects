@@ -19,8 +19,9 @@ with open(fname) as f:
         m = re.match(team_regex, line)
         if m:
             ofile = open("{0}/{1}_{2}.txt".format(data_dir, sport, m.group(3).lower()), 'w')
-            r = requests.get(m.group(2))
-            soup = bs.BeautifulSoup(r.content, 'html.parser')
+#            r = requests.get(m.group(2))
+#            soup = bs.BeautifulSoup(r.content, 'html.parser')
+            soup = my.get_soup(m.group(2))
             content_table = soup.find("table" , {"class" : "tablehead"})
             for tr in content_table.find_all('tr'):
                 row = ""

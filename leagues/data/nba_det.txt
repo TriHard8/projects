@@ -1,0 +1,16 @@
+22,Avery Bradley,SG,27,6-2,180,Texas,8808989
+25,Reggie Bullock,SF,26,6-7,205,North Carolina,2500000
+20,Dwight Buycks,PG,28,6-3,190,Marquette,
+0,Andre Drummond,C,24,6-11,279,Connecticut,23775506
+8,Henry Ellenson,PF,20,6-11,245,Marquette,1780800
+9,Langston Galloway,SG,26,6-2,200,Saint Joseph's,6666667
+34,Tobias Harris,SF,25,6-9,235,Tennessee,16000000
+1,Reggie Jackson,PG,27,6-3,208,Boston College,16000000
+7,Stanley Johnson,SF,21,6-7,245,Arizona,3097800
+5,Luke Kennard,SG,21,6-5,200,Duke,2759280
+30,Jon Leuer,PF,28,6-10,228,Wisconsin,10497319
+51,Boban Marjanovic,C,29,7-3,290,,7000000
+44,Luis Montero,SG,24,6-7,200,Westchester CC,
+24,Eric Moreland,PF,26,6-10,238,Oregon State,1739333
+14,Ish Smith,PG,29,6-0,175,Wake Forest,6000000
+43,Anthony Tolliver,PF,32,6-8,240,Creighton,3290000

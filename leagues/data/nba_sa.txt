@@ -1,0 +1,17 @@
+12,LaMarcus Aldridge,PF,32,6-11,260,Texas,21461010
+1,Kyle Anderson,SF,24,6-9,230,UCLA,2151704
+42,Davis Bertans,SF,25,6-10,210,,1312611
+10,Matt Costello,SF,24,6-10,240,Michigan State,
+11,Bryn Forbes,SG,24,6-3,190,Michigan State,1312611
+16,Pau Gasol,C,37,7-0,250,,16000000
+22,Rudy Gay,SF,31,6-8,230,Connecticut,8406000
+20,Manu Ginobili,SG,40,6-6,205,,2500000
+14,Danny Green,SG,30,6-6,215,North Carolina,10000000
+24,Darrun Hilliard,SG,24,6-6,220,Villanova,
+77,Joffrey Lauvergne,C,26,6-11,260,,1524305
+2,Kawhi Leonard,SF,26,6-7,230,San Diego State,18868626
+8,Patty Mills,PG,29,6-0,185,Saint Mary's,10714286
+5,Dejounte Murray,PG,21,6-5,170,Washington,1312611
+9,Tony Parker,PG,35,6-2,185,,15453126
+3,Brandon Paul,SG,26,6-4,200,Illinois,815615
+4,Derrick White,PG,23,6-4,190,Colorado,1404600

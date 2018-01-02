@@ -1,0 +1,17 @@
+81,Jose Calderon,PG,36,6-3,200,,1471382
+99,Jae Crowder,PF,27,6-6,235,Marquette,6796117
+8,Channing Frye,PF,34,6-11,255,Arizona,7420912
+32,Jeff Green,SF,31,6-9,235,Georgetown,1471382
+10,John Holland,SG,29,6-5,205,Boston University,
+23,LeBron James,SF,32,6-8,250,,33285709
+26,Kyle Korver,SG,36,6-7,212,Creighton,7000000
+0,Kevin Love,PF,29,6-10,251,UCLA,22642350
+16,Cedi Osman,SF,22,6-8,215,,2642857
+15,London Perrantes,PG,23,6-2,190,Virginia,
+1,Derrick Rose,PG,29,6-3,190,Memphis,1471382
+4,Iman Shumpert,SG,27,6-5,220,Georgia Tech,10337079
+5,JR Smith,SG,32,6-6,225,,13760000
+3,Isaiah Thomas,PG,28,5-9,185,Washington,6261395
+13,Tristan Thompson,C,26,6-9,238,Texas,16400000
+9,Dwyane Wade,SG,35,6-4,220,Marquette,1471382
+41,Ante Zizic,PF,20,6-11,250,,1645200

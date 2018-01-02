@@ -3,6 +3,8 @@
 import os
 import sys
 import re
+import bs4 as bs
+import requests
 
 def get_script_directory():
     directory = os.path.abspath(os.path.dirname(sys.argv[0]))
@@ -23,6 +25,12 @@ def up_x_dir(base_directory, num):
         m = re.match(regex, base_directory)
         if m:
             return (m.group(1))
+ 
+def get_soup(site):
+    r = requests.get(site)
+    soup = bs.BeautifulSoup(r.content, 'html.parser')
+    print(site)
+    return soup
  
 this = get_script_directory()
 up_x_dir(this, 1)

@@ -1,0 +1,16 @@
+21,Patrick Beverley,PG,29,6-1,185,Arkansas,5513514
+7,Sam Dekker,SF,23,6-9,230,Wisconsin,1794600
+1,Jawun Evans,PG,21,6-0,190,Oklahoma State,815615
+8,Danilo Gallinari,SF,29,6-10,225,,20559599
+32,Blake Griffin,PF,28,6-10,251,Oklahoma,29512900
+5,Montrezl Harrell,PF,23,6-8,240,Louisville,1471382
+11,Brice Johnson,PF,23,6-10,230,North Carolina,1331160
+33,Wesley Johnson,SF,30,6-7,215,Syracuse,5882260
+6,DeAndre Jordan,C,29,6-11,265,Texas A&M;,22642350
+35,Willie Reed,C,27,6-11,245,Saint Louis,1471382
+25,Austin Rivers,PG,25,6-4,200,Duke,11825000
+4,Milos Teodosic,PG,30,6-5,196,,6000000
+0,Sindarius Thornwell,SG,23,6-5,215,South Carolina,815615
+9,C.J. Williams,SG,27,6-5,230,North Carolina State,
+23,Lou Williams,SG,31,6-1,175,,7000000
+13,Jamil Wilson,SF,27,6-7,229,Marquette,

@@ -1,0 +1,17 @@
+34,Giannis Antetokounmpo,PF,23,6-11,222,,22471910
+6,Eric Bledsoe,PG,28,6-1,205,Kentucky,14500000
+24,Joel Bolomboy,PF,23,6-9,235,Weber State,
+13,Malcolm Brogdon,PG,25,6-5,215,Virginia,1312611
+23,Sterling Brown,SG,22,6-6,230,SMU,815615
+8,Matthew Dellavedova,PG,27,6-4,198,Saint Mary's,9607500
+31,John Henson,PF,26,6-11,229,North Carolina,11422536
+9,Sean Kilpatrick,SG,27,6-4,212,Cincinnati,1524305
+25,DeAndre Liggins,SG,29,6-6,209,Kentucky,1471382
+7,Thon Maker,C,20,7-1,223,,2684160
+22,Khris Middleton,SF,26,6-8,234,Texas A&M;,14100000
+12,Jabari Parker,PF,22,6-8,250,Duke,6782392
+21,Tony Snell,SG,26,6-7,221,New Mexico,9887640
+35,Mirza Teletovic,PF,32,6-9,242,,10500000
+3,Jason Terry,SG,40,6-2,185,Arizona,1471382
+20,Rashad Vaughn,SG,21,6-6,202,UNLV,1889040
+5,D.J. Wilson,PF,21,6-10,236,Michigan,2135040

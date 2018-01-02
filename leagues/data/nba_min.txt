@@ -1,0 +1,15 @@
+45,Cole Aldrich,C,29,6-11,253,Kansas,7300000
+8,Nemanja Bjelica,PF,29,6-10,230,,3949999
+30,Aaron Brooks,PG,32,6-0,161,Oregon,1471382
+3,Anthony Brown,SF,25,6-7,224,Stanford,
+23,Jimmy Butler,SG,28,6-8,236,Marquette,19301070
+11,Jamal Crawford,SG,37,6-5,185,Michigan,4328000
+5,Gorgui Dieng,C,27,6-11,251,Louisville,14112360
+13,Marcus Georges-Hunt,SG,23,6-5,226,Georgia Tech,1312611
+67,Taj Gibson,PF,32,6-9,235,USC,14000000
+1,Tyus Jones,PG,21,6-2,184,Duke,1471382
+15,Shabazz Muhammad,SG,25,6-6,221,UCLA,1577230
+24,Justin Patton,C,20,7-0,236,Creighton,2247480
+0,Jeff Teague,PG,29,6-2,189,Wake Forest,19000000
+32,Karl-Anthony Towns,C,22,7-0,248,Kentucky,6216840
+22,Andrew Wiggins,SF,22,6-8,202,Kansas,7574323

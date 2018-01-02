@@ -1,0 +1,17 @@
+8,Bogdan Bogdanovic,SG,25,6-6,205,,9412280
+15,Vince Carter,SG,40,6-6,220,North Carolina,8000000
+00,Willie Cauley-Stein,C,24,7-0,240,Kentucky,3704160
+45,Jack Cooley,PF,26,6-10,274,Notre Dame,
+5,De'Aaron Fox,PG,20,6-3,175,Kentucky,4609200
+20,Harry Giles,PF,19,6-10,240,Duke,1859400
+24,Buddy Hield,SG,24,6-4,214,Oklahoma,3675480
+3,George Hill,PG,31,6-3,188,IUPUI,20000000
+25,Justin Jackson,SF,22,6-8,210,North Carolina,2365560
+41,Kosta Koufos,C,28,7-0,265,Ohio State,8393000
+7,Skal Labissiere,PF,21,6-11,225,Kentucky,1312611
+10,Frank Mason III,PG,23,5-11,190,Kansas,1184385
+13,Georgios Papagiannis,C,20,7-1,240,,2301360
+50,Zach Randolph,PF,36,6-9,250,Michigan State,12307692
+23,Malachi Richardson,SG,21,6-6,205,Syracuse,1504560
+29,JaKarr Sampson,SF,24,6-9,207,St. John's,
+17,Garrett Temple,SG,31,6-6,195,LSU,8000000

@@ -1,0 +1,16 @@
+3,OG Anunoby,SF,20,6-8,235,Indiana,1645200
+4,Lorenzo Brown,PG,27,6-5,189,North Carolina State,
+5,Bruno Caboclo,SF,22,6-9,205,,2451225
+10,DeMar DeRozan,SG,28,6-7,220,USC,27739975
+9,Serge Ibaka,PF,28,6-10,235,,20061729
+7,Kyle Lowry,PG,31,6-0,205,Villanova,28703704
+34,Alfonzo McKinnie,SF,25,6-8,215,Green Bay,815615
+0,CJ Miles,SF,30,6-6,225,,7936509
+13,Malcolm Miller,SF,24,6-7,210,Holy Cross,
+92,Lucas Nogueira,C,25,7-0,220,,2947305
+42,Jakob Poeltl,C,22,7-0,230,Utah,2825640
+24,Norman Powell,SF,24,6-4,215,UCLA,1471382
+43,Pascal Siakam,PF,23,6-9,230,New Mexico State,1312611
+17,Jonas Valanciunas,C,25,7-0,255,,15460675
+23,Fred VanVleet,PG,23,6-0,195,Wichita State,1312611
+55,Delon Wright,PG,25,6-5,190,Utah,1645200

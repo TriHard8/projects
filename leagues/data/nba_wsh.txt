@@ -1,0 +1,16 @@
+3,Bradley Beal,SG,24,6-5,207,Florida,23775506
+8,Tim Frazier,PG,27,6-1,170,Penn State,2000000
+13,Marcin Gortat,C,33,6-11,240,,12782609
+9,Sheldon Mac,SG,25,6-6,200,Miami (FL),1312611
+28,Ian Mahinmi,C,31,6-11,262,,16661641
+1,Chris McCullough,PF,22,6-9,215,Syracuse,1471382
+20,Jodie Meeks,SG,30,6-4,210,Kentucky,3290000
+5,Markieff Morris,PF,28,6-10,245,Kansas,8000000
+12,Kelly Oubre Jr.,SF,22,6-7,205,Kansas,2093040
+22,Otto Porter Jr.,SF,24,6-8,198,Georgetown,24773250
+7,Devin Robinson,SF,22,6-8,200,Florida,
+31,Tomas Satoransky,SF,26,6-7,210,,3000000
+30,Mike Scott,PF,29,6-8,237,Virginia,1471382
+14,Jason Smith,PF,31,7-0,240,Colorado State,5225000
+2,John Wall,PG,27,6-4,210,Kentucky,18063850
+4,Mike Young,SF,23,6-9,235,Pittsburgh,
