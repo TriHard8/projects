@@ -14,10 +14,20 @@ class Player():
     def Print(self):
         print("{0},{1},{2},{3},{4},{5}".format(self.name, self.salary, self.position, self.ceiling, self.floor, self.projected))
 
+    def make_list(self):
+        attr = []
+        attr.append(self.name)
+        attr.append(self.salary)
+        attr.append(self.position)
+        attr.append(self.ceiling)
+        attr.append(self.floor)
+        attr.append(self.projected)
+        return attr 
+
 def getkey(custom):
     return custom.salary
 
-def knapsack(optimize, attr, high):
+def knapsack(optimize, wgt_index, val_index, high):
     matrix = []
     for i in range(0, len(optimize)):
         new = []
@@ -27,26 +37,37 @@ def knapsack(optimize, attr, high):
         #print("***{}***".format(len(new)))
 
     for row in range(0, len(matrix)):
-        weight = optimize[row].salary
+        weight = int(optimize[row][wgt_index])
+        value = optimize[row][val_index]
         for col in range(0, len(matrix[row])):
             if row == 0 and weight <= col:
-                matrix[row][col] = weight
-            elif weight >= col: #massive assumption here that i'm taking the first player of that weight.
+                matrix[row][col] = value
+            elif weight > col: #massive assumption here that i'm taking the first player of that weight.
                 matrix[row][col] = matrix[row-1][col]
             else:
-                
-            continue
-           #print(matrix[row][col]) 
-    print(matrix)
+                matrix[row][col] = max(matrix[row-1][col], value + matrix[row-1][col-weight])
 
+    max_value = matrix[len(optimize)-1][high]
+    while(max_value > 0):
+        
+ 
 ofile = "{0}/data/20180102_nba_players.csv".format(my.up_x_dir(my.get_script_directory(), 1))
 players = []
 with open(ofile) as file:
     for line in file:
         player = line.strip('\n').split(',')
-        players.append(Player(player[0].strip('"'), int(player[1]), player[3], float(player[5]), float(player[6]), float(player[7])))
+        players.append(Player(player[0].strip('"'), int(player[1]), player[3], int(10000*float(player[5])), int(10000*float(player[6])), int(10000*float(player[7]))).make_list())
 
-knapsack(sorted(players, key=getkey), "salary", 35)
-#knapsack(players, "salary", 89)
+#knapsack(sorted(players, key=getkey), "salary", 35)
+'''
+    Salary Index = 1
+    Ceiling Index = 3
+    Floor Index = 4
+    Projected Index = 5
+'''
+'''
+    knapsack(wgt_list_values, weight_index, value_index, max_size)
+'''
+knapsack(players, 1, 4, 600)
 #for player in sorted(players, key=getkey):
 #    player.Print()
