@@ -24,6 +24,28 @@ class Player():
         attr.append(self.projected)
         return attr 
 
+class Team():
+    def __init__(self):
+        self.value = 0
+        self.salary = 0
+        self.players = []
+        for i in range(0, 9):
+            if i == 0 or i == 1:
+                self.players.append(Player, 0, 0, "PG", 0, 0, 0)
+            elif i == 2 or i == 3:
+                self.players.append(Player, 0, 0, "SG", 0, 0, 0)
+            elif i == 4 or i == 5:
+                self.players.append(Player, 0, 0, "SF", 0, 0, 0)
+            elif i == 6 or i == 7:
+                self.players.append(Player, 0, 0, "PF", 0, 0, 0)
+            else:
+                self.players.append(Player, 0, 0, "C", 0, 0, 0)
+        
+    def evaluate(self, player):
+        position = player.position
+        values = [self.value, 0, 0]
+        teams = [self, self]
+        
 def getkey(custom):
     return custom.salary
 

@@ -5,6 +5,8 @@ import sys
 import re
 import bs4 as bs
 import requests
+from datetime import date, timedelta
+import urllib.request
 
 def get_script_directory():
     directory = os.path.abspath(os.path.dirname(sys.argv[0]))
@@ -25,7 +27,14 @@ def up_x_dir(base_directory, num):
         m = re.match(regex, base_directory)
         if m:
             return (m.group(1))
+
+def download_file(link, save_location):
+    urllib.request.urlretrieve(link, save_location)
+    return
  
+def date_for_files():
+    return date.today().strftime("%Y%m%d")
+
 def get_soup(site):
     r = requests.get(site)
     soup = bs.BeautifulSoup(r.content, 'html.parser')
