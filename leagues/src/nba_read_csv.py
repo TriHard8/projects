@@ -3,16 +3,20 @@
 import my_utils as my
 
 class Player():
-    def __init__(self, name, salary, position, ceiling, floor, projected):
+    def __init__(self, name, salary, team, position, ceiling, ceil_per_kdol, floor, fl_per_kdol, projected, proj_per_kdol):
         self.name = name
         self.salary = salary / int(100)
+        self.team = team
         self.position = position
         self.ceiling = ceiling
+        self.ceil_per_kdol = ceil_per_kdol
         self.floor = floor
+        self.fl_per_kdol= fl_per_kdol
         self.projected = projected
+        self.proj_per_kdol = proj_per_kdol
 
     def Print(self):
-        print("{0},{1},{2},{3},{4},{5}".format(self.name, self.salary, self.position, self.ceiling, self.floor, self.projected))
+        print("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}".format(self.name, self.salary, self.team, self.position, self.ceiling, self.ceil_per_kdol, self.floor, self.fl_per_kdol, self.projected, self.proj_per_kdol))
 
     def make_list(self):
         attr = []
@@ -47,7 +51,7 @@ class Team():
         teams = [self, self]
         
 def getkey(custom):
-    return custom.salary
+    return custom.proj_per_kdol
 
 def knapsack(optimize, wgt_index, val_index, high):
     matrix = []
@@ -70,16 +74,18 @@ def knapsack(optimize, wgt_index, val_index, high):
                 matrix[row][col] = max(matrix[row-1][col], value + matrix[row-1][col-weight])
 
     max_value = matrix[len(optimize)-1][high]
-    while(max_value > 0):
+#    while(max_value > 0):
         
- 
-ofile = "{0}/data/20180102_nba_players.csv".format(my.up_x_dir(my.get_script_directory(), 1))
+ofile = "{0}/data/20180114_nba_projections.csv".format(my.up_x_dir(my.get_script_directory(), 1))
 players = []
 with open(ofile) as file:
+    next(file)
     for line in file:
         player = line.strip('\n').split(',')
-        players.append(Player(player[0].strip('"'), int(player[1]), player[3], int(10000*float(player[5])), int(10000*float(player[6])), int(10000*float(player[7]))).make_list())
+        players.append(Player(player[0].strip('"'), int(player[1]), player[2], player[3], int(10000*float(player[5])), int(10000*float(player[6])), int(10000*float(player[7])), int(10000*float(player[8])), int(10000*float(player[9])), int(10000*float(player[10]))))
 
+for player in sorted(players, key=getkey, reverse=True):
+    player.Print()
 #knapsack(sorted(players, key=getkey), "salary", 35)
 '''
     Salary Index = 1

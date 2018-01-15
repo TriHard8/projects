@@ -40,9 +40,9 @@ with open (file_location, 'w') as f:
                 player[6] = '0'
             if player[7] == '':
                 player[7] = '0'
-            player.append(str(Decimal(10000) * Decimal(player[6]) / Decimal(player[1])))
+            player.append(str(Decimal(1000) * Decimal(player[6]) / Decimal(player[1])))
             player.append(player[7])
-            player.append(str(Decimal(10000) * Decimal(player[7]) / Decimal(player[1])))
+            player.append(str(Decimal(1000) * Decimal(player[7]) / Decimal(player[1])))
             player[7] = player[6]
-            player[6] = (str(Decimal(10000) * Decimal(player[5]) / Decimal(player[1])))
+            player[6] = (str(Decimal(1000) * Decimal(player[5]) / Decimal(player[1])))
             f.write("{0}\n".format(",".join(player)))
