@@ -127,14 +127,11 @@ def knapsack(optimize, wgt_index, val_index, high):
         for col in range(0, len(matrix[row])):
             if row == 0 and weight <= col:
                 matrix[row][col] = [optimize[row]]
-                print("if: {0}".format(matrix[row][col]))
             elif weight > col: #massive assumption here that i'm taking the first player of that weight.
                 matrix[row][col] = matrix[row-1][col]
-                print("elif: {0}".format(matrix[row][col]))
             else:
                 above_floor = 0
                 without_floor = 0
-                print("else: {0},{1},{2}".format(row, col, matrix[row-1][col]))
                 for player in matrix[row-1][col]:
                     above_floor += player.floor
                 for player in matrix[row-1][col-weight]:
