@@ -9,7 +9,7 @@ my.download_file("https://rotogrinders.com/projected-stats/nba-player.csv?site=f
 
 getcontext().prec = 6
 with open (file_location, 'w') as f:
-    f.write("name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$\n")
+    f.write("name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out\n")
     with open (tmp_location, 'r') as r:
         for line in r:
             player = line.strip('\n').split(',')
@@ -40,9 +40,12 @@ with open (file_location, 'w') as f:
                 player[6] = '0'
             if player[7] == '':
                 player[7] = '0'
-            player.append(str(Decimal(1000) * Decimal(player[6]) / Decimal(player[1])))
-            player.append(player[7])
-            player.append(str(Decimal(1000) * Decimal(player[7]) / Decimal(player[1])))
-            player[7] = player[6]
-            player[6] = (str(Decimal(1000) * Decimal(player[5]) / Decimal(player[1])))
-            f.write("{0}\n".format(",".join(player)))
+            if Decimal(player[1]) == 0:
+                print("{0} has a 0 salary.".format(player[0]))
+            else:
+                player.append(str(Decimal(1000) * Decimal(player[6]) / Decimal(player[1])))
+                player.append(player[7])
+                player.append(str(Decimal(1000) * Decimal(player[7]) / Decimal(player[1])))
+                player[7] = player[6]
+                player[6] = (str(Decimal(1000) * Decimal(player[5]) / Decimal(player[1])))
+                f.write("{0},0\n".format(",".join(player)))

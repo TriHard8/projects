@@ -2,7 +2,7 @@
 
 import my_utils as my
 
-date = "20180122"
+date = "20180119"
 class Player():
     def __init__(self, name, salary, team, position, ceiling, ceil_per_kdol, floor, fl_per_kdol, projected, proj_per_kdol):
         self.name = name
@@ -111,68 +111,13 @@ def knapsack(optimize, wgt_index, val_index, high):
     for i in range(0, len(optimize)):
         new = []
         for j in range(0, high+1):
-            #new.append(0)
-            new.append([])
-        matrix.append(new)
-
-    weight = 0
-    value = 0
-    for row in range(0, len(matrix)):
-        if wgt_index == 0:
-            weight = int(optimize[row].salary)
-        if val_index == 0:
-            value = optimize[row].floor
-        elif val_index == 1:
-            value = optimize[row].projected
-        for col in range(0, len(matrix[row])):
-            if row == 0 and weight <= col:
-                matrix[row][col] = [optimize[row]]
-                print("if: {0}".format(matrix[row][col]))
-            elif weight > col: #massive assumption here that i'm taking the first player of that weight.
-                matrix[row][col] = matrix[row-1][col]
-                print("elif: {0}".format(matrix[row][col]))
-            else:
-                above_floor = 0
-                without_floor = 0
-                print("else: {0},{1},{2}".format(row, col, matrix[row-1][col]))
-                for player in matrix[row-1][col]:
-                    above_floor += player.floor
-                for player in matrix[row-1][col-weight]:
-                    without_floor += player.floor
-                if  above_floor > (value + without_floor):
-                    matrix[row][col] = matrix[row-1][col]
-                else:
-                    matrix[row][col] = matrix[row-1][col-weight].append(optimize[row])
-
-    max_value = matrix[len(optimize)-1][high]
-    knapsack_results = "{0}/data/knapsack_results.csv".format(my.up_x_dir(my.get_script_directory(), 1))
-    open(knapsack_results, 'w')
-    knapsack_results = open("{0}/data/knapsack_results.csv".format(my.up_x_dir(my.get_script_directory(), 1)), 'a')
-    for row in range(0,len(matrix)):
-        line = "{0},{1},".format(optimize[row].name, optimize[row].salary)
-        for col in range(0,len(matrix[row])):
-            line += "{0},".format(str(matrix[row][col]))
-        line = line[:-1] + "\n"
-        knapsack_results.write(line)
-            
-def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
-    matrix = []
-    for i in range(0, len(optimize)):
-        new = []
-        for j in range(0, high+1):
             new.append(0)
         matrix.append(new)
         #print("***{}***".format(len(new)))
 
-    weight = 0
-    value = 0
     for row in range(0, len(matrix)):
-        if wgt_index == 0:
-            weight = int(optimize[row].salary)
-        if val_index == 0:
-            value = optimize[row].floor
-        elif val_index == 1:
-            value = optimize[row].projected
+        weight = int(optimize[row][wgt_index])
+        value = optimize[row][val_index]
         for col in range(0, len(matrix[row])):
             if row == 0 and weight <= col:
                 matrix[row][col] = value
@@ -182,18 +127,9 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
                 matrix[row][col] = max(matrix[row-1][col], value + matrix[row-1][col-weight])
 
     max_value = matrix[len(optimize)-1][high]
-    knapsack_results = "{0}/data/knapsack_results.csv".format(my.up_x_dir(my.get_script_directory(), 1))
-    open(knapsack_results, 'w')
-    knapsack_results = open("{0}/data/knapsack_results.csv".format(my.up_x_dir(my.get_script_directory(), 1)), 'a')
-    for row in range(0,len(matrix)):
-        line = "{0},{1},{2},".format(optimize[row].name, optimize[row].position, optimize[row].salary)
-        for col in range(0,len(matrix[row])):
-            line += "{0},".format(str(matrix[row][col]))
-        line = line[:-1] + "\n"
-        knapsack_results.write(line)
-    
+#    while(max_value > 0):
         
-ofile = "{0}/data/{1}_nba_projections.csv".format(my.up_x_dir(my.get_script_directory(), 1), date)
+ofile = "{0}/data/20180119_nba_projections.csv".format(my.up_x_dir(my.get_script_directory(), 1))
 players = []
 with open(ofile) as file:
     next(file)
@@ -215,7 +151,7 @@ for player in sorted(players, key=getkey, reverse=True):
 
 myteam.Print()
 print("{0}".format(myteam.get_salary()))
-knapsack(sorted(players, key=getkey), 0, 0, 600)
+#knapsack(sorted(players, key=getkey), "salary", 35)
 '''
     Salary Index = 1
     Ceiling Index = 3
