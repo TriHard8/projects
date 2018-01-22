@@ -1,4 +1,4 @@
-name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out,""=sumif(ls:l400,"=1",b2:b400)""
+name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out,"=sumif(ls:l400,"=1",b2:b400)"
 Ben McLemore,3500,MEM,SG,PHI,18.419,5.26257,4.181,1.19457,11.3,3.22857,0
 Ivan Rabb,3500,MEM,PF,PHI,6.768,1.93371,0.752,0.214857,3.76,1.07429,0
 Myke Henry,3500,MEM,SG,PHI,11.6784,3.33669,4.5416,1.2976,8.11,2.31714,0
