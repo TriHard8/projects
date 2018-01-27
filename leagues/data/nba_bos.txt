@@ -1,7 +1,8 @@
-45,Kadeem Allen,SG,24,6-3,200,Arizona,
+45,Kadeem Allen,SG,25,6-3,200,Arizona,
 46,Aron Baynes,C,31,6-10,260,Washington State,4328000
 26,Jabari Bird,SG,23,6-6,198,California,
 7,Jaylen Brown,SG,21,6-7,225,California,4956480
+9,Jarell Eddie,SG,26,6-7,218,Virginia Tech,57672
 20,Gordon Hayward,SF,27,6-8,226,Butler,29727900
 42,Al Horford,PF,31,6-10,245,Florida,27734406
 11,Kyrie Irving,PG,25,6-3,193,Duke,18868626

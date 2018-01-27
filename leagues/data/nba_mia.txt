@@ -5,6 +5,7 @@
 40,Udonis Haslem,PF,37,6-8,235,Florida,1471382
 16,James Johnson,PF,30,6-8,240,Wake Forest,13734000
 8,Tyler Johnson,SG,25,6-4,190,Fresno State,5881260
+5,Derrick Jones Jr.,SF,20,6-7,200,UNLV,1312611
 17,Rodney McGruder,SG,26,6-4,200,Kansas State,1312611
 25,Jordan Mickey,C,23,6-8,235,LSU,1471382
 9,Kelly Olynyk,C,26,7-0,245,Gonzaga,10607169
@@ -13,5 +14,4 @@
 14,Derrick Walton Jr.,PG,22,6-1,185,Michigan,
 15,Okaro White,PF,25,6-8,215,Florida State,1312611
 21,Hassan Whiteside,C,28,7-0,265,Marshall,23775506
-12,Matt Williams Jr.,SG,24,6-5,210,UCF,
 20,Justise Winslow,SF,21,6-7,225,Duke,2705040

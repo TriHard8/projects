@@ -11,6 +11,6 @@
 25,Austin Rivers,PG,25,6-4,200,Duke,11825000
 4,Milos Teodosic,PG,30,6-5,196,,6000000
 0,Sindarius Thornwell,SG,23,6-5,215,South Carolina,815615
+12,Tyrone Wallace,SG,23,6-5,198,California,
 9,C.J. Williams,SG,27,6-5,230,North Carolina State,
 23,Lou Williams,SG,31,6-1,175,,7000000
-13,Jamil Wilson,SF,27,6-7,229,Marquette,

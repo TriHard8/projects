@@ -2,11 +2,11 @@
 24,Kent Bazemore,SG,28,6-5,201,Old Dominion,16910113
 3,Marco Belinelli,SG,31,6-5,210,,6060606
 95,DeAndre' Bembry,SF,23,6-6,210,Saint Joseph's,1567200
-34,Tyler Cavanaugh,PF,23,6-9,238,George Washington,
+34,Tyler Cavanaugh,PF,23,6-9,238,George Washington,679919
 20,John Collins,PF,20,6-10,235,Wake Forest,1936920
 14,Dewayne Dedmon,C,28,7-0,245,USC,6000000
 5,Malcolm Delaney,PG,28,6-3,190,Virginia Tech,2500000
-2,Tyler Dorsey,SG,21,6-4,183,Oregon,815615
+2,Tyler Dorsey,SG,21,6-5,183,Oregon,815615
 7,Ersan Ilyasova,PF,30,6-10,235,,6000000
 11,Josh Magette,PG,28,6-1,160,Alabama-Huntsville,
 31,Mike Muscala,PF,26,6-11,240,Bucknell,5000000
@@ -14,3 +14,4 @@
 12,Taurean Prince,SF,23,6-8,220,Baylor,2422560
 17,Dennis Schroder,PG,24,6-1,172,,15500000
 22,Isaiah Taylor,PG,23,6-3,170,Texas,1312611
+04,Andrew White III,SF,24,6-7,210,Syracuse,

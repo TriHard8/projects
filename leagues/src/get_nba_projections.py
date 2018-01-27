@@ -9,7 +9,7 @@ my.download_file("https://rotogrinders.com/projected-stats/nba-player.csv?site=f
 
 getcontext().prec = 6
 with open (file_location, 'w') as f:
-    f.write("name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out,,\"=sumif(l2:l400,\"\"=1\"\",b2:b400)\"\n")
+    f.write("name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out,,\"=sumif(l2:l400,\"\"=1\"\",b2:b400)\",=max(m2:n400)\n")
     with open (tmp_location, 'r') as r:
         for line in r:
             player = line.strip('\n').split(',')

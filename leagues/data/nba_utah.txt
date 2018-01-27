@@ -1,19 +1,17 @@
-13,Tony Bradley,C,19,6-10,248,North Carolina,1414920
+13,Tony Bradley,C,20,6-10,248,North Carolina,1414920
 10,Alec Burks,SG,26,6-6,214,Colorado,10845506
 11,Dante Exum,PG,22,6-6,190,,4992385
 15,Derrick Favors,PF,26,6-10,265,Georgia Tech,12000000
 27,Rudy Gobert,C,25,7-1,245,,21924719
-17,Eric Griffin,C,27,6-8,205,Campbell,
 5,Rodney Hood,SG,25,6-8,206,Duke,2386864
 2,Joe Ingles,SF,30,6-8,226,,14136364
 8,Jonas Jerebko,PF,30,6-10,231,,4000000
 6,Joe Johnson,SG,36,6-7,240,Arkansas,10505000
 21,Erik McCree,SF,24,6-8,225,Louisiana Tech,815615
 45,Donovan Mitchell,SG,21,6-3,215,Louisville,2621280
-30,Naz Mitrou-Long,G,24,6-4,218,Iowa State,815615
 25,Raul Neto,PG,25,6-1,179,,1471382
+31,Georges Niang,F,24,6-6,231,Iowa State,
 23,Royce O'Neale,SF,24,6-6,226,Baylor,815615
 3,Ricky Rubio,PG,27,6-4,190,,14275000
 22,Thabo Sefolosha,SF,33,6-7,220,,5500000
 33,Ekpe Udoh,C,30,6-10,245,Baylor,3200000
-16,Nate Wolters,PG,26,6-4,190,South Dakota State,

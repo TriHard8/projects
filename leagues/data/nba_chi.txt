@@ -8,7 +8,7 @@
 42,Robin Lopez,C,29,7-0,277,Stanford,13788500
 24,Lauri Markkanen,PF,20,7-0,230,Arizona,3821640
 44,Nikola Mirotic,PF,26,6-10,238,,12500000
-11,David Nwaba,PG,24,6-4,209,Cal Poly,1312611
+11,David Nwaba,PG,25,6-4,209,Cal Poly,1312611
 22,Cameron Payne,PG,23,6-3,185,Murray State,2203440
 20,Quincy Pondexter,SG,29,6-7,225,Washington,3853931
 5,Bobby Portis,PF,22,6-11,248,Arkansas,1516320

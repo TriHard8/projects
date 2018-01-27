@@ -1,5 +1,5 @@
 4,Arron Afflalo,SG,32,6-5,210,UCLA,1471382
-0,Jamel Artis,SG,24,6-7,213,Pittsburgh,
+0,Jamel Artis,SG,25,6-7,213,Pittsburgh,
 14,D.J. Augustin,PG,30,6-0,183,Texas,7250000
 24,Khem Birch,C,25,6-9,220,UNLV,815615
 11,Bismack Biyombo,C,25,6-9,255,,17000000

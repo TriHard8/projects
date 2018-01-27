@@ -2,7 +2,7 @@
 
 import my_utils as my
 
-date = "20180122"
+date = my.date_for_files()
 class Player():
     def __init__(self, name, salary, team, position, ceiling, ceil_per_kdol, floor, fl_per_kdol, projected, proj_per_kdol):
         self.name = name
@@ -126,20 +126,20 @@ def knapsack(optimize, wgt_index, val_index, high):
             value = optimize[row].projected
         for col in range(0, len(matrix[row])):
             if row == 0 and weight <= col:
-                matrix[row][col] = [optimize[row]]
+                matrix[row][col].append(optimize[row])
             elif weight > col: #massive assumption here that i'm taking the first player of that weight.
                 matrix[row][col] = matrix[row-1][col]
             else:
-                above_floor = 0
-                without_floor = 0
+                above_value = 0
+                without_value = 0
                 for player in matrix[row-1][col]:
-                    above_floor += player.floor
+                    above_value += player.floor
                 for player in matrix[row-1][col-weight]:
-                    without_floor += player.floor
-                if  above_floor > (value + without_floor):
+                    without_value += player.floor
+                if  above_value > (value + without_value):
                     matrix[row][col] = matrix[row-1][col]
                 else:
-                    matrix[row][col] = matrix[row-1][col-weight].append(optimize[row])
+                    matrix[row-1][col-weight].append(optimize[row])
 
     max_value = matrix[len(optimize)-1][high]
     knapsack_results = "{0}/data/knapsack_results.csv".format(my.up_x_dir(my.get_script_directory(), 1))
@@ -189,7 +189,6 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
         line = line[:-1] + "\n"
         knapsack_results.write(line)
     
-        
 ofile = "{0}/data/{1}_nba_projections.csv".format(my.up_x_dir(my.get_script_directory(), 1), date)
 players = []
 with open(ofile) as file:

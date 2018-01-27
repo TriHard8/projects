@@ -1,5 +1,5 @@
 00,Darrell Arthur,PF,29,6-9,235,Kansas,7464912
-5,Will Barton,SG,26,6-6,190,Memphis,3533333
+5,Will Barton,SG,27,6-6,190,Memphis,3533333
 25,Malik Beasley,SG,21,6-5,196,Florida State,1700640
 21,Wilson Chandler,SF,30,6-9,225,DePaul,12016854
 3,Torrey Craig,SG,27,6-6,215,USC Upstate,

@@ -1,10 +1,11 @@
 5,J.J. Barea,PG,33,6-0,185,Northeastern,3903900
 40,Harrison Barnes,SF,25,6-8,225,North Carolina,23112004
-2,Kyle Collinsworth,PG,26,6-6,210,BYU,543471
+8,Kyle Collinsworth,PG,26,6-6,210,BYU,543471
 30,Seth Curry,SG,27,6-2,185,Duke,3028410
 11,Yogi Ferrell,PG,24,6-0,180,Indiana,1312611
 10,Dorian Finney-Smith,SF,24,6-8,220,Florida,1312611
 34,Devin Harris,PG,34,6-3,185,Wisconsin,4402546
+12,Jalen Jones,SF,24,6-7,220,Texas A&M;,
 42,Maximilian Kleber,PF,25,6-11,220,,815615
 23,Wesley Matthews,SG,31,6-5,220,Marquette,17884176
 13,Josh McRoberts,PF,30,6-10,240,Duke,6021175

@@ -13,4 +13,3 @@
 30,Mike Scott,PF,29,6-8,237,Virginia,1471382
 14,Jason Smith,PF,31,7-0,240,Colorado State,5225000
 2,John Wall,PG,27,6-4,210,Kentucky,18063850
-4,Mike Young,SF,23,6-9,235,Pittsburgh,

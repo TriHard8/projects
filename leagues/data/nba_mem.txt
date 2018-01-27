@@ -1,4 +1,4 @@
-24,Dillon Brooks,SF,21,6-6,220,Oregon,815615
+24,Dillon Brooks,SF,22,6-6,220,Oregon,815615
 6,Mario Chalmers,PG,31,6-2,190,Kansas,1471382
 11,Mike Conley,PG,30,6-1,175,Ohio State,28530608
 21,Deyonta Davis,C,21,6-11,237,Michigan State,1312611
@@ -7,7 +7,7 @@
 33,Marc Gasol,C,32,7-1,255,,22642350
 0,JaMychal Green,PF,27,6-9,227,Alabama,8533333
 5,Andrew Harrison,SG,23,6-6,213,Kentucky,1312611
-32,Vince Hunter,SF,23,6-8,208,UTEP,
+4,Myke Henry,F,25,6-6,210,DePaul,
 1,Jarell Martin,PF,23,6-10,239,LSU,1471382
 23,Ben McLemore,SG,24,6-5,195,Kansas,5200000
 25,Chandler Parsons,SF,29,6-10,230,Florida,23112004

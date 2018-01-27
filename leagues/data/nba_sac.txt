@@ -12,6 +12,6 @@
 10,Frank Mason III,PG,23,5-11,190,Kansas,1184385
 13,Georgios Papagiannis,C,20,7-1,240,,2301360
 50,Zach Randolph,PF,36,6-9,250,Michigan State,12307692
-23,Malachi Richardson,SG,21,6-6,205,Syracuse,1504560
+23,Malachi Richardson,SG,22,6-6,205,Syracuse,1504560
 29,JaKarr Sampson,SF,24,6-9,207,St. John's,
 17,Garrett Temple,SG,31,6-6,195,LSU,8000000

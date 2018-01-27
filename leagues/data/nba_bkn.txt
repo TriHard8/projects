@@ -5,14 +5,13 @@
 8,Spencer Dinwiddie,PG,24,6-6,200,Colorado,1524305
 14,Milton Doyle,SG,24,6-4,180,Loyola (IL),
 12,Joe Harris,SG,26,6-6,219,Virginia,1524305
-24,Rondae Hollis-Jefferson,SF,22,6-7,214,Arizona,1471382
+24,Rondae Hollis-Jefferson,SF,23,6-7,214,Arizona,1471382
 22,Caris LeVert,SG,23,6-7,203,Michigan,1632480
 7,Jeremy Lin,PG,29,6-3,200,Harvard,12000000
 20,Timofey Mozgov,C,31,7-1,275,,15280000
 4,Jahlil Okafor,C,22,6-11,260,Duke,4995120
-00,Yakuba Ouattara,SG,25,6-4,220,,
 1,D'Angelo Russell,PG,21,6-5,195,Ohio State,5562360
 2,Nik Stauskas,SG,24,6-6,205,Michigan,3807147
+0,James Webb III,SF,24,6-9,202,Boise State,
 15,Isaiah Whitehead,SG,22,6-4,213,Seton Hall,1312611
-21,Jacob Wiley,SF,23,6-8,223,Eastern Washington,
-44,Tyler Zeller,C,27,7-0,250,North Carolina,1709538
+44,Tyler Zeller,C,28,7-0,250,North Carolina,1709538

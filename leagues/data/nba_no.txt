@@ -1,5 +1,5 @@
 42,Alexis Ajinca,C,29,7-2,248,,4961798
-24,Tony Allen,SG,35,6-4,213,Oklahoma State,1471382
+24,Tony Allen,SG,36,6-4,213,Oklahoma State,1471382
 3,Omer Asik,C,31,7-0,255,,10595505
 2,Ian Clark,SG,26,6-3,175,Belmont,1471382
 4,Charles Cooke,SG,23,6-5,196,Dayton,
@@ -10,7 +10,8 @@
 44,Solomon Hill,SF,26,6-7,225,Arizona,12236535
 11,Jrue Holiday,PG,27,6-4,205,UCLA,25686667
 15,Frank Jackson,PG,19,6-3,205,Duke,815615
-12,Jalen Jones,SF,24,6-7,220,Texas A&M;,
+5,Mike James,PG,27,6-1,195,Lamar,
+34,DeAndre Liggins,SG,29,6-6,209,Kentucky,
 21,Darius Miller,SF,27,6-8,225,Kentucky,2100000
 55,E'Twaun Moore,SG,28,6-4,191,Purdue,8445024
 14,Jameer Nelson,PG,35,6-0,190,Saint Joseph's,1429818
