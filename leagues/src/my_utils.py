@@ -41,5 +41,16 @@ def get_soup(site):
     print(site)
     return soup
  
+def list_2_csv(my_list):
+    csv = ""
+    for item in my_list:
+        for i in range(0,len(item)):
+            if i < (len(item)-1):
+                csv = csv + "{0},".format(item[i])
+            else:
+                csv = csv + "{0}\n".format(item[i])
+
+    return csv
+
 this = get_script_directory()
 up_x_dir(this, 1)
