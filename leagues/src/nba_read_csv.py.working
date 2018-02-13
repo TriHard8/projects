@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+criteria = 9
 
 import my_utils as my
 from operator import itemgetter
@@ -222,23 +223,32 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
 if __name__ == "__main__":
     #date = "20180202"
     date = my.date_for_files()
+
+    ofile = "{0}/data/todays_games.txt".format(my.up_x_dir(my.get_script_directory(), 1))
+    teams = []
+    with open(ofile) as file:
+        for line in file:
+            team = line.strip('\n')
+            teams.append(team)
+    
     ofile = "{0}/data/{1}_nba_projections.csv".format(my.up_x_dir(my.get_script_directory(), 1), date)
     players = []
     with open(ofile) as file:
         next(file)
         for line in file:
             player = line.strip('\n').split(',')
-            player[0] = player[0].strip('"')
-            player[1] = int(player[1])
-            player[2] = player[2]
-            player[3] = player[3]
-            player[5] = int(10000*float(player[5]))
-            player[6] = int(10000*float(player[6]))
-            player[7] = int(10000*float(player[7]))
-            player[8] = int(10000*float(player[8]))
-            player[9] = int(10000*float(player[9]))
-            player[10] = int(10000*float(player[10]))
-            players.append(player)
+            if player[2] in teams:
+                player[0] = player[0].strip('"')
+                player[1] = int(player[1])
+                #player[2] = player[2]
+                #player[3] = player[3]
+                player[5] = int(10000*float(player[5]))
+                player[6] = int(10000*float(player[6]))
+                player[7] = int(10000*float(player[7]))
+                player[8] = int(10000*float(player[8]))
+                player[9] = int(10000*float(player[9]))
+                player[10] = int(10000*float(player[10]))
+                players.append(player)
 #            players.append(Player(player[0].strip('"'), int(player[1]), player[2], player[3], int(10000*float(player[5])), int(10000*float(player[6])), int(10000*float(player[7])), int(10000*float(player[8])), int(10000*float(player[9])), int(10000*float(player[10]))))
     
     sorted_players = sorted(players, key = itemgetter(10), reverse = True)
@@ -266,7 +276,7 @@ if __name__ == "__main__":
             sorted_players[i][11] = 1    
             print(sorted_players[i])
                 
-    sorted_players = sorted(players, key = itemgetter(7), reverse = True)
+    sorted_players = sorted(players, key = itemgetter(criteria), reverse = True)
     min_position = get_min_position(sorted_players)
         
     for i in range(0,len(sorted_players)):
@@ -305,7 +315,7 @@ if __name__ == "__main__":
                 continue 
             elif sorted_players[i][11] == 1:
                 continue
-            pt_dif = sorted_players[i][7] - sorted_players[min_position[sorted_players[i][3]]][7]
+            pt_dif = sorted_players[i][criteria] - sorted_players[min_position[sorted_players[i][3]]][criteria]
             sal_dif = sorted_players[i][1] - sorted_players[min_position[sorted_players[i][3]]][1]
             if sal_dif <= 0:
                 sorted_players[i][11] = 1
