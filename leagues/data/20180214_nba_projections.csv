@@ -1,0 +1,1 @@
+name,salary,team,position,versus,ceiling,ceil/$,floor,fl/$,projected,proj/$,in/out,,"=sumif(l2:l400,""=1"",b2:b400)",=max(m2:n400)
