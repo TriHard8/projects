@@ -221,8 +221,8 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
         knapsack_results.write(line)
     
 if __name__ == "__main__":
-    date = "20180213"
-    #date = my.date_for_files()
+    #date = "20180213"
+    date = my.date_for_files()
 
     ofile = "{0}/data/todays_games.txt".format(my.up_x_dir(my.get_script_directory(), 1))
     teams = []
@@ -336,7 +336,7 @@ if __name__ == "__main__":
         current_salary = 0
         for player in sorted_players:
             if player[11] == 1:
-                print(player)
+                print("{0} - ({1} vs {2}) {3}".format(player[3], player[2], player[4], player[0]))
                 current_salary += player[1]
         print(current_salary)
         #current_salary = 60001
