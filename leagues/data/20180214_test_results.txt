@@ -1,0 +1,455 @@
+['Taurean Prince', 4000, 'ATL', 'SF', 'DET', 410130, 102532, 147870, 36967, 279000, 69750, 1]
+['John Collins', 5100, 'ATL', 'PF', 'DET', 453060, 88835, 218140, 42772, 335600, 65803, 1]
+['Malcolm Delaney', 3500, 'ATL', 'PG', 'DET', 346256, 98930, 109344, 31241, 227800, 65085, 1]
+['Tyler Dorsey', 3700, 'ATL', 'PG', 'DET', 395418, 106870, 51382, 13887, 223400, 60378, 1]
+["Royce O'Neale", 4300, 'UTA', 'SF', 'PHO', 448920, 104400, 49880, 11600, 249400, 58000, 1]
+['Dewayne Dedmon', 5700, 'ATL', 'C', 'DET', 460740, 80831, 197460, 34642, 329099, 57736, 1]
+['Amir Johnson', 3500, 'PHI', 'PF', 'MIA', 284696, 81341, 89904, 25686, 187300, 53514, 1]
+['Tim Hardaway Jr.', 5500, 'NYK', 'SG', 'WAS', 410989, 74725, 152010, 27638, 281500, 51181, 1]
+['Lou Williams', 7000, 'LAC', 'SG', 'BOS', 475253, 67893, 218547, 31221, 346900, 49557, 1]
+swapping in: ['Kentavious Caldwell-Pope', 5500, 'LAL', 'SG', 'NOP', 351968, 63994, 165631, 30114, 258800, 47054, 1, 0]: 
+swapping out: ['Tim Hardaway Jr.', 5500, 'NYK', 'SG', 'WAS', 410989, 74725, 152010, 27638, 281500, 51181, 0, 0]: 
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (LAL vs NOP) Kentavious Caldwell-Pope
+SF - (ATL vs DET) Taurean Prince
+PG - (ATL vs DET) Malcolm Delaney
+PF - (PHI vs MIA) Amir Johnson
+PG - (ATL vs DET) Tyler Dorsey
+SF - (UTA vs PHO) Royce O'Neale
+42300
+swapping in: ["E'Twaun Moore", 4300, 'NOP', 'SF', 'LAL', 274548, 63848, 126252, 29360, 200400, 46604, 1, 0]: 
+swapping out: ["Royce O'Neale", 4300, 'UTA', 'SF', 'PHO', 448920, 104400, 49880, 11600, 249400, 58000, 0, 0]: 
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (LAL vs NOP) Kentavious Caldwell-Pope
+SF - (ATL vs DET) Taurean Prince
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+PF - (PHI vs MIA) Amir Johnson
+PG - (ATL vs DET) Tyler Dorsey
+42300
+swapping in: ['Mario Chalmers', 3600, 'MEM', 'PG', 'OKC', 261942, 72761, 89658, 24905, 175799, 48833, 1, 0]: 
+swapping out: ['Tyler Dorsey', 3700, 'ATL', 'PG', 'DET', 395418, 106870, 51382, 13887, 223400, 60378, 0, 0]: 
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (LAL vs NOP) Kentavious Caldwell-Pope
+SF - (ATL vs DET) Taurean Prince
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+PF - (PHI vs MIA) Amir Johnson
+PG - (MEM vs OKC) Mario Chalmers
+42200
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (LAL vs NOP) Kentavious Caldwell-Pope
+SF - (ATL vs DET) Taurean Prince
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+PF - (PHI vs MIA) Amir Johnson
+PG - (MEM vs OKC) Mario Chalmers
+42200
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (BOS vs LAC) Jaylen Brown
+SF - (ATL vs DET) Taurean Prince
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+PF - (PHI vs MIA) Amir Johnson
+PG - (MEM vs OKC) Mario Chalmers
+42300
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (BOS vs LAC) Jaylen Brown
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+PG - (MEM vs OKC) Mario Chalmers
+43500
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+C - (ATL vs DET) Dewayne Dedmon
+SG - (BOS vs LAC) Jaylen Brown
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+PG - (IND vs BKN) Cory Joseph
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+44200
+C - (BOS vs LAC) Al Horford
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SG - (BOS vs LAC) Jaylen Brown
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+PG - (IND vs BKN) Cory Joseph
+SF - (NOP vs LAL) E'Twaun Moore
+PG - (ATL vs DET) Malcolm Delaney
+45500
+C - (BOS vs LAC) Al Horford
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+SG - (BOS vs LAC) Jaylen Brown
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+PG - (IND vs BKN) Cory Joseph
+PG - (ATL vs DET) Malcolm Delaney
+47100
+C - (BOS vs LAC) Al Horford
+SG - (POR vs GSW) C.J. McCollum
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+PG - (IND vs BKN) Cory Joseph
+PG - (ATL vs DET) Malcolm Delaney
+48400
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (POR vs GSW) C.J. McCollum
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+PG - (IND vs BKN) Cory Joseph
+52900
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (POR vs GSW) C.J. McCollum
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PG - (LAC vs BOS) Austin Rivers
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+53800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (POR vs GSW) C.J. McCollum
+SG - (LAC vs BOS) Lou Williams
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+57600
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (BOS vs LAC) Marcus Morris
+SF - (ATL vs DET) Taurean Prince
+58500
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
+PG - (POR vs GSW) Damian Lillard
+PG - (BOS vs LAC) Kyrie Irving
+C - (BOS vs LAC) Al Horford
+SG - (NOP vs LAL) Jrue Holiday
+SG - (POR vs GSW) C.J. McCollum
+PF - (ATL vs DET) John Collins
+SF - (UTA vs PHO) Joe Ingles
+PF - (OKC vs MEM) Carmelo Anthony
+SF - (ATL vs DET) Taurean Prince
+59800
