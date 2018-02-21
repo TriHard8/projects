@@ -38,9 +38,11 @@ def date_for_files():
 def get_soup(site):
     r = requests.get(site)
     soup = bs.BeautifulSoup(r.content, 'html.parser')
-    print(site)
     return soup
  
+def get_soup_str(html):
+    return bs.BeautifulSoup(html, 'html.parser')
+
 def list_2_csv(my_list):
     csv = ""
     for item in my_list:
@@ -52,5 +54,6 @@ def list_2_csv(my_list):
 
     return csv
 
-this = get_script_directory()
-up_x_dir(this, 1)
+if __name__ == "__main__":
+    this = get_script_directory()
+    up_x_dir(this, 1)
