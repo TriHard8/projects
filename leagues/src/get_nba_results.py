@@ -5,7 +5,7 @@ from datetime import date, timedelta
 from selenium import webdriver
 import re
 import time
-import pandas as pd
+#import pandas as pd
 
 def get_gameIds():
     one_day = timedelta(days = 1)
@@ -44,27 +44,38 @@ def get_games():
 
     game = test_string.split(',')[0]
     date = test_string.split(',')[1]
+    driver = webdriver.Chrome()
 
     url = "{0}/{1}/boxscore?gameId={2}".format(espn, sport, game)
-    driver = webdriver.Chrome()
     driver.get(url)
     innerHTML = driver.execute_script("return document.body.innerHTML")
     soup = my.get_soup_str(innerHTML)
     teams = []
     for team in soup.find_all("span", {"class" : "abbrev"}):
         teams.append(team.string)
-    runs = [["one","away"], ["two","home"]]
+    runs = [["one","away",teams[0]], ["two","home",teams[1]]]
     name_regex = "^.+\/(.+)\/(.+)$"
+    hyphen_regex = "^([0-9]+)-([0-9]+)$"
+    header = "gameId,starter,playerId,playerName,playerAbbr,position,team,minutes,fgm,fga,3ptm,3pta,ftm,fta,oreb,dreb,reb,ast,stl,blk,to,pf,plusminus,pts"
     for run in runs:
         for block in soup.find_all("div", {"class" : "col column-{0} gamepackage-{1}-wrap".format(run[0], run[1])}):
             table = block.find('table')
             table_rows = table.find_all('tr')
+            start = 0
             for tr in table_rows:
                 if tr.has_attr("class"):
                     if tr.get("class")[0] == "highlight":
                         continue
                 td = tr.find_all('td')
-                row = []
+                if tr.find('th') is not None:
+                    starter = tr.find('th')
+                    print(starter)
+                    if tr.find('th').text == "Starters":
+                        start = 1
+                    if tr.find('th').text == "Bench":
+                        start = 0
+                    continue
+                row = [game, start]
                 for i in td:
                     if i.get("class")[0] == 'name':
                         a = i.find('a')
@@ -80,22 +91,16 @@ def get_games():
                         for span in i.find_all("span"):
                             if span.has_attr("class"):
                                 if span.get("class")[0] == "position":
-                                    print(span)
                                     row.append(span.text)
                         #row.append(i.get("class")[0].find("span", {"class", "position"})).text
-                        print(row)
-                                        
-                row = [i.text for i in td]
-                if len(row) == 0:
-                    th = tr.find_all('th')
-                    row = [i.text for i in th]
-                        
+                        row.append(run[2])
+                    else:
+                        m = re.match(hyphen_regex, i.text)
+                        if m:
+                            row.extend((m.group(1), m.group(2)))
+                        else:
+                            row.append(i.text)
                 print(row)
-    #dfs = pd.read_html(url)
-    #for df in dfs:
-    #    print(df)
-    #for table in soup.find_all('td'):
-    #    print(table)
 
 if __name__ == "__main__":
     get_games()
