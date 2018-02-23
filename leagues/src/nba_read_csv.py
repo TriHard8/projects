@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-criteria = 9
+criteria = 5
 
 import my_utils as my
 from operator import itemgetter
@@ -221,8 +221,8 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
         knapsack_results.write(line)
     
 if __name__ == "__main__":
-    #date = "20180213"
-    date = my.date_for_files()
+    date = "20180222"
+    #date = my.date_for_files()
 
     ofile = "{0}/data/todays_games.txt".format(my.up_x_dir(my.get_script_directory(), 1))
     teams = []

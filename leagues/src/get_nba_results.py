@@ -42,65 +42,73 @@ def get_games():
     espn = "http://www.espn.com"
     sport = "nba"
 
-    game = test_string.split(',')[0]
-    date = test_string.split(',')[1]
     driver = webdriver.Chrome()
+    games_file = open("{0}/data/{1}_game_info.txt".format(my.up_x_dir(my.get_script_directory(), 1), sport), 'w')
 
-    url = "{0}/{1}/boxscore?gameId={2}".format(espn, sport, game)
-    driver.get(url)
-    innerHTML = driver.execute_script("return document.body.innerHTML")
-    soup = my.get_soup_str(innerHTML)
-    teams = []
-    for team in soup.find_all("span", {"class" : "abbrev"}):
-        teams.append(team.string)
-    runs = [["one","away",teams[0]], ["two","home",teams[1]]]
-    name_regex = "^.+\/(.+)\/(.+)$"
-    hyphen_regex = "^([0-9]+)-([0-9]+)$"
-    header = "gameId,starter,playerId,playerName,playerAbbr,position,team,minutes,fgm,fga,3ptm,3pta,ftm,fta,oreb,dreb,reb,ast,stl,blk,to,pf,plusminus,pts"
-    for run in runs:
-        for block in soup.find_all("div", {"class" : "col column-{0} gamepackage-{1}-wrap".format(run[0], run[1])}):
-            table = block.find('table')
-            table_rows = table.find_all('tr')
-            start = 0
-            for tr in table_rows:
-                if tr.has_attr("class"):
-                    if tr.get("class")[0] == "highlight":
-                        continue
-                td = tr.find_all('td')
-                if tr.find('th') is not None:
-                    starter = tr.find('th')
-                    print(starter)
-                    if tr.find('th').text == "Starters":
-                        start = 1
-                    if tr.find('th').text == "Bench":
-                        start = 0
-                    continue
-                row = [game, start]
-                for i in td:
-                    if i.get("class")[0] == 'name':
-                        a = i.find('a')
-                        abbv = a.find("span", {"class", "abbr"})
-                        href = a.get('href')
-                        if isinstance(href, str):
-                            m = re.match(name_regex, href)
-                            if m:
-                                row.append(m.group(1))
-                                row.append(m.group(2).replace('-',' '))
-                        
-                        row.append(abbv.text)
-                        for span in i.find_all("span"):
-                            if span.has_attr("class"):
-                                if span.get("class")[0] == "position":
-                                    row.append(span.text)
-                        #row.append(i.get("class")[0].find("span", {"class", "position"})).text
-                        row.append(run[2])
-                    else:
-                        m = re.match(hyphen_regex, i.text)
-                        if m:
-                            row.extend((m.group(1), m.group(2)))
-                        else:
-                            row.append(i.text)
-                print(row)
+    with open("{0}/data/{1}_gameIds.txt".format(my.up_x_dir(my.get_script_directory(), 1), sport)) as f:
+        for line in f:
+            game = line.split(',')[0]
+            date = line.split(',')[1]
+    #        print("{0}:{1}".format(game, date))
+
+    #        game = test_string.split(',')[0]
+    #        date = test_string.split(',')[1]
+            url = "{0}/{1}/boxscore?gameId={2}".format(espn, sport, game)
+            driver.get(url)
+            innerHTML = driver.execute_script("return document.body.innerHTML")
+            soup = my.get_soup_str(innerHTML)
+            teams = []
+            for team in soup.find_all("span", {"class" : "abbrev"}):
+                teams.append(team.string)
+            runs = [["one","away",teams[0]], ["two","home",teams[1]]]
+            name_regex = "^.+\/(.+)\/(.+)$"
+            hyphen_regex = "^([0-9]+)-([0-9]+)$"
+            header = "gameId,starter,playerId,playerName,playerAbbr,position,team,minutes,fgm,fga,3ptm,3pta,ftm,fta,oreb,dreb,reb,ast,stl,blk,to,pf,plusminus,pts"
+            for run in runs:
+                for block in soup.find_all("div", {"class" : "col column-{0} gamepackage-{1}-wrap".format(run[0], run[1])}):
+                    table = block.find('table')
+                    table_rows = table.find_all('tr')
+                    start = 0
+                    for tr in table_rows:
+                        if tr.has_attr("class"):
+                            if tr.get("class")[0] == "highlight":
+                                continue
+                        td = tr.find_all('td')
+                        if tr.find('th') is not None:
+                            starter = tr.find('th')
+                            if tr.find('th').text == "Starters":
+                                start = 1
+                            if tr.find('th').text == "Bench":
+                                start = 0
+                            continue
+                        row = [game, start]
+                        for i in td:
+                            if i.get("class")[0] == 'name':
+                                a = i.find('a')
+                                abbv = a.find("span", {"class", "abbr"})
+                                href = a.get('href')
+                                if isinstance(href, str):
+                                    m = re.match(name_regex, href)
+                                    if m:
+                                        row.append(m.group(1))
+                                        row.append(m.group(2).replace('-',' '))
+                                
+                                row.append(abbv.text)
+                                for span in i.find_all("span"):
+                                    if span.has_attr("class"):
+                                        if span.get("class")[0] == "position":
+                                            row.append(span.text)
+                                #row.append(i.get("class")[0].find("span", {"class", "position"})).text
+                                row.append(run[2])
+                            else:
+                                m = re.match(hyphen_regex, i.text)
+                                if m:
+                                    row.extend((m.group(1), m.group(2)))
+                                else:
+                                    row.append(i.text)
+                        print(','.join(str(x) for x in row))
+                        games_file.write("{0}\n".format(','.join(str(x) for x in row)))
+    driver.close()
 
 if __name__ == "__main__":
     get_games()
