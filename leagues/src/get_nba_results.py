@@ -48,7 +48,7 @@ def get_games():
     with open("{0}/data/{1}_gameIds.txt".format(my.up_x_dir(my.get_script_directory(), 1), sport)) as f:
         for line in f:
             game = line.split(',')[0]
-            date = line.split(',')[1]
+            date = line.split(',')[1].rstrip()
     #        print("{0}:{1}".format(game, date))
 
     #        game = test_string.split(',')[0]
@@ -108,6 +108,7 @@ def get_games():
                                     row.append(i.text)
                         print(','.join(str(x) for x in row))
                         games_file.write("{0}\n".format(','.join(str(x) for x in row)))
+            print("{0},{1}".format(date,game))
     driver.close()
 
 if __name__ == "__main__":
