@@ -209,8 +209,8 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
         knapsack_results.write(line)
     
 if __name__ == "__main__":
-    date = "20180214"
-    #date = my.date_for_files()
+    #date = "20180214"
+    date = my.date_for_files()
 
     ifile = "{0}/nba_limits.txt".format(my.get_script_directory())
     limits = {}
