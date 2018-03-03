@@ -320,7 +320,7 @@ if __name__ == "__main__":
                 print("{0} - ({1} vs {2}) {3}".format(player[3], player[2], player[4], player[0]))
                 current_salary += player[1]
         print(current_salary)
-        #current_salary = 60001
+        current_salary = 60001
 
         if change:
             for i in range(0, len(sorted_players)):
@@ -335,7 +335,13 @@ if __name__ == "__main__":
                 change = False        
             else:
                 del sorted_players[max_upgrade_index]
-
+    
+    current_salary = 0
+    for player in sorted_players:
+        if player[11] == 1:
+            print("{0} - ({1} vs {2}) {3}".format(player[3], player[2], player[4], player[0]))
+            current_salary += player[1]
+    print(current_salary)
     #print(sorted_players)
     ofile = "{0}/data/todays_games.txt".format(my.up_x_dir(my.get_script_directory(), 1))
     teams = []
