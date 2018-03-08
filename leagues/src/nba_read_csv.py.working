@@ -3,6 +3,7 @@ criteria = 9
 
 import my_utils as my
 from operator import itemgetter
+import ast
 
 class Player():
     def __init__(self, name, salary, team, position, ceiling, ceil_per_kdol, floor, fl_per_kdol, projected, proj_per_kdol):
@@ -25,6 +26,7 @@ class Team():
         self.players = []
         for i in range(0, 9):
             self.players.append(None)
+        self.limits = {}
         
     def Print(self):
         for player in self.players:
@@ -71,6 +73,16 @@ class Team():
 
         return
                     
+    def getLimits(self, location):
+        #location must be a single line file with the correct dictionary syntax
+        ifile = open(location, 'r')
+        first = ifile.readline().rstrip()
+        try:
+            self.limits = ast.literal_eval(first)
+        except:
+            print("Error: ", sys.exc_info()[0])
+            raise
+    
     def get_value(self, index):
         value = 0
         for player in self.players:
@@ -223,6 +235,9 @@ def nba_knapsack(optimize, wgt_index, val_index, high, per_position):
 if __name__ == "__main__":
     #date = "20180222"
     date = my.date_for_files()
+
+    team = Team()
+    team.getLimits("{0}/nba_limits.txt".format(my.get_script_directory()))
 
     ofile = "{0}/data/todays_games.txt".format(my.up_x_dir(my.get_script_directory(), 1))
     teams = []
