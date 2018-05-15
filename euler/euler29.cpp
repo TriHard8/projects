@@ -16,11 +16,12 @@ private:
 
     void setPrimeList();
     void setFactors();
+    double getLog() const;
 
 public:
     baseNum(int);
     baseNum(int, int);
-    ~baseNum(){ std::cout << "Closing this biatch!" << std::endl;};
+    ~baseNum(){};
 
     int getBaseNum(int num){ return bases[num]; };
     void setWholeNum(int num){ wholeNum = num; };
@@ -28,24 +29,22 @@ public:
     std::vector<int> getPrimeList(){ return primeList; };
     void printFactors();
     bool operator==(const baseNum &rhs) const { return bases == rhs.bases; };
-
+    bool operator<(const baseNum &rhs) const { return getLog() < rhs.getLog(); };
 };
 
 int main(){
 
     std::map<baseNum, int> numbers;
-    baseNum first(2,4), second(4, 2);
-    std::vector<int> list = first.getPrimeList();
-    numbers[first] = 0;
-    numbers[second] = 3;
-    /*for(int i(0); i < list.size(); ++i)
-        std::cout << list[i] << std::endl;*/
+    for(int i(2); i <= 100; ++i){
+        for(int j(2); j <= 100; ++j){
+            numbers[baseNum(i, j)] = 0;
+        }
+    }
+    int count(0);
     for(std::map<baseNum, int>::iterator it = numbers.begin(); it != numbers.end(); ++it)
-        std::cout << it->second << std::endl;
-    first.printFactors();
-    second.printFactors();
-    if(first == second)
-        std::cout << "The 2 numbers are equal!" << std::endl;
+        count += 1;
+    
+    std::cout << count << std::endl;
     return 0;
 }
 
@@ -91,7 +90,13 @@ void baseNum::printFactors(){
         std::cout << it->first << "^" << it->second << std::endl;
     }
 }
+double baseNum::getLog() const{
+    double value(0.0);
+    for(std::map<int, int>::const_iterator it = bases.begin(); it != bases.end(); ++it)
+        value += (it->second * log(it->first));
 
+    return value;
+}
 bool isPrime(int num){
 
     for(int i(2); i <= sqrt(num); ++i)
