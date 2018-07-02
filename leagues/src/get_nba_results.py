@@ -9,7 +9,7 @@ import time
 
 def get_gameIds():
     one_day = timedelta(days = 1)
-    espn_start_date = date(2018, 2, 15)
+    espn_start_date = date(2018, 6, 28)
     end_date = date(2002, 10, 6)
     today = espn_start_date
     
@@ -112,5 +112,6 @@ def get_games():
     driver.close()
 
 if __name__ == "__main__":
+    get_gameIds()
     get_games()
     
