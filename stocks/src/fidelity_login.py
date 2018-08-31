@@ -21,6 +21,7 @@ driver = webdriver.Chrome()
 driver.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
 action = action_chains.ActionChains(driver)
 
+time.sleep(2)
 elem = driver.find_element_by_id("userId-input")
 elem.send_keys(user + keys.Keys.TAB)
 elem = driver.find_element_by_id("password")
@@ -38,7 +39,20 @@ with open(stock_list, 'r') as f:
         driver.get("{0}{1}".format(option_page, symbol))
         innerHTML = driver.execute_script("return document.body.innerHTML")
         soup = my.get_soup_str(innerHTML)
-        for price in soup.find_all("span", {"class" : "main-number"}):
-            print("{0} : {1}".format(symbol, price.string[1:]))
+        price = "No Options"
+        for number in soup.find_all("span", {"class" : "main-number"}):
+            price = number.string[1:]
+    
+        print("{0} : {1}".format(symbol, price))
 
+        for table in soup.find_all("div", {"class" : "symbol-results-data-table"}):
+            for header in table.find_all("thead", {"class" : "js-lock-target"}):
+                '''
+                    Because there is a class = "js-lock-target clone" which the header results
+                    to a list as ["js-lock-target", "clone"]
+                '''
+                if len(header['class']) == 1:
+                    for rows in header.find_all("th"): 
+                        if rows.has_attr('name'):
+                            print(rows['name'])
 #driver.close()
