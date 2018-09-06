@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import re
 import os
 import sys
 configfile = "{0}/repo/projects/utils/".format(os.path.expanduser('~'))
@@ -41,7 +42,7 @@ with open(stock_list, 'r') as f:
         soup = my.get_soup_str(innerHTML)
         price = "No Options"
         for number in soup.find_all("span", {"class" : "main-number"}):
-            price = number.string[1:]
+            price = number.string[1:].replace(',','')
     
         print("{0} : {1}".format(symbol, price))
 
@@ -51,8 +52,33 @@ with open(stock_list, 'r') as f:
                     Because there is a class = "js-lock-target clone" which the header results
                     to a list as ["js-lock-target", "clone"]
                 '''
-                if len(header['class']) == 1:
-                    for rows in header.find_all("th"): 
-                        if rows.has_attr('name'):
-                            print(rows['name'])
-#driver.close()
+                #if len(header['class']) == 1:
+                #    for rows in header.find_all("th"): 
+                #        if rows.has_attr('name'):
+                #            print(rows['name'])
+            strike_date = ""
+            days_to_expiry_regex = "(.+)\(([0-9]+)\s+.+"
+            days_to_expiry = ""
+            ask = 0.0
+            strike = 0.0
+            count = 0
+            for body in table.find_all("tbody"):
+                for row in body.find_all("tr"):
+                    m = re.match(days_to_expiry_regex, row['id'])
+                    if m:
+                        days_to_expiry = int(m.group(2))
+                        expiry = m.group(1)
+                    else:
+                        count += 1
+                        for data in row.find_all("td"):
+                            if data.has_attr("name"):
+                                if data["name"] == "Ask Calls":
+                                    ask = float(data.string)
+                                if data["name"] == "Strike":
+                                    strike = float(data.string.replace(',',''))
+                        
+                        if count == 5:
+                            print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
+                        elif count == 10:
+                            count = 0                 
+driver.close()
