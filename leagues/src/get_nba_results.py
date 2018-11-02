@@ -9,7 +9,7 @@ import time
 
 def get_gameIds():
     one_day = timedelta(days = 1)
-    espn_start_date = date(2018, 6, 28)
+    espn_start_date = date(2018, 10, 31)
     end_date = date(2002, 10, 6)
     today = espn_start_date
     
@@ -48,25 +48,25 @@ def get_games():
 
     with open("{0}/data/{1}_gameIds.txt".format(my.up_x_dir(my.get_script_directory(), 1), sport)) as f:
         for line in f:
-            game = line.split(',')[0]
-            date = line.split(',')[1].rstrip()
-            #game = test_string.split(',')[0]
-            #date = test_string.split(',')[1]
-
-            print("{0}:{1}".format(game, date))
-
-            url = "{0}/{1}/boxscore?gameId={2}".format(espn, sport, game)
-            driver.get(url)
-            innerHTML = driver.execute_script("return document.body.innerHTML")
-            soup = my.get_soup_str(innerHTML)
-            teams = []
-            for team in soup.find_all("span", {"class" : "abbrev"}):
-                teams.append(team.string)
-            runs = [["one","away",teams[0]], ["two","home",teams[1]]]
-            name_regex = "^.+\/(.+)\/(.+)$"
-            hyphen_regex = "^([0-9]+)-([0-9]+)$"
-            header = "gameId,starter,playerId,playerName,playerAbbr,position,team,minutes,fgm,fga,3ptm,3pta,ftm,fta,oreb,dreb,reb,ast,stl,blk,to,pf,plusminus,pts"
             try:
+                game = line.split(',')[0]
+                date = line.split(',')[1].rstrip()
+                #game = test_string.split(',')[0]
+                #date = test_string.split(',')[1]
+
+                print("{0}:{1}".format(game, date))
+
+                url = "{0}/{1}/boxscore?gameId={2}".format(espn, sport, game)
+                driver.get(url)
+                innerHTML = driver.execute_script("return document.body.innerHTML")
+                soup = my.get_soup_str(innerHTML)
+                teams = []
+                for team in soup.find_all("span", {"class" : "abbrev"}):
+                    teams.append(team.string)
+                runs = [["one","away",teams[0]], ["two","home",teams[1]]]
+                name_regex = "^.+\/(.+)\/(.+)$"
+                hyphen_regex = "^([0-9]+)-([0-9]+)$"
+                header = "gameId,starter,playerId,playerName,playerAbbr,position,team,minutes,fgm,fga,3ptm,3pta,ftm,fta,oreb,dreb,reb,ast,stl,blk,to,pf,plusminus,pts"
                 for run in runs:
                     for block in soup.find_all("div", {"class" : "col column-{0} gamepackage-{1}-wrap".format(run[0], run[1])}):
                         table = block.find('table')
