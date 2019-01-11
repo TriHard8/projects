@@ -9,8 +9,9 @@ import time
 
 def get_gameIds():
     one_day = timedelta(days = 1)
-    espn_start_date = date(2018, 10, 31)
-    end_date = date(2002, 10, 6)
+    espn_start_date = date(2019, 1, 10)
+    #end_date = date(2002, 10, 6)
+    end_date = date(2019, 1, 10)
     today = espn_start_date
     
     espn = "http://www.espn.com"
@@ -116,7 +117,33 @@ def get_games():
             print("Completed - {0},{1}".format(date,game))
     driver.close()
 
+def get_fanduel_results():
+    fgs = 2
+    threes = 1
+    ft = 1
+    rebounds = 1.2
+    assists = 1.5
+    steals = 3
+    blocks = 3
+    turnovers = -1
+
+    regex_player = "^(.+,){23}.+$"
+    sport = "nba"
+    with open("{0}/data/{1}_game_info.txt".format(my.up_x_dir(my.get_script_directory(), 1), sport)) as f:
+        for line in f:
+            if line.count(",") == 23:
+                line = line.strip().split(',')
+                score =(float(line[8]) * fgs +
+                        float(line[10]) * threes +
+                        float(line[12]) * ft +
+                        float(line[16]) * rebounds +
+                        float(line[17]) * assists +
+                        float(line[18]) * steals +
+                        float(line[19]) * blocks +
+                        float(line [20]) * turnovers )
+                print("{0} : {1}".format(line[4],round(score, 1))) 
+
 if __name__ == "__main__":
-   # get_gameIds()
-    get_games()
-    
+#    get_gameIds()
+#    get_games()
+    get_fanduel_results()    
