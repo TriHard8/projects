@@ -9,9 +9,9 @@ import time
 
 def get_gameIds():
     one_day = timedelta(days = 1)
-    espn_start_date = date(2019, 1, 10)
+    espn_start_date = date(2019, 1, 11)
     #end_date = date(2002, 10, 6)
-    end_date = date(2019, 1, 10)
+    end_date = date(2019, 1, 11)
     today = espn_start_date
     
     espn = "http://www.espn.com"
@@ -144,6 +144,6 @@ def get_fanduel_results():
                 print("{0} : {1}".format(line[4],round(score, 1))) 
 
 if __name__ == "__main__":
-#    get_gameIds()
-#    get_games()
+    get_gameIds()
+    get_games()
     get_fanduel_results()    
