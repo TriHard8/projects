@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-criteria = 9
+criteria = 7
 
 import my_utils as my
 from operator import itemgetter
