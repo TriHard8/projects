@@ -1,0 +1,2089 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="https://nexus.ensighten.com/fidelity/prod/Bootstrap.js" ></script> 
+
+
+ 
+
+<title>Option Chain: Fidelity Investments</title>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta name="keywords"
+	content="optifeb.options.chain.fullon trading, option, covered call, call option, put-attribute option, fidelity option" />
+<meta name="description"
+	content="Fidelity offers quotes and chains for single- and multi-leg option strategies as well as other essential research tools and resources for new and experienced option traders." />
+<meta name="oasis" content=""/>
+<link
+	href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site.css"
+	rel="stylesheet" type="text/css" media="screen" />	
+<link
+	href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site.css"
+	rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/site_header.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/dojo/dojo/dojo.xd.js" djConfig="parseOnLoad:true, isDebug:false"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/jquery-1.9.1.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/jquery-ui-1.10.3.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/rct-ui/rct-ui.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/fidsymbolsvc.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/optionChainService.js"></script>
+
+<!--[if IE]>
+<link href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site-ie.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site-ie.css" rel="stylesheet" type="text/css" media="print"/>
+<![endif]-->
+<!--[if IE 6]>
+<link href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site-ie6.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/site-ie6.css" rel="stylesheet" type="text/css" media="print"/>
+<![endif]--> 
+
+
+
+<link
+	href="https://www.fidelity.com/rct/2.0.0/dojo/dijit/themes/tundra/tundra.css"
+	rel="stylesheet" type="text/css" media="screen" />
+
+
+	<style type="text/css" media="screen">
+		.slider{width:100px;padding: 10px 0px 0px 0px;}
+		.slider-labels{font: arial;padding:4px;font-size:90%;color:#000;}
+	</style>
+  
+</head>
+<body class="tundra" >
+<script>
+ var rct_server = 'https://www.fidelity.com';
+ var embeded_quotes_server = 'https://scs.fidelity.com';
+ var personal_server = 'https://www.fidelity.com';
+ var autocomplete_server = 'https://autocomplete.fidelity.com';
+ var mlo_fastquote_url = 'https://quotes.fidelity.com';
+ var mlo_watchlist_url = 'https://watchlists.fidelity.com';
+ var mlo_content_url = 'https://www.fidelity.com';
+ var mlo_webcontent_location = '/webcontent/ap002390-mlo-content/19.01';
+</script>
+
+
+
+<!-- +++++++++++++++++++++++++++ -->
+<!-- Begin NavBar Region -->
+<!-- +++++++++++++++++++++++++++ -->
+
+	
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+try{
+if (typeof Bootstrapper !== "object"){
+document.writeln('<scr'+'ipt type="text/javascript" src="https://nexus.ensighten.com/fidelity/prod/Bootstrap.js"></sc'+'ript>');
+}
+}catch(e){
+ console.log('no load bs');
+}
+</script>
+<!-- begin_nav -->
+    <link rel="stylesheet" href="https://www.fidelity.com/bin-public/060_www_fidelity_com/css/nav-07.18.min.css" type="text/css">
+              <div class="mboxDefault">
+<!--[if lte IE 7 ]>    
+<div id="pgnb" class="pgnb ie ie7" data-nav-ver="12"> 
+<![endif]-->
+<!--[if IE 8 ]>
+<div id="pgnb" class="pgnb ie ie8  bm" data-nav-ver="12"> 
+<![endif]-->
+<!--[if IE 9 ]>
+<div id="pgnb" class="pgnb ie ie9  bm" data-nav-ver="12"> 
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<div id="pgnb" class="pgnb bm" data-nav-ver="12">
+<!--<![endif]-->
+    <div class="pbn" role="banner">
+        <div class="pnsn"><a href="#piNavSkipToContent" class="pnsl" id="pnsl">Skip to Main Content.</a></div> 
+        <a id="pnt" class="pnt" href="javascript:void(0)"><span class="pntstrp"><span class="off-screen">Site navigation</span></span></a>
+             <div class="pnld"><a target="_top" href="https://www.fidelity.com/?bar=p"><span class="screen-reader-only">Fidelity.com Home</span></a></div>
+        <div class="pntlt">
+<ul class="pntl pnlogout">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage" target="_top" >Log In</a></li>
+</ul><ul class="pntl pnlogin">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fidelity/RtlCust/Logout/Init?AuthRedUrl=https://www.fidelity.com/customer-service/customer-logout" target="_top">Log Out</a></li>
+</ul>        </div>
+        <div id="pns" class="pns" role="search">
+<form class="pnsm" method="get" action="https://search.fidelity.com/search/getSearchResults?question=">
+		<label for="nav-search-mobile" class="screen-reader-only">Search fidelity.com or get a quote</label>
+                <div class="pnst-container">
+		        <input id="nav-search-mobile" type="text" placeholder="Search or get a quote" class="pnst search-autocomplete" name="question"  maxlength="64">
+                </div>
+		<input type="submit" value="Search Site" class="pnss">
+	</form>        </div>
+    </div>
+    <div class="pnacr-wrapper"> <div class="pnacr"></div></div>
+    <div id="pnmm" class="pnmm" role="navigation" aria-label="Site Navigation">
+        <ul class="pnl1 pns-5">
+<li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Accounts &amp; Trade</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/portfolio.shtml" target="_top">Portfolio <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#summary" target="_top" name="Link_1369248506220" id="Link_1369248506220">Portfolio</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/accountposition.shtml" target="_top">Account <span class="pi-nav-nowrap">Positions <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#positions" target="_top">Account <span class="pi-nav-nowrap">Positions</span></a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/trade.shtml" target="_top">Trade <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?FRAME_LOADED=Y&amp;NAVBAR=Y" target="_top">Trade</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/trading/advanced-trading-tools/active-trader-pro/overview" target="_top">Active Trader Pro</a></li>
+							<li class="" tms="navLink"><a href="https://digital.fidelity.com/prgw/digital/guide-to-moving-money" target="_top">Transfer</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/ofcashmgmt/cashMgmtApp">Cash Management <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/ofcashmgmt/cashMgmtApp">Cash Management</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://billpayment.fidelity.com/ftgw/billpayment/PayBills" id="Link_1366018845877" target="_top" name="Link_1366018845877" >BillPay <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://billpayment.fidelity.com/ftgw/billpayment/PayBills" id="Link_1366018845877" target="_top" name="Link_1366018845877" >BillPay</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/emoney/home" target="_top" >Full View<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/emoney/home" target="_top" >Full View</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://dpcs.fidelity.com/ftgw/dpcs/security/dashboard/view" target="_top" >Security Settings<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://dpcs.fidelity.com/ftgw/dpcs/security/dashboard/view" target="_top" >Security Settings</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/update-features.shtml" id="Link_1366018882368" target="_top" name="Link_1366018882368">Account Features <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#Feature" id="Link_1366018882368" target="_top" name="Link_1366018882368">Account Features</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://statements.fidelity.com/ftgw/fbc/ofstatements/getStatementsList" id="Link_1366018909540" target="_top" name="Link_1366018909540" >Statements <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://statements.fidelity.com/ftgw/fbc/ofstatements/getStatementsList" id="Link_1366018909540" target="_top" name="Link_1366018909540" >Statements</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/tax-information/overview" target="_top">Tax Information</a></li>
+							<li class="dynamic-act-prof " data-dynamic-act-prof="D60>=59.5" tms="navLink"><a href="https://moneymovement.fidelity.com/ftgw/fbc/mm/mmRDCLanding" target="_top" >Retirement Distributions<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+		</ul>
+			<ul class="offer-submenu">
+							<li class="" tms="navLink"><label>OFFER</label> <a href="https://rewards.fidelity.com/offers/ATP500free" target="_top">See our featured trading offer. Learn more.</a></li>
+			</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Planning &amp; Advice</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/what-we-offer/overview" >What We Offer</a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://myguidance.fidelity.com/ftgw/guidance/customer/guidanceLanding.go" >My Goals</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/financial-basics/overview" >Financial Basics</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/building-savings/overview" >Building Savings</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/wealth-management/overview" >Wealth Management</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/retirement-guidance/overview" >Retirement</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/life-events/overview" >Life Events</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">News &amp; Research</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/news/overview" id="Link_1474659208719" name="Link_1474659208719" >News</a></li>
+							<li class="" tms="navLink"><a href="https://watchlists.fidelity.com/ftgw/watchlists/goto/retail/getWatchlist" target="_top" >Watch List <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="" tms="navLink"><a href="https://quotes.fidelity.com/ftgw/fbc/ofquotes/webxpress/get_quote" id="Link_1474659319682" name="Link_1474659319682" >Quotes</a></li>
+							<li class="" tms="navLink"><a href="https://alertable.fidelity.com/ftgw/alerts/GetAlertsSummary" target="_top" >Alerts <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/fund-screener/research.shtml" id="Link_1474659463496" name="Link_1474659463496" >Mutual Funds</a></li>
+							<li class="" tms="navLink"><a href="https://eresearch.fidelity.com/eresearch/landing.jhtml" target="_top">Stocks</a></li>
+							<li class="" tms="navLink"><a href="https://fixedincome.fidelity.com/ftgw/fi/FILanding" target="_top" >Fixed Income, Bonds &amp; CDs</a></li>
+							<li class="" tms="navLink"><a href="https://screener.fidelity.com/ftgw/etf/evaluator/goto/landing" target="_top" >ETFs</a></li>
+							<li class="" tms="navLink"><a href="https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChain" target="_top">Options</a></li>
+							<li class="" tms="navLink"><a href="https://eresearch.fidelity.com/eresearch/goto/markets_sectors/landing.jhtml" target="_top" >Markets &amp; Sectors</a></li>
+							<li class="" tms="navLink"><a href="https://brokerage.fidelity.com/ftgw/brkg/ipo/calendar" target="_top" >IPOs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/research-annuities/overview" target="_top" >Annuities</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/learning-center" id="Link_1474659825988" name="Link_1474659825988" >Learning Center</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://www.fidelity.com/go/notebook" id="Link_1474659859175" name="Link_1474659859175" >Notebook</a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://dpcs.fidelity.com/ftgw/dpcs/notebook/#?channel=nav" target="_top">Notebook</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Investment Products</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/mutual-funds/overview" target="_top" >Mutual Funds</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/retirement-ira/overview" target="_top" >Retirement &amp; IRAs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/trading/overview" id="Link_1474660590700" name="Link_1474660590700" >Trading</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/stock-trading/overview" id="Link_1474660631692" name="Link_1474660631692" >Stocks</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/fixed-income-bonds/overview" id="Link_1474660886252" name="Link_1474660886252" >Fixed Income, Bonds &amp; CDs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/etfs/overview" target="_top" >ETFs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/options-trading/overview" target="_top" >Options</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/sector-investing/overview" target="_top" >Sector Investing</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/cash-management/overview" target="_top" >Cash Management &amp; Credit Cards</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/managed-accounts/overview" target="_top" >Managed Accounts</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/managed-accounts/fidelity-go/overview" target="_top" >Fidelity Go</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/529-plans/overview" target="_top" >529 College Savings</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/annuities/overview" target="_top" >Annuities</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/life-insurance/overview" target="_top" >Life Insurance &amp; Long Term Care</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Why Fidelity</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/overview" id="Link_1474662025230" name="Link_1474662025230">The Fidelity Advantage</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/planning-advice" target="_top">Planning &amp; Advice</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/trading" target="_top">Trading</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/pricing-fees" target="_top">Straightforward Pricing</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/insights-tools" target="_top">Insights &amp; Tools</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/security-protection" target="_top">Security &amp; Protection</a></li>
+		</ul>
+	</div>
+</li>        </ul><!-- pnl1 -->
+        <div class="pntlb">
+<ul class="pntl pnlogout">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage" target="_top" >Log In</a></li>
+</ul><ul class="pntl pnlogin">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fidelity/RtlCust/Logout/Init?AuthRedUrl=https://www.fidelity.com/customer-service/customer-logout" target="_top">Log Out</a></li>
+</ul>        </div>
+    </div>
+    <a name="piNavSkipToContent" id="piNavSkipToContent" tabindex="-1" class="off-screen"></a>
+</div>
+              </div>
+             <script type="text/javascript">
+               window.mboxCreate = window.mboxCreate || function (){};
+               mboxCreate("PI_Navbar");
+             </script>
+<script  type="text/javascript">
+var PIGlobalNav_WWWHOST = "https://www.fidelity.com";
+var PIGlobalNav_ACTIVEQUOTE_HOST = "https://quotes.fidelity.com";
+var PIGlobalNav_ERESEARCH_HOST = "https://eresearch.fidelity.com";
+var PIGlobalNav_RESEARCHTOOLS_HOST ="https://researchtools.fidelity.com";
+var PGNBProperties = {
+fadeInTime : 4000 ,
+menuDelayTime : 400 
+}
+</script>
+<script src="https://www.fidelity.com/bin-public/060_www_fidelity_com/js/nav-07.18.min.js" type="text/javascript"></script>
+<!-- end_nav -->
+
+
+<!-- +++++++++++++++++++++++++++ -->
+<!-- End NavBar Region -->
+<!-- +++++++++++++++++++++++++++ -->
+
+<!-- +++++++++++++++++++++++++++ -->
+<!-- Begin Main header Region -->
+<!-- +++++++++++++++++++++++++++ -->
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- ++++++++++++++++++++++++++++ -->
+<!-- Begin Breadcrumb Tile Region -->
+<!-- ++++++++++++++++++++++++++++ -->
+<div class="layout-breadcrumb-region">
+
+<div class="layout-spacer-1"></div>
+<div class="breadcrumb">
+<ul>
+	<li><span class="bold">Research &gt;</span></li>
+</ul>
+
+<span class="byline">Content and data provided by various third parties and Fidelity Investments &ndash;<a href="https://www.fidelity.com/terms-of-use#third" onclick="return commonPopWin(this.href,420,450)" title="Opens in a new window.">Terms of Use<span class="off-screen">. Opens in a new window.</span></a></span>
+
+<div class="layout-clear-both"></div>
+</div>
+<div class="layout-spacer-2"></div>
+</div>
+<!-- +++++++++++++++++++++++++++++ -->
+<!-- End of Breadcrumb Tile Region -->
+<!-- +++++++++++++++++++++++++++++ -->
+
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Begin Page Title [Or Page Heading] Tile Region -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="layout-page-title-region">
+<div class="page-title">
+<div class="title">
+<h1>Options</h1>
+<!-- overview.shtml starts -->
+
+ 
+<!-- overview.shtml ends --></div>
+
+
+
+<div class="help-link">
+	<ul>
+		<li class="first-item"><a href="javascript:window.print()"><img border="0" alt="" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/images/print2.gif"/>Print</a></li>
+		<li><a href="https://www.fidelity.com/webcontent/ap002390-mlo-content/18.09/help/researching_options.shtml" onclick="return commonPopWin(this.href,617,380)" href="#" title="Opens in a new window.">Help/Glossary</a></li>
+	</ul>
+</div>
+</div>
+
+  
+<!-- placeholder comment -->
+<script type="text/javascript">
+  if (top != self)
+  {
+	  var oldUrl = self.location.href;
+	  var val =  oldUrl.search('goto');
+	  
+	  var newUrl  = oldUrl;
+
+	  if(val ==-1)
+	  {
+	  	var splitVal  = newUrl.split("mloptions");
+	  	if(splitVal.length > 1)
+	  	 {
+	  	  newUrl = splitVal[0]+"mloptions/goto"+splitVal[1];
+	  	 }
+	  }
+	  top.location.replace(newUrl);
+  }
+</script>
+
+ 
+
+<div class="layout-clear-both"></div>
+
+</div>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- End of Page Title [Or Page Heading] Tile Region -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++++++++++++ -->
+<!-- End Main header Region -->
+<!-- +++++++++++++++++++++++++++ -->
+
+<div class="layout-content-region" role="main">
+
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!-- Begin Main TABS Tile Region -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+	
+	
+	
+
+	
+
+<div id="errorMsgTable" style="margin-left:310px;margin-bottom:4px" >
+
+
+</div>
+
+<div class="layout-tabs-region">
+	<div class="rounded-tab">
+		<ul>
+			<li id="quotesAndTools" class="selected"><a href="/ftgw/mloptions/goto/optionChain" ><span>Quotes &amp; Tools</span></a></li>
+			<li ><a href="/ftgw/mloptions/goto/optionLanding"><span>Market Overview</span></a></li>
+			<li ><a href="/ftgw/mloptions/goto/marketScanner" ><span>Trading Ideas</span></a></li>
+		</ul>
+		<span class="right-links">
+		
+		<a href="https://www.fidelity.com/learning-center/investment-products/options/overview">Fidelity Learning Center</a></span>
+		<div class="bottom-border"><div class="hr-for-ie"></div></div>
+	</div>
+	
+</div>
+	<!-- +++++++++++++++++++++++++++ -->
+	<!-- Endof Main TABS Tile Region -->
+	<!-- +++++++++++++++++++++++++++ -->
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!-- Begin Sub TABS Tile Region -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<!-- Menu Box Starts -->
+		<div class="details-tools-section-new left10">
+			<ul class="jump-links--list">				
+				<li>
+					
+						
+							<span >Option Chain</span>
+						
+						
+					
+				</li>
+				<li>
+					
+						
+						
+							<a id="st1" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/underlyingStatistics">Key Statistics</a>
+						
+					
+				</li>
+				<li  class="lastitem">
+					
+						
+						
+							<a id="st3" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/ivIndex">IV Index</a>
+						
+								
+				</li>
+				<li>
+					
+						
+						
+							<a id="st4" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/detailedQuote">Option Quote &amp; Chart</a>
+						
+								
+				</li>
+				<li>
+					
+						
+						
+							<a id="st5" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/probCalc">Probability Calculator</a>
+						
+					
+				</li>
+				<li>
+					
+						
+						
+							<a id="st6" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/plCalculator">P/L Calculator</a>
+						
+					 
+				</li>
+				<li>
+					
+						
+						
+							<a id="st7" onclick="return seedAcctToOption(this);" href="/ftgw/mloptions/goto/optionSPCommentary">Market Commentary</a>								
+						
+					 
+				</li>
+			</ul>
+		</div>
+		<!-- Menu Box Ends -->
+
+	
+	
+
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!-- Endof Sub TABS Tile Region -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	<!-- Begin common underlying quote Tile Region -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	
+	
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var suppressAlert = false;
+
+	function checkAllowedCharacter(value) {
+		// means check if not having a-z, A-Z, 0-9 ,hyphen(-), space, period, comma or slash
+		var retval = value.match(new RegExp("[^a-zA-Z0-9- .,/]+"));
+
+		if (retval == null || retval == "") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function searchFormSubmit() {
+		document.getElementById("searchBtn").click();
+	}
+
+	function validateForm() {
+		//x='';//document.forms["optionChainForm"]["symbol"].value;
+		var symbol = '';
+		var symbolField = '';
+
+		if (document.getElementById("plCalcForm")) {
+			symbolField = document.getElementById("ulSymbol");
+			symbolField.value = symbolField.value.toUpperCase()
+			document.getElementById("symbol").value = symbolField.value;
+		}
+
+		if (document.getElementById("symbol")) {
+			symbolField = document.getElementById("symbol");
+			symbolField.value = symbolField.value.toUpperCase()
+			symbol = symbolField.value;
+		}
+
+		if (document.getElementById("ulSymbol")) {
+			symbolField = document.getElementById("ulSymbol");
+			symbol = symbolField.value.toUpperCase();
+		}
+
+		// check if null
+		if (symbol == null || symbol == "") {
+			return showErrorMsg("Please enter at least one symbol.", symbolField);
+		} else if (!checkAllowedCharacter(symbol)) {
+			// if using appropriate characters
+			return showErrorMsg(
+					"The symbol you entered is not recognized.\n Please check the information and try again.",
+					symbolField);
+		} else if (symbol.length > 10) {
+			// check symbol length
+			return showErrorMsg("Please enter symbol at most 10 characters long.", symbolField);
+		} else {
+			symbol = symbol.toUpperCase();
+
+			if (document.getElementById("searchForm")) {
+
+				var input_symbols = document.createElement("input");
+
+				input_symbols.setAttribute("type", "hidden");
+				input_symbols.setAttribute("name", "showsymbols");
+				input_symbols.setAttribute("value", document.getElementById("showsymbols").value);
+
+				document.getElementById("searchForm").appendChild(input_symbols);
+
+				var btn = document.getElementById("searchBtn");
+
+				if (btn != 'undefined' && btn != null) {
+					btn.focus();
+				}
+
+				if (document.getElementById("symbols")) {
+
+					document.getElementById("symbols").value = symbol;
+
+					var strategy = document.getElementById("strategy").value;
+					if ((strategy == "CallsPuts" || strategy == "Calls" || strategy == "Puts")) {
+
+						/* OptionChain Redesign Changes - added new parameter sortBy to display option chain result in group  */
+						var sloSortByParameter = 'EXDATE_EXTYPE_OPTYPE_ADJ';
+						var input_sortBy = document.createElement("input");
+
+						input_sortBy.setAttribute("type", "hidden");
+						input_sortBy.setAttribute("name", "sortBy");
+						input_sortBy.setAttribute("value", sloSortByParameter);
+
+						document.getElementById("searchForm").appendChild(input_sortBy);
+						document.getElementById("searchForm").action = "/ftgw/mloptions/goto/optionChain";
+
+						suppressAlert = true;
+
+						$('#resultsBlock').hide();
+						$('#loaderBlock').show();
+					} else {
+
+						var input = document.createElement("input");
+
+						input.setAttribute("type", "hidden");
+						input.setAttribute("name", "strategy");
+						input.setAttribute("value", strategy);
+
+						document.getElementById("searchForm").appendChild(input);
+						suppressAlert = true;
+						document.getElementById("searchForm").action = "/ftgw/mloptions/goto/optionPairingResult";
+
+						$('#resultsBlock').hide();
+						$('#loaderBlock').show();
+					}
+				}
+			}
+
+			return true;
+		}
+	}
+
+	var searchedSymbol = findExistingSymbol();
+	
+	function setFocus() {
+		
+		var symbolField = '';
+		var symbolObj = document.getElementById("symbol");
+		var ulsymbolObj = document.getElementById("ulSymbol");
+		
+		if ((symbolObj != 'undefined') && (symbolObj != null) && (symbolObj.type == 'text') && (symbolObj.value == "")) {
+			symbolField = document.getElementById("symbol");
+			symbolField.select();
+			symbolField.focus();
+		} 
+		
+		if ((ulsymbolObj != 'undefined') && (ulsymbolObj != null) && (ulsymbolObj.type == 'text') && (ulsymbolObj.value == "")) {
+			symbolField = document.getElementById("ulSymbol");
+			symbolField.select();
+			symbolField.focus();
+		}
+	}
+
+	function toUpperCaseSymbol() {
+		
+		var symbol = document.getElementById("symbol");
+		
+		if ((symbol == null) || (symbol.value == "")) {
+			symbol = document.getElementById("ulSymbol")
+		}
+
+		if ((symbol != null) && (symbol.value != "") && (symbol.value != searchedSymbol)) {
+			searchedSymbol = symbol.value;
+			toUpperCase(symbol);
+			searchFormSubmit();
+		}
+	}
+	
+	function findExistingSymbol() {
+		
+		var sym = "";
+		
+		if ("") {
+			sym = "";
+		} else if ("") {
+			sym = "";
+		} else if ("") {
+			sym = "";
+		} else if ("") {
+			sym = "";
+		}
+		
+		return sym;
+	}
+</script>
+
+<!-- Analysis Section Starts -->
+<div class="analysis-section quotes-content">
+
+	<form method="GET" onsubmit="return validateForm();" id="optionChainForm" name="optionChainForm">
+
+		<div class="symbol-div-box" role="search">
+			<input type="hidden" id="cusip" name="cusip" value="" />
+			
+				
+				
+					<input id="symbol" maxlength="30" aria-required="true" aria-invalid="false" name="symbol" class="symbol-field" type="text" 
+						autocomplete="off"  placeholder="Symbol" data-placeholdertext="Symbol"
+						value=""
+						onchange="toUpperCaseSymbol();" onkeyup="javascript:this.value=this.value.toUpperCase();" />
+				
+			
+			<button class="button-component button--secondary symbol-search-button" type="submit" id="searchBtn" name="Search" value="Search">
+				<span class="quote-icon"></span>
+			</button>
+		</div>
+		
+		<!-- ERROR  -->
+		<div class="error-search-contents">
+			<div class="acResults" id="searchResultPane"></div>
+			<div class="acError" id="searchErrorPane"></div>
+			
+			
+		</div>
+	</form>
+
+	<div class="search-quotes-content">
+		
+		
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+<link href="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/css/bootstrap-overrides.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript">
+	$('html').addClass('has-probability-calculator');
+</script>
+
+
+	
+
+
+<style>
+
+.ofx_left1{
+
+float : left;
+width : 250px;
+}
+.ofx_right1{
+float : left;
+width : 80px;
+}
+</style>
+		
+	</div>
+</div>
+
+<!-- Analysis Section Ends -->
+<script type="text/javascript">
+	setFocus();
+</script>
+
+	
+	<!-- End of Tabbed Content Section -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	<!-- Endof common underlying quote Tile Region -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	<!-- Begin TABBED Content Tile Region -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+function updateLoginLink(id)
+{
+
+	var browserUrl = escape(parent.location);
+	var link = document.getElementById(id);
+	var loc = link.href;
+	link.href = loc+browserUrl;
+}
+</script> 
+<div class="layout-peek-content-region">
+<div class="peek-login-msg" style="top:414px;">
+	<span class="bold"><a id="chainPeak" onclick="updateLoginLink('chainPeak');" href="https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=" target="_top">Log in</a></span> to find and filter single- and multi-leg options through our comprehensive option chain.
+	<ul>
+		<li>Search for Calls &amp; Puts or multi-leg strategies.</li>
+		<li>Filter your searches by Expiration, Strike, and other settings.</li>
+		<li>See Implied Volatility and The Greeks for calls and puts.</li>
+	</ul>
+</div>
+<div class="peak_image"><img src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/images/option_chain_peek.png" width="995" height="623" alt="" /></div>
+</div>
+
+
+	<!-- End of Tabbed Content Section -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+	<!-- Endof TABBED Content Tile Region -->
+	<!-- ++++++++++++++++++++++++++++++++ -->
+
+</div>
+
+
+<!-- +++++++++++++++++++++++++++++ -->
+<!-- Begin Page Footer Tile Region -->
+<!-- +++++++++++++++++++++++++++++ -->
+<!-- footer.shtml starts -->
+<div class="layout-footer-region">	
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="layout-spacer-1"></div><!--Begin footer component--><div class="primary-footer"><a href="https://www.fidelity.com" target="_top" title="Fidelity Logo"><img class="fid-logo" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/images/FidLogoGray.gif" alt="Fidelity Investments"  title="Fidelity Investments" border="0" /></a><p class="copyright">&copy; 1998 - 2018 FMR LLC.</p><p class="rights">All rights reserved.</p><ul><li class="first"><a href="https://www.fidelity.com/terms-of-use" target="_top" title="Terms of Use">Terms of Use</a></li><li><a href="https://www.fidelity.com/privacy-policy" target="_top" title="Privacy">Privacy</a></li><li><a href="https://www.fidelity.com/security/overview" target="_top" title="Security">Security</a></li><li><a href="https://www.fidelity.com/sitemap/overview" target="_top" title="Site Map">Site Map</a></li></ul></div><!-- End footer component-->
+
+<!-- DTT on MLO Research pages -->
+
+	
+		
+		
+		
+			
+			<!-- login no -->
+		
+	
+	
+	<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/jquery-ui-1.10.3.js"></script>
+	<script language="javascript" type="text/javascript">
+	var tradeUrl = 'https://oltx.fidelity.com/ftgw/fbc/oftrade/snippet/quickTradeStandAlone';
+
+	$(document).ready(function () {
+		ngttWindowLoad();
+	});
+
+	function ngttWindowLoad() {
+
+		var featureToggle = 'on';
+
+		var isBrowserCompatible = false;
+
+		var queryString = 'login=no';
+		var loggedIn = getLoggedInParam(queryString);
+		var defaultsForTicket = getDefaultParam(queryString);
+
+		// if we recognize the default param passed in as mm, we want to pass this along to
+		// trade so that client trade starts with special settings for market monitor
+		if (defaultsForTicket === 'mm') {
+			tradeUrl = tradeUrl + "?DEFAULT=mm"
+		}
+
+		// this is using the comment based html markup on next gen that sets the html class based on which version
+		// of IE the user's current browser is. lt-ie10 stands for less than IE10. So this is a good check for IE9 and older.
+		var ieVersion = getInternetExplorerVersion();
+
+		if (ieVersion == -1 || ieVersion >= 10) {
+			isBrowserCompatible = true;
+		} else {
+			isBrowserCompatible = false;
+		}
+
+		$('body').prepend('<div class="docked-top-container" style="display:none;">'
+			+ '<div class="docked-trade-ticket" id="dockedTicketContainer" role="dialog" aria-label="docked-trade-ticket"></div>'
+			+ '<div id="dockedTicketBrowserCompatability" style="display:none;">' + isBrowserCompatible + '</div>'
+			+ '<div id="dockedTicketEnabledEntitlement"  style="display:none;">true</div>'
+			+ '<div id="dockedTicketPreference"  style="display:none;">true</div>'
+			+ '<div id="dockedTicketLoggedInState"  style="display:none;">' + loggedIn + '</div>'
+			+ '<div id="ticketBootstrapped"  style="display:none;">true</div>'
+			+ '<div id="featureToggle"  style="display:none;">' + featureToggle + '</div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large terms-of-use-modal trade-ticket-modal"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large extended-hours-trading-modal trade-ticket-modal"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large select-a-fund-i-own-modal trade-ticket-modal" role="dialog" aria-labelledby="select-a-fund-i-own--header"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large additional-important-information-modal trade-ticket-modal" role="dialog" aria-labelledby="additional-important-information--header"></div>'
+			+ '<div class="docked-ticket-remove-popup"></div>'
+			+ '<div class="docked-additional-important-information"></div>'
+			+ '<div class="trade-container" id="tradeTicketContainer"></div>'
+			+ '</div>'
+			+ '<!-- shtml -->');
+		//insert a placeholder for the docked TT
+
+		if (isBrowserCompatible === true && featureToggle == 'on' && loggedIn == 'yes') {
+			// fetch the trade ticket
+			$("<div id='dockedComponents' style='z-index: 99999997; left: 0; width:100%; position:absolute; bottom: 0;'></div>").appendTo(".docked-top-container");
+			$.ajax({
+				type: 'GET',
+				url: tradeUrl,
+				contentType: 'text/plain',
+				xhrFields: {
+					withCredentials: true
+				},
+
+				headers: {},
+				success: function (response) {
+					$("#dockedComponents").html(response);
+				},
+				error: function (xhRequest, ErrorText, thrownError) {
+					console.log("CORS Error while importing DOCKED TT: " + xhRequest.responseText)
+				}
+			});
+		}
+	}
+
+	function getInternetExplorerVersion() {
+		var rv = -1;
+		var ua = navigator.userAgent;
+		if (navigator.appName === 'Microsoft Internet Explorer') {
+			var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null) {
+				rv = parseFloat(RegExp.$1);
+			}
+		} else if (navigator.appName === 'Netscape') {
+			var re = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null) {
+				rv = parseFloat(RegExp.$1);
+			}
+		}
+		return rv;
+	}
+
+	function seedATicket(jsonInput) {
+
+		//fetch the state variables
+		var browserCompatability = false;
+		var dockedEntitled = false;
+		var dockedPreference = true;
+		var loggedInState = false;
+		var featureToggle = 'off';
+		var featureToggleDiv = $('#featureToggle');
+		if (featureToggleDiv != null || featureToggleDiv != undefined) {
+			featureToggle = featureToggleDiv.html();
+		}
+		var browserCompatabilityDiv = $('#dockedTicketBrowserCompatability');
+		if (browserCompatabilityDiv != null || browserCompatabilityDiv != undefined) {
+			browserCompatability = browserCompatabilityDiv.html();
+		}
+		var dockedEntitledDiv = $('#dockedTicketEnabledEntitlement');
+		if (dockedEntitledDiv != null || dockedEntitledDiv != undefined) {
+			dockedEntitled = dockedEntitledDiv.html();
+		}
+		var dockedPreferenceDiv = $('#dockedTicketPreference');
+		if (dockedPreferenceDiv != null || dockedPreferenceDiv != undefined) {
+			dockedPreference = dockedPreferenceDiv.html();
+		}
+		var loggedInStateDiv = $('#dockedTicketLoggedInState');
+		if (loggedInStateDiv != null || loggedInStateDiv != undefined) {
+			loggedInState = loggedInStateDiv.html();
+		}
+
+		// fetch data to seed from json input
+		var seedingParams = fetchParams(jsonInput);
+
+		var securityType = seedingParams.securityType;
+
+		if (browserCompatability == 'false' || (mmDefault != "true" && (dockedEntitled == 'false' || dockedPreference == 'false' || featureToggle != 'on'))) {
+			//if not showing docked, then rebuild link
+			var url = rebuildTradeLink(jsonInput);
+			window.open(url, "_self");
+		} else if (securityType == 'H' || securityType == 'F' || securityType == 'BT' || securityType == 'MLO' || securityType == 'CT' || securityType == 'X') {
+			//if not showing docked, then rebuild link
+			var url = rebuildTradeLink(jsonInput);
+			window.open(url, "_self");
+		} else if (loggedInState == 'no' || loggedInState == 'member') {
+			// [PIATQTR-3635] set flag to open float ticket.
+			setSessionStorage("openFloatTicket", true);
+			var orderInfo = {
+				'SYMBOL': seedingParams.symbol,
+				'ORDER_TYPE': seedingParams.securityType,
+				'ORDER_ACTION': seedingParams.orderAction,
+				'LIMIT_STOP_PRICE': seedingParams.limitStopPrice,
+				'ACCOUNT': seedingParams.account,
+				'QTY': seedingParams.qty,
+				'ACCOUNT_TYPE': seedingParams.accountType
+			};
+			var tradeInfo = {
+				'orderInfo': orderInfo
+			};
+			setSessionStorage("tradeInfo", JSON.stringify(tradeInfo));
+
+			var redirectUrl = $(location).attr('href');
+			$(location).attr('href', 'https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=' + redirectUrl);
+		} else {
+			//test for float on page
+			var quickTradewrapper = $('.quick-trade-popup-wrapper');
+			if (quickTradewrapper == null || quickTradewrapper == undefined || quickTradewrapper.length == 0) {
+				//if float is not present, reopen it
+				openNewFloat(seedingParams);
+
+			} else {
+				//if floating ticket is present, attempt to seed ticket
+				populateExistingTicket(seedingParams);
+			}
+		}
+	}
+
+	function fetchParams(jsonInput) {
+
+		var symbol = "symbol";
+		var securityType = "securityType";
+		var orderAction = "orderAction";
+		var limitStopPrice = "limitStopPrice";
+		var results = {};
+
+		for (var i = 0; i < jsonInput.length; i++) {
+			var obj = jsonInput[i];
+			for (var key in obj) {
+
+				switch (key) {
+					case 'SECURITY_ID':
+						results.symbol = decodeURIComponent(obj[key]);
+						break;
+					case 'SECURITY_TYPE':
+					case 'ORDER_TYPE':
+						results.securityType = obj[key];
+						break;
+					case 'ORDER_ACTION':
+						results.orderAction = obj[key];
+						break;
+					case 'LIMIT_STOP_PRICE':
+						results.limitStopPrice = decodeURIComponent(obj[key]);
+						break;
+					case 'ACCOUNT':
+						results.account = decodeURIComponent(obj[key]);
+						break;
+					case 'QTY':
+						results.qty = decodeURIComponent(obj[key]);
+						break;
+					case 'ACCT_TYPE':
+						results.accountType = decodeURIComponent(obj[key]);
+						break;
+					default:
+						break;
+				}
+			}
+		}
+
+		return results;
+	}
+
+	function populateExistingTicket(seedingParams) {
+
+		var closeButton = $(".close-qt");
+		if (closeButton != null || closeButton != undefined) {
+			closeButton.trigger('click');
+			openNewFloat(seedingParams);
+		} else {
+
+			var symbolBox = $("#qt-symbol");
+			if (symbolBox != null || symbolBox != undefined) {
+				symbolBox.val(seedingParams.symbol);
+				symbolBox.trigger('blur');
+			}
+		}
+	}
+
+	function openNewFloat(seedingParams) {
+		var orderInfo = {
+			'SYMBOL': seedingParams.symbol,
+			'ORDER_TYPE': seedingParams.securityType,
+			'ORDER_ACTION': seedingParams.orderAction,
+			'LIMIT_STOP_PRICE': seedingParams.limitStopPrice,
+			'ACCOUNT': seedingParams.account,
+			'QTY': seedingParams.qty,
+			'ACCOUNT_TYPE': seedingParams.accountType
+		};
+		var tradeInfo = {
+			'orderInfo': orderInfo
+		};
+
+		this.tradeInfo = tradeInfo;
+
+		$(document).trigger("QUICK_TRADE", tradeInfo);
+	}
+
+	function rebuildTradeLink(jsonInput) {
+
+		var url = "https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?";
+		var first = true;
+
+		for (var i = 0; i < jsonInput.length; i++) {
+			var obj = jsonInput[i];
+			for (var key in obj) {
+				var attrName = key;
+				var attrValue = obj[key];
+				if (first) {
+					url = url + attrName + "=" + attrValue;
+					first = false;
+				} else {
+					url = url + "&" + attrName + "=" + attrValue;
+				}
+			}
+		}
+
+		return url;
+	}
+
+	function setSessionStorage(key, val) {
+		if (typeof (Storage) !== "undefined") {
+			sessionStorage.setItem(key, val);
+		}
+	}
+
+	/**
+	 * Parses the logged in param after app calls this bootstrap file
+	 * @returns {string}  whether a user is logged in or not
+	 */
+	function getLoggedInParam(queryString) {
+
+		var loggedInParam = "no";
+
+		if (queryString != null && queryString != undefined && queryString != "") {
+			var queryParamSplit = queryString.split("&");
+			if (queryParamSplit.length > 0) {
+				// split the logged in param value out
+				var loggedInQuery = queryParamSplit[0].split("=");
+				if (loggedInQuery.length > 1 && loggedInQuery[0] === 'login') {
+					if (loggedInQuery[1] && (loggedInQuery[1] === 'yes' || loggedInQuery[1] === 'no' || loggedInQuery[1] === 'member')) {
+						loggedInParam = loggedInQuery[1];
+					}
+				}
+			}
+		}
+
+		return loggedInParam;
+	}
+
+	/**
+	 * Parses the default param after app calls this bootstrap file
+	 * @returns {string}  whether the calling app needs to pass in a default value for use in initialization
+	 */
+	function getDefaultParam(queryString) {
+
+		var defaultsForTicketParam = "none";
+
+		if (queryString != null && queryString != undefined && queryString != "") {
+			var queryParamSplit = queryString.split("&amp;");
+			if (queryParamSplit.length > 1) {
+				// split the default param
+				var defaultQuery = queryParamSplit[1].split("=");
+				if (defaultQuery.length > 1 && defaultQuery[0] === 'default') {
+					if (defaultQuery[1] && (defaultQuery[1] === 'mm')) {
+						defaultsForTicketParam = defaultQuery[1];
+					}
+				}
+			}
+		}
+
+		return defaultsForTicketParam;
+	}
+
+</script>
+	
+
+<!-- End of DTT on MLO Research pages -->
+
+</div>
+<!-- footer.shtml ends -->
+<!-- +++++++++++++++++++++++++++++ -->
+<!-- Endof Page Footer Tile Region -->
+<!-- +++++++++++++++++++++++++++++ -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/dojo/dojo/dojo.xd.js" djConfig="parseOnLoad:true, isDebug:false"></script>
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/site.js"></script>
+<script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/rct-ui/rct-ui.js"></script>
+
+
+ <!-- 
+
+ -->
+
+<!--Below is the tooltip box -->
+		<div id="scans-screens-tip" class="tip-block hidden" style="display: none; left: 442px; top: 363px;">
+			<div class="tip-block-tooltip"></div>
+			<div id="tip-tooltip-text" class="tip-block-text" style="background-color: #ffffff;"> Placeholder Text.
+			</div>
+		</div>
+<!--End tooltip box -->
+
+<!-- Fix for DTT covering disclaimer links  -->
+<div class="layout-clear-both"></div>
+
+<script type="text/javascript">
+
+<!--
+if(getInternetExplorerVersion()== 7.0 && (document.documentMode==7) )
+{
+	document.write("<style>.tip-block-tooltip {background: url('https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/images/arrow_left_f.gif') no-repeat scroll 0 5px transparent; margin: -1px; margin-left:86px;margin-top:8px;position: absolute; z-index: 1005;width:20px;height:100%;}</style>");
+}
+//-->
+</script>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//tooltips for barchats and table headers
+$(document).ready(function(){	 
+		tooltipShowHide('th');
+		var posx = 0;
+		var posy = 0;
+		var ifr = document.getElementById("ddHide");
+		
+		if(ifr != null && ifr != 'undefined')
+		{
+			document.getElementById("ddHide").style.display="none";			
+		}
+		
+		
+		
+		$("#dividendlink").click(function(e){
+			
+			var pos = $("#dividendlink").offset();
+			posx = (pos.left-245)+"px";
+			posy= (pos.top+13)+"px";
+			showIframe(ifr,"405px",(pos.left-175)+"px","220px");
+			var obj = document.getElementById("dividendsDiv");
+			obj.style.left = posx;
+			obj.style.top = posy;
+			$("#dividendsDiv").show();
+			$("#ratingsDiv").hide();			
+			$("#earningsDiv").hide();
+			
+		});					
+		
+		$("#consensusLink").click(function(){ 
+			
+			var pos = $("#consensusLink").offset();
+			posx = (pos.left-295)+"px";
+			posy= (pos.top+13)+"px";
+			
+			var obj = document.getElementById("ratingsDiv");
+			obj.style.left = posx;
+			obj.style.top = posy;
+			$("#dividendsDiv").hide();
+			$("#ratingsDiv").show();			
+			$("#earningsDiv").hide();
+			if(ifr != null && ifr != 'undefined')
+			{
+				ifr.style.display="none";
+				
+			}
+			
+		});
+		
+		$("#earningsLink").click(function(){ 
+			
+			var pos = $("#earningsLink").offset();
+			posx = (pos.left-340)+"px";
+			posy= (pos.top+13)+"px";
+			
+			var obj = document.getElementById("earningsDiv");
+			obj.style.left = posx;
+			obj.style.top = posy;
+			showIframe(ifr,"405px",(pos.left-310)+"px","375px");
+			$("#dividendsDiv").hide();
+			$("#ratingsDiv").hide();			
+			$("#earningsDiv").show();
+			
+			
+		});	
+		
+		$(document).click(function(event){ 
+			
+			var clickedDiv = $(event.target).parent("td").get(0);
+			var clickedDivID = ""
+			if(clickedDiv != null){
+				clickedDivID = clickedDiv.id;
+			}
+			
+			if(clickedDivID  != 'dividendlink'){
+				$("#dividendsDiv").hide();
+			}
+			
+			if(clickedDivID != 'consensusLink'){
+				$("#ratingsDiv").hide();
+			}
+			
+			if(clickedDivID != 'earningsLink'){
+				$("#earningsDiv").hide();
+			}			
+			
+			$("#relatedNewsDiv").hide();
+			if(ifr != null && ifr != 'undefined' && clickedDivID != 'earningsLink' && clickedDivID != 'dividendlink' && clickedDivID != 'consensusLink')
+			{
+				ifr.style.display="none";
+				
+			}
+			var relNewsFr = document.getElementById("relNewsiFr");
+			if(relNewsFr != null && relNewsFr != 'undefined')
+			{
+				relNewsFr.style.display="none";	
+			}
+			
+			
+		});
+		
+});
+
+function showIframe(ifr,top,left,width){
+	if(ifr != null && ifr != 'undefined')
+	{
+		
+		ifr.style.top=top;
+		ifr.style.left=left;
+		ifr.style.width=width;
+		ifr.style.display="block";
+		var browserName  = navigator.appName;
+		if(browserName != null && browserName != 'undefined' && browserName=="Netscape")
+		{
+			var earningsBorder=  document.getElementById("earnings_border");
+			var borderDiv = document.getElementById("div_border");
+			borderDiv.style.backgroundColor="#6E6E6E";
+			earningsBorder.style.backgroundColor="#6E6E6E";
+		}
+	}
+}
+</script>
+   
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+//Function used to set the height of the tool tip
+//	text = text to be used(string)
+//	defLength = default height
+//	incLength = maximum lenth of text before increment
+//	incHeight = increment height
+function setIncr(text,defLength,incLength,incHeight)
+{
+var leng = text.length;
+if(leng>250)
+	leng = leng * 1.2;
+var incr = Math.floor(leng/incLength );
+incr = defLength +(incr*incHeight );
+return incr;
+}
+
+
+
+
+//Function used to show and hide the tooltip text hidden in tabs
+//Note: should be used inside $(document).ready(function(){}
+//	mt = tag/class to use
+
+function tooltipShowHide(mt){
+
+	var myTime;
+	var over;
+	//timer function to call when tooltip is needed
+	function tooltipShowText(txt,ttX,ttY){	
+		  myTime=setTimeout(function(e){
+			if (over) {//alert('ttX='+ttX);
+	  			$('#tip-tooltip-text').text(txt );// change text
+				$('#tip-tooltip-text').css("height",setIncr(txt,40,100,30)+"px");//change height of box based on text length
+				$('#tip-tooltip-text').css("width","265px");
+				$('#tip-tooltip-text').css("border","1px solid #000000");
+				
+				$('#scans-screens-tip').attr("style","display: block; left: "+(ttX)+"px; top: "+(ttY)+"px;");// display text
+			} }
+			  ,250);//delay execution by 250ms
+		 }
+		// mouse over event
+		
+		
+	$(mt).hover(function(e){
+		
+		if($(this).hasClass("off-IV-text")){
+			
+			$(this).find('.ofx_ivpopinfo').click(function(e){
+				var parent = $(this).parent();
+				var txt = parent.find('.off-screen').text();//text to display
+				var adjTop = 4;
+				
+				if (parent.find('.off-screen').text())// if tooltip text exist
+			    	{
+						over = true;									
+						adjTop = -7;
+						
+						tooltipShowText(txt,$(this).offset().left+($(this).width()-6),$(this).offset().top+7+adjTop);
+			    	}
+			});
+			
+			$(document).click(function(event){ 
+				
+				var clickedCell = $(event.target);
+				if(!clickedCell.parent().hasClass('off-IV-text')){
+					$("#scans-screens-tip").attr("style","display: none;");// turn off display
+					  over = false;
+					  clearInterval(myTime);
+				}
+				
+			});
+		}else{
+		
+		var txt = $(this).find('.off-screen').text();//text to display
+		var adjTop = 4;
+		var adjLeft =0;
+		if(getInternetExplorerVersion()== 7.0 && (document.documentMode==7) )
+		{
+			adjTop = 4;
+			adjLeft =0;
+		}
+		if ($(this).find('.off-screen').text())// if tooltip text exist
+	    	{
+				over = true;
+				var extra_space = 0;
+				if($(this).hasClass('off-IV-text')){
+					
+					var padding = 4;
+					var original_content = $(this).html();
+					var text = $(this).contents(':not(span)').text()
+					var text_span = '<span class="ivText">'+text+'</span>';
+					$(this).html(text_span);
+					var ivtext_length = $(this).find('.ivText').width();
+					extra_space = $(this).width() - ivtext_length - padding;
+					$(this).html(original_content);
+					adjTop = -7;
+					
+				}
+				tooltipShowText(txt,$(this).offset().left+adjLeft+($(this).width()-12-extra_space),$(this).offset().top+7+adjTop);
+	    	
+				//mouse exit event
+				$(this).mouseout(function(){
+					  $("#scans-screens-tip").attr("style","display: none;");// turn off display
+					  over = false;
+					  clearInterval(myTime);
+				  });
+	    	
+	    	}
+
+		
+	}
+	
+	});
+	
+	
+	
+	  
+	
+}
+
+
+</script>
+<!-- End Javascript for tool tip help box -->	
+<script type="text/javascript">
+function getRelatedNewsForSymbol(symbol,position,callingEvent){	
+  	var event = callingEvent;
+	var selectedSymbol = symbol;
+	
+	jQuery.ajax({
+        url: "/ftgw/mloptions/asyncNewsDetails",
+        type: "POST",
+        data: {symbol: selectedSymbol},
+        beforeSend: function(x) {
+         if (x && x.overrideMimeType) {
+            x.overrideMimeType("application/j-son;charset=UTF-8");
+          }
+        },
+        success: function(data) {
+        	
+        		returnObj = jQuery.parseJSON( data );
+        		updateNewsBrickletForSymbol(returnObj,position,selectedSymbol);
+				
+         },
+        error:function(data) {
+        	alert("error");
+        }
+	});
+}
+
+function updateNewsBrickletForSymbol(returnObj,position,selectedSymbol)
+{	
+	
+	if(returnObj.rrData != undefined)
+	{
+
+		var recentNewsDiv = document.getElementById('newsBricklet');
+		recentNewsDiv.innerHTML = "";
+		
+	    var titleDiv = document.createElement('div');	
+	    titleDiv.className='popin-title';
+	    
+	    var heading = document.createElement('h3');	
+	    heading.innerHTML = 'Related News';
+	    
+	    titleDiv.appendChild(heading);
+	    recentNewsDiv.appendChild(titleDiv);
+	    
+	    var headLinesCount='4';	    
+	    var numberOfHeadlines= returnObj.rrData.tradeAlert.length;
+	    var showHeadLinesNumber;
+	    
+	    if(numberOfHeadlines > headLinesCount )
+	 	{
+	 	   showHeadLinesNumber=headLinesCount;
+	 	}
+	    else
+	 	{
+	 	   showHeadLinesNumber=numberOfHeadlines;
+	 	}
+	   
+	    if(showHeadLinesNumber > 0)
+	    {
+		     for(var i=0;i<showHeadLinesNumber;i++)
+			 {
+		    	 var newsDiv = document.createElement('div');	
+		 	     newsDiv.className='info-container';
+		    	
+				 var headLine = returnObj.rrData.tradeAlert[i].headLine;	
+				 var articleId = returnObj.rrData.tradeAlert[i].storyId;	
+				 var providerName = returnObj.rrData.tradeAlert[i].providerName;		
+				 var asOfDate = returnObj.rrData.tradeAlert[i].asofDate;			
+				 var storySymbol = returnObj.rrData.tradeAlert[i].symbol;
+		    	 
+			     var headlineParagraph = document.createElement('p');	
+			     headlineParagraph.className='headline';
+			    
+			     var anchorNews = document.createElement('a');
+			     anchorNews.innerHTML = headLine;
+			     anchorNews.setAttribute('href',"javascript:showRelatedNewsPopup('"+returnObj.rrData.tradeAlert[i].storyId+"','"+selectedSymbol+"');");
+			    
+			     var image = document.createElement('img');
+			     image.src = 'https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/images/newsPopup.png';
+			     //image.src = personal_server + '/research/options/13.11/content/images/newsPopup.png';
+			    
+			     headlineParagraph.appendChild(anchorNews);
+			     headlineParagraph.appendChild(image);
+			    
+			     var newsSrc1 = document.createElement('p');	
+			     newsSrc1.className='newsrc';
+			     newsSrc1.innerHTML = providerName;
+			    
+			     var newsSrc2 = document.createElement('p');	
+			     newsSrc2.className='newsrc';
+			     newsSrc2.innerHTML = asOfDate;
+			    
+			     newsDiv.appendChild(headlineParagraph);
+			     newsDiv.appendChild(newsSrc1);
+			     newsDiv.appendChild(newsSrc2);
+			     
+			     recentNewsDiv.appendChild(newsDiv);
+			}
+		     
+		    newsDiv.appendChild(headlineParagraph);
+			newsDiv.appendChild(newsSrc1);
+			newsDiv.appendChild(newsSrc2);
+
+	    }else{
+	    	
+	    	var headlineParagraph = document.createElement('p');	
+			headlineParagraph.className='headline';
+			//headlineParagraph.style = 'font-size: 12px;font-family: Helvetica,Arial,sans-serif;';
+			headlineParagraph.innerHTML = "Currently there are no DJ News Service articles for this security, select More News to search additional providers.";   
+	    	
+	    	recentNewsDiv.appendChild(headlineParagraph);
+	    }
+	    
+	    var moreNewsDiv = document.createElement('div');	
+	    moreNewsDiv.className='info-container';
+	    
+	    var moreNewsPara = document.createElement('p');	
+	    moreNewsPara.className='morenews';
+	    
+	    var moreNewsLink = document.createElement('a');
+	    moreNewsLink.setAttribute("id","mLink");
+	    moreNewsLink.setAttribute('href','https://eresearch.fidelity.com/eresearch/evaluate/news/basicNews.jhtml?symbols='+selectedSymbol);
+	    moreNewsLink.innerHTML = "More News..."
+	    moreNewsPara.appendChild(moreNewsLink);
+	    
+	    moreNewsDiv.appendChild(moreNewsPara);
+	    recentNewsDiv.appendChild(moreNewsDiv);
+	}
+	showRelatedNewsModalDialog(0,position);
+}
+
+
+function showRelatedNewsModalDialog(c,position){
+	var obj, sIdHold, sId, sXHold, sYHold;
+	var b=0,a=0;
+	var relNewsFr = document.getElementById("relNewsiFr");
+	
+	obj = document.getElementById("relatedNewsDiv");
+	b = position.left;
+	a = position.top;
+	
+	if(b<250){
+		obj.style.left=(b-10)+"px";	
+	}else{
+		obj.style.left=(b-220)+"px";
+	}
+	
+	obj.style.top=(a)+"px";
+	obj.style.display="inline";
+	if(relNewsFr != null && relNewsFr !='undefined')
+	{
+		relNewsFr.style.left=(b-220)+"px";
+		relNewsFr.style.top=(a)+"px";
+		var ht = $("#relatedNewsDiv").outerHeight();
+		relNewsFr.style.width="270px";
+		relNewsFr.style.height=ht+"px";
+		relNewsFr.style.display="block";
+	}
+	return;
+}
+function showRelatedNewsPopup(articleId, symbol)
+{	
+	window.open("/ftgw/mloptions/asyncNewsDetails?articleId="+articleId+"&symbol="+symbol,'name','scrollbars=yes,height=562px,width=580px');   
+	
+}
+
+function openReport(link,width,height){
+	var winXpos = (screen.width/2)-(width/2);
+	var winYpos = (screen.height/2)-(height/2);
+	newwindow=window.open(link,'_blank','top='+winYpos+',left='+winXpos+',height='+height+',width='+width);
+	if(window.focus){
+		newwindow.focus();
+	}
+	return false;
+}
+</script>
+<script language="JavaScript" type="text/javascript" src="https://scs.fidelity.com/common/always-cached/embeddedquotes/1.2/js/embeddedquotes.js.shtml"></script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/option-chain.js"></script>
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/optionchain-settings.js"></script>
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap002390-mlo-content/19.01/content/js/tableSort.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://scs.fidelity.com/common/always-cached/embeddedquotes/1.2/js/embeddedquotes.js.shtml"></script> 
+ 
+<style>
+.symbol-results-data-table th.sortable{cursor:pointer;}
+</style>
+
+<script>
+
+var dptoggles = {"toggles":["TaxseasonApigeeEnable","mmUFDNextGenFeature","mmPPANextGenFeature","FI_ANNUITIES_TOGGLE","TIKNavigationForNonFPPManagedAccountFeature","TIKNavigationForFPPManagedAccountFeature","mmSDBNonQualFeature","fgomm_EFTtoRetailNRDailyLimitFeature","fgomm_MinimumBalanceFeature","fgomm_MgdRetToMgdRetFeature","cmHsaAiFix","ABLE_MM_FEATURE","fgomm_MgdRetToRetFeature","fgomm_mgdJNLDailyLimitFeature","isManagedNonRetirementWithdrawalArchivalEnabled","isManagedAccountWithdrawalArchivalEnabled","jsonArchivalFeatureMVP2","jsonArchivalFeature","isFGoHybridWidgetModeEnabled","FGOMM_NOV2016_FEATURES_ENABLED","FGOMM_OCT2016_FEATURES_ENABLED","cashAvailableToWithdrawFeature","FGO-FULLWITHDRAWAL-FEATURES","mmTwoFactAuthFeature","FGOMM_MOBILE_FEATURES","FGOMM_SEPT2016_FEATURES_ENABLED","enableDuplicateTxnGateCheckLogic","dpAccountMashupFeature","mmUFDMobileFeature","mmPPAMobileFeature","felixTransferLimitsEFT","felixTransferLimits","cmCashAvailToWithdraw","mmAddBankTransferToFeature","todaysMarketsCardDisplayPriorCloseDuringPreMarket"]};
+
+//encode the user id to available in js file
+var uuId='';
+
+
+
+// we will take current date from server so that we always compare with EST date
+var currentDateStr = '';
+
+var sloExpFilterId = '';
+
+var lastSym = '';
+
+
+
+var preferenceData = '';
+ 
+
+
+
+function resetSettingsPage()
+{	 	
+	 var defautSetting = preferenceData.customOptionChainSettings ;
+	 var strategy = defautSetting.defaultStrategy;
+	 var strike = defautSetting.defaultStrike;
+	 var volume = defautSetting.defaultVolume;
+	 var defaultExpiration = defautSetting.defaultExpiration;
+	 var openInterest = defautSetting.defaultOpenInt;
+	 var histogramFlag = defautSetting.defaultHistogramFlag;
+	 var adjustedOptionsFlag = defautSetting.defaultAdjustedOptionsFlag;
+	 var weeklyOptionsFlag = defautSetting.defaultWeeklyOptionsFlag;
+	 var settingColumns = [];
+	 
+	/*  for(var colItem in defautSetting.resultColumn){
+		 settingColumns.push(defautSetting.resultColumn[colItem]);
+	 } */
+	   
+	 settingColumns.reverse();
+	 
+	 
+	 
+		var expirationText='';
+			
+		 switch(defaultExpiration)
+		{
+		case '1':
+		  expirationText = "Next 3 Months";
+		  break;
+		case '2':
+		  expirationText = "Next 9 Months";
+		  break;
+		case '3':
+		  expirationText = "After 9 Months";
+		  break;
+		case '4':
+		  expirationText = "All Expirations";
+		  break;
+		case '5':
+		  expirationText = "No Expirations";
+		  break;	
+		default:
+		  expirationText = "Next 3 Months";
+		  break;
+		} 
+		
+	 
+	 
+	//Reset strategy dropdown
+	var strategyText = '';
+	if(strategy == 'CallsPuts'){ strategyText = "Calls & Puts";}else{strategyText = strategy;}
+	settingsMainWrapper.find("#settings-strategy-select-box span.select-box-text").text(strategyText);
+	settingsMainWrapper.find("#settingsStrategyListDivModal ul li").removeClass("cust-selected");
+	settingsMainWrapper.find("#settingsStrategyListDivModal ul li#"+ strategy).addClass("cust-selected");
+	//Reset strike dropdown
+	settingsMainWrapper.find("#settings-selector-strike-box span.select-box-text").text(strike);
+	//Reset expiration dropdown
+	settingsMainWrapper.find("#settings-selector-expiration-box span.select-box-text").text(expirationText);
+	//Reset vloume dropdown
+	settingsMainWrapper.find("#settings-selector-volume-box span.select-box-text").text(volume);
+	//Reset open interest
+	settingsMainWrapper.find("#settings-selector-open-int-box span.select-box-text").text(openInterest);
+	//Reset Histogram
+	settingsMainWrapper.find("#settings-histogram-toggle").removeClass("turn-on turn-off");
+	settingsMainWrapper.find("#settings-histogram-toggle").addClass("turn-" + histogramFlag);
+	settingsMainWrapper.find("#settings-histogram-toggle").attr("switch-state" , histogramFlag);
+	//Reset Adjustion Toggle
+	settingsMainWrapper.find("#settings-adjusted-toggle").removeClass("turn-on turn-off");
+	settingsMainWrapper.find("#settings-adjusted-toggle").addClass("turn-" + adjustedOptionsFlag);
+	settingsMainWrapper.find("#settings-adjusted-toggle").attr("switch-state" , adjustedOptionsFlag);
+	//Reset Weekly Toggle
+	settingsMainWrapper.find("#settings-weekly-toggle").removeClass("turn-on turn-off");
+	settingsMainWrapper.find("#settings-weekly-toggle").addClass("turn-" + weeklyOptionsFlag);
+	settingsMainWrapper.find("#settings-weekly-toggle").attr("switch-state" , weeklyOptionsFlag);
+	//Reset Settings & Results Columns	
+	settingsMainWrapper.find(".settings-content-right input[type='checkbox']").prop("checked" , false);
+	for(var i=0; i<settingColumns.length; i++){
+		var colItem = settingColumns[i];
+		if (colItem.length <= 1) {
+			colItem = colItem.toLowerCase();
+	    } else {
+	    	colItem = colItem.substring(0, 1).toLowerCase() + colItem.substring(1);
+	    }
+		var colItemParent = settingsMainWrapper.find("#"+colItem+"Chk").parent();
+		var element = $(colItemParent).parent().detach();
+		settingsMainWrapper.find(".settings-content-right .settings-description").after(element);	
+		if(checkResultsColumnString(settingColumns[i]) == true){
+			settingsMainWrapper.find(".settings-content-right input#" + colItem +"Chk").prop("checked" , true);
+		}
+	}
+}
+
+function checkResultsColumnString(str){
+	 var defautSetting = preferenceData.customOptionChainSettings ;
+	 var resultsColumns = [];
+	 for(var colItem in defautSetting.resultColumn){
+		 resultsColumns.push(defautSetting.resultColumn[colItem]);
+	 }	
+	 for(var i=0; i<resultsColumns.length; i++){
+		var colItem = resultsColumns[i];
+		if (str == colItem) {
+			return true;
+	    } 		
+	}
+	 return false;
+}
+
+
+
+//  Performance Code change 
+function showOptionChainActionMenu(menuId,flyoutId,headerId){
+	
+	var menuHolder = optionChainMainForm.find('#actionMenuHolder');
+
+	if(!$(menuHolder).find("#"+menuId).length){ // If flyout not already initialised
+
+		$("#"+headerId)
+		.contents()
+	    .filter(function(){ 
+	    	return this.nodeType == 8;
+	    	})
+	    .each(function(){ 
+	    	menuHolder.append(this.nodeValue);
+	    	});
+
+		createFlyout(menuId,flyoutId,headerId);
+	}	 
+	
+	
+	
+}
+
+var mlo_RowMap = {};
+$(document).ready(function () {
+
+	$('table[name="jquerySortableTable"] tbody')
+	.contents()
+	.filter(function(){ return this.nodeType == 8;})
+	.each(function(){
+		var str = this.nodeValue;
+		var bigIndex =str.indexOf("###");
+								
+		if(bigIndex == -1)
+		{
+			return;
+		}
+		var endIndex =str.indexOf("###", bigIndex+1);
+								
+		if(endIndex == -1)
+		{
+			return;
+		}
+
+		var idStr = str.substring(bigIndex+3, endIndex);
+
+		var textStr  =  str.substr(endIndex+3);
+		mlo_RowMap[idStr]=textStr;
+								
+	});
+					    
+						    
+});
+
+
+	
+</script>
+
+
+
+
+</body>
+</html>
