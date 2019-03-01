@@ -1,32 +1,53 @@
 #include "card.h"
 
 Card::Card(){
-    card.resize(2);
-    card[0] = 1;
-    card[1] = 4;
+    rank = 1;
+    suit = 4;
 }
-Card::Card(short value, short suit){
-    card.resize(2);
+Card::Card(short value, short iSuit){
     if(value >= 1 && value <= 13)
-        card[0] = value;
+        rank = value;
     else{
-        card[0] = 1;
+        rank = 1;
         cout << "Invalid Card - Assigning as A" << endl;        
     }
 
-    if(suit <= 4 && suit >= 1)
-        card[1] = suit;
+    if(iSuit <= 4 && iSuit >= 1)
+        suit = iSuit;
     else{
-        card[1] = 4;
-        cout << "Invalid Suit - Assigning as 4 (Spade)" << endl;
+        suit = 4;
+        cout << iSuit << " Invalid Suit - Assigning as 4 (Spade)" << endl;
     }
 }
 Card::~Card(){};
-
-short Card::getValue(){
-    return card[0];
+short Card::getValue() const{
+    return rank;
 }
-short Card::getSuit(){
-    return card[1];
+short Card::getSuit() const{
+    return suit;
+}
+std::string Card::toString() const{
+    std::string temp;
+    if(rank >= 2 and rank <= 10)
+        temp = std::to_string(rank);
+    else if(rank == 1)
+        temp = "A";
+    else if(rank == 11)
+        temp = "J";
+    else if(rank == 12)
+        temp = "Q";
+    else if(rank == 13)
+        temp = "K";
+    temp.append(" ");
+    if(suit == 1)
+        temp.append(1, 'C');
+    else if(suit == 2)
+        temp.append(1, 'D');
+    else if(suit == 3)
+        temp.append(1, 'H');
+    else if(suit == 4)
+        temp.append(1, 'S');
+
+    return temp;
 }
 

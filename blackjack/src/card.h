@@ -1,4 +1,7 @@
+#ifndef include_card_h
+#define include_card_h
 #include <vector>
+#include <string>
 #include <iostream>
 
 using std::cout;
@@ -13,7 +16,7 @@ class Card{
             K -> 13              Spade ->    4
     */
     private:
-        std::vector<short> card;
+        short rank, suit;
 
     public:
         Card();
@@ -23,7 +26,10 @@ class Card{
         //void setValue(short);
         //void setSuit(short);
                     
-        short getValue();
-        short getSuit();
+        short getValue() const;
+        short getSuit() const;
+	    std::string toString() const;
         //std::ostream& operator<<(std::ostream &, const Card &);
 };
+
+#endif
