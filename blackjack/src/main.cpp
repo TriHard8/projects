@@ -1,20 +1,11 @@
 #include "card.h"
 #include "deck.h"
+#include "table.h"
 
 int main(){
-    Card A;
-    Card B(0,0);
-    Card C(3,4);
-    Deck deck;
-    Deck deck2(6);
-    //cout << A.toString() << endl;
-    //cout << B.toString() << endl;
-    //cout << C.toString() << endl;
+    Table *table = new Table(2, 6);
 
-    deck.shuffler();
-    deck2.shuffler();
-    cout << deck;
-    cout << deck2; 
-
+    table->deal();
+   /* use a hashtable for addition since it will be repetitive */
     return 0;
 }
