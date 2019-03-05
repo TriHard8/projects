@@ -72,7 +72,11 @@ void Table::deal(){
                         cout << "You have: " << score << endl;
                     }
                     // This is the decision block for the dealer.
-                    if(i == players.size() - 1){
+                    if(score > 21){
+                        stand = true;
+                        cout << "%%%%%%BUSTED%%%%%%" << endl;
+                    }
+                    else if(i == players.size() - 1){
                         if(hasAce){
                             if(score >= 7 && score <= 11) stand = true;
                             else if(score > 21) stand = true;
