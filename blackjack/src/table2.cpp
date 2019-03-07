@@ -2,18 +2,14 @@
 
 Table::Table(){
     deck = Deck(1);
-    players.push_back(std::unique_ptr<Participant> (new Player()));
-    players.push_back(std::unique_ptr<Participant> (new Dealer()));
+    players.resize(2);
     stand = false;
     cutcard = 10;
     currentcard = 0;
 }
 Table::Table(int numPlayers, int numDecks){
     deck = Deck(numDecks);
-    for(int i(0); i < numPlayers; ++i){
-        players.push_back(std::unique_ptr<Participant> (new Player()));
-    }
-    players.push_back(std::unique_ptr<Participant> (new Dealer()));
+    players.resize(numPlayers + 1);
     stand = false;
     cutcard = 10;
     currentcard = 0;

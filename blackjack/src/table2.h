@@ -5,18 +5,14 @@
 #include <iostream>
 #include <unordered_map>
 #include <sstream>
-#include <memory>
 #include "deck.h"
-#include "participant.h"
-#include "dealer.h"
-#include "player.h"
 
 using std::cin;
 
 class Table{
     private:
         Deck deck;
-        std::vector<std::vector<std::unique_ptr<Participant>>> players;
+        std::vector<std::vector<std::string>> players;
         bool stand;
         int cutcard;
         int currentcard;
