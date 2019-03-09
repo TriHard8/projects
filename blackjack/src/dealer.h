@@ -2,6 +2,7 @@
 #define dealer_h
 #include "participant.h"
 #include <string>
+#include <iostream>
 
 class Dealer : public Participant{
     private:
@@ -10,6 +11,7 @@ class Dealer : public Participant{
         Dealer();
         ~Dealer();
 
-        std::string decision(const char *);
+        std::string decision() override;
+        std::string getTopCard() const override;
 };
 #endif

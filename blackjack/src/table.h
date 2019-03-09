@@ -16,7 +16,7 @@ using std::cin;
 class Table{
     private:
         Deck deck;
-        std::vector<std::vector<std::unique_ptr<Participant>>> players;
+        std::vector<std::unique_ptr<Participant>> players;
         bool stand;
         int cutcard;
         int currentcard;

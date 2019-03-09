@@ -11,9 +11,11 @@ class Player : public Participant{
 
     public:
         Player();
+        Player(long long, long long);
         ~Player();
 
-        std::string decision(const char *);
+        std::string decision() override;
+        long long getBankroll() const override;
 };
 #endif
 
