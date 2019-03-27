@@ -39,34 +39,39 @@ void Table::deal(){
             cout << "Dealer: " << (*it_dealer)->getTopCard() << endl;
             int playerCount(1);
             for(auto it = players.begin(); it != players.end(); ++it){
-                stand = false;
-                while(!stand){
-                    if(playerCount == players.size()) cout << "Dealer: ";
-                    else cout << "Player " << playerCount << ": ";
-                    
-                    (*it)->printCards();
-                    //(*it)->printScore();
-                    if((*it)->getScore() > 21){
-                        stand = true;
-                        (*it)->setFinalScore();
-                        //cout << "%%%%%%BUSTED%%%%%%" << endl;
-                    }
-                    else{
-                        choice = (*it)->decision();
-                        if(choice == "hit") (*it)->newCard(getNextCard());
-                        else if(choice == "stand"){
+                for(auto i(0); i < (*it)->getNumHands; ++i){
+                    stand = false;
+                    while(!stand){
+                        if(playerCount == players.size()) cout << "Dealer: ";
+                        else cout << "Player " << playerCount << ": ";
+                        
+                        (*it)->printCards();
+                        //(*it)->printScore();
+                        if((*it)->getScore() > 21){
                             stand = true;
                             (*it)->setFinalScore();
+                            //cout << "%%%%%%BUSTED%%%%%%" << endl;
                         }
-                        else if(choice == "double down"){
-                            (*it)->newCard(getNextCard());
-                            stand = true;
-                            (*it)->setFinalScore();
+                        else{
+                            choice = (*it)->decision();
+                            if(choice == "hit") (*it)->newCard(getNextCard());
+                            else if(choice == "stand"){
+                                stand = true;
+                                (*it)->setFinalScore();
+                            }
+                            else if(choice == "double down"){
+                                (*it)->newCard(getNextCard());
+                                stand = true;
+                                (*it)->setFinalScore();
+                            }
+                            else if(choice == "split"){
+                                if((*it)->getNumCards(i) != 2) cout << "Can't Split" << endl;
+                                (*it)->split(); 
+                            }
+                            else std::cout << "Incorrect Choice" << std::endl;
                         }
-                        else if(choice == "split") std::cout << "Splitting" << std::endl;
-                        else std::cout << "Incorrect Choice" << std::endl;
-                    }
-                }         
+                    }         
+                }
                 playerCount++;
             }
             playerCount = 1;

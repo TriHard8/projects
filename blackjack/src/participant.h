@@ -15,7 +15,7 @@ class Participant{
         long long currentBet;
         short score;
         bool hasAce;
-        std::vector<std::string> cards;
+        std::vector<std::vector<std::string>> cards;
         
     public:
         Participant();
@@ -25,6 +25,8 @@ class Participant{
         virtual std::string getTopCard() const;
         virtual long long getBankroll() const;
         short getScore() const;
+        short getNumHands() const;
+        short getNumCards(short) const;
         bool getHasAce() const;
 
         void setFinalScore();
@@ -34,5 +36,6 @@ class Participant{
         void newCard(const std::string &);
         void printScore();
         void printCards();
+        void split();
 };
 #endif
