@@ -36,6 +36,6 @@ class Participant{
         void newCard(const std::string &);
         void printScore();
         void printCards();
-        void split();
+        void split(short);
 };
 #endif

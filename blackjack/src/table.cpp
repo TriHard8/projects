@@ -39,7 +39,7 @@ void Table::deal(){
             cout << "Dealer: " << (*it_dealer)->getTopCard() << endl;
             int playerCount(1);
             for(auto it = players.begin(); it != players.end(); ++it){
-                for(auto i(0); i < (*it)->getNumHands; ++i){
+                for(auto i(0); i < (*it)->getNumHands(); ++i){
                     stand = false;
                     while(!stand){
                         if(playerCount == players.size()) cout << "Dealer: ";

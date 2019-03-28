@@ -57,7 +57,7 @@ std::string Participant::decision() { return "Invalid Function Call"; }
 std::string Participant::getTopCard() const { return "Invalid Function Call"; }
 long long Participant::getBankroll() const { return -1; }
 short Participant::getNumHands() const { return cards.size(); };
-short Participant::getNumCards(short num) const { returns cards[num].size(); };
+short Participant::getNumCards(short num) const { return cards[num].size(); };
 void Participant::split(short num){
     cards.resize(cards.size()+1);
     for(int i(cards.size()-1); i > num; --i){
