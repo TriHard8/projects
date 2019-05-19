@@ -13,9 +13,9 @@ class Participant{
     protected:
         long long bankroll;
         long long currentBet;
-        short score;
-        bool hasAce;
-        std::vector<std::vector<std::string>> cards;
+        std::vector<short> score;
+        std::vector<bool> hasAce;
+        std::vector<std::vector<std::string> > cards;
         
     public:
         Participant();
@@ -24,18 +24,18 @@ class Participant{
         virtual std::string decision() = 0;
         virtual std::string getTopCard() const;
         virtual long long getBankroll() const;
-        short getScore() const;
+        short getScore(short) const;
         short getNumHands() const;
         short getNumCards(short) const;
-        bool getHasAce() const;
+        bool getHasAce(short) const;
 
-        void setFinalScore();
-        void setHasAce(bool);
+        void setFinalScore(short);
+        void setHasAce(bool, short);
 
         void newDeal();
-        void newCard(const std::string &);
-        void printScore();
-        void printCards();
+        void newCard(const std::string &, short);
+        void printScore(short);
+        void printCards(short);
         void split(short);
 };
 #endif

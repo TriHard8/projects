@@ -40,7 +40,8 @@ std::string Deck::getCard(int num) const{
 }
 void Deck::shuffler(){
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-    shuffle(deck.begin(), deck.end(), std::default_random_engine(seed)); 
+    auto gen = std::default_random_engine(seed);
+    shuffle(deck.begin(), deck.end(), gen); 
 }
 std::ostream& operator<<(std::ostream &os, const Deck &rhs){
     for(int i(0); i < rhs.getDeckSize(); ++i){

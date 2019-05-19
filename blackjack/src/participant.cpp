@@ -1,56 +1,62 @@
 #include "participant.h"
 
 Participant::Participant(){
-    score = 0;
-    hasAce = false;
+    score.resize(1);
+    score[0] = 0;
+    hasAce.resize(1);
+    hasAce[0] = false;
 }
 Participant::Participant(long long bank, long long bet){
     bankroll = bank;
     currentBet = bet;
 }
 Participant::~Participant(){};
-short Participant::getScore() const { return score; };
-bool Participant::getHasAce() const { return hasAce; };
-void Participant::setFinalScore(){
-    if(score <= 11 && hasAce) score += 10; 
-    else if(score > 21) score = -1;
-    hasAce = false;
+short Participant::getScore(short num) const { return score[num]; };
+bool Participant::getHasAce(short num) const { return hasAce[num]; };
+void Participant::setFinalScore(short num){
+    if(score[num] <= 11 && hasAce[num]) score[num] += 10; 
+    else if(score[num] > 21) score[num] = -1;
+    hasAce[num] = false;
     return;
 }
-void Participant::setHasAce(bool dec) { hasAce = dec; };
+void Participant::setHasAce(bool dec, short num) { hasAce[num] = dec; };
 void Participant::newDeal(){
-    cards.resize(0);
-    hasAce = false;
-    score = 0;
+    cards.resize(1);
+    cards[0].resize(0);
+    hasAce.resize(1);
+    hasAce[0] = false;
+    score.resize(1);
+    score[0] = 0;
     return;
 }
-void Participant::newCard(const std::string &card){
+void Participant::newCard(const std::string &card, short num){
     char cardValue = (char)card[0];
-    cards.push_back(card);
+    cards[num].push_back(card);
     if(cardValue >= '2' && cardValue <= '9'){
-        score += cardValue - '0'; 
+        score[num] += cardValue - '0'; 
     }
     else if(cardValue == 'A'){
-        score += 1;
-        hasAce = true;
+        score[num] += 1;
+        hasAce[num] = true;
     }
     else{
-        score += 10;
+        score[num] += 10;
     }
 }
-void Participant::printScore(){
-    if(score <= 11 && hasAce){
-        cout << "You have: " << score << " or " << score + 10 << ":" << endl; 
+void Participant::printScore(short num){
+    if(score[num] <= 11 && hasAce[num]){
+        cout << "You have: " << score[num] << " or " << score[num] + 10 << ":" << endl; 
     }
     else{
-        cout << "You have: " << score << endl;
+        cout << "You have: " << score[num] << endl;
     }
 }
-void Participant::printCards(){
-    for(int i(0); i < cards.size()-1; ++i){
-        std::cout << cards[i] << " / ";
+void Participant::printCards(short num){
+    for(short i(0); i < cards[num].size()-1; ++i){
+        std::cout << cards[num][i] << " / ";
     }
-    std::cout << cards[cards.size()-1] << std::endl;
+    std::cout << cards[num][cards[num].size()-1] << std::endl;
+    std::cout << cards.size() << " : " << cards[num].size() << std::endl;
     return;
 }
 std::string Participant::decision() { return "Invalid Function Call"; }
@@ -60,8 +66,13 @@ short Participant::getNumHands() const { return cards.size(); };
 short Participant::getNumCards(short num) const { return cards[num].size(); };
 void Participant::split(short num){
     cards.resize(cards.size()+1);
-    for(int i(cards.size()-1); i > num; --i){
-        cards[i] = cards[i-1];    
+    score.resize(cards.size());
+    hasAce.resize(cards.size());
+    for(int i(cards.size()-1); i > num + 1; --i){
+        cards[i].resize(1);
+        cards[i][0] = cards[i-1][0];    
     }
-    
+    cards[num+1].resize(1);
+    cards[num+1][0] = cards[num][1];
+    cards[num].resize(1);
 }
