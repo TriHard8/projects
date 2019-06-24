@@ -1,15 +1,10 @@
 #include <iostream>
-#include <string>
+#include <vector>
+using namespace std;
 
-int* changeInt(int* a){
-    a = new int(1000);
-    return a;
-}
-int main(){
-    int *num;
-    int *otra;
-    otra = changeInt(num);
-    
-    std::cout << *num << std::endl;
-    return 1;
+int main()
+{
+    int i = 1;
+    for(int j(0); j < 5; ++j) i = (i << 1) | 1;
+    cout << i << endl;
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <vector>
 
 using std::string;
 using std::cout;
@@ -26,6 +27,13 @@ class TennisPlayer{
         //settors
         void setName(string player) { name = player; }
         void setOdds(int chances) { odds = chances; }
+
+        bool operator<(const TennisPlayer &rhs) const{ return this->getOdds() < rhs.getOdds(); }
+        bool operator>(const TennisPlayer &rhs) const{ return rhs < *this; }
+        bool operator<=(const TennisPlayer &rhs) const{ return !(rhs < *this); }
+        bool operator>=(const TennisPlayer &rhs) const{ return !(*this < rhs); }
+        bool operator==(const TennisPlayer &rhs) const{ return this->getOdds() == rhs.getOdds(); }
+        bool operator!=(const TennisPlayer &rhs) const{ return !(*this == rhs); }
 };
 class TournamentNode{
     private:
@@ -33,46 +41,43 @@ class TournamentNode{
         uint position;
     
     public:
-        TournamentNode(uint slot, string name, int odds): position(slot),player(TennisPlayer(name, odds)) {};
+        TournamentNode(string name, int odds): player(TennisPlayer(name, odds)) {};
         TournamentNode(string name): player(TennisPlayer(name)) {}; 
+        TournamentNode(): player(TennisPlayer("")) {};
         ~TournamentNode() {};
 
         //gettors
-        TournamentNode* left;
-        TournamentNode* right;
-        TournamentNode* getLeft(){ return left; }
-        TournamentNode* getRight() { return right; }
-        TennisPlayer getPlayer() { return player; }
-
-        //settors
-        void setLeft(TournamentNode* newLeft) { left = newLeft; }
-        void setRight(TournamentNode* newRight) { right = newRight; }
+        TennisPlayer getPlayer() const { return player; }
 
 };
 class Tournament{
     private:
         uint size;
-        TournamentNode* champion;
+        std::vector<TournamentNode> bracket;
         
     public:
         Tournament(int);
         ~Tournament() {};
 
-        void Insert(TournamentNode* &, string, uint);
-        TournamentNode* GetNewNode(string);
-        void inOrder();
-        void inOrder(TournamentNode*);
+        void Insert(const string &);
+        friend std::ostream& operator<<(std::ostream &, const Tournament &);
+        
 };
 int main(){
 
+    Tournament tourney(4);
+    cout << tourney;
+    TennisPlayer first("Matt", 1600), second("Hall", 300);
+    if(first > second) cout << first.getName() << endl;
+    else cout << second.getName() << endl;
 
-    TennisPlayer player("Me", 1600);
-    Tournament tourney(32);
-    player.setName("Matt Hall");
-    player.setOdds(-160);
-    cout << player << endl;
-    tourney.inOrder();
     return 0;
+}
+std::ostream& operator<<(std::ostream &os, const Tournament &rhs){
+    int i = 1;
+    for(; i < rhs.bracket.size(); ++i) 
+        os << rhs.bracket[i].getPlayer() << "\n";
+    return os;
 }
 std::ostream& operator<<(std::ostream &os, const TennisPlayer &rhs){
     os << rhs.getName() << " (";
@@ -83,36 +88,11 @@ std::ostream& operator<<(std::ostream &os, const TennisPlayer &rhs){
 }
 Tournament::Tournament(int a){
     size = a*2 - 1;
-    champion = NULL; 
-    cout << size << endl;
-    for(int i(0); i < size; ++i) Insert(champion, std::to_string(i), (uint)0);
-//    for(int i(0); i < size; ++i){
-//        cout << "Enter Player Name #" << i+1 << " and Odds: ";
-//        cin >> name >> odds;
-//    }
-}
-TournamentNode* Tournament::GetNewNode(string newName){
-    TournamentNode* newNode = new TournamentNode(newName);
-    newNode->left = NULL;
-    newNode->right = NULL;
-    return newNode;
-}
-void Tournament::Insert(TournamentNode* &rootPtr, string name, uint level){
-    uint levels = log(size+1)/log(2);
-    if(level > levels) return;
-    else if(rootPtr == NULL) { rootPtr = GetNewNode(name); }
-    else if(rootPtr->left == NULL && (level + 1) <= levels) { Insert(rootPtr->left, name, level+1); }
-    else { Insert(rootPtr->right, name, ++level); }
-}
-void Tournament::inOrder(){
-    if(champion == NULL) return;
-    inOrder(champion->left);
-    std::cout << champion->getPlayer().getName() << std::endl;
-    inOrder(champion->right);
-}
-void Tournament::inOrder(TournamentNode* rootPtr){
-    if(rootPtr == NULL) return;
-    inOrder(rootPtr->getLeft());
-    std::cout << rootPtr->getPlayer().getName() << std::endl;
-    inOrder(rootPtr->getRight());
+    bracket.resize(a*2);    
+
+    for(int i(1); i < a+1; ++i) bracket[i] = TournamentNode(std::to_string(i), i*100);
+    for(int i(a+1); i < bracket.size(); ++i){
+        if(bracket[i-a].getPlayer() < bracket[i-a+1].getPlayer()) bracket[i] = bracket[i-a];
+        else bracket[i] = bracket[i-a+1];
+    }
 }
