@@ -8,6 +8,8 @@ using std::string;
 using std::cout;
 using std::cin;
 using std::endl;
+using std::vector;
+using std::reverse;
 
 class TennisPlayer{
     private:
@@ -42,8 +44,9 @@ struct Node{
     TennisPlayer data;
     Node *left, *right;
 };
-Node* newNode(TennisPlayer data){
+Node* newNode(TennisPlayer newData){
     Node* node = new Node();
+    node->data = newData;
     node->left = node->right = NULL;
     return node;
 };
@@ -59,28 +62,44 @@ class Tournament{
         void Insert(const string &);
         friend std::ostream& operator<<(std::ostream &, Tournament &);
         Node* insertLevelOrder(Node*, int);     
+        void inOrder(std::ostream &, Node *, int);
+        
 };
 int main(){
 
     Tournament tourney(32);
     cout << tourney;
     TennisPlayer first("Matt", 1600), second("Hall", 300);
-    if(first < second) cout << first.getName() << endl;
-    else cout << second.getName() << endl;
 
     return 0;
 }
 std::ostream& operator<<(std::ostream &os, Tournament &rhs){
-//    Node* champion = rhs.insertLevelOrder(champion, 0); 
-    for(int i(1); i < rhs.bracket.size(); ++i) os << rhs.bracket[i] << endl;
+    Node* champion = rhs.insertLevelOrder(champion, 0); 
+    rhs.inOrder(os, champion, (int)log2(rhs.size));
+    //for(int i(0); i < rhs.bracket.size(); ++i) os << rhs.bracket[i] << endl;
     return os;
 }
 Node* Tournament::insertLevelOrder(Node* root, int i){
-    return NULL;
-//    if(i < bracket.size()){
-//        Node* temp = 
-//    }
+    if(i < bracket.size()){
+        Node* temp = newNode(bracket[i]);
+        root = temp;
+        root->left = insertLevelOrder(root->left, 2*i+1);
+        root->right = insertLevelOrder(root->right, 2*i+2);
+    }
+    return root;
+}
+void Tournament::inOrder(std::ostream &os, Node *root, int tab){
+    string temp = "";
+    if(root != NULL){
+        inOrder(os, root->left, tab - 1);
 
+        for(int i(tab); i > 0; --i) os << "\t\t";
+        os << root->data.getName() << " (";
+        if (root->data.getOdds() > 0) os << "+";
+        os << root->data.getOdds() << ")\n";
+
+        inOrder(os, root->right, tab - 1);
+    }
 }
 std::ostream& operator<<(std::ostream &os, const TennisPlayer &rhs){
     os << rhs.getName() << " (";
@@ -90,7 +109,7 @@ std::ostream& operator<<(std::ostream &os, const TennisPlayer &rhs){
     return os;
 }
 Tournament::Tournament(int a){
-    size = a*2 - 1;
+    size = a;
     bracket.resize(a*2);    
 
     for(int i(1); i < a+1; ++i) bracket[i] = TennisPlayer(std::to_string(i), i*100);
@@ -101,5 +120,17 @@ Tournament::Tournament(int a){
         else bracket[i] = bracket[j+1];
         j += 2; 
     }
-    std::reverse(bracket.begin(), bracket.end());
+
+    uint temp = size;
+    vector<TennisPlayer>::iterator it1, it2;
+    it1 = bracket.begin() + 1;
+    it2 = bracket.begin() + temp + 1;
+    while(temp > 1){
+        reverse(it1, it2);
+        it1 += temp;
+        it2 += (temp / 2);
+        temp /= 2;
+    }
+    reverse(bracket.begin(), bracket.end());
+    bracket.pop_back();
 }
