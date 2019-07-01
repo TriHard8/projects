@@ -1,4 +1,4 @@
-Jordan Thompson, 200
-Lorenzo Sonego, 250
-Pablo Carreno Busta, 300
-Miomir Kecmanovic, 360
+Jordan Thompson,200
+Lorenzo Sonego,250
+Pablo Carreno Busta,300
+Miomir Kecmanovic,360
