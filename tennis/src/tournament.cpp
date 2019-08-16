@@ -1,8 +1,12 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <cmath>
 #include <vector>
 #include <algorithm>
+#include <stdlib.h>
+#include <limits.h>
+#include <sstream>
 
 using std::string;
 using std::cout;
@@ -10,6 +14,7 @@ using std::cin;
 using std::endl;
 using std::vector;
 using std::reverse;
+using std::getline;
 
 class TennisPlayer{
     private:
@@ -54,9 +59,12 @@ class Tournament{
     private:
         uint size;
         std::vector<TennisPlayer> bracket;
-        
+        void readFile(string); 
+        void pickWinners();
+        void buildTree();
     public:
         Tournament(int);
+        Tournament(int, string);
         ~Tournament() {};
 
         void Insert(const string &);
@@ -65,9 +73,9 @@ class Tournament{
         void inOrder(std::ostream &, Node *, int);
         
 };
-int main(){
+int main(int argc, char** argv){
 
-    Tournament tourney(32);
+    Tournament tourney(128, argv[1]);
     cout << tourney;
     TennisPlayer first("Matt", 1600), second("Hall", 300);
 
@@ -113,14 +121,28 @@ Tournament::Tournament(int a){
     bracket.resize(a*2);    
 
     for(int i(1); i < a+1; ++i) bracket[i] = TennisPlayer(std::to_string(i), i*100);
-    
+    pickWinners();
+    buildTree();
+}
+Tournament::Tournament(int a, string filename){
+    size = a;
+    bracket.resize(a*2);    
+
+    readFile(filename); 
+    pickWinners();
+    buildTree();
+}
+void Tournament::pickWinners(){
     int j(1);
-    for(int i(a+1); i < bracket.size(); ++i){
+    for(int i(size+1); i < bracket.size(); ++i){
         if(bracket[j] < bracket[j+1]) bracket[i] = bracket[j];
         else bracket[i] = bracket[j+1];
         j += 2; 
     }
 
+    return;
+}
+void Tournament::buildTree(){
     uint temp = size;
     vector<TennisPlayer>::iterator it1, it2;
     it1 = bracket.begin() + 1;
@@ -133,4 +155,27 @@ Tournament::Tournament(int a){
     }
     reverse(bracket.begin(), bracket.end());
     bracket.pop_back();
+    
+    return;
 }
+void Tournament::readFile(string filename){
+    vector<string> row;
+    std::fstream ifile;
+    string temp, line, word;
+    char actualpath[PATH_MAX];
+    char *filepath;
+    filepath = realpath(filename.c_str(), actualpath);
+    ifile.open(filepath, std::ios::in);    
+
+    int i(1);
+    while(getline(ifile, line)){
+        row.clear();
+        std::stringstream s(line);
+        while(getline(s, word, ',')){
+            row.push_back(word);
+        }
+        bracket[i++] = TennisPlayer(row[0], stoi(row[1]));       
+    }
+
+    return;
+} 
