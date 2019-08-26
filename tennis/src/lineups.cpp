@@ -10,13 +10,13 @@
 
 using namespace std;
 
-void read_record(std::vector< std::tuple<std::string, int, std::string>> &players, std::unordered_set<std::string> &dogs){ 
+void read_record(std::vector< std::tuple<std::string, int, std::string>> &players, std::unordered_set<std::string> &dogs, const int &dog_count){ 
     // File pointer 
     fstream fin; 
   
     // Open an existing file 
     //fin.open("/run/media/trihard8/New Volume/linux_directory/DKSalaries.csv", ios::in); 
-    fin.open("/home/trihard8/Downloads/20190819DKSalaries.csv", ios::in); 
+    fin.open("/home/trihard8/Downloads/20190826DKSalaries.csv", ios::in); 
   
     // Read the Data from the file 
     // as String Vector 
@@ -45,8 +45,13 @@ void read_record(std::vector< std::tuple<std::string, int, std::string>> &player
         //std::cout << row[2] << " : " << row[5] << std::endl;
         ss.str(row[6]);
         ss >> matchup;
-        players.push_back(std::make_tuple(row[2], std::stoi(row[5]), matchup));
-        if(std::stoi(row[9]) > 0) dogs.insert(row[2]);         
+        if(dog_count){
+            players.push_back(std::make_tuple(row[2], std::stoi(row[5]), matchup));
+            if(std::stoi(row[9]) > 0) dogs.insert(row[2]);
+        }
+        else if(!dog_count){
+            if(std::stoi(row[9]) < 0) players.push_back(std::make_tuple(row[2], std::stoi(row[5]), matchup));
+        }
     } 
 }
 void add_bitset(std::bitset<64> &num, int64_t adder){
@@ -108,7 +113,7 @@ void make_combos(std::vector < std::tuple<std::string, int, std::string>> &playe
         current_salary = lineup_salary(players, foo);
         matches = head2head(players, foo);
 
-        if(foo.count() != 6 || current_salary > 50000 || current_salary < 49000 || matches || dog_check(players, foo, dogs, dog_count)){
+        if(foo.count() != 6 || current_salary > 50000 || current_salary < 40000 || matches || dog_check(players, foo, dogs, dog_count)){
             add_bitset(foo, 1);
             continue;
         } 
@@ -127,7 +132,8 @@ int main(int argc, char *argv[]){
     else dog_count = atoi(argv[1]);
     std::vector< std::tuple<std::string, int, std::string>> players;
     std::unordered_set<std::string> dogs;
-    read_record(players, dogs);
+    read_record(players, dogs, dog_count);
+    std::cout << "CSV was read!" << std::endl;
     make_combos(players, dogs, dog_count);
     return 0;
 }
