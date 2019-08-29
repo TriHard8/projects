@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <fstream>
 #include <vector>
 #include <string>
@@ -8,21 +9,117 @@
 #include <math.h>
 #include <unordered_set>
 
+class Player;
+class DKSlate;
+
 using namespace std;
 
-void read_record(std::vector< std::tuple<std::string, int, std::string>> &players, std::unordered_set<std::string> &dogs, const int &dog_count){ 
+class Player{
+    private:
+        int salary, odds;
+        std::string name, matchup, team, id;     
+    
+    public:
+        Player() {};
+        ~Player() {};
+        Player(int newSalary, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds):
+                                    salary(newSalary),
+                                    name(newName),
+                                    matchup(newMatchup),
+                                    team(newTeam),
+                                    id(newID),
+                                    odds(newOdds) {};
+
+        void setName(std::string newName) { name = newName; };
+        void setMatchup(std::string newMatchup) { matchup = newMatchup; };
+        void setTeam(std::string newTeam) { team = newTeam; };
+        void setId(std::string newID) { id = newID; };
+        void setSalary(int newSalary) { salary = newSalary; };
+        void setOdds(int newOdds) { odds = newOdds; };
+        std::string getName() const { return name; };
+        std::string getMatchup() const { return matchup; };
+        std::string getTeam() const { return team; };
+        std::string getID() const { return id; };
+        int getSalary() const { return salary; };
+        int getOdds() const { return odds; };
+        bool operator==(const Player &) const;
+
+};
+namespace std{
+    template<>
+        struct hash<Player>{
+            size_t operator()(const Player &rhs) const{
+                return hash<std::string>()(rhs.getName());
+            }
+        };
+}
+class DKSlate{
+    private:
+        std::vector<Player*> players;
+        std::unordered_set<Player*> dogs;
+        std::vector<std::vector<Player *>> lineups;
+        int dog_count;
+        
+    public:
+        DKSlate(int dogs):dog_count(dogs){};
+        DKSlate():dog_count(0){};
+        ~DKSlate(){};
+
+        void setDogCount(int dogs) { dog_count = dogs; };
+        int getDogCount() const { return dog_count; };
+        size_t numLineups() const { return lineups.size(); };
+        size_t numPlayers() const { return players.size(); };
+        int getLineupSalary(int) const;
+        int getLineupOdds(int) const;
+        void readRecords();
+        void make_combos();
+        int lineup_salary(std::bitset<64> &);
+        bool head2head(std::bitset<64> &);
+        bool dog_check(std::bitset<64> &);
+        void get_lineup(std::bitset<64> &);
+        void printLineups() const;
+        void printLineup(int) const;
+
+};
+int DKSlate::getLineupOdds(int i) const{
+    int odds(0);
+    for(auto j(0); j < lineups[i].size(); ++j)
+        odds += lineups[i][j]->getOdds();
+
+    return odds;
+}
+int DKSlate::getLineupSalary(int i) const{
+    int salary(0);
+    for(auto j(0); j < lineups[i].size(); ++j)
+        salary += lineups[i][j]->getSalary();
+
+    return salary;
+}
+void DKSlate::printLineup(int i) const{
+    for(auto j(0); j < lineups[i].size(); ++j){
+        std::cout << lineups[i][j]->getName() << ",";
+    }
+    std::cout << getLineupSalary(i) << ",";
+    std::cout << getLineupOdds(i) << std::endl;
+}
+void DKSlate::printLineups() const{
+    for(auto i(0); i < lineups.size(); ++i){
+        printLineup(i);
+    }
+}
+void DKSlate::readRecords(){ 
     // File pointer 
-    fstream fin; 
+    std::fstream fin; 
   
     // Open an existing file 
     //fin.open("/run/media/trihard8/New Volume/linux_directory/DKSalaries.csv", ios::in); 
-    fin.open("/home/trihard8/Downloads/20190826DKSalaries.csv", ios::in); 
+    fin.open("/home/trihard8/Downloads/20190828DKSalaries.csv", ios::in); 
   
     // Read the Data from the file 
     // as String Vector 
-    vector<string> row; 
-    string line, word, matchup; 
-    stringstream ss;
+    vector<std::string> row; 
+    std::string line, word, matchup; 
+    std::stringstream ss;
   
     while(getline(fin, line)) { 
         row.clear(); 
@@ -42,17 +139,22 @@ void read_record(std::vector< std::tuple<std::string, int, std::string>> &player
             // of a row to a vector 
             row.push_back(word); 
         } 
-        //std::cout << row[2] << " : " << row[5] << std::endl;
         ss.str(row[6]);
         ss >> matchup;
+        //Player constructor to know what some of the elements of the row vector mean
+        //Player(int newSalary, std::string newName, std::string newMatchup, std::string newTeam, std::string newID):
+        Player * player = new Player(std::stoi(row[5]),row[2], matchup, row[7], row[3],std::stoi(row[9]));
         if(dog_count){
-            players.push_back(std::make_tuple(row[2], std::stoi(row[5]), matchup));
-            if(std::stoi(row[9]) > 0) dogs.insert(row[2]);
+            players.push_back(player);
+            if(player->getOdds() > 0) dogs.insert(player);
         }
         else if(!dog_count){
-            if(std::stoi(row[9]) < 0) players.push_back(std::make_tuple(row[2], std::stoi(row[5]), matchup));
+            if(player->getOdds() < 0) players.push_back(player);
         }
+        //delete player;
     } 
+    std::reverse(players.begin(),players.end());
+    fin.close();
 }
 void add_bitset(std::bitset<64> &num, int64_t adder){
     uint64_t number;
@@ -60,80 +162,94 @@ void add_bitset(std::bitset<64> &num, int64_t adder){
     num = number;
     return;
 }
-int lineup_salary(std::vector < std::tuple<std::string, int, std::string>> &players, std::bitset<64> &num){
+int DKSlate::lineup_salary(std::bitset<64> &num){
     int salary(0);
     for(int i(0); i < players.size(); ++i){
-        if(num[i]) salary += std::get<1>(players[i]);
+        if(num[i]) salary += players[i]->getSalary();
     }
     return salary;
 }
-std::string get_lineup(std::vector < std::tuple<std::string, int, std::string>> &players, std::bitset<64> &num){
-    std::string lineup("");
+void DKSlate::get_lineup(std::bitset<64> &num){
+    std::vector<Player *> lineup;
     int count(0);
     for(int i(0); i < players.size(); ++i){
         if(num[i]){
             count++;
-            lineup.append(std::get<0>(players[i]));
-            if(count < 6) lineup.append(","); 
+            lineup.push_back(players[i]);
         }
     }
-    return lineup;
+    lineups.push_back(lineup);
 }
-bool head2head(std::vector<std::tuple<std::string, int, std::string>> &players, std::bitset<64> &num){
+bool DKSlate::head2head(std::bitset<64> &num){
     std::unordered_set<std::string> matchups;
     std::unordered_set<std::string>::iterator it;
     for(int i(0); i < players.size(); ++i){
         if(num[i]){
-            it = matchups.find(std::get<2>(players[i]));
-            if(it == matchups.end()) matchups.insert(std::get<2>(players[i]));
+            it = matchups.find(players[i]->getMatchup());
+            if(it == matchups.end()) matchups.insert(players[i]->getMatchup());
             else return true;
         }
     }
     return false; 
 }
-bool dog_check(std::vector<std::tuple<std::string, int, std::string>> &players, std::bitset<64> &num, std::unordered_set<std::string> &dogs, const int &dog_count){
+bool DKSlate::dog_check(std::bitset<64> &num){
     int count(0);
-    std::unordered_set<std::string>::iterator it;
+    std::unordered_set<Player *>::iterator it;
     for(int i(0); i < players.size(); ++i){
         if(num[i]){
-            it = dogs.find(std::get<0>(players[i]));
+            it = dogs.find(players[i]);
             if(it != dogs.end()) count++;
         }
     }
     return (count > dog_count);
 }
-void make_combos(std::vector < std::tuple<std::string, int, std::string>> &players, std::unordered_set<std::string> &dogs, const int &dog_count){
+void DKSlate::make_combos(){
     std::bitset<64> foo;
-    std::string lineup;
     int current_salary(0);   
     bool matches(false);
+    int count(0);
 
+    if(players.size() > 63){
+        std::cout << "The players list is too large, more than 64 participants" << std::endl;
+        exit(1);
+    }
+/*
+    In the future if need to do something larger than 64 bits, can use a std::bitset<256> and use 4 uint64 loops and construct the bitset
+    bitset<256> = bitset<256>(1st uint64) | (bitset<256>(2nd uint64) << 64) | (bitset<256>(3rd uint64) << 128) | ....
+*   I'll then need to do 4 nested loops with each of the 4 uint64s.
+*/
     while(foo.to_ullong() < pow(2,players.size())){
-        lineup = "";
-        current_salary = lineup_salary(players, foo);
-        matches = head2head(players, foo);
+        current_salary = lineup_salary(foo);
+        matches = head2head(foo);
 
-        if(foo.count() != 6 || current_salary > 50000 || current_salary < 40000 || matches || dog_check(players, foo, dogs, dog_count)){
+        if(foo.count() != 6 || current_salary > 50000 || current_salary < 40000 || matches || dog_check(foo)){
+            count++;
             add_bitset(foo, 1);
             continue;
         } 
-        lineup = get_lineup(players, foo); 
-        std::cout << lineup << "," << current_salary << std::endl;
+        get_lineup(foo);
+        printLineup(lineups.size()-1);
         add_bitset(foo, 1);
     }
 }
 
 int main(int argc, char *argv[]){
-    int dog_count(0);
+    DKSlate slate;
     if(argc != 2){
         std::cout << "Incorrect number of arguments" << std::endl;
         return 1;
     }
-    else dog_count = atoi(argv[1]);
-    std::vector< std::tuple<std::string, int, std::string>> players;
-    std::unordered_set<std::string> dogs;
-    read_record(players, dogs, dog_count);
-    std::cout << "CSV was read!" << std::endl;
-    make_combos(players, dogs, dog_count);
+    slate.setDogCount(atoi(argv[1]));
+    slate.readRecords();
+    std::cout << "CSV was read!" << " There are " << slate.numPlayers() << " players." << std::endl;
+    slate.make_combos();
+    std::cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << std::endl;
+    //slate.printLineups();
     return 0;
+}
+bool Player::operator==(const Player &rhs) const{
+    if(name == rhs.name)
+        return true;
+    else
+        return false;
 }
