@@ -13,6 +13,10 @@
 using namespace std;
 
 void add_bitset(std::bitset<64> &, int64_t);
+template <typename T>
+void pretty_print(const T&, __int128);
+template <typename T>
+void combo(const T &, int);
 int main(int argc, char** argv)
 {
 /*    vector<string> row;
@@ -40,7 +44,7 @@ int main(int argc, char** argv)
     s >> s_str;
     std::cout << ":" << s_str << ":" << endl;
 */
-    fstream bit_log;
+/*    fstream bit_log;
     //bit_log.open("/home/trihard8/repo/projects/tennis/src/6SetBits.txt", ios::out);
     bit_log.open("/run/media/trihard8/233C-7659/6SetBits.txt", ios::out);
 
@@ -52,7 +56,42 @@ int main(int argc, char** argv)
         add_bitset(bits, 1);
     }
     bit_log.close();
+*/
+    unsigned int num = std::atoi(argv[1]);
+    std::vector<int> nums;
+    for(int i(0); i < num; ++i) nums.push_back(i);
+    
+    combo(nums,6); 
     return 0;
+}
+template <typename T>
+void pretty_print(const T& c, unsigned long long combo){
+    int n = c.size();
+    for(int i(0); i < n; ++i){
+        if((combo >> i) & 1) cout << c[i] << " ";
+    }
+    std::cout << std::endl;
+    //std::cout << (combo >> 30) << std::endl;
+}
+template <typename T>
+void combo(const T &c, int k){
+    int n = c.size();
+    unsigned long long ones = 1ULL<<n;
+    unsigned long long combo = (1ULL << k) - 1;
+    std::cout << combo << " : " << ones << std::endl;
+    while(combo < ones){
+        //std::cout << combo << std::endl;
+        pretty_print(c, combo);
+
+        unsigned long long x = combo & -combo;
+        unsigned long long y = combo + x;
+        unsigned long long z = (combo & ~y);
+        combo = z/x;
+        combo >>= 1ULL;
+        combo |= y;
+        //std::cout << combo << " : " << ones << std::endl;
+        
+    }
 }
 void add_bitset(std::bitset<64> &num, int64_t adder){
     uint64_t number;
@@ -60,3 +99,6 @@ void add_bitset(std::bitset<64> &num, int64_t adder){
     num = number;
     return;
 }
+
+
+    
