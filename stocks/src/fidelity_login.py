@@ -10,11 +10,39 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common import action_chains, keys
 
+def formatdate(oldDate):
+    mon = ""
+    newDate = "20";
+    newDate += oldDate[8:10]
+    
+    if 'Jan' in oldDate: mon = "01"
+    elif 'Feb' in oldDate: mon = "02"
+    elif 'Mar' in oldDate: mon = "03"
+    elif 'Apr' in oldDate: mon = "04"
+    elif 'May' in oldDate: mon = "05"
+    elif 'Jun' in oldDate: mon = "06"
+    elif 'Jul' in oldDate: mon = "07"
+    elif 'Aug' in oldDate: mon = "08"
+    elif 'Sep' in oldDate: mon = "09"
+    elif 'Oct' in oldDate: mon = "10"
+    elif 'Nov' in oldDate: mon = "11"
+    elif 'Dec' in oldDate: mon = "12"
+
+    newDate += mon
+    newDate += oldDate[4:6]
+    if len(newDate) != 8:
+        print("Error in date generation! {0}".format(newDate))
+    else:
+        return newDate
+
 user = ""
 pwd = ""
 with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
-    user = f.readline().rstrip('\n')
-    pwd = f.readline().rstrip('\n')
+    for line in f:
+        if "fidelity" in line:
+            user = f.readline().rstrip('\n')
+            pwd = f.readline().rstrip('\n')
+            break
 
 stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
 
@@ -41,10 +69,17 @@ with open(stock_list, 'r') as f:
         innerHTML = driver.execute_script("return document.body.innerHTML")
         soup = my.get_soup_str(innerHTML)
         price = "No Options"
-        for number in soup.find_all("span", {"class" : "main-number"}):
-            price = number.string[1:].replace(',','')
+        updown = "down"
+        for line in soup.find_all("div", {"class" : "company-main"}):
+            for number in line.find_all("span", {"class" : "main-number"}):
+                price = number.string[1:].replace(',','')
+            for direction in line.find_all("span", {"class" : "up-down"}):
+                if "green" in direction["style"]: updown = "up" 
     
-        print("{0} : {1}".format(symbol, price))
+        #for number in soup.find_all("span", {"class" : "main-number"}):
+        #    price = number.string[1:].replace(',','')
+    
+        #print("{0} : {1} : {2}".format(symbol, price, updown))
 
         for table in soup.find_all("div", {"class" : "symbol-results-data-table"}):
             for header in table.find_all("thead", {"class" : "js-lock-target"}):
@@ -59,9 +94,10 @@ with open(stock_list, 'r') as f:
             strike_date = ""
             days_to_expiry_regex = "(.+)\(([0-9]+)\s+.+"
             days_to_expiry = ""
-            ask = 0.0
-            strike = 0.0
-            count = 0
+            ask_call = bid_call = strike = last_price_call = daily_change_call = imp_vol_call = delta_call = 0.0
+            ask_put = bid_put = last_price_put = daily_change_put = imp_vol_put = delta_put = 0.0
+            count = vol_call = open_int_call = vol_put = open_int_put = 0
+            
             for body in table.find_all("tbody"):
                 for row in body.find_all("tr"):
                     m = re.match(days_to_expiry_regex, row['id'])
@@ -73,12 +109,63 @@ with open(stock_list, 'r') as f:
                         for data in row.find_all("td"):
                             if data.has_attr("name"):
                                 if data["name"] == "Ask Calls":
-                                    ask = float(data.string)
-                                if data["name"] == "Strike":
+                                    ask_call = float(data.string)
+                                elif data["name"] == "Strike":
                                     strike = float(data.string.replace(',',''))
-                        
-                        if count == 5:
-                            print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
-                        elif count == 10:
-                            count = 0                 
+                                elif data["name"] == "Last Calls":
+                                    last_price_call = float(data.string)
+                                elif data["name"] == "Change Calls":
+                                    daily_change_call = float(data.string)
+                                elif data["name"] == "Bid Calls":
+                                    bid_call = float(data.string)
+                                elif data["name"] == "Volume Calls":
+                                    datum = data.find("span")
+                                    vol_call = int(datum.string.replace(",",""))
+                                elif data["name"] == "Open Int Calls":
+                                    datum = data.find("span")
+                                    open_int_call = int(datum.string.replace(",",""))
+                                elif data["name"] == "Imp Vol Calls":
+                                    if data.string == "--":
+                                        imp_vol_call = 0.0
+                                    else:
+                                        imp_vol_call = float(data.string.strip().rstrip('%'))
+                                elif data["name"] == "Delta Calls":
+                                    if data.string == "--":
+                                        imp_vol_call = 0.0
+                                    else:
+                                        delta_call = float(data.string)
+                                elif data["name"] == "Ask Puts":
+                                    ask_put = float(data.string)
+                                elif data["name"] == "Last Puts":
+                                    last_price_put = float(data.string)
+                                elif data["name"] == "Change Puts":
+                                    daily_change_put = float(data.string)
+                                elif data["name"] == "Bid Puts":
+                                    bid_put = float(data.string)
+                                elif data["name"] == "Volume Puts":
+                                    datum = data.find("span")
+                                    vol_put = int(datum.string.replace(",",""))
+                                elif data["name"] == "Open Int Puts":
+                                    datum = data.find("span")
+                                    open_int_put = int(datum.string.replace(",",""))
+                                elif data["name"] == "Imp Vol Puts":
+                                    if data.string == "--":
+                                        imp_vol_call = 0.0
+                                    else:
+                                        imp_vol_put = float(data.string.rstrip('%'))
+                                elif data["name"] == "Delta Puts":
+                                    if data.string == "--":
+                                        imp_vol_call = 0.0
+                                    else:
+                                        delta_put = float(data.string)
+                        #if count == 5:
+                        #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
+                        #print("{},{},{},{},{}".format(symbol,last_price_call,strike,formatdate(expiry),(ask_call+strike)/float(price) - 1))
+                        print("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(symbol,formatdate(expiry),strike,price,updown,
+                                                                                          last_price_call,daily_change_call,bid_call,ask_call,vol_call,open_int_call, imp_vol_call,delta_call,
+                                                                                          last_price_put,daily_change_put,bid_put,ask_put,vol_put,open_int_put,imp_vol_put,delta_put
+                                                                                         )
+                             )
+                        #elif count == 10:
+                        #    count = 0                 
 driver.close()
