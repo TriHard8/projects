@@ -4,6 +4,8 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <sstream>
 
 class Option{
     private:
@@ -21,6 +23,14 @@ class Option{
               );
         ~Option(){};
 
+        //gettors and settors
+        int getVolCall() const { return vol_call; };
+        int getOpenIntCall() const { return open_int_call; };
+        int getVolPut() const { return vol_put; };
+        int getOpenIntPut() const { return open_int_call; };
+        int getExpiration() const { return expiry; };
+        bool getUpDown() const { return updown; };
+        std::string getSymbol() const { return symbol; };
 };
 
 #endif
