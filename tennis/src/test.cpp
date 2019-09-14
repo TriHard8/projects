@@ -57,11 +57,15 @@ int main(int argc, char** argv)
     }
     bit_log.close();
 */
-    unsigned int num = std::atoi(argv[1]);
-    std::vector<int> nums;
-    for(int i(0); i < num; ++i) nums.push_back(i);
+    //unsigned int num = std::atoi(argv[1]);
+    unsigned long long num = 33;
+    std::cout << (num & -num) << std::endl;
+
+    int num1 =345;
+    std::cout << (num1 & -num1) << std::endl;
     
-    combo(nums,6); 
+    //combo(nums,std::atoi(argv[2])); 
+    //__int128 num = __uint128(1)<<78;
     return 0;
 }
 template <typename T>
@@ -78,7 +82,7 @@ void combo(const T &c, int k){
     int n = c.size();
     unsigned long long ones = 1ULL<<n;
     unsigned long long combo = (1ULL << k) - 1;
-    std::cout << combo << " : " << ones << std::endl;
+    //std::cout << combo << " : " << ones << std::endl;
     while(combo < ones){
         //std::cout << combo << std::endl;
         pretty_print(c, combo);
