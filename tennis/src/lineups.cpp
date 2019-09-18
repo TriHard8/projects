@@ -61,6 +61,16 @@ namespace std{
             }
         };
 }
+class Lineup{
+    private:
+        std::vector<Player *> lineup;
+
+    public:
+        Lineup(std::vector<Player *> &lhs) : lineup(lhs) {};
+        ~Lineup(){};
+
+        int getLineupSalary() const;
+};
 class DKSlate{
     private:
         std::vector<Player*> players;
@@ -82,6 +92,7 @@ class DKSlate{
         size_t numLineups() const { return lineups.size(); };
         size_t numPlayers() const { return players.size(); };
         int getLineupSalary(int) const;
+        int getLineupSalary(const std::vector<Player *> &) const;
         float getLineupPoints(int) const;
         int getLineupOdds(int) const;
         void readRecords();
@@ -90,9 +101,10 @@ class DKSlate{
         bool head2head(const unsigned long long);
         bool dog_check(const unsigned long long);
         void get_lineup(const unsigned long long);
-        void printLineups() const;
+        void printLineups(unsigned int) const;
         void printLineup(int) const;
         void printDogs() const;
+        //bool operator<(const std::vector<Player *> &, const std::vector<Player *> &);
 
 };
 /*class myComparator{
@@ -122,6 +134,20 @@ int DKSlate::getLineupOdds(int i) const{
 
     return odds;
 }
+int DKSlate::getLineupSalary(const std::vector<Player *> &line) const{
+    int salary(0);
+    for(auto i(0); i < line.size(); ++i)
+        salary += line[i]->getSalary();
+
+    return salary;
+}
+/*int Lineup::getLineupSalary() const{
+    int salary(0);
+    for(auto i(0); i < lineup.size(); ++i)
+        salary += lineup[i].getSalary();
+
+    return salary;
+}*/
 int DKSlate::getLineupSalary(int i) const{
     int salary(0);
     for(auto j(0); j < lineups[i].size(); ++j)
@@ -135,12 +161,15 @@ void DKSlate::printLineup(int i) const{
         //std::cout << lineups[i][j]->getID() << ",";
         //std::cout << lineups[i][j]->getName() << ",";
     }
+    //std::cout << lineups[i]->getSalary() << ",";
     std::cout << getLineupSalary(i) << ",";
     std::cout << getLineupOdds(i) << ",";
     std::cout << getLineupPoints(i) << std::endl;
 }
-void DKSlate::printLineups() const{
-    for(auto i(0); i < lineups.size(); ++i){
+void DKSlate::printLineups(unsigned int lines=0) const{
+    if(lines == 0)
+        lines = lineups.size();
+    for(auto i(0); i < lines; ++i){
         printLineup(i);
     }
 }
@@ -150,7 +179,7 @@ void DKSlate::readRecords(){
   
     // Open an existing file 
     //fin.open("/run/media/trihard8/New Volume/linux_directory/DKSalaries.csv", ios::in); 
-    fin.open("/home/trihard8/Downloads/20190914_MMA_DKSalaries.csv", ios::in); 
+    fin.open("/home/trihard8/Downloads/20190921_MMA_DKSalaries.csv", ios::in); 
     //fin.open("/home/trihard8/Downloads/20190910amDKSalaries.csv", ios::in); 
   
     // Read the Data from the file 

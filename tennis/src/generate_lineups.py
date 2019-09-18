@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 sport = "mma"
-date = 20190907
-names = ["Salikhov","Cummings","Moras","Felder","Ziam","Calderwood","Packalen","Ferreira","Sato","Ramos","Poirier","Abdurakhimov","Murphy"]
+date = 20190921
+names = ["Craig","Esparza","Carnelossi","Reyes","Huachin","Moreno","Mariano","Correia","Nam","Melo"]
 
 print ("#!/bin/bash")
 for i in range(0, len(names)):
