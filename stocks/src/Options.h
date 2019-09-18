@@ -27,8 +27,9 @@ class Option{
         int getVolCall() const { return vol_call; };
         int getOpenIntCall() const { return open_int_call; };
         int getVolPut() const { return vol_put; };
-        int getOpenIntPut() const { return open_int_call; };
+        int getOpenIntPut() const { return open_int_put; };
         int getExpiration() const { return expiry; };
+        float getStrike () const { return strike; };
         bool getUpDown() const { return updown; };
         std::string getSymbol() const { return symbol; };
 };

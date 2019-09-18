@@ -161,7 +161,7 @@ with open(stock_list, 'r') as f:
                         #if count == 5:
                         #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
                         #print("{},{},{},{},{}".format(symbol,last_price_call,strike,formatdate(expiry),(ask_call+strike)/float(price) - 1))
-                        print("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(symbol,formatdate(expiry),strike,price,updown,
+                        print("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(symbol,formatdate(expiry),strike,price,updown,
                                                                                           last_price_call,daily_change_call,bid_call,ask_call,vol_call,open_int_call, imp_vol_call,delta_call,
                                                                                           last_price_put,daily_change_put,bid_put,ask_put,vol_put,open_int_put,imp_vol_put,delta_put
                                                                                          )
