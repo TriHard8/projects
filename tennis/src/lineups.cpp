@@ -95,7 +95,7 @@ class DKSlate{
         int getLineupSalary(const std::vector<Player *> &) const;
         float getLineupPoints(int) const;
         int getLineupOdds(int) const;
-        void readRecords();
+        void readRecordsDK();
         void make_combos();
         int lineup_salary(const unsigned long long);
         bool head2head(const unsigned long long);
@@ -173,7 +173,7 @@ void DKSlate::printLineups(unsigned int lines=0) const{
         printLineup(i);
     }
 }
-void DKSlate::readRecords(){ 
+void DKSlate::readRecordsDK(){ 
     // File pointer 
     std::fstream fin; 
   
@@ -322,7 +322,7 @@ int main(int argc, char *argv[]){
         return 1;
     }
     slate.setDogCount(atoi(argv[1]));
-    slate.readRecords();
+    slate.readRecordsDK();
     std::cout << "CSV was read!" << " There are " << slate.numPlayers() << " players." << std::endl;
     slate.make_combos();
     std::cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << std::endl;
