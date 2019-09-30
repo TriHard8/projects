@@ -79,6 +79,7 @@ class DKSlate{
         int indexMinOdds, indexMaxPoints;
         int dog_count;
         unsigned short site;
+	unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
         void nextCombo(unsigned long long &);
         
     public:
@@ -107,7 +108,9 @@ class DKSlate{
         void printLineup(int) const;
         void printDogs() const;
         std::string getSite() const { if(site == 1) return "DraftKings"; else if(site == 2) return "FanDuel"; };
+	std::string getSport() const { if(site == 1) return "tennis/mma"; else if(site == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
         void setSite(std::string);
+	void setSport(std::string);
         //bool operator<(const std::vector<Player *> &, const std::vector<Player *> &);
 
 };
@@ -198,7 +201,7 @@ void DKSlate::readRecordsDK(std::string file){
   
         // read an entire row and 
         // store it in a string variable 'line' 
-        std::cout << line << std::endl;
+        //std::cout << line << std::endl;
         if(line[1] != ',') getline(fin, line);
   
         // used for breaking words 
@@ -290,8 +293,8 @@ void DKSlate::make_combos(){
     int k = 6;  //This is the setting for tennis (i.e. 6 players in the slate's lineup)
     if(site == 2){
         k = 5;
-        upperSalary = 60000;
-        lowerSalary = 50000;
+        upperSalary = 50000;
+        lowerSalary = 40000;
     }
     
     unsigned long long ones = 1ULL<<n;
@@ -315,7 +318,7 @@ void DKSlate::make_combos(){
         current_salary = lineup_salary(combo);
         matches = head2head(combo);
 
-        if(current_salary > upperSalary || current_salary < lowerSalary /*|| matches*/ || dog_check(combo)){
+        if(current_salary > upperSalary || current_salary < lowerSalary || matches || dog_check(combo)){
             count++;
             nextCombo(combo);
             continue;
@@ -338,13 +341,14 @@ void DKSlate::printDogs() const{
 }
 int main(int argc, char *argv[]){
     DKSlate slate;
-    if(argc != 4){
+    if(argc != 5){
         std::cout << "Incorrect number of arguments" << std::endl;
         return 1;
     }
     slate.setDogCount(atoi(argv[1]));
     slate.setSite(std::string(argv[2]));
-    slate.readRecordsDK(std::string(argv[3]));
+    slate.setSport(std::string(argv[3]));
+    slate.readRecordsDK(std::string(argv[4]));
     std::cout << "CSV was read!" << " There are " << slate.numPlayers() << " players." << std::endl;
     slate.make_combos();
     std::cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << std::endl;
@@ -366,7 +370,18 @@ void DKSlate::setSite(std::string origin){
     if(origin == "draftkings") site = 1;
     else if(origin == "fanduel") site = 2;
     else{
-        std::cerr << "Invalid site argument provided!" << std::endl;
+        std::cerr << "Invalid SITE argument provided!" << std::endl;
         exit(1);
     }
+}
+void DKSlate::setSport(std::string origin){
+    for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
+    if(origin == "nascar" || origin == "golf") sport = 2;
+    else if(origin == "tennis" || origin == "mma") sport = 1;
+    else if(origin == "nfl" || origin == "nba" || origin == "nhl" || origin == "mlb") sport = 0;
+    else{
+        std::cerr << "Invalid SPORT argument provided!" << std::endl;
+        exit(2);
+    }
+
 }
