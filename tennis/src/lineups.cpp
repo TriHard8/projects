@@ -179,7 +179,7 @@ void DKSlate::readRecordsDK(){
   
     // Open an existing file 
     //fin.open("/run/media/trihard8/New Volume/linux_directory/DKSalaries.csv", ios::in); 
-    fin.open("/home/trihard8/Downloads/20190921_MMA_DKSalaries.csv", ios::in); 
+    fin.open("/home/trihard8/Downloads/20190930_TEN_DKSalaries.csv", ios::in); 
     //fin.open("/home/trihard8/Downloads/20190910amDKSalaries.csv", ios::in); 
   
     // Read the Data from the file 
