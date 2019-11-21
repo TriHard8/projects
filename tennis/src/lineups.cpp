@@ -17,14 +17,14 @@ using namespace std;
 
 class Player{
     private:
-        int salary, odds;
-        float points;
+        int salary;
+        float points, odds;
         std::string nameid, name, matchup, team, id;     
     
     public:
         Player() {};
         ~Player() {};
-        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds, float newPoints):
+        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, float newOdds, float newPoints):
                                     salary(newSalary),
                                     nameid(newNameID),
                                     name(newName),
@@ -40,7 +40,7 @@ class Player{
         void setId(std::string newID) { id = newID; };
         void setNameID(std::string newNameID) { nameid = newNameID; };
         void setSalary(int newSalary) { salary = newSalary; };
-        void setOdds(int newOdds) { odds = newOdds; };
+        void setOdds(float newOdds) { odds = newOdds; };
         void setPoints(float newPoints) { points = newPoints; };
         std::string getName() const { return name; };
         std::string getMatchup() const { return matchup; };
@@ -48,7 +48,7 @@ class Player{
         std::string getID() const { return id; };
         std::string getNameID() const { return nameid; };
         int getSalary() const { return salary; };
-        int getOdds() const { return odds; };
+        float getOdds() const { return odds; };
         float getPoints() const { return points; };
         bool operator==(const Player &) const;
 
@@ -96,7 +96,7 @@ class DKSlate{
         int getLineupSalary(int) const;
         int getLineupSalary(const std::vector<Player *> &) const;
         float getLineupPoints(int) const;
-        int getLineupOdds(int) const;
+        float getLineupOdds(int) const;
         void readRecordsDK(std::string);
         void readRecordsFanDuel(std::string);
         void make_combos();
@@ -134,10 +134,10 @@ float DKSlate::getLineupPoints(int i) const{
 
     return points;
 }
-int DKSlate::getLineupOdds(int i) const{
-    int odds(0);
+float DKSlate::getLineupOdds(int i) const{
+    float odds(1);
     for(auto j(0); j < lineups[i].size(); ++j)
-        odds += lineups[i][j]->getOdds();
+        odds *= lineups[i][j]->getOdds();
 
     return odds;
 }
@@ -223,17 +223,25 @@ void DKSlate::readRecordsDK(std::string file){
         //Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds, float newPoints):
 
         Player * player;
-        if(site == 1)
-            player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3],std::stoi(row[9]),std::stof(row[10]));
-        else if(site == 2)
-            player = new Player(std::stoi(row[7]),row[3] + " (" + row[1] + ")", row[3], matchup, row[9], row[1], std::stoi(row[15]), std::stoi(row[16]));
-
+        if(site == 1){
+            float prob = std::stof(row[9]);
+            //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
+            //else prob = 100.0/(prob + 100.0);
+            player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3],prob,std::stof(row[10]));
+            //cout << player->getName() << " : " << player->getOdds() << endl; 
+        }
+        else if(site == 2){
+            float prob = std::stof(row[15]);
+            //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
+            //else prob = 100.0/(prob + 100.0);
+            player = new Player(std::stoi(row[7]),row[3] + " (" + row[1] + ")", row[3], matchup, row[9], row[1], prob, std::stoi(row[16]));
+        }
         if(dog_count){
             players.push_back(player);
-            if(player->getOdds() > 0) dogs.insert(player);
+            if(player->getOdds() <= 0.5) dogs.insert(player);
         }
         else if(!dog_count){
-            if(player->getOdds() < 0) players.push_back(player);
+            if(player->getOdds() > 0.5) players.push_back(player);
         }
         //delete player;
     } 
@@ -289,7 +297,7 @@ bool DKSlate::dog_check(const unsigned long long combo){
 }
 void DKSlate::make_combos(){
     unsigned int n = players.size();
-    unsigned int upperSalary(50000), lowerSalary(45000);
+    unsigned int upperSalary(50000), lowerSalary(40000);
     int k = 6;  //This is the setting for tennis (i.e. 6 players in the slate's lineup)
     if(site == 2){
         k = 5;

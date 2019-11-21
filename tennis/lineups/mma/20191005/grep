@@ -1,0 +1,23 @@
+grep Whittaker final.csv | wc -l
+grep Adesanya final.csv | wc -l
+grep Anderson final.csv | wc -l
+grep Tuivasa final.csv | wc -l
+grep Matthews final.csv | wc -l
+grep Pitolo final.csv | wc -l
+grep Taha final.csv | wc -l
+grep Kim final.csv | wc -l
+grep Riddell final.csv | wc -l
+grep Hooker final.csv | wc -l
+grep Lima final.csv | wc -l
+grep Tafa final.csv | wc -l
+grep Castro final.csv | wc -l
+grep Jumeau final.csv | wc -l
+grep Iaquinta final.csv | wc -l
+grep Mullarkey final.csv | wc -l
+grep Kassem final.csv | wc -l
+grep Silva final.csv | wc -l
+grep Potter final.csv | wc -l
+grep Akman final.csv | wc -l
+grep Spivac final.csv | wc -l
+grep Santos final.csv | wc -l
+

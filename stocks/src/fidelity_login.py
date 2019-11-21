@@ -39,7 +39,7 @@ user = ""
 pwd = ""
 with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
     for line in f:
-        if "fidelity" in line:
+        if "fidelity" in line.lower():
             user = f.readline().rstrip('\n')
             pwd = f.readline().rstrip('\n')
             break

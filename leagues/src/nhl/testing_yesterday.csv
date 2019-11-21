@@ -1,0 +1,551 @@
+!!!!!!!!!!!
+EVGENY SVECHNIKOV,EVGENI MALKIN
+DENNIS CHOLOWSKI,EVGENI MALKIN
+STEVEN STAMKOS,EVGENI MALKIN
+KEVIN SHATTENKIRK,EVGENI MALKIN
+!!!!!!!!!!!
+VLADISLAV NAMESTNIKOV,FRANS NIELSEN
+!!!!!!!!!!!
+PATRICK MAROON,PAT MAROON
+!!!!!!!!!!!
+ALEX GALCHENYUK,ALEX BIEGA
+!!!!!!!!!!!
+CHRISTIAN JAROS,CHRISTIAN WOLANIN
+!!!!!!!!!!!
+CHRISTOFFER EHN,CARTER VERHAEGHE
+!!!!!!!!!!!
+RON HAINSEY,TREVOR DALEY
+VICTOR HEDMAN,TREVOR DALEY
+ALEX GALCHENYUK,TREVOR DALEY
+!!!!!!!!!!!
+JUSTIN ABDELKADER,J.C. BEAUDIN
+SCOTT SABOURIN,J.C. BEAUDIN
+JOSEPH BLANDISI,J.C. BEAUDIN
+!!!!!!!!!!!
+DOMINIK KAHUN,DOMINIC TURGEON
+DOMINIK SIMON,DOMINIC TURGEON
+!!!!!!!!!!!
+JOSEPH BLANDISI,JOSEPH VELENO
+!!!!!!!!!!!
+JOSEPH BLANDISI,JOSH NORRIS
+!!!!!!!!!!!
+JUSTIN ABDELKADER,RUDOLFS BALCERS
+MARCUS PETTERSSON,RUDOLFS BALCERS
+!!!!!!!!!!!
+MARK BOROWIECKI,MARIAN GABORIK
+!!!!!!!!!!!
+RYAN MCDONAGH,RYAN CALLAHAN
+!!!!!!!!!!!
+ANDREAS ATHANASIOU,JONATHAN DAVIDSSON
+!!!!!!!!!!!
+JACOB DE LA ROSE,JACK RODEWALD
+!!!!!!!!!!!
+VALTTERI FILPPULA,MATT PUEMPEL
+!!!!!!!!!!!
+VLADISLAV NAMESTNIKOV,VITALY ABRAMOV
+!!!!!!!!!!!
+MARCUS PETTERSSON,MAX VERONNEAU
+!!!!!!!!!!!
+ANDREAS ATHANASIOU,DRAKE BATHERSON
+!!!!!!!!!!!
+FILIP CHLAPIK,FILIP ZADINA
+!!!!!!!!!!!
+ALEX KILLORN,ALEX FORMENTON
+!!!!!!!!!!!
+JACOB DE LA ROSE,CODY GOLOUBEF
+!!!!!!!!!!!
+ANDREAS ATHANASIOU,JONATHAN ERICSSON
+MARCUS PETTERSSON,JONATHAN ERICSSON
+JOHN MARINO,JONATHAN ERICSSON
+!!!!!!!!!!!
+CHRISTIAN JAROS,BRIAN LASHOFF
+BRIAN DUMOULIN,BRIAN LASHOFF
+!!!!!!!!!!!
+DYLAN LARKIN,DYLAN MCILRATH
+DYLAN DEMELO,DYLAN MCILRATH
+RYAN MCDONAGH,DYLAN MCILRATH
+!!!!!!!!!!!
+ANDREAS ATHANASIOU,ANDREAS ENGLUND
+!!!!!!!!!!!
+ANDREAS ATHANASIOU,LASSI THOMSON
+VLADISLAV NAMESTNIKOV,LASSI THOMSON
+MARCUS PETTERSSON,LASSI THOMSON
+!!!!!!!!!!!
+MATHIEU JOSEPH,MAXIME LAJOIE
+!!!!!!!!!!!
+JOSEPH BLANDISI,JOE HICKETTS
+CEDRIC PAQUETTE,JOE HICKETTS
+!!!!!!!!!!!
+ALEX GALCHENYUK,ALEX BARRE-BOULET
+!!!!!!!!!!!
+VLADISLAV NAMESTNIKOV,OULA PALVE
+JEAN-GABRIEL PAGEAU,OULA PALVE
+JUSTIN ABDELKADER,OULA PALVE
+JACOB DE LA ROSE,OULA PALVE
+ONDREJ PALAT,OULA PALVE
+ALEX GALCHENYUK,OULA PALVE
+!!!!!!!!!!!
+DOMINIK KAHUN,DOMINIK UHER
+!!!!!!!!!!!
+BRIAN DUMOULIN,SAM POULIN
+!!!!!!!!!!!
+PATRIC HORNQVIST,KASPER BJORKQVIST
+!!!!!!!!!!!
+DENNIS CHOLOWSKI,DENNIS YAN
+!!!!!!!!!!!
+TYLER BERTUZZI,TAYLOR RADDYSH
+TARO HIROSE,TAYLOR RADDYSH
+TYLER ENNIS,TAYLOR RADDYSH
+MICHAEL RASMUSSEN,TAYLOR RADDYSH
+DANNY DEKEYSER,TAYLOR RADDYSH
+TYLER JOHNSON,TAYLOR RADDYSH
+MIKHAIL SERGACHEV,TAYLOR RADDYSH
+!!!!!!!!!!!
+VLADISLAV NAMESTNIKOV,ALEXANDER VOLKOV
+!!!!!!!!!!!
+PATRICK MAROON,DANICK MARTEL
+!!!!!!!!!!!
+COLIN WHITE,NOLAN FOOTE
+JACOB DE LA ROSE,NOLAN FOOTE
+BRANDON TANEV,NOLAN FOOTE
+!!!!!!!!!!!
+RYAN MCDONAGH,CORY CONACHER
+!!!!!!!!!!!
+MICHAEL RASMUSSEN,CHAD RUHWEDEL
+!!!!!!!!!!!
+VLADISLAV NAMESTNIKOV,DAVID WARSOFSKY
+JACOB DE LA ROSE,DAVID WARSOFSKY
+SIDNEY CROSBY,DAVID WARSOFSKY
+!!!!!!!!!!!
+JEAN-GABRIEL PAGEAU,DANIEL WALCOTT
+!!!!!!!!!!!
+MICHAEL RASMUSSEN,CAMERON GAUNCE
+RON HAINSEY,CAMERON GAUNCE
+JAKE GUENTZEL,CAMERON GAUNCE
+ALEX GALCHENYUK,CAMERON GAUNCE
+MIKHAIL SERGACHEV,CAMERON GAUNCE
+BRANDON TANEV,CAMERON GAUNCE
+CEDRIC PAQUETTE,CAMERON GAUNCE
+!!!!!!!!!!!
+ZACH ASTON-REESE,ZACH TROTMAN
+!!!!!!!!!!!
+LUKE GLENDENING,LUKE SCHENN
+!!!!!!!!!!!
+COLIN WHITE,CALLAN FOOTE
+JACOB DE LA ROSE,CALLAN FOOTE
+Wingers Average (before reduction): 3.2
+RW,NIKITA KUCHEROV,7500,4.54545
+LW,STEVEN STAMKOS,7200,4.54545
+RW,ANTHONY MANTHA,6800,4.03226
+LW,JAKE GUENTZEL,6500,3.7037
+LW,BRADY TKACHUK,6300,3.50877
+LW,ANDREAS ATHANASIOU,4300,3.22581
+Centers Average (before reduction): 2.5
+C,SIDNEY CROSBY,7200,3.7037
+C,DYLAN LARKIN,6400,3.84615
+C,BRAYDEN POINT,6200,4.34783
+C,TYLER JOHNSON,5500,3.1746
+C,ANTHONY CIRELLI,5000,2.89855
+C,JEAN-GABRIEL PAGEAU,4700,2.5641
+C,COLIN WHITE,4200,2.5641
+Defensemen Average (before reduction): 2
+D,KRIS LETANG,6600,2.10526
+D,THOMAS CHABOT,6200,2.22222
+D,VICTOR HEDMAN,5900,2.5
+D,MIKHAIL SERGACHEV,4300,2.35294
+Goalies: 4
+Wingers: 6
+Defensemen: 4
+Centers: 7
+Utility: 17
+CSV was read! There are 21 players.
+20
+21
+6
+Press Enter to Continue!Andrei Vasilevskiy (13622290),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,5767.31,101.1
+Andrei Vasilevskiy (13622290),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5767.31,101.1
+Andrei Vasilevskiy (13622290),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5767.31,101.1
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,4800.35,104.6
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5400.4,100.3
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,4800.35,104.6
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5400.4,100.3
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,4800.35,104.6
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,5400.4,100.3
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,5603.42,98.5
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5603.42,98.5
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,4547.7,96.1
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,5116.16,91.8
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,4547.7,96.1
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,5116.16,91.8
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,4547.7,96.1
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5603.42,98.5
+Andrei Vasilevskiy (13622290),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,5116.16,91.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,5818.17,102.3
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,4574.97,118.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5146.84,114.5
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,4574.97,118.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,5818.17,102.3
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5146.84,114.5
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49900,3957.3,106.4
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49500,4177.15,112.1
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49200,4699.29,107.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,3957.3,106.4
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4177.15,112.1
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5818.17,102.3
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,4699.29,107.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,3957.3,106.4
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,4574.97,118.8
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,4177.15,112.1
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,5146.84,114.5
+Andrei Vasilevskiy (13622290),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49200,4699.29,107.8
+Anders Nilsson (13622295),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,5767.31,99.2
+Anders Nilsson (13622295),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5767.31,99.2
+Anders Nilsson (13622295),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5767.31,99.2
+Anders Nilsson (13622295),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,6087.72,104.5
+Anders Nilsson (13622295),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,6087.72,104.5
+Anders Nilsson (13622295),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,6087.72,104.5
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49900,5126.5,100.3
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49600,5767.31,96
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5126.5,100.3
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,5767.31,96
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5126.5,100.3
+Anders Nilsson (13622295),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,5767.31,96
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,5914.72,101.9
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5914.72,101.9
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49700,4800.35,99.5
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49400,5400.4,95.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,4800.35,99.5
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49400,5400.4,95.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,4800.35,99.5
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,5914.72,101.9
+Anders Nilsson (13622295),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49400,5400.4,95.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,6334.3,81.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,4980.82,97.7
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5603.42,93.4
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,4980.82,97.7
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,6334.3,81.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5603.42,93.4
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49900,4308.35,85.3
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49500,4547.7,91
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49200,5116.16,86.7
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,4308.35,85.3
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4547.7,91
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,6334.3,81.2
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,5116.16,86.7
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,4308.35,85.3
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,4980.82,97.7
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,4547.7,91
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,5603.42,93.4
+Anders Nilsson (13622295),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49200,5116.16,86.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,5171.71,101.5
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5818.17,97.2
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49700,4574.97,113.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49400,5146.84,109.4
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,5171.71,101.5
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,4574.97,113.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,5818.17,97.2
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49400,5146.84,109.4
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49600,3957.3,101.3
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49200,4177.15,107
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48900,4699.29,102.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,3957.3,101.3
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5171.71,101.5
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,4177.15,107
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,5818.17,97.2
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48900,4699.29,102.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,3957.3,101.3
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,4574.97,113.7
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49200,4177.15,107
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49400,5146.84,109.4
+Anders Nilsson (13622295),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48900,4699.29,102.7
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,6087.72,94
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,6087.72,94
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,6087.72,94
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,5126.5,89.8
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5767.31,85.5
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5126.5,89.8
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5767.31,85.5
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,5126.5,89.8
+Jonathan Bernier (13622296),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,5767.31,85.5
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,6627.76,74.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,6627.76,74.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,6627.76,74.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49900,5411.31,95.1
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49600,6087.72,90.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5411.31,95.1
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,6087.72,90.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5411.31,95.1
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,6087.72,90.8
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,6316.58,89
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,6316.58,89
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49700,5126.5,86.6
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49400,5767.31,82.3
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5126.5,86.6
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49400,5767.31,82.3
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,5126.5,86.6
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,6316.58,89
+Jonathan Bernier (13622296),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49400,5767.31,82.3
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,6686.2,76
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,5257.53,92.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,5914.72,88.2
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5257.53,92.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,6686.2,76
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,5914.72,88.2
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49900,4547.7,80.1
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49500,4800.35,85.8
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49200,5400.4,81.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,4547.7,80.1
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4800.35,85.8
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,6686.2,76
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,5400.4,81.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,4547.7,80.1
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5257.53,92.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,4800.35,85.8
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,5914.72,88.2
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49200,5400.4,81.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,6334.3,67.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,4980.82,84
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,5603.42,79.7
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,4980.82,84
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,6334.3,67.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,5603.42,79.7
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49700,4308.35,71.6
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49300,4547.7,77.3
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49000,5116.16,73
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,4308.35,71.6
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49300,4547.7,77.3
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,6334.3,67.5
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49000,5116.16,73
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,4308.35,71.6
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,4980.82,84
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49300,4547.7,77.3
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49500,5603.42,79.7
+Jonathan Bernier (13622296),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49000,5116.16,73
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49900,7048.94,86.2
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,7048.94,86.2
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,5171.71,87.8
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5818.17,98.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,5818.17,83.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49900,4334.18,94.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49500,4574.97,100
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,5818.17,98.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49200,5146.84,95.7
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,4334.18,94.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,5171.71,87.8
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4574.97,100
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,5818.17,83.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,5146.84,95.7
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49400,3957.3,87.6
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49000,4177.15,93.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5818.17,98.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48700,4699.29,89
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49400,3957.3,87.6
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,5171.71,87.8
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49000,4177.15,93.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49500,5818.17,83.5
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48700,4699.29,89
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,4334.18,94.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49400,3957.3,87.6
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Victor Hedman (13622200),Mikhail Sergachev (13622212),49900,3602.79,104.8
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49500,4574.97,100
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49000,4177.15,93.3
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Victor Hedman (13622200),49900,3602.79,104.8
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Brayden Point (13622024),49900,7048.94,86.2
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49200,5146.84,95.7
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48700,4699.29,89
+Jonathan Bernier (13622296),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Thomas Chabot (13622198),49900,3602.79,104.8
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,6627.76,92.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,6627.76,92.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,6627.76,92.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,6667.5,115.6
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,6667.5,115.6
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,5411.31,113.2
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,6087.72,108.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,5411.31,113.2
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,6087.72,108.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,5411.31,113.2
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,6667.5,115.6
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,6087.72,108.9
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,6316.58,107.1
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,6316.58,107.1
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),50000,4856.68,99
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49600,5126.5,104.7
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49300,5767.31,100.4
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,4856.68,99
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,5126.5,104.7
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49300,5767.31,100.4
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,4856.68,99
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,5126.5,104.7
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,6316.58,107.1
+Tristan Jarry (13622297),Nikita Kucherov (13622076),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49300,5767.31,100.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,7258.97,96.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,7258.97,96.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,5891.34,94
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,6627.76,89.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,5891.34,94
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,6627.76,89.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,5891.34,94
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,7258.97,96.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Anthony Mantha (13622080),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,6627.76,89.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,7537.18,100.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,5926.67,116.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,6667.5,112.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5926.67,116.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,7537.18,100.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,6667.5,112.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49900,5126.5,104.3
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49500,5411.31,110
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49200,6087.72,105.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5126.5,104.3
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,5411.31,110
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,7537.18,100.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49200,6087.72,105.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5126.5,104.3
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,5926.67,116.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,5411.31,110
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,6667.5,112.4
+Tristan Jarry (13622297),Steven Stamkos (13622078),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49200,6087.72,105.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,7140.48,91.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,5614.74,108.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,6316.58,103.9
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,5614.74,108.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,7140.48,91.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,6316.58,103.9
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49700,4856.68,95.8
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49300,5126.5,101.5
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49000,5767.31,97.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,4856.68,95.8
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49300,5126.5,101.5
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,7140.48,91.7
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49000,5767.31,97.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,4856.68,95.8
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,5614.74,108.2
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49300,5126.5,101.5
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49500,6316.58,103.9
+Tristan Jarry (13622297),Steven Stamkos (13622078),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49000,5767.31,97.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Brayden Point (13622024),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,8100.59,93.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,8100.59,93.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49900,5943.29,95.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49600,6686.2,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),50000,4980.82,101.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49600,5257.53,107.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49300,5914.72,103.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,4980.82,101.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5943.29,95.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,5257.53,107.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,6686.2,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49300,5914.72,103.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49500,4547.7,95
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49100,4800.35,100.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48800,5400.4,96.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4547.7,95
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,5943.29,95.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49100,4800.35,100.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49600,6686.2,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48800,5400.4,96.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Tyler Johnson (13622028),50000,4980.82,101.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49500,4547.7,95
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Victor Hedman (13622200),Mikhail Sergachev (13622212),50000,4140.3,112.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49600,5257.53,107.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49100,4800.35,100.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Victor Hedman (13622200),50000,4140.3,112.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Brayden Point (13622024),50000,8100.59,93.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49300,5914.72,103.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48800,5400.4,96.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Jake Guentzel (13622082),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Thomas Chabot (13622198),50000,4140.3,112.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,6788.76,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,6788.76,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,7674.25,85.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,7674.25,85.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49700,5630.49,86.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,6334.3,97.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49400,6334.3,82.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49800,4718.67,93.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49400,4980.82,98.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,6334.3,97.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49100,5603.42,94.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,4718.67,93.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49700,5630.49,86.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49400,4980.82,98.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49400,6334.3,82.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49100,5603.42,94.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49300,4308.35,86.5
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),48900,4547.7,92.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,6334.3,97.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48600,5116.16,87.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49300,4308.35,86.5
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49700,5630.49,86.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48900,4547.7,92.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49400,6334.3,82.4
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48600,5116.16,87.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,4718.67,93.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49300,4308.35,86.5
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Victor Hedman (13622200),Mikhail Sergachev (13622212),49800,3922.39,103.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49400,4980.82,98.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48900,4547.7,92.2
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Victor Hedman (13622200),49800,3922.39,103.7
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Dylan Larkin (13622022),50000,6788.76,90.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Brayden Point (13622024),49800,7674.25,85.1
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49100,5603.42,94.6
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48600,5116.16,87.9
+Tristan Jarry (13622297),Anthony Mantha (13622080),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Thomas Chabot (13622198),49800,3922.39,103.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),50000,7048.94,94.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),50000,5542.75,111.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49700,6235.6,106.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),50000,5542.75,111.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),50000,7048.94,94.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Dylan Larkin (13622022),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49700,6235.6,106.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49800,7968.37,88.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49800,6265.72,105.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49500,7048.94,101.1
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49800,6265.72,105.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,7968.37,88.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Brayden Point (13622024),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,7048.94,101.1
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49800,4899.51,97
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49900,5171.71,117.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49400,5171.71,102.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49600,5818.17,113.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Anthony Cirelli (13622030),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),49100,5818.17,98.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49500,4334.18,109.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49900,5171.71,117.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),49100,4574.97,114.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49600,5818.17,113.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48800,5146.84,110.6
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49800,4899.51,97
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49500,4334.18,109.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49400,5171.71,102.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49100,4574.97,114.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49100,5818.17,98.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Tyler Johnson (13622028),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48800,5146.84,110.6
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Kris Letang (13622196),Mikhail Sergachev (13622212),Colin White (13622036),49000,3957.3,102.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49900,5171.71,117.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Colin White (13622036),48600,4177.15,108.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49600,5818.17,113.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Jean-Gabriel Pageau (13622032),Victor Hedman (13622200),Mikhail Sergachev (13622212),Colin White (13622036),48300,4699.29,103.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49800,4899.51,97
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),49000,3957.3,102.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Victor Hedman (13622200),Mikhail Sergachev (13622212),49800,4072.72,107.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49400,5171.71,102.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48600,4177.15,108.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Victor Hedman (13622200),49800,4072.72,107.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Dylan Larkin (13622022),50000,7048.94,94.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Brayden Point (13622024),49800,7968.37,88.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49100,5818.17,98.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Jean-Gabriel Pageau (13622032),48300,4699.29,103.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Anthony Cirelli (13622030),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Thomas Chabot (13622198),49800,4072.72,107.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Victor Hedman (13622200),Mikhail Sergachev (13622212),49900,3413.17,114
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49500,4334.18,109.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),49000,3957.3,102.5
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Kris Letang (13622196),Mikhail Sergachev (13622212),Victor Hedman (13622200),49900,3413.17,114
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Victor Hedman (13622200),Mikhail Sergachev (13622212),49500,3602.79,119.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Dylan Larkin (13622022),50000,5542.75,111.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Brayden Point (13622024),49800,6265.72,105.4
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Tyler Johnson (13622028),49100,4574.97,114.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48600,4177.15,108.2
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Thomas Chabot (13622198),Mikhail Sergachev (13622212),Victor Hedman (13622200),49500,3602.79,119.7
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Dylan Larkin (13622022),49700,6235.6,106.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Brayden Point (13622024),49500,7048.94,101.1
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Tyler Johnson (13622028),48800,5146.84,110.6
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Anthony Cirelli (13622030),48300,4699.29,103.9
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Kris Letang (13622196),49900,3413.17,114
+Tristan Jarry (13622297),Jake Guentzel (13622082),Brady Tkachuk (13622084),Andreas Athanasiou (13622098),Jean-Gabriel Pageau (13622032),Colin White (13622036),Victor Hedman (13622200),Mikhail Sergachev (13622212),Thomas Chabot (13622198),49500,3602.79,119.7
