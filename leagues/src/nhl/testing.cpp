@@ -2,12 +2,14 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+#include <set>
 
 using std::cout;
 using std::endl;
 using std::vector;
 using std::priority_queue;
 using std::for_each;
+using std::set;
 
 int sumVec(const vector<int> &v1){
     int sum(0);
@@ -48,7 +50,7 @@ int main(int argc, char** argv){
         pq.pop();
     }
 */
-    std::vector<int> nums = {4, 3, 2, 0, 3, -1, 0};
+/*    std::vector<int> nums = {4, 3, 2, 0, 3, -1, 0};
     auto it = nums.begin();
     while(it != nums.end()){
         auto maxIT = std::max_element(it,nums.end(), [](int num1, int num2){ return num1 < num2; });
@@ -57,5 +59,25 @@ int main(int argc, char** argv){
         else it = nums.erase(it, maxIT);    
     } 
     for(auto &item : nums) cout << item << endl;
+*/
+    set< set<int> > nums;
+    set<int> temp;
+    for(int i(0); i < 10; ++i) temp.insert(i);
+    nums.insert(temp);
+    
+    for(int i(3); i < 10; ++i) temp.insert(i);
+    nums.insert(temp);
+
+    for(int i(0); i < 10; ++i) temp.insert(i);
+    for(auto &item : nums){
+        if(item == temp) std::cout << "They Match" << std::endl;
+        else std::cout << "They SHOULD Match" << std::endl;
+    }
+    vector<int> lnums;
+    for(int i(0); i < 10; ++i) lnums.push_back(i);
+    for(auto &item : lnums){
+        continue;
+        cout << item << endl;
+    }
     return 0;
 }

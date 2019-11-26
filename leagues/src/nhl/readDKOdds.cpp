@@ -68,6 +68,26 @@ int lcs(string X, string Y)
     for X[0..n-1] and Y[0..m-1] */
     return matrix[X.size()][Y.size()];  
 }  
+int editDistance(string x, string y){
+    vector< vector<int> > distances;
+    distances.resize(x.size()+1);
+    for(auto &item : distances) item.resize(y.size()+1);
+
+    
+    for(auto i(0); i < x.size()+1; ++i) distances[i][0] = i;
+    for(auto i(1); i < y.size()+1; ++i) distances[0][i] = i;
+    for(int i(1); i < distances.size(); ++i){
+        for(int j(1); j < distances[i].size(); ++j){
+            if(x[i-1] == y[j-1]){
+                distances[i][j] = distances[i-1][j-1];
+            }
+            else{
+                distances[i][j] = 1 + std::min(distances[i-1][j-1], std::min(distances[i-1][j], distances[i][j-1]));
+            }
+        }
+    }
+    return distances[x.size()][y.size()];
+}
 /* Utility function to get max of 2 integers */
 int max(int a, int b)  
 {  

@@ -8,7 +8,7 @@ using std::cout;
 using std::endl;
 
 int main(int argc, char** argv){
-    vector< vector<string> > playerOdds;
+/*    vector< vector<string> > playerOdds;
     string file(argv[1]);
 
     csv2StringVector(file, playerOdds);
@@ -20,5 +20,7 @@ int main(int argc, char** argv){
             else cout << endl;
         }
     }); 
+*/
+    cout << editDistance(argv[1], argv[2]) << endl;
     return 0;
 }

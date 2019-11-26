@@ -14,6 +14,7 @@ using std::string;
 void Odds2FantasyMapping(std::map<std::string, std::string> &);
 void csv2StringVector(std::string, std::vector< std::vector<std::string> > &);
 int lcs(string, string);  
+int editDistance(string, string);
 int max(int, int);  
 
 #endif

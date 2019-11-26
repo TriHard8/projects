@@ -15,6 +15,7 @@
 #include <queue>
 #include <climits>
 #include "readDKOdds.h"
+#include <stdlib.h>
 
 using std::cout;
 using std::endl;
@@ -90,7 +91,7 @@ namespace std{
     template<>
         struct hash<Player>{
             size_t operator()(const Player &rhs) const{
-                return hash<std::string>()(rhs.getName());
+                return hash<std::string>()(rhs.getName()+rhs.getPosition());
             }
         };
 }
@@ -107,6 +108,7 @@ class Lineup{
 class DKSlate{
     private:
         vector<Player*> players;
+        set< set<Player*> > hashLineups;
         std::unordered_set<Player*> dogs;
         vector<Player*> goalies;
         vector<Player*> defensemen;
@@ -152,13 +154,12 @@ class DKSlate{
         void printLineups(unsigned int) const;
         void printLineup(int) const;
         void printDogs() const;
-        //std::string getSite() const { if(site == 1) return "DraftKings"; else if(site == 2) return "FanDuel"; };
         Site getSite() const { return site; };
 	    std::string getSport() const { if(sport == 1) return "tennis/mma"; else if(sport == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
         void setSite(std::string);
 	    void setSport(std::string);
         template <class T>
-        bool lineupExists(vector< vector<T> > &, vector<T> &);
+        bool lineupExists(vector<T> &);
         bool teamCount(vector<Player*> &);
         void makeCombos(vector<Player*> &, vector< vector<Player*> > &, int idx, int contents);
         void helpMakeCombos(vector<Player*> &, vector< vector<Player*> > &, int idx, int contents, vector<int> &);
@@ -224,7 +225,7 @@ double DKSlate::getLineupPoints(int i) const{
 double DKSlate::getLineupOdds(int i) const{
     double total(1);
     //start this loop at 1, b/c the goalie doesn't have odds
-    for(auto j(1); j < lineups[i].size(); ++j){
+    for(auto j(0); j < lineups[i].size()-1; ++j){
         total *= lineups[i][j]->getOdds();
     }
 
@@ -253,26 +254,26 @@ int DKSlate::getLineupSalary(int i) const{
 }
 void DKSlate::printLineup(int i) const{
     if(site == draftkings){
+        cout << lineups[i][3]->getNameID() << ",";
         cout << lineups[i][4]->getNameID() << ",";
-        cout << lineups[i][5]->getNameID() << ",";
+        cout << lineups[i][0]->getNameID() << ",";
         cout << lineups[i][1]->getNameID() << ",";
         cout << lineups[i][2]->getNameID() << ",";
-        cout << lineups[i][3]->getNameID() << ",";
+        cout << lineups[i][5]->getNameID() << ",";
         cout << lineups[i][6]->getNameID() << ",";
-        cout << lineups[i][7]->getNameID() << ",";
-        cout << lineups[i][0]->getNameID() << ",";
         cout << lineups[i][8]->getNameID() << ",";
+        cout << lineups[i][7]->getNameID() << ",";
     }
     else{
-        cout << lineups[i][4]->getID() << ":" << lineups[i][4]->getName() << ",";
-        cout << lineups[i][5]->getID() << ":" << lineups[i][5]->getName() << ",";
-        cout << lineups[i][1]->getID() << ":" << lineups[i][1]->getName() << ",";
-        cout << lineups[i][2]->getID() << ":" << lineups[i][2]->getName() << ",";
-        cout << lineups[i][3]->getID() << ":" << lineups[i][3]->getName() << ",";
-        cout << lineups[i][8]->getID() << ":" << lineups[i][8]->getName() << ",";
-        cout << lineups[i][6]->getID() << ":" << lineups[i][6]->getName() << ",";
-        cout << lineups[i][7]->getID() << ":" << lineups[i][7]->getName() << ",";
-        cout << lineups[i][0]->getID() << ":" << lineups[i][0]->getName() << ",";
+        cout << lineups[i][3]->getID() << ":" << lineups[i][4]->getName() << ",";
+        cout << lineups[i][4]->getID() << ":" << lineups[i][5]->getName() << ",";
+        cout << lineups[i][0]->getID() << ":" << lineups[i][1]->getName() << ",";
+        cout << lineups[i][1]->getID() << ":" << lineups[i][2]->getName() << ",";
+        cout << lineups[i][2]->getID() << ":" << lineups[i][3]->getName() << ",";
+        cout << lineups[i][7]->getID() << ":" << lineups[i][8]->getName() << ",";
+        cout << lineups[i][5]->getID() << ":" << lineups[i][6]->getName() << ",";
+        cout << lineups[i][6]->getID() << ":" << lineups[i][7]->getName() << ",";
+        cout << lineups[i][8]->getID() << ":" << lineups[i][0]->getName() << ",";
     }
     
     /*for(auto j(0); j < lineups[i].size(); ++j){
@@ -426,7 +427,7 @@ void DKSlate::readRecordsDK(std::string file){
             }
             else{
                 bool exists = false;
-                int currentlen(0), maxlen(0);
+                int currentlen(0), minlen(100);
                 vector<int> idx;
                 for(int i(0); i < Odds.size(); ++i){
                     if(Odds[i][0] == player->getName()){
@@ -446,17 +447,17 @@ void DKSlate::readRecordsDK(std::string file){
                         break;
                     } 
                     else{
-                        currentlen = lcs(Odds[i][0],player->getName());
+                        currentlen = editDistance(Odds[i][0],player->getName());
                         //cout << Odds[i][0] << "," << player->getName() << "," << currentlen << "," << maxlen << endl;
-                        if(currentlen < player->getName().size()*3/5){
+                        /*if(currentlen < player->getName().size()*3/5){
                             continue;
-                        }
-                        if(currentlen > maxlen){
-                            maxlen = currentlen;
+                        }*/
+                        if(currentlen < minlen){
+                            minlen = currentlen;
                             idx.clear();
                             idx.push_back(i);
                         }        
-                        else if(currentlen == maxlen){
+                        else if(currentlen == minlen){
                             idx.push_back(i);
                         }
                     }
@@ -508,7 +509,7 @@ void DKSlate::readRecordsDK(std::string file){
         sum += loop->getOdds();
     });
     //average = percent * double(sum)/double(wingers.size());
-    average = 2.59;
+    average = 2.9;
     cout << "Wingers Average (before reduction): " << average << endl;
     //if(wingers.size() >= 100) average *= 0.75;
     //cout << "Wingers: " << average << " : " << wingers.size() << endl;
@@ -529,7 +530,7 @@ void DKSlate::readRecordsDK(std::string file){
     });
     percent = 0.9;
     //average = percent * double(sum)/double(centers.size());
-    average = 2.59;
+    average = 2.8;
     cout << "Centers Average (before reduction): " << average << endl;
     //if(centers.size() >= 100) average *= 0.75;
     //cout << "Centers: " << average << " : " << centers.size() << endl;
@@ -549,7 +550,7 @@ void DKSlate::readRecordsDK(std::string file){
     });
     percent = 1.1;
     //average = percent * double(sum)/double(defensemen.size());
-    average = 1.59;
+    average = 1.5;
     cout << "Defensemen Average (before reduction): " << average << endl;
     //if(defensemen.size() >= 100) average *= 0.75;
     //cout << "Defensemen: " << average << " : " << defensemen.size() << endl;
@@ -565,6 +566,7 @@ void DKSlate::readRecordsDK(std::string file){
 
     std::for_each(wingers.begin(), wingers.end(), [&](Player* loop){ utility.push_back(loop); });
     //FanDuel has 4 Wingers and DraftKings has 3 Wingers and a Utility
+    //So this block adds Centers to Utility for Draftkings
     if(site == draftkings){
         std::for_each(centers.begin(), centers.end(), [&](Player* loop){ utility.push_back(loop); });
         std::sort(utility.begin(), utility.end(), sortSalary());
@@ -693,31 +695,29 @@ void DKSlate::helpMakeCombos(vector<Player*> &names, vector< vector<Player*> > &
     }
 }
 template <class T>
-bool DKSlate::lineupExists(vector< vector<T> > &base, vector<T> &test){
+bool DKSlate::lineupExists(vector<T> &test){
     bool equal(false);
-    std::for_each(base.begin(), base.end()-1, [&test, &equal](vector<T> &loop){
-        set<T> exists(loop.begin(), loop.end());
-        set<T> testCase(test.begin(), test.end());
-        set<T> intersect;
-        std::set_intersection(exists.begin(), exists.end(), testCase.begin(), testCase.end(), std::inserter(intersect, intersect.begin()));
-//        cout << intersect.size() << "," << exists.size() << endl;
-        if(intersect == exists ){
-            //cout << "***Equal***" << endl;
-            //std::for_each(intersect.begin(), intersect.end(), [](Player* confirm){ cout << confirm->getName() << ","; });
-            //cout << endl;
-            equal = true;
-        }
-    });
-    //cout << "NOT Equal!" << endl;
-    return equal;
+    set<T> temp;
+    for(auto &item : test) temp.insert(item);
+    for(auto &item : hashLineups){
+        if(item == temp) return true;
+    }
+    return false;
 }
 /*template <class T>
 bool DKSlate::helpLineupExists(vector<T> &first, vector<T> &second){
 
 }*/
 void DKSlate::make_combos(){
-    unsigned int upperSalary(50000), lowerSalary(47500);
-    if(site == fanduel){
+    unsigned int upperSalary, lowerSalary, count(0);
+    std::fstream fout;
+    if(site == draftkings){
+        fout.open("/home/trihard8/repo/projects/leagues/src/nhl/DK_run_count.txt", ios::out);
+        upperSalary = 50000;
+        lowerSalary = 47500;
+    }
+    else if(site == fanduel){
+        fout.open("/home/trihard8/repo/projects/leagues/src/nhl/FD_run_count.txt", ios::out);
         upperSalary = 55000;
         lowerSalary = 52500;
     }
@@ -729,11 +729,13 @@ void DKSlate::make_combos(){
     cout << combo_W.size() << endl;
     cout << combo_C.size() << endl;
     cout << combo_D.size() << endl;
+    cout << "Total: " << goalies.size()*combo_W.size()*combo_D.size()*combo_C.size()*utility.size() << endl;
 
     string pass;
-    cout << "Press Enter to Continue!";
+    cout << "Press Enter to Continue!" << endl;
     cin >> pass;
     
+    set<Player*> hashLineup;
     if(sport == 3){
         vector<int> goalieSalary;
         vector< priority_queue<vector<Player*>, vector< vector<Player*> >, compareLineups> > pq;
@@ -745,98 +747,75 @@ void DKSlate::make_combos(){
         }
         //std::cin >> pass;
         vector<Player*> lineup;
-        for_each(goalies.begin(), goalies.end(), [&](Player* goalie){
-            lineup.push_back(goalie);
-            for_each(combo_W.begin(), combo_W.end(), [&](vector<Player*> winger){
-                for_each(winger.begin(), winger.end(), [&](Player* wing){
-                    lineup.push_back(wing);
-                });
-                for_each(combo_C.begin(), combo_C.end(), [&](vector<Player*> center){
-                    for_each(center.begin(), center.end(), [&](Player* cent){
-                        lineup.push_back(cent);
-                    });
-                    for_each(combo_D.begin(), combo_D.end(), [&](vector<Player*> defense){
-                        for_each(defense.begin(), defense.end(), [&](Player* def){
-                            lineup.push_back(def);
-                        });
-                        for_each(utility.begin(), utility.end(), [&](Player* util){
-                            auto it = std::find(lineup.begin(), lineup.end(), util);
-                            if(it == lineup.end()){
-                                lineup.push_back(util);
-                                lineups.push_back(lineup);
-                                int currentSalary = getLineupSalary(lineups.size()-1);
-                                //printLineup(lineups.size()-1);
-                                //if(currentSalary + *std::min_element(goalieSalary.begin(),goalieSalary.end()) <= upperSalary && currentSalary + *std::max_element(goalieSalary.begin(),goalieSalary.end()) > lowerSalary && !(lineupExists(lineups,lineup))){
-                                if(currentSalary <= upperSalary && currentSalary > lowerSalary && !(lineupExists(lineups,lineup)) && teamCount(lineup)){
-                                    //cout << "Passed" << endl;
-                                    printLineup(lineups.size()-1);
+        int currentSalary(0); 
+        int minGoalie = (*std::min_element(goalies.begin(), goalies.end(), [](Player* &p1, Player* &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
+        int maxGoalie = (*std::max_element(goalies.begin(), goalies.end(), [](Player* &p1, Player* &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
+        //auto maxIT = std::max_element(it, vec.end(), [](Player* &p1, Player* &p2){ return p1->getOdds() < p2->getOdds(); });
+        
+        for(auto &pairW : combo_W){
+            for(auto &W : pairW){
+                lineup.push_back(W);
+                currentSalary += W->getSalary();
+            }
+            for(auto &pairC : combo_C){
+                for(auto &C : pairC){
+                    lineup.push_back(C);
+                    currentSalary += C->getSalary();
+                }
+                for(auto &pairD : combo_D){
+                    for(auto &D : pairD){
+                        lineup.push_back(D);
+                        currentSalary += D->getSalary();
+                    }
+                    for(auto &util : utility){
+                        auto it = std::find(lineup.begin(), lineup.end(), util);
+                        if(it == lineup.end()){
+                            lineup.push_back(util);
+                            currentSalary += util->getSalary();
+                            if(currentSalary+minGoalie <= upperSalary && currentSalary+maxGoalie > lowerSalary){
+                                for(auto &goalie : goalies){
+                                    fout << count++ << endl;
+                                    lineup.push_back(goalie);
+                                    currentSalary += goalie->getSalary();
+                                    lineups.push_back(lineup);
+                                    //currentSalary = getLineupSalary(lineups.size()-1);
+                                    if(currentSalary <= upperSalary && currentSalary > lowerSalary && !(lineupExists(lineup)) && teamCount(lineup)){
+                                        for_each(lineup.begin(), lineup.end(), [&hashLineup](Player* &loop){ hashLineup.insert(loop); });
+                                        hashLineups.insert(hashLineup);
+                                        hashLineup.clear();
+                                        printLineup(lineups.size()-1);
+                                    }
+                                    else lineups.pop_back();
+                                    currentSalary -= (lineup.back())->getSalary();
+                                    lineup.pop_back(); 
                                 }
-                                else lineups.pop_back();
-                                lineup.pop_back(); 
-                            } 
-                            else{
-                                //cout << util->getName() << " : " << (*it)->getName() << endl;
-                                ;
                             }
-                        });
-                        lineup.pop_back();
-                        lineup.pop_back();
-                    });
-                    lineup.pop_back();
-                    lineup.pop_back();
-                });
-                lineup.pop_back();
-                lineup.pop_back();
-                lineup.pop_back();
-            });    
-            lineup.pop_back();
-        });
-    }
-/*    if(site == 2){
-        k = 5;
-        upperSalary = 50000;
-        lowerSalary = 40000;
-    }
-    
-    unsigned long long ones = 1ULL<<n;
-    unsigned long long combo = (1ULL << k) - 1ULL; 
-    int current_salary(0), minOdds(INT_MAX), maxPoints(-INT_MAX);
-    bool matches(false);
-    int count(0);
-
-    if(players.size() > 63){
-        cout << "The players list is too large, more than 64 participants" << endl;
-        exit(1);
-    }
-
-    In the future if need to do something larger than 64 bits, can use a std::bitset<256> and use 4 uint64 loops and construct the bitset
-    bitset<256> = bitset<256>(1st uint64) | (bitset<256>(2nd uint64) << 64) | (bitset<256>(3rd uint64) << 128) | ....
-*   I'll then need to do 4 nested loops with each of the 4 uint64s.
-
-    indexMinOdds = -1000;   
-    indexMaxPoints = -1000;
-    while(combo < ones){
-        current_salary = lineup_salary(combo);
-        matches = head2head(combo);
-
-        if(current_salary > upperSalary || current_salary < lowerSalary || matches || dog_check(combo)){
-            count++;
-            nextCombo(combo);
-            continue;
-        } 
-        get_lineup(combo);
-        printLineup(lineups.size()-1);
-        if(getLineupOdds(lineups.size()-1) < minOdds){
-            indexMinOdds = lineups.size() - 1;
-            minOdds = getLineupOdds(lineups.size() - 1); 
+                            else{
+                                count += goalies.size();
+                                fout << count++ << endl;
+                            }
+                            currentSalary -= (lineup.back())->getSalary();
+                            lineup.pop_back(); 
+                        } 
+                    }
+                    for(int i(0); i < pairD.size(); ++i){
+                        currentSalary -= (lineup.back())->getSalary();
+                        lineup.pop_back(); 
+                    }
+                }
+                for(int i(0); i < pairC.size(); ++i){
+                    currentSalary -= (lineup.back())->getSalary();
+                    lineup.pop_back(); 
+                }
+            }
+            for(int i(0); i < pairW.size(); ++i){
+                currentSalary -= (lineup.back())->getSalary();
+                lineup.pop_back(); 
+            }
+            if(currentSalary != 0) exit(256);
         }
-        if(getLineupPoints(lineups.size()-1) > maxPoints){
-            indexMaxPoints = lineups.size() - 1;
-            maxPoints = getLineupPoints(lineups.size() - 1); 
-        }
-        nextCombo(combo);
     }
-*/
+    fout.close();
 }
 void DKSlate::printDogs() const{
     for(auto it = dogs.begin(); it != dogs.end(); ++it) cout << (*it)->getName() << endl;
