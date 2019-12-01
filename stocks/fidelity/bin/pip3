@@ -1,5 +1,4 @@
 #!/home/trihard8/repo/projects/stocks/fidelity/bin/python3
-
 # -*- coding: utf-8 -*-
 import re
 import sys

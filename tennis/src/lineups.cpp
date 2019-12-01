@@ -17,14 +17,14 @@ using namespace std;
 
 class Player{
     private:
-        int salary, odds;
-        float points;
+        int salary;
+        float points, odds;
         std::string nameid, name, matchup, team, id;     
     
     public:
         Player() {};
         ~Player() {};
-        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds, float newPoints):
+        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, float newOdds, float newPoints):
                                     salary(newSalary),
                                     nameid(newNameID),
                                     name(newName),
@@ -40,7 +40,7 @@ class Player{
         void setId(std::string newID) { id = newID; };
         void setNameID(std::string newNameID) { nameid = newNameID; };
         void setSalary(int newSalary) { salary = newSalary; };
-        void setOdds(int newOdds) { odds = newOdds; };
+        void setOdds(float newOdds) { odds = newOdds; };
         void setPoints(float newPoints) { points = newPoints; };
         std::string getName() const { return name; };
         std::string getMatchup() const { return matchup; };
@@ -48,7 +48,7 @@ class Player{
         std::string getID() const { return id; };
         std::string getNameID() const { return nameid; };
         int getSalary() const { return salary; };
-        int getOdds() const { return odds; };
+        float getOdds() const { return odds; };
         float getPoints() const { return points; };
         bool operator==(const Player &) const;
 
@@ -78,6 +78,8 @@ class DKSlate{
         std::vector<std::vector<Player *>> lineups;
         int indexMinOdds, indexMaxPoints;
         int dog_count;
+        unsigned short site;
+	unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
         void nextCombo(unsigned long long &);
         
     public:
@@ -94,8 +96,9 @@ class DKSlate{
         int getLineupSalary(int) const;
         int getLineupSalary(const std::vector<Player *> &) const;
         float getLineupPoints(int) const;
-        int getLineupOdds(int) const;
-        void readRecordsDK();
+        float getLineupOdds(int) const;
+        void readRecordsDK(std::string);
+        void readRecordsFanDuel(std::string);
         void make_combos();
         int lineup_salary(const unsigned long long);
         bool head2head(const unsigned long long);
@@ -104,6 +107,10 @@ class DKSlate{
         void printLineups(unsigned int) const;
         void printLineup(int) const;
         void printDogs() const;
+        std::string getSite() const { if(site == 1) return "DraftKings"; else if(site == 2) return "FanDuel"; };
+	std::string getSport() const { if(site == 1) return "tennis/mma"; else if(site == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
+        void setSite(std::string);
+	void setSport(std::string);
         //bool operator<(const std::vector<Player *> &, const std::vector<Player *> &);
 
 };
@@ -127,10 +134,10 @@ float DKSlate::getLineupPoints(int i) const{
 
     return points;
 }
-int DKSlate::getLineupOdds(int i) const{
-    int odds(0);
+float DKSlate::getLineupOdds(int i) const{
+    float odds(1);
     for(auto j(0); j < lineups[i].size(); ++j)
-        odds += lineups[i][j]->getOdds();
+        odds *= lineups[i][j]->getOdds();
 
     return odds;
 }
@@ -173,14 +180,15 @@ void DKSlate::printLineups(unsigned int lines=0) const{
         printLineup(i);
     }
 }
-void DKSlate::readRecordsDK(){ 
+void DKSlate::readRecordsDK(std::string file){ 
     // File pointer 
     std::fstream fin; 
   
     // Open an existing file 
     //fin.open("/run/media/trihard8/New Volume/linux_directory/DKSalaries.csv", ios::in); 
-    fin.open("/home/trihard8/Downloads/20190930_TEN_DKSalaries.csv", ios::in); 
+    //fin.open("/home/trihard8/Downloads/20190921_MMA_DKSalaries.csv", ios::in); 
     //fin.open("/home/trihard8/Downloads/20190910amDKSalaries.csv", ios::in); 
+    fin.open(file, ios::in);
   
     // Read the Data from the file 
     // as String Vector 
@@ -193,6 +201,7 @@ void DKSlate::readRecordsDK(){
   
         // read an entire row and 
         // store it in a string variable 'line' 
+        //std::cout << line << std::endl;
         if(line[1] != ',') getline(fin, line);
   
         // used for breaking words 
@@ -206,17 +215,33 @@ void DKSlate::readRecordsDK(){
             // of a row to a vector 
             row.push_back(word); 
         } 
-        ss.str(row[6]);
+        if(site == 1) ss.str(row[6]); //Set matchup for DraftKings
+        else if(site == 2) ss.str(row[8]); //Set matchup for FanDuel
+
         ss >> matchup;
         //Player constructor to know what some of the elements of the row vector mean
-        //Player(int newSalary, std::string newName, std::string newMatchup, std::string newTeam, std::string newID):
-        Player * player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3],std::stoi(row[9]),std::stof(row[10]));
+        //Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds, float newPoints):
+
+        Player * player;
+        if(site == 1){
+            float prob = std::stof(row[9]);
+            //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
+            //else prob = 100.0/(prob + 100.0);
+            player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3],prob,std::stof(row[10]));
+            //cout << player->getName() << " : " << player->getOdds() << endl; 
+        }
+        else if(site == 2){
+            float prob = std::stof(row[15]);
+            //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
+            //else prob = 100.0/(prob + 100.0);
+            player = new Player(std::stoi(row[7]),row[3] + " (" + row[1] + ")", row[3], matchup, row[9], row[1], prob, std::stoi(row[16]));
+        }
         if(dog_count){
             players.push_back(player);
-            if(player->getOdds() > 0) dogs.insert(player);
+            if(player->getOdds() <= 0.5) dogs.insert(player);
         }
         else if(!dog_count){
-            if(player->getOdds() < 0) players.push_back(player);
+            if(player->getOdds() > 0.5) players.push_back(player);
         }
         //delete player;
     } 
@@ -272,7 +297,14 @@ bool DKSlate::dog_check(const unsigned long long combo){
 }
 void DKSlate::make_combos(){
     unsigned int n = players.size();
+    unsigned int upperSalary(50000), lowerSalary(40000);
     int k = 6;  //This is the setting for tennis (i.e. 6 players in the slate's lineup)
+    if(site == 2){
+        k = 5;
+        upperSalary = 50000;
+        lowerSalary = 40000;
+    }
+    
     unsigned long long ones = 1ULL<<n;
     unsigned long long combo = (1ULL << k) - 1ULL; 
     int current_salary(0), minOdds(INT_MAX), maxPoints(-INT_MAX);
@@ -294,7 +326,7 @@ void DKSlate::make_combos(){
         current_salary = lineup_salary(combo);
         matches = head2head(combo);
 
-        if(current_salary > 50000 || current_salary < 45000 || matches || dog_check(combo)){
+        if(current_salary > upperSalary || current_salary < lowerSalary || matches || dog_check(combo)){
             count++;
             nextCombo(combo);
             continue;
@@ -317,12 +349,14 @@ void DKSlate::printDogs() const{
 }
 int main(int argc, char *argv[]){
     DKSlate slate;
-    if(argc != 2){
+    if(argc != 5){
         std::cout << "Incorrect number of arguments" << std::endl;
         return 1;
     }
     slate.setDogCount(atoi(argv[1]));
-    slate.readRecordsDK();
+    slate.setSite(std::string(argv[2]));
+    slate.setSport(std::string(argv[3]));
+    slate.readRecordsDK(std::string(argv[4]));
     std::cout << "CSV was read!" << " There are " << slate.numPlayers() << " players." << std::endl;
     slate.make_combos();
     std::cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << std::endl;
@@ -338,4 +372,24 @@ bool Player::operator==(const Player &rhs) const{
         return true;
     else
         return false;
+}
+void DKSlate::setSite(std::string origin){
+    for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
+    if(origin == "draftkings") site = 1;
+    else if(origin == "fanduel") site = 2;
+    else{
+        std::cerr << "Invalid SITE argument provided!" << std::endl;
+        exit(1);
+    }
+}
+void DKSlate::setSport(std::string origin){
+    for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
+    if(origin == "nascar" || origin == "golf") sport = 2;
+    else if(origin == "tennis" || origin == "mma") sport = 1;
+    else if(origin == "nfl" || origin == "nba" || origin == "nhl" || origin == "mlb") sport = 0;
+    else{
+        std::cerr << "Invalid SPORT argument provided!" << std::endl;
+        exit(2);
+    }
+
 }

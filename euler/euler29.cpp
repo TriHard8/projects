@@ -5,6 +5,9 @@
 #include <algorithm>
 #include <iterator>
 
+using std::cout;
+using std::endl;
+
 bool isPrime(int);
 
 class baseNum{
@@ -40,11 +43,8 @@ int main(){
             numbers[baseNum(i, j)] = 0;
         }
     }
-    int count(0);
-    for(std::map<baseNum, int>::iterator it = numbers.begin(); it != numbers.end(); ++it)
-        count += 1;
     
-    std::cout << count << std::endl;
+    cout << numbers.size() << endl;
     return 0;
 }
 

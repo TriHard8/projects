@@ -1,0 +1,6 @@
+--2019-10-21 05:38:48--  https://www.draftkings.com/lineup/getavailableplayerscsv?contestTypeId=125
+Resolving www.draftkings.com (www.draftkings.com)... 104.102.79.40
+Connecting to www.draftkings.com (www.draftkings.com)|104.102.79.40|:443... connected.
+HTTP request sent, awaiting response... 500 Internal Server Error
+2019-10-21 05:38:48 ERROR 500: Internal Server Error.
+

@@ -1,0 +1,660 @@
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,,,,
+G,Mike Smith (13595500),Mike Smith,13595500,G,8400,DET@EDM 10/18/2019 09:00PM ET,EDM,15,#N/A,,Mike Hoffman,950,950,135
+G,Mikko Koskinen (13595540),Mikko Koskinen,13595540,G,8200,DET@EDM 10/18/2019 09:00PM ET,EDM,21.47,#N/A,,Nathan MacKinnon,950,950,128
+C,Connor McDavid (13595694),Connor McDavid,13595694,C/UTIL,8100,DET@EDM 10/18/2019 09:00PM ET,EDM,19.97,-112,,Mikko Rantanen,1000,1000,143
+LW,Leon Draisaitl (13595659),Leon Draisaitl,13595659,W/UTIL,7900,DET@EDM 10/18/2019 09:00PM ET,EDM,22.26,100,,Aleksander Barkov,1150,1150,170
+G,John Gibson (13595587),John Gibson,13595587,G,7700,CAR@ANH 10/18/2019 10:00PM ET,ANH,18.38,#N/A,,Gabriel Landeskog,1150,1150,170
+G,Petr Mrazek (13595558),Petr Mrazek,13595558,G,7600,CAR@ANH 10/18/2019 10:00PM ET,CAR,15.92,#N/A,,Jonathan Huberdeau,1200,1200,180
+G,Ryan Miller (13595499),Ryan Miller,13595499,G,7500,CAR@ANH 10/18/2019 10:00PM ET,ANH,20.7,#N/A,,Evgeny Dadonov,1300,1300,190
+G,James Reimer (13595529),James Reimer,13595529,G,7400,CAR@ANH 10/18/2019 10:00PM ET,CAR,15.65,#N/A,,Nazem Kadri,1400,1400,215
+G,Kevin Boyle (13595719),Kevin Boyle,13595719,G,7300,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Vincent Trocheck,1500,1500,240
+G,Jimmy Howard (13595513),Jimmy Howard,13595513,G,6900,DET@EDM 10/18/2019 09:00PM ET,DET,12.98,#N/A,,Frank Vatrano,1600,1600,255
+G,Jonathan Bernier (13595524),Jonathan Bernier,13595524,G,6700,DET@EDM 10/18/2019 09:00PM ET,DET,10.77,#N/A,,Brett Connolly,1700,1700,270
+C,Dylan Larkin (13595665),Dylan Larkin,13595665,C/UTIL,6700,DET@EDM 10/18/2019 09:00PM ET,DET,11.53,175,,Denis Malgin,1800,1800,290
+G,Calvin Pickard (13595555),Calvin Pickard,13595555,G,6500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Henrik Borgstrom,1900,1900,310
+G,Anton Forsberg (13595600),Anton Forsberg,13595600,G,6500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Andre Burakovsky,1900,1900,300
+G,Alex Nedeljkovic (13595667),Alex Nedeljkovic,13595667,G,6500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Aaron Ekblad,2000,2000,335
+G,Callum Booth (13595708),Callum Booth,13595708,G,6500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,JT Compher,2000,2000,340
+G,Jeremy Helvig (13595738),Jeremy Helvig,13595738,G,6500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Joonas Donskoi,2000,2000,320
+D,Dougie Hamilton (13595577),Dougie Hamilton,13595577,D/UTIL,6300,CAR@ANH 10/18/2019 10:00PM ET,CAR,16.19,275,,Tyson Jost,2000,2000,340
+LW,James Neal (13595514),James Neal,13595514,W/UTIL,6100,DET@EDM 10/18/2019 09:00PM ET,EDM,17.01,120,,Noel Acciari ,2200,2200,360
+D,Oscar Klefbom (13595579),Oscar Klefbom,13595579,D/UTIL,6100,DET@EDM 10/18/2019 09:00PM ET,EDM,15.01,430,,Jayce Hawryluk,2200,2200,390
+C,Erik Haula (13595631),Erik Haula,13595631,C/UTIL,6000,CAR@ANH 10/18/2019 10:00PM ET,CAR,12.74,295,,Dryden Hunt,2200,2200,390
+RW,Anthony Mantha (13595637),Anthony Mantha,13595637,W/UTIL,5900,DET@EDM 10/18/2019 09:00PM ET,DET,19.46,163,,Colton Sceviour,2200,2200,390
+D,Jaccob Slavin (13595625),Jaccob Slavin,13595625,D/UTIL,5700,CAR@ANH 10/18/2019 10:00PM ET,CAR,10.35,750,,Keith Yandle,2200,2200,390
+LW,Rickard Rakell (13595583),Rickard Rakell,13595583,W/UTIL,5600,CAR@ANH 10/18/2019 10:00PM ET,ANH,11.94,195,,Vladislav Kamenev,2400,2400,400
+D,Darnell Nurse (13595635),Darnell Nurse,13595635,D/UTIL,5400,DET@EDM 10/18/2019 09:00PM ET,EDM,9.43,360,,Colin Wilson,2400,2400,400
+LW,Tyler Bertuzzi (13595647),Tyler Bertuzzi,13595647,W/UTIL,5300,DET@EDM 10/18/2019 09:00PM ET,DET,10.49,285,,Matt Calvert,2800,2800,475
+C,Sebastian Aho (13595700),Sebastian Aho,13595700,C/UTIL,5300,CAR@ANH 10/18/2019 10:00PM ET,CAR,9.32,170,,Cale Makar,2800,2800,475
+C,Ryan Nugent-Hopkins (13595573),Ryan Nugent-Hopkins,13595573,C/UTIL,5200,DET@EDM 10/18/2019 09:00PM ET,EDM,9.09,163,,Matt Nieto,2800,2800,475
+RW,Teuvo Teravainen (13595613),Teuvo Teravainen,13595613,W/UTIL,5200,CAR@ANH 10/18/2019 10:00PM ET,CAR,10.36,225,,Valeri Nichushkin,3000,3000,525
+LW,Andrei Svechnikov (13595761),Andrei Svechnikov,13595761,W/UTIL,5200,CAR@ANH 10/18/2019 10:00PM ET,CAR,10.1,250,,Pierre-Edouard Bellemare,3300,3300,575
+C,Adam Henrique (13595561),Adam Henrique,13595561,C/UTIL,5000,CAR@ANH 10/18/2019 10:00PM ET,ANH,11,320,,Samuel Girard,3300,3300,575
+RW,Jakob Silfverberg (13595569),Jakob Silfverberg,13595569,W/UTIL,4800,CAR@ANH 10/18/2019 10:00PM ET,ANH,10.09,220,,Ryan Graves,3300,3300,575
+RW,Ondrej Kase (13595688),Ondrej Kase,13595688,W/UTIL,4700,CAR@ANH 10/18/2019 10:00PM ET,ANH,8.29,220,,Michael Matheson,3500,3500,650
+LW,Nino Niederreiter (13595545),Nino Niederreiter,13595545,W/UTIL,4600,CAR@ANH 10/18/2019 10:00PM ET,CAR,5.41,235,,Anton Strålman,3500,3500,650
+D,Brett Pesce (13595649),Brett Pesce,13595649,D/UTIL,4500,CAR@ANH 10/18/2019 10:00PM ET,CAR,11.11,750,,MacKenzie Weegar,3500,3500,650
+D,Cam Fowler (13595549),Cam Fowler,13595549,D/UTIL,4400,CAR@ANH 10/18/2019 10:00PM ET,ANH,8.34,575,,Erik Johnson,3500,3500,650
+LW,Ryan Dzingel (13595601),Ryan Dzingel,13595601,W/UTIL,4400,CAR@ANH 10/18/2019 10:00PM ET,CAR,8.52,275,,Nikita Zadorov,4000,4000,700
+C,Andreas Athanasiou (13595623),Andreas Athanasiou,13595623,C/UTIL,4300,DET@EDM 10/18/2019 09:00PM ET,DET,4.48,230,,Conor Timmins,4500,4500,850
+RW,Zack Kassian (13595538),Zack Kassian,13595538,W/UTIL,4200,DET@EDM 10/18/2019 09:00PM ET,EDM,8.49,260,,Mark Pysyk,5000,5000,900
+D,Danny DeKeyser (13595629),Danny DeKeyser,13595629,D/UTIL,4200,DET@EDM 10/18/2019 09:00PM ET,DET,11.05,800,,Kevin Connauton,5500,5500,1000
+D,Filip Hronek (13595734),Filip Hronek,13595734,D/UTIL,4100,DET@EDM 10/18/2019 09:00PM ET,DET,8.39,525,,Alexander Ovechkin,700,700,-127
+D,Mike Green (13595509),Mike Green,13595509,D/UTIL,4000,DET@EDM 10/18/2019 09:00PM ET,DET,8.83,440,,T.J. Oshie,1050,1050,143
+C,Ryan Getzlaf (13595503),Ryan Getzlaf,13595503,C/UTIL,4000,CAR@ANH 10/18/2019 10:00PM ET,ANH,7.71,320,,Evgeny Kuznetsov,1100,1100,160
+D,Hampus Lindholm (13595611),Hampus Lindholm,13595611,D/UTIL,4000,CAR@ANH 10/18/2019 10:00PM ET,ANH,7.41,575,,Tom Wilson,1100,1100,160
+C,Jordan Staal (13595522),Jordan Staal,13595522,C/UTIL,3900,CAR@ANH 10/18/2019 10:00PM ET,CAR,6.61,275,,Nicklas Bäckström,1200,1200,180
+D,Jake Gardiner (13595532),Jake Gardiner,13595532,D/UTIL,3700,CAR@ANH 10/18/2019 10:00PM ET,CAR,6.12,650,,Mika Zibanejad,1200,1200,170
+D,Ethan Bear (13595711),Ethan Bear,13595711,D/UTIL,3500,DET@EDM 10/18/2019 09:00PM ET,EDM,5.1,#N/A,,Chris Kreider,1300,1300,200
+D,Kris Russell (13595520),Kris Russell,13595520,D/UTIL,3400,DET@EDM 10/18/2019 09:00PM ET,EDM,5.74,700,,Artemy Panarin,1300,1300,185
+RW,Luke Glendening (13595609),Luke Glendening,13595609,W/UTIL,3400,DET@EDM 10/18/2019 09:00PM ET,DET,6.99,525,,Jakub Vrána,1400,1400,215
+D,Dennis Cholowski (13595724),Dennis Cholowski,13595724,D/UTIL,3400,DET@EDM 10/18/2019 09:00PM ET,DET,5.4,900,,Lars Eller,1800,1800,285
+LW,Darren Helm (13595525),Darren Helm,13595525,W/UTIL,3300,DET@EDM 10/18/2019 09:00PM ET,DET,8.67,360,,Carl Hagelin,1800,1800,285
+D,Patrik Nemeth (13595553),Patrik Nemeth,13595553,D/UTIL,3300,DET@EDM 10/18/2019 09:00PM ET,DET,5.2,1300,,Pavel Buchnevich,1800,1800,275
+D,Adam Larsson (13595575),Adam Larsson,13595575,D/UTIL,3300,DET@EDM 10/18/2019 09:00PM ET,EDM,9.7,#N/A,,Kaapo Kakko,1800,1800,275
+D,Brandon Manning (13595603),Brandon Manning,13595603,D/UTIL,3200,DET@EDM 10/18/2019 09:00PM ET,EDM,11.5,#N/A,,John Carlson,1900,1900,310
+RW,Evgeny Svechnikov (13595696),Evgeny Svechnikov,13595696,W/UTIL,3200,DET@EDM 10/18/2019 09:00PM ET,DET,0,335,,Travis Boyd,2200,2200,370
+D,Korbinian Holzer (13595543),Korbinian Holzer,13595543,D/UTIL,3200,CAR@ANH 10/18/2019 10:00PM ET,ANH,7.8,1300,,Nic Dowd,2200,2200,370
+RW,Martin Necas (13595745),Martin Necas,13595745,W/UTIL,3200,CAR@ANH 10/18/2019 10:00PM ET,CAR,6.55,335,,Garnet Hathaway,2200,2200,370
+D,Joel Persson (13595759),Joel Persson,13595759,D/UTIL,3100,DET@EDM 10/18/2019 09:00PM ET,EDM,4.78,430,,Chandler Stephenson,2200,2200,370
+D,Trevor Daley (13595497),Trevor Daley,13595497,D/UTIL,3000,DET@EDM 10/18/2019 09:00PM ET,DET,2.73,#N/A,,Ryan Strome,2200,2200,350
+RW,Alex Chiasson (13595607),Alex Chiasson,13595607,W/UTIL,3000,DET@EDM 10/18/2019 09:00PM ET,EDM,2.58,245,,Brendan Leipsic,2400,2400,410
+LW,Taro Hirose (13595773),Taro Hirose,13595773,W/UTIL,3000,DET@EDM 10/18/2019 09:00PM ET,DET,3.19,360,,Lias Andersson,2400,2400,390
+D,Joel Edmundson (13595590),Joel Edmundson,13595590,D/UTIL,3000,CAR@ANH 10/18/2019 10:00PM ET,CAR,6.11,850,,Brett Howden,2400,2400,390
+RW,Brock McGinn (13595615),Brock McGinn,13595615,W/UTIL,3000,CAR@ANH 10/18/2019 10:00PM ET,CAR,4.4,410,,Jacob Trouba,2400,2400,390
+LW,Nick Ritchie (13595663),Nick Ritchie,13595663,W/UTIL,3000,CAR@ANH 10/18/2019 10:00PM ET,ANH,4.58,270,,Brendan Lemieux,2500,2500,425
+D,Brendan Guhle (13595704),Brendan Guhle,13595704,D/UTIL,3000,CAR@ANH 10/18/2019 10:00PM ET,ANH,7.78,1050,,Jesper Fast,2800,2800,460
+C,Sam Steel (13595728),Sam Steel,13595728,C/UTIL,3000,CAR@ANH 10/18/2019 10:00PM ET,ANH,3.1,320,,Micheal Haley,2900,2900,500
+D,Josh Manson (13595594),Josh Manson,13595594,D/UTIL,2900,CAR@ANH 10/18/2019 10:00PM ET,ANH,5.03,650,,Greg McKegg,2900,2900,500
+LW,Max Comtois (13595749),Max Comtois,13595749,W/UTIL,2900,CAR@ANH 10/18/2019 10:00PM ET,ANH,2.17,360,,Dimitri Orlov,3000,3000,510
+C,Frans Nielsen (13595518),Frans Nielsen,13595518,C/UTIL,2800,DET@EDM 10/18/2019 09:00PM ET,DET,2.52,#N/A,,Anthony DeAngelo,3300,3300,540
+D,Alex Biega (13595541),Alex Biega,13595541,D/UTIL,2800,DET@EDM 10/18/2019 09:00PM ET,DET,5.05,#N/A,,Michal Kempny,4000,4000,650
+LW,Joakim Nygard (13595779),Joakim Nygard,13595779,W/UTIL,2800,DET@EDM 10/18/2019 09:00PM ET,EDM,4.1,#N/A,,Adam Fox,4000,4000,650
+RW,Troy Terry (13595713),Troy Terry,13595713,W/UTIL,2800,CAR@ANH 10/18/2019 10:00PM ET,ANH,2.79,270,,Brady Skjei,4000,4000,650
+LW,Valtteri Filppula (13595511),Valtteri Filppula,13595511,W/UTIL,2700,DET@EDM 10/18/2019 09:00PM ET,DET,2.26,360,,Radko Gudas,4500,4500,800
+LW,Tomas Jurco (13595585),Tomas Jurco,13595585,W/UTIL,2700,DET@EDM 10/18/2019 09:00PM ET,EDM,3.07,245,,Nick Jensen,4500,4500,800
+RW,Patrick Russell (13595720),Patrick Russell,13595720,W/UTIL,2700,DET@EDM 10/18/2019 09:00PM ET,EDM,3.12,#N/A,,Jonas Siegenthaler,4500,4500,800
+C,Derek Grant (13595563),Derek Grant,13595563,C/UTIL,2700,CAR@ANH 10/18/2019 10:00PM ET,ANH,5.67,480,,Brendan Smith,6600,6600,1100
+RW,Justin Abdelkader (13595530),Justin Abdelkader,13595530,W/UTIL,2600,DET@EDM 10/18/2019 09:00PM ET,DET,4.53,380,,Marc Staal,8000,8000,1300
+C,Riley Sheahan (13595551),Riley Sheahan,13595551,C/UTIL,2600,DET@EDM 10/18/2019 09:00PM ET,EDM,1.5,390,,Sidney Crosby,950,950,155
+RW,Josh Archibald (13595598),Josh Archibald,13595598,W/UTIL,2600,DET@EDM 10/18/2019 09:00PM ET,EDM,1.88,#N/A,,Jake Guentzel,950,950,155
+D,Matt Benning (13595627),Matt Benning,13595627,D/UTIL,2600,DET@EDM 10/18/2019 09:00PM ET,EDM,2.94,#N/A,,Tyler Seguin,1050,1050,170
+D,Michael Del Zotto (13595534),Michael Del Zotto,13595534,D/UTIL,2600,CAR@ANH 10/18/2019 10:00PM ET,ANH,4.16,650,,Joe Pavelski,1150,1150,190
+D,Haydn Fleury (13595661),Haydn Fleury,13595661,D/UTIL,2600,CAR@ANH 10/18/2019 10:00PM ET,CAR,4.96,750,,Jamie Benn,1200,1200,205
+LW,Warren Foegele (13595672),Warren Foegele,13595672,W/UTIL,2600,CAR@ANH 10/18/2019 10:00PM ET,CAR,3.45,310,,Alexander Radulov,1200,1200,205
+C,Kyle Brodziak (13595507),Kyle Brodziak,13595507,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Patric Hörnqvist,1300,1300,235
+D,Jonathan Ericsson (13595516),Jonathan Ericsson,13595516,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Alex Galchenyuk,1400,1400,250
+RW,Sam Gagner (13595527),Sam Gagner,13595527,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,260,,Dominik Kahun,1600,1600,300
+D,Brian Lashoff (13595536),Brian Lashoff,13595536,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Sam Lafferty,1600,1600,300
+D,Dylan McIlrath (13595547),Dylan McIlrath,13595547,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Jared McCann,1600,1600,300
+LW,Brad Malone (13595567),Brad Malone,13595567,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Brandon Tanev,1600,1600,300
+LW,Matt Puempel (13595581),Matt Puempel,13595581,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Corey Perry,1600,1600,290
+C,Markus Granlund (13595588),Markus Granlund,13595588,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,1.44,300,,Andrew Agozzino,1700,1700,320
+D,Keegan Lowe (13595592),Keegan Lowe,13595592,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Bryan Rust,1700,1700,320
+LW,Jujhar Khaira (13595621),Jujhar Khaira,13595621,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,1.84,390,,Roope Hintz,1700,1700,310
+RW,Adam Erne (13595639),Adam Erne,13595639,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,3.9,335,,Kris Letang,1800,1800,340
+C,Jacob de la Rose (13595641),Jacob de la Rose,13595641,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,5.66,480,,Dominik Simon,1800,1800,340
+D,Madison Bowey (13595645),Madison Bowey,13595645,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,2.3,900,,Zachary Aston-Reese,2000,2000,360
+C,Bogdan Yakimov (13595651),Bogdan Yakimov,13595651,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Joseph Blandisi,2000,2000,360
+RW,Josh Currie (13595657),Josh Currie,13595657,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Teddy Blueger,2000,2000,360
+C,Dominic Turgeon (13595670),Dominic Turgeon,13595670,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Adam Johnson,2000,2000,360
+D,William Lagesson (13595674),William Lagesson,13595674,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,540,,Justin Schultz,2200,2200,425
+RW,Christoffer Ehn (13595680),Christoffer Ehn,13595680,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0.93,380,,Nicholas Caamano,2200,2200,420
+LW,Nolan Vesey (13595686),Nolan Vesey,13595686,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Radek Faksa,2200,2200,390
+D,Joe Hicketts (13595690),Joe Hicketts,13595690,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Rhett Gardner,2200,2200,420
+C,Colby Cave (13595692),Colby Cave,13595692,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,300,,Denis Guryanov,2200,2200,420
+D,Caleb Jones (13595709),Caleb Jones,13595709,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Joel L'Esperance,2200,2200,420
+C,Cooper Marody (13595715),Cooper Marody,13595715,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Justin Dowling,2400,2400,450
+LW,Tyler Benson (13595730),Tyler Benson,13595730,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Miro Heiskanen,2400,2400,450
+LW,Joseph Gambardella (13595739),Joseph Gambardella,13595739,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,John Klingberg,2400,2400,450
+RW,Michael Rasmussen (13595743),Michael Rasmussen,13595743,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,410,,Mattias Janmark-Nylén,2500,2500,480
+RW,Kailer Yamamoto (13595747),Kailer Yamamoto,13595747,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Andrew Cogliano,2800,2800,540
+C,Gaetan Haas (13595755),Gaetan Haas,13595755,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,2.28,#N/A,,Esa Lindell,3000,3000,575
+LW,Filip Zadina (13595763),Filip Zadina,13595763,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Marcus Pettersson,3300,3300,650
+D,Evan Bouchard (13595765),Evan Bouchard,13595765,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Erik Gudbranson,4000,4000,800
+C,Joseph Veleno (13595769),Joseph Veleno,13595769,C/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,#N/A,,Jack Johnson,4000,4000,800
+LW,Ryan Kuffner (13595771),Ryan Kuffner,13595771,W/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,360,,John Marino,4000,4000,800
+D,Oliwer Kaski (13595777),Oliwer Kaski,13595777,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,DET,0,650,,Juuso Riikola,4000,4000,800
+D,Philip Broberg (13595781),Philip Broberg,13595781,D/UTIL,2500,DET@EDM 10/18/2019 09:00PM ET,EDM,0,#N/A,,Joel Hanley,5000,5000,950
+C,Ryan Kesler (13595501),Ryan Kesler,13595501,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Andrej Sekera,5000,5000,950
+RW,Patrick Eaves (13595505),Patrick Eaves,13595505,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Taylor Fedun,5500,5500,1100
+D,Jani Hakanpaa (13595556),Jani Hakanpaa,13595556,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Jamie Oleksiak,5500,5500,1100
+C,Sam Carrick (13595559),Sam Carrick,13595559,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Brian Dumoulin,6000,6000,1150
+LW,Brian Gibbons (13595565),Brian Gibbons,13595565,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0.75,#N/A,,Patrick Kane,850,850,120
+LW,Nicolas Deslauriers (13595571),Nicolas Deslauriers,13595571,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0.65,#N/A,,Alex DeBrincat,900,900,130
+LW,Max McCormick (13595596),Max McCormick,13595596,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Cam Atkinson,950,950,140
+D,Chris Wideman (13595605),Chris Wideman,13595605,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Jonathan Toews,1150,1150,180
+RW,Jordan Martinook (13595617),Jordan Martinook,13595617,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,3.02,#N/A,,Alexander Nylander,1300,1300,210
+C,Devin Shore (13595619),Devin Shore,13595619,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,4.58,390,,Dylan Strome,1500,1500,245
+RW,Carter Rowney (13595633),Carter Rowney,13595633,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,2.16,480,,Pierre-Luc Dubois,1500,1500,255
+RW,Nick Sorensen (13595643),Nick Sorensen,13595643,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Brandon Saad,1600,1600,265
+RW,Saku Maenalanen (13595653),Saku Maenalanen,13595653,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Josh Anderson,1600,1600,265
+D,Trevor van Riemsdyk (13595655),Trevor van Riemsdyk,13595655,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Gustav Nyquist,1600,1600,265
+D,Roland McKeown (13595668),Roland McKeown,13595668,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Alexandre Texier,1700,1700,280
+C,Lucas Wallmark (13595676),Lucas Wallmark,13595676,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,3.56,360,,Dominik Kubalik,1800,1800,300
+C,Chase De Leo (13595678),Chase De Leo,13595678,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Andrew Shaw,1800,1800,300
+D,Gustav Forsling (13595682),Gustav Forsling,13595682,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Oliver Björkstrand,1800,1800,300
+C,Clark Bishop (13595684),Clark Bishop,13595684,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Nick Foligno,1800,1800,300
+D,Jacob Larsson (13595698),Jacob Larsson,13595698,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,4,1050,,David Kämpf,2000,2000,340
+RW,Daniel Sprong (13595702),Daniel Sprong,13595702,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Brendan Perlini,2000,2000,340
+RW,Deven Sideroff (13595706),Deven Sideroff,13595706,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Emil Bemström,2000,2000,360
+C,Andrew Poturalski (13595717),Andrew Poturalski,13595717,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Boone Jenner,2000,2000,340
+D,Jake Bean (13595722),Jake Bean,13595722,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Drake Caggiula,2200,2200,370
+LW,Max Jones (13595726),Max Jones,13595726,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,3.8,450,,Erik Gustafsson,2200,2200,400
+RW,Janne Kuokkanen (13595732),Janne Kuokkanen,13595732,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Seth Jones,2200,2200,390
+D,Josh Mahura (13595736),Josh Mahura,13595736,D/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,800,,Jakob Lilja,2400,2400,420
+C,Justin Kloos (13595741),Justin Kloos,13595741,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Alexander Wennberg,2400,2400,420
+C,Antoine Morand (13595751),Antoine Morand,13595751,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Zach Werenski,2400,2400,420
+C,Morgan Geekie (13595753),Morgan Geekie,13595753,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,John Quenneville,2500,2500,440
+RW,Kiefer Sherwood (13595757),Kiefer Sherwood,13595757,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,525,,Marko Daňo,2500,2500,450
+C,Isac Lundestrom (13595767),Isac Lundestrom,13595767,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,1.93,#N/A,,Riley Nash,2500,2500,450
+LW,Jacob Pritchard (13595775),Jacob Pritchard,13595775,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Ryan Carpenter,2800,2800,480
+C,Ryan Suzuki (13595783),Ryan Suzuki,13595783,C/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,CAR,0,#N/A,,Zack Smith,2800,2800,480
+LW,Brayden Tracey (13595785),Brayden Tracey,13595785,W/UTIL,2500,CAR@ANH 10/18/2019 10:00PM ET,ANH,0,#N/A,,Duncan Keith,3300,3300,600
+,,,,,,,,,,,Brent Seabrook,3500,3500,700
+,,,,,,,,,,,Ryan Murray,3500,3500,650
+,,,,,,,,,,,Markus Nutivaara,3500,3500,650
+,,,,,,,,,,,Slater Koekkoek,4000,4000,800
+,,,,,,,,,,,Connor Murphy,4000,4000,800
+,,,,,,,,,,,Olli Määttä,4000,4000,800
+,,,,,,,,,,,David Savard,4000,4000,750
+,,,,,,,,,,,Calvin de Haan,5000,5000,900
+,,,,,,,,,,,Vladislav Gavrikov,5000,5000,850
+,,,,,,,,,,,Dean Kukan,5000,5000,850
+,,,,,,,,,,,Scott Harrington,7000,7000,1200
+,,,,,,,,,,,Connor McDavid,700,700,-112
+,,,,,,,,,,,Leon Draisaitl,800,800,100
+,,,,,,,,,,,James Neal,900,900,120
+,,,,,,,,,,,Ryan Nugent-Hopkins,1100,1100,163
+,,,,,,,,,,,Anthony Mantha,1150,1150,163
+,,,,,,,,,,,Dylan Larkin,1200,1200,175
+,,,,,,,,,,,Alex Chiasson,1500,1500,245
+,,,,,,,,,,,Tomas Jurco,1500,1500,245
+,,,,,,,,,,,Andreas Athanasiou,1500,1500,230
+,,,,,,,,,,,Sam Gagner,1600,1600,260
+,,,,,,,,,,,Zack Kassian,1600,1600,260
+,,,,,,,,,,,Joakim Nygård,1600,1600,260
+,,,,,,,,,,,Colby Cave,1800,1800,300
+,,,,,,,,,,,Markus Granlund,1800,1800,300
+,,,,,,,,,,,Tyler Bertuzzi,1800,1800,285
+,,,,,,,,,,,Gaëtan Haas,2000,2000,330
+,,,,,,,,,,,Adam Erne,2000,2000,335
+,,,,,,,,,,,Evgeny Svechnikov,2000,2000,335
+,,,,,,,,,,,Jujhar Khaira,2200,2200,390
+,,,,,,,,,,,Darnell Nurse,2200,2200,360
+,,,,,,,,,,,Riley Sheahan,2200,2200,390
+,,,,,,,,,,,Justin Abdelkader,2200,2200,380
+,,,,,,,,,,,Christoffer Ehn,2200,2200,380
+,,,,,,,,,,,Valtteri Filppula,2200,2200,360
+,,,,,,,,,,,Darren Helm,2200,2200,360
+,,,,,,,,,,,Taro Hirose,2200,2200,360
+,,,,,,,,,,,Ryan Kuffner,2200,2200,360
+,,,,,,,,,,,Michael Rasmussen,2400,2400,410
+,,,,,,,,,,,Oscar Klefbom,2500,2500,430
+,,,,,,,,,,,Joel Persson,2500,2500,430
+,,,,,,,,,,,Mike Green,2500,2500,440
+,,,,,,,,,,,Jacob De La Rose,2800,2800,480
+,,,,,,,,,,,William Lagesson,3000,3000,540
+,,,,,,,,,,,Luke Glendening,3000,3000,525
+,,,,,,,,,,,Filip Hronek,3000,3000,525
+,,,,,,,,,,,Matthew Benning,3400,3400,600
+,,,,,,,,,,,Oliwer Kaski,3500,3500,650
+,,,,,,,,,,,Kris Russell,4000,4000,700
+,,,,,,,,,,,Danny Dekeyser,4500,4500,800
+,,,,,,,,,,,Madison Bowey,5000,5000,900
+,,,,,,,,,,,Dennis Cholowski,5000,5000,900
+,,,,,,,,,,,Patrik Nemeth,7500,7500,1300
+,,,,,,,,,,,Sebastian Aho,1000,1000,170
+,,,,,,,,,,,Rickard Rakell,1150,1150,195
+,,,,,,,,,,,Ondrej Kase,1300,1300,220
+,,,,,,,,,,,Jakob Silfverberg,1300,1300,220
+,,,,,,,,,,,Nino Niederreiter,1300,1300,235
+,,,,,,,,,,,Teuvo Teravainen,1300,1300,225
+,,,,,,,,,,,Andrei Svechnikov,1400,1400,250
+,,,,,,,,,,,Nick Ritchie,1500,1500,270
+,,,,,,,,,,,Troy Terry,1500,1500,270
+,,,,,,,,,,,Ryan Dzingel,1500,1500,275
+,,,,,,,,,,,Dougie Hamilton,1500,1500,275
+,,,,,,,,,,,Jordan Staal,1500,1500,275
+,,,,,,,,,,,Erik Haula,1600,1600,295
+,,,,,,,,,,,Ryan Getzlaf,1700,1700,320
+,,,,,,,,,,,Adam Henrique,1700,1700,320
+,,,,,,,,,,,Sam Steel,1700,1700,320
+,,,,,,,,,,,Warren Foegele,1700,1700,310
+,,,,,,,,,,,Martin Necas,1800,1800,335
+,,,,,,,,,,,Max Comtois,1900,1900,360
+,,,,,,,,,,,Lucas Wallmark,1900,1900,360
+,,,,,,,,,,,Devin Shore,2000,2000,390
+,,,,,,,,,,,Julien Gauthier,2000,2000,380
+,,,,,,,,,,,Brock McGinn,2200,2200,410
+,,,,,,,,,,,Max Jones,2400,2400,450
+,,,,,,,,,,,Derek Grant,2500,2500,480
+,,,,,,,,,,,Carter Rowney,2500,2500,480
+,,,,,,,,,,,Kiefer Sherwood,2800,2800,525
+,,,,,,,,,,,Cam Fowler,3000,3000,575
+,,,,,,,,,,,Hampus Lindholm,3000,3000,575
+,,,,,,,,,,,Michael Del Zotto,3300,3300,650
+,,,,,,,,,,,Josh Manson,3300,3300,650
+,,,,,,,,,,,Jake Gardiner,3300,3300,650
+,,,,,,,,,,,Josh Mahura,4000,4000,800
+,,,,,,,,,,,Haydn Fleury,4000,4000,750
+,,,,,,,,,,,Brett Pesce,4000,4000,750
+,,,,,,,,,,,Jaccob Slavin,4000,4000,750
+,,,,,,,,,,,Joel Edmundson,4500,4500,850
+,,,,,,,,,,,Brendan Guhle,5500,5500,1050
+,,,,,,,,,,,Jani Hakanpää,5500,5500,1050
+,,,,,,,,,,,Jacob Larsson,5500,5500,1050
+,,,,,,,,,,,Korbinian Holzer,6600,6600,1300
+,,,,,,,,,,,Taylor Hall,900,900,133
+,,,,,,,,,,,Kyle Palmieri,1000,1000,150
+,,,,,,,,,,,Elias Pettersson,1000,1000,155
+,,,,,,,,,,,Brock Boeser,1100,1100,175
+,,,,,,,,,,,Bo Horvat,1200,1200,195
+,,,,,,,,,,,Nico Hischier,1300,1300,220
+,,,,,,,,,,,Nikita Gusev,1500,1500,260
+,,,,,,,,,,,Blake Coleman,1600,1600,275
+,,,,,,,,,,,Wayne Simmonds,1600,1600,275
+,,,,,,,,,,,Jack Hughes,1700,1700,295
+,,,,,,,,,,,Travis Zajac,1700,1700,295
+,,,,,,,,,,,Michael Ferland,1700,1700,310
+,,,,,,,,,,,J.T Miller,1700,1700,290
+,,,,,,,,,,,Jesper Bratt,1800,1800,310
+,,,,,,,,,,,Tanner Pearson,1800,1800,325
+,,,,,,,,,,,P. K. Subban,1900,1900,335
+,,,,,,,,,,,Miles Wood,1900,1900,335
+,,,,,,,,,,,John Hayden,2000,2000,360
+,,,,,,,,,,,Pavel Zacha,2000,2000,360
+,,,,,,,,,,,Jake Virtanen,2000,2000,370
+,,,,,,,,,,,Loui Eriksson,2200,2200,400
+,,,,,,,,,,,Adam Gaudette,2200,2200,400
+,,,,,,,,,,,Kevin Rooney,2400,2400,420
+,,,,,,,,,,,Brandon Sutter,2400,2400,430
+,,,,,,,,,,,Will Butcher,2800,2800,500
+,,,,,,,,,,,Damon Severson,2800,2800,500
+,,,,,,,,,,,Jay Beagle,2800,2800,500
+,,,,,,,,,,,Josh Leivo,2800,2800,500
+,,,,,,,,,,,Tyler Motte,2800,2800,500
+,,,,,,,,,,,Tim Schaller,2800,2800,500
+,,,,,,,,,,,Sami Vatanen,3000,3000,550
+,,,,,,,,,,,Connor Carrick,3300,3300,600
+,,,,,,,,,,,Alexander Edler,3300,3300,600
+,,,,,,,,,,,Quinn Hughes,3300,3300,600
+,,,,,,,,,,,Tyler Myers,3300,3300,600
+,,,,,,,,,,,Andy Greene,4500,4500,800
+,,,,,,,,,,,Mirco Müller,4500,4500,800
+,,,,,,,,,,,Jordie Benn,4500,4500,900
+,,,,,,,,,,,Troy Stecher,5500,5500,1050
+,,,,,,,,,,,Oscar Fantenberg,6600,6600,1300
+,,,,,,,,,,,Chris Tanev,6600,6600,1300
+,,,,,,,,,,,Vladimir Tarasenko,850,850,132
+,,,,,,,,,,,Brayden Schenn,1000,1000,163
+,,,,,,,,,,,Ryan O'Reilly,1100,1100,188
+,,,,,,,,,,,Brendan Gallagher,1200,1200,205
+,,,,,,,,,,,David Perron,1300,1300,230
+,,,,,,,,,,,Jaden Schwartz,1400,1400,245
+,,,,,,,,,,,Max Domi,1400,1400,245
+,,,,,,,,,,,Sammy Blais,1500,1500,275
+,,,,,,,,,,,Zachary Sanford,1700,1700,310
+,,,,,,,,,,,Oskar Sundqvist,1700,1700,310
+,,,,,,,,,,,Tomas Tatar,1700,1700,295
+,,,,,,,,,,,Shea Weber,1700,1700,310
+,,,,,,,,,,,Tyler Bozak,1800,1800,335
+,,,,,,,,,,,Alexander Steen,1800,1800,335
+,,,,,,,,,,,Robert Thomas,1800,1800,335
+,,,,,,,,,,,Jonathan Drouin,1800,1800,330
+,,,,,,,,,,,Robby Fabbri,1900,1900,360
+,,,,,,,,,,,Paul Byron,1900,1900,350
+,,,,,,,,,,,Ivan Barbashyov,2000,2000,390
+,,,,,,,,,,,Vince Dunn,2000,2000,390
+,,,,,,,,,,,Colton Parayko,2000,2000,390
+,,,,,,,,,,,Alex Pietrangelo,2000,2000,390
+,,,,,,,,,,,Artturi Lehkonen,2000,2000,375
+,,,,,,,,,,,Nick Suzuki,2000,2000,375
+,,,,,,,,,,,Joel Armia,2200,2200,400
+,,,,,,,,,,,Phillip Danault,2200,2200,400
+,,,,,,,,,,,Jesperi Kotkaniemi,2200,2200,400
+,,,,,,,,,,,Justin Faulk,2400,2400,460
+,,,,,,,,,,,Nick Cousins,2500,2500,500
+,,,,,,,,,,,Jeff Petry,2500,2500,460
+,,,,,,,,,,,Nate Thompson,2500,2500,500
+,,,,,,,,,,,Jordan Weal,2900,2900,540
+,,,,,,,,,,,Victor Mete,3000,3000,600
+,,,,,,,,,,,Mike Reilly,3000,3000,600
+,,,,,,,,,,,Jay Bouwmeester,4000,4000,800
+,,,,,,,,,,,Carl Gunnarsson,4000,4000,800
+,,,,,,,,,,,Robert Bortuzzo,5000,5000,950
+,,,,,,,,,,,Brett Kulak,5000,5000,950
+,,,,,,,,,,,Ben Chiarot,6000,6000,1100
+,,,,,,,,,,,Christian Folin,6000,6000,1100
+,,,,,,,,,,,Sidney Crosby,1050,1050,155
+,,,,,,,,,,,Jake Guentzel,1050,1050,155
+,,,,,,,,,,,Mark Stone,1050,1050,160
+,,,,,,,,,,,Max Pacioretty,1100,1100,165
+,,,,,,,,,,,Jonathan Marchessault,1200,1200,180
+,,,,,,,,,,,William Karlsson,1300,1300,200
+,,,,,,,,,,,Patric Hörnqvist,1500,1500,235
+,,,,,,,,,,,Reilly Smith,1500,1500,235
+,,,,,,,,,,,Alex Galchenyuk,1600,1600,250
+,,,,,,,,,,,Brandon Pirri,1600,1600,265
+,,,,,,,,,,,Paul Stastny,1700,1700,285
+,,,,,,,,,,,Dominik Kahun,1800,1800,300
+,,,,,,,,,,,Sam Lafferty,1800,1800,300
+,,,,,,,,,,,Jared McCann,1800,1800,300
+,,,,,,,,,,,Brandon Tanev,1800,1800,300
+,,,,,,,,,,,Cody Eakin,1800,1800,300
+,,,,,,,,,,,Cody Glass,1800,1800,300
+,,,,,,,,,,,Andrew Agozzino,1900,1900,320
+,,,,,,,,,,,Bryan Rust,1900,1900,320
+,,,,,,,,,,,Kris Letang,2000,2000,340
+,,,,,,,,,,,Dominik Simon,2000,2000,340
+,,,,,,,,,,,Zachary Aston-Reese,2200,2200,370
+,,,,,,,,,,,Joseph Blandisi,2200,2200,370
+,,,,,,,,,,,Teddy Blueger,2200,2200,370
+,,,,,,,,,,,Adam Johnson,2200,2200,370
+,,,,,,,,,,,Ryan Reaves,2400,2400,410
+,,,,,,,,,,,Justin Schultz,2500,2500,430
+,,,,,,,,,,,William Carrier,2500,2500,450
+,,,,,,,,,,,Tomas Nosek,2500,2500,450
+,,,,,,,,,,,Shea Théodore,2800,2800,480
+,,,,,,,,,,,Marcus Pettersson,3500,3500,650
+,,,,,,,,,,,Nick Holden,4000,4000,700
+,,,,,,,,,,,Nate Schmidt,4000,4000,700
+,,,,,,,,,,,Jimmy Schuldt,4000,4000,700
+,,,,,,,,,,,Erik Gudbranson,4500,4500,850
+,,,,,,,,,,,Jack Johnson,4500,4500,850
+,,,,,,,,,,,John Marino,4500,4500,850
+,,,,,,,,,,,Juuso Riikola,4500,4500,850
+,,,,,,,,,,,Deryk Engelland,5000,5000,950
+,,,,,,,,,,,Brayden McNabb,5000,5000,950
+,,,,,,,,,,,Jon Merrill,6000,6000,1150
+,,,,,,,,,,,Brian Dumoulin,6600,6600,1200
+,,,,,,,,,,,Nikita Kucherov,950,950,128
+,,,,,,,,,,,Steven Stamkos,950,950,128
+,,,,,,,,,,,Brayden Point,1000,1000,140
+,,,,,,,,,,,Nathan MacKinnon,1000,1000,138
+,,,,,,,,,,,Mikko Rantanen,1100,1100,155
+,,,,,,,,,,,Gabriel Landeskog,1200,1200,180
+,,,,,,,,,,,Tyler Johnson,1400,1400,230
+,,,,,,,,,,,Alex Killorn,1500,1500,240
+,,,,,,,,,,,Nazem Kadri,1500,1500,230
+,,,,,,,,,,,Anthony Cirelli,1600,1600,260
+,,,,,,,,,,,Patrick Maroon,1600,1600,260
+,,,,,,,,,,,Ondrej Palát,1600,1600,260
+,,,,,,,,,,,Yanni Gourde,1700,1700,275
+,,,,,,,,,,,Mathieu Joseph,1700,1700,275
+,,,,,,,,,,,Victor Hedman,1900,1900,320
+,,,,,,,,,,,Andre Burakovsky,1900,1900,320
+,,,,,,,,,,,Mikhail Sergachev,2000,2000,340
+,,,,,,,,,,,Joonas Donskoi,2000,2000,340
+,,,,,,,,,,,Luke Witkowski,2200,2200,375
+,,,,,,,,,,,JT Compher,2200,2200,360
+,,,,,,,,,,,Tyson Jost,2200,2200,360
+,,,,,,,,,,,Ryan McDonagh,2500,2500,450
+,,,,,,,,,,,Cedric Paquette,2500,2500,450
+,,,,,,,,,,,Kevin Shattenkirk,2500,2500,450
+,,,,,,,,,,,Vladislav Kamenev,2500,2500,420
+,,,,,,,,,,,Colin Wilson,2500,2500,420
+,,,,,,,,,,,Matt Calvert,2900,2900,500
+,,,,,,,,,,,Cale Makar,2900,2900,500
+,,,,,,,,,,,Matt Nieto,2900,2900,500
+,,,,,,,,,,,Valeri Nichushkin,3000,3000,540
+,,,,,,,,,,,Pierre-Edouard Bellemare,3500,3500,600
+,,,,,,,,,,,Samuel Girard,3500,3500,600
+,,,,,,,,,,,Ryan Graves,3500,3500,600
+,,,,,,,,,,,Erik Cernak,4000,4000,750
+,,,,,,,,,,,Jan Rutta,4000,4000,750
+,,,,,,,,,,,Erik Johnson,4000,4000,650
+,,,,,,,,,,,Nikita Zadorov,4500,4500,750
+,,,,,,,,,,,Braydon Coburn,5000,5000,850
+,,,,,,,,,,,Conor Timmins,5000,5000,850
+,,,,,,,,,,,Kevin Connauton,6000,6000,1000
+,,,,,,,,,,,Auston Matthews,800,800,102
+,,,,,,,,,,,David Pastrnak,1000,1000,138
+,,,,,,,,,,,Patrice Bergeron,1050,1050,150
+,,,,,,,,,,,Brad Marchand,1150,1150,170
+,,,,,,,,,,,Mitch Marner,1300,1300,200
+,,,,,,,,,,,Jake DeBrusk,1400,1400,220
+,,,,,,,,,,,Alexander Kerfoot,1600,1600,260
+,,,,,,,,,,,William Nylander,1600,1600,260
+,,,,,,,,,,,Andreas Johnsson,1700,1700,280
+,,,,,,,,,,,Kasperi Kapanen,1700,1700,280
+,,,,,,,,,,,Ilya Mikheyev,1700,1700,280
+,,,,,,,,,,,Morgan Rielly,1800,1800,300
+,,,,,,,,,,,Charlie Coyle,1900,1900,325
+,,,,,,,,,,,David Krejci,1900,1900,325
+,,,,,,,,,,,Sean Kuraly,1900,1900,325
+,,,,,,,,,,,Trevor Moore,2000,2000,340
+,,,,,,,,,,,Jason Spezza,2000,2000,340
+,,,,,,,,,,,Dmytro Timashov,2000,2000,340
+,,,,,,,,,,,Karson Kuhlman,2000,2000,350
+,,,,,,,,,,,Tyson Barrie,2200,2200,370
+,,,,,,,,,,,Danton Heinen,2200,2200,375
+,,,,,,,,,,,Kenny Agostino,2400,2400,400
+,,,,,,,,,,,Frédérik Gauthier,2400,2400,400
+,,,,,,,,,,,Nick Shore,2400,2400,400
+,,,,,,,,,,,David Backes,2400,2400,400
+,,,,,,,,,,,Nicolas Petan,2500,2500,440
+,,,,,,,,,,,Torey Krug,2500,2500,440
+,,,,,,,,,,,Pär Lindholm,2500,2500,440
+,,,,,,,,,,,Joakim Nordström,2500,2500,440
+,,,,,,,,,,,Brett Ritchie,2500,2500,440
+,,,,,,,,,,,Chris Wagner,2500,2500,440
+,,,,,,,,,,,Charlie McAvoy,2800,2800,475
+,,,,,,,,,,,Zdeno Chára,3300,3300,575
+,,,,,,,,,,,Matt Grzelcyk,3300,3300,575
+,,,,,,,,,,,Cody Ceci,4000,4000,700
+,,,,,,,,,,,Timothy Liljegren,4000,4000,700
+,,,,,,,,,,,Connor Clifton,4000,4000,750
+,,,,,,,,,,,Kevin Gravel,4500,4500,800
+,,,,,,,,,,,Martin Marincin,4500,4500,800
+,,,,,,,,,,,Jake Muzzin,4500,4500,800
+,,,,,,,,,,,Ben Harpur,5000,5000,900
+,,,,,,,,,,,Justin Holl,5000,5000,900
+,,,,,,,,,,,Brandon Carlo,5500,5500,1000
+,,,,,,,,,,,Cam Atkinson,900,900,140
+,,,,,,,,,,,Anders Lee,1100,1100,188
+,,,,,,,,,,,Jordan Eberle,1300,1300,225
+,,,,,,,,,,,Brock Nelson,1300,1300,225
+,,,,,,,,,,,Pierre-Luc Dubois,1400,1400,250
+,,,,,,,,,,,Mathew Barzal,1400,1400,255
+,,,,,,,,,,,Josh Anderson,1500,1500,265
+,,,,,,,,,,,Gustav Nyquist,1500,1500,265
+,,,,,,,,,,,Alexandre Texier,1500,1500,280
+,,,,,,,,,,,Oliver Björkstrand,1600,1600,295
+,,,,,,,,,,,Nick Foligno,1600,1600,295
+,,,,,,,,,,,Michael Dal Colle,1600,1600,300
+,,,,,,,,,,,Anthony Beauvillier,1700,1700,320
+,,,,,,,,,,,Boone Jenner,1800,1800,335
+,,,,,,,,,,,Emil Bemström,1900,1900,360
+,,,,,,,,,,,Josh Bailey,1900,1900,360
+,,,,,,,,,,,Derick Brassard,1900,1900,360
+,,,,,,,,,,,Seth Jones,2000,2000,390
+,,,,,,,,,,,Jakob Lilja,2200,2200,420
+,,,,,,,,,,,Alexander Wennberg,2200,2200,420
+,,,,,,,,,,,Zach Werenski,2200,2200,420
+,,,,,,,,,,,Marko Daňo,2400,2400,450
+,,,,,,,,,,,Riley Nash,2400,2400,450
+,,,,,,,,,,,Cal Clutterbuck,2500,2500,480
+,,,,,,,,,,,Ross Johnston,2500,2500,480
+,,,,,,,,,,,Tom Kühnhackl,2500,2500,480
+,,,,,,,,,,,Ryan Pulock,2500,2500,480
+,,,,,,,,,,,Leo Komarov,2800,2800,525
+,,,,,,,,,,,Matt Martin,2800,2800,525
+,,,,,,,,,,,Johnny Boychuk,2900,2900,575
+,,,,,,,,,,,Noah Dobson,3300,3300,650
+,,,,,,,,,,,Nick Leddy,3300,3300,650
+,,,,,,,,,,,Ryan Murray,3400,3400,650
+,,,,,,,,,,,Markus Nutivaara,3400,3400,650
+,,,,,,,,,,,Devon Toews,3500,3500,700
+,,,,,,,,,,,David Savard,4000,4000,750
+,,,,,,,,,,,Thomas Hickey,4000,4000,800
+,,,,,,,,,,,Vladislav Gavrikov,4500,4500,850
+,,,,,,,,,,,Dean Kukan,4500,4500,850
+,,,,,,,,,,,Scott Mayfield,4500,4500,900
+,,,,,,,,,,,Adam Pelech,4500,4500,900
+,,,,,,,,,,,Scott Harrington,6000,6000,1200
+,,,,,,,,,,,Sean Couturier,1050,1050,175
+,,,,,,,,,,,Claude Giroux,1050,1050,180
+,,,,,,,,,,,Tyler Seguin,1050,1050,170
+,,,,,,,,,,,Joe Pavelski,1150,1150,195
+,,,,,,,,,,,James van Riemsdyk,1200,1200,220
+,,,,,,,,,,,Jamie Benn,1200,1200,210
+,,,,,,,,,,,Alexander Radulov,1200,1200,210
+,,,,,,,,,,,Travis Konecny,1300,1300,230
+,,,,,,,,,,,Jakub Voracek,1400,1400,255
+,,,,,,,,,,,Kevin Hayes,1500,1500,270
+,,,,,,,,,,,Corey Perry,1600,1600,295
+,,,,,,,,,,,Roope Hintz,1700,1700,310
+,,,,,,,,,,,Oskar Lindblom,1800,1800,325
+,,,,,,,,,,,Joel Farabee,2000,2000,375
+,,,,,,,,,,,Radek Faksa,2000,2000,400
+,,,,,,,,,,,Connor Bunnaman,2200,2200,440
+,,,,,,,,,,,Shayne Gostisbehere,2200,2200,440
+,,,,,,,,,,,Scott Laughton,2200,2200,400
+,,,,,,,,,,,Michael Raffl,2200,2200,400
+,,,,,,,,,,,Chris Stewart,2200,2200,440
+,,,,,,,,,,,Carsen Twarynski,2200,2200,440
+,,,,,,,,,,,Nicholas Caamano,2200,2200,425
+,,,,,,,,,,,Rhett Gardner,2200,2200,425
+,,,,,,,,,,,Denis Guryanov,2200,2200,425
+,,,,,,,,,,,Joel L'Esperance,2200,2200,425
+,,,,,,,,,,,Justin Dowling,2400,2400,460
+,,,,,,,,,,,Miro Heiskanen,2400,2400,460
+,,,,,,,,,,,John Klingberg,2400,2400,460
+,,,,,,,,,,,Ivan Provorov,2500,2500,480
+,,,,,,,,,,,Mattias Janmark-Nylén,2500,2500,500
+,,,,,,,,,,,Matt Niskanen,2800,2800,525
+,,,,,,,,,,,Andrew Cogliano,2800,2800,540
+,,,,,,,,,,,Esa Lindell,3000,3000,600
+,,,,,,,,,,,Robert Hägg,3300,3300,650
+,,,,,,,,,,,Samuel Morin,3300,3300,650
+,,,,,,,,,,,Philippe Myers,3300,3300,650
+,,,,,,,,,,,Travis Sanheim,3300,3300,650
+,,,,,,,,,,,Justin Braun,4000,4000,850
+,,,,,,,,,,,Joel Hanley,5000,5000,950
+,,,,,,,,,,,Andrej Sekera,5000,5000,950
+,,,,,,,,,,,Taylor Fedun,5500,5500,1100
+,,,,,,,,,,,Jamie Oleksiak,5500,5500,1100
+,,,,,,,,,,,Viktor Arvidsson,850,850,125
+,,,,,,,,,,,Filip Forsberg,850,850,125
+,,,,,,,,,,,Matt Duchene,1050,1050,163
+,,,,,,,,,,,Mike Hoffman,1100,1100,175
+,,,,,,,,,,,Aleksander Barkov,1200,1200,195
+,,,,,,,,,,,Evgeny Dadonov,1400,1400,235
+,,,,,,,,,,,Jonathan Huberdeau,1400,1400,225
+,,,,,,,,,,,Kyle Turris,1500,1500,265
+,,,,,,,,,,,Mikael Granlund,1600,1600,280
+,,,,,,,,,,,Ryan Johansen,1600,1600,280
+,,,,,,,,,,,Craig Smith,1600,1600,280
+,,,,,,,,,,,Vincent Trocheck,1700,1700,295
+,,,,,,,,,,,Frank Vatrano,1800,1800,310
+,,,,,,,,,,,Brett Connolly,1900,1900,330
+,,,,,,,,,,,Nick Bonino,2000,2000,340
+,,,,,,,,,,,Daniel Carr,2000,2000,370
+,,,,,,,,,,,Roman Josi,2000,2000,340
+,,,,,,,,,,,Calle Järnkrok,2000,2000,370
+,,,,,,,,,,,Colton Sissons,2000,2000,340
+,,,,,,,,,,,Denis Malgin,2000,2000,350
+,,,,,,,,,,,Rocco Grimaldi,2200,2200,400
+,,,,,,,,,,,Austin Watson,2200,2200,400
+,,,,,,,,,,,Henrik Borgstrom,2200,2200,375
+,,,,,,,,,,,Aaron Ekblad,2200,2200,400
+,,,,,,,,,,,Noel Acciari ,2400,2400,430
+,,,,,,,,,,,Jayce Hawryluk,2500,2500,475
+,,,,,,,,,,,Dryden Hunt,2500,2500,475
+,,,,,,,,,,,Colton Sceviour,2500,2500,475
+,,,,,,,,,,,Keith Yandle,2500,2500,475
+,,,,,,,,,,,Mattias Ekholm,3300,3300,600
+,,,,,,,,,,,Ryan Ellis,3300,3300,600
+,,,,,,,,,,,Dante Fabbro,3300,3300,600
+,,,,,,,,,,,Matt Irwin,4000,4000,800
+,,,,,,,,,,,Michael Matheson,4000,4000,800
+,,,,,,,,,,,Anton Strålman,4000,4000,800
+,,,,,,,,,,,MacKenzie Weegar,4000,4000,800
+,,,,,,,,,,,Steven Santini,5000,5000,900
+,,,,,,,,,,,Yannick Weber,5000,5000,900
+,,,,,,,,,,,Mark Pysyk,5500,5500,1050
+,,,,,,,,,,,Dan Hamhuis,6000,6000,1100
+,,,,,,,,,,,Sean Monahan,950,950,148
+,,,,,,,,,,,Johnny Gaudreau,1050,1050,170
+,,,,,,,,,,,Matthew Tkachuk,1100,1100,180
+,,,,,,,,,,,Dustin Brown,1300,1300,225
+,,,,,,,,,,,Jeff Carter,1300,1300,225
+,,,,,,,,,,,Anze Kopitar,1300,1300,225
+,,,,,,,,,,,Elias Lindholm,1300,1300,215
+,,,,,,,,,,,Tyler Toffoli,1500,1500,260
+,,,,,,,,,,,Mikael Backlund,1500,1500,275
+,,,,,,,,,,,Ilya Kovalchuk,1600,1600,290
+,,,,,,,,,,,Alex Iafallo,1800,1800,325
+,,,,,,,,,,,Sam Bennett,1800,1800,330
+,,,,,,,,,,,Michael Frolík,1800,1800,330
+,,,,,,,,,,,Mark Giordano,1800,1800,330
+,,,,,,,,,,,Drew Doughty,1900,1900,340
+,,,,,,,,,,,Carl Grundström,1900,1900,340
+,,,,,,,,,,,Tobias Rieder,1900,1900,360
+,,,,,,,,,,,Milan Lucic,2000,2000,380
+,,,,,,,,,,,Derek Ryan,2000,2000,380
+,,,,,,,,,,,Adrian Kempe,2200,2200,420
+,,,,,,,,,,,Trevor Lewis,2200,2200,420
+,,,,,,,,,,,Nikolai Prokhorkin,2200,2200,420
+,,,,,,,,,,,Mark Jankowski,2200,2200,420
+,,,,,,,,,,,Andrew Mangiapane,2200,2200,420
+,,,,,,,,,,,Mario Kempe,2400,2400,450
+,,,,,,,,,,,Austin Wagner,2400,2400,450
+,,,,,,,,,,,Austin Czarnik,2400,2400,450
+,,,,,,,,,,,Michael Amadio,2500,2500,480
+,,,,,,,,,,,Kyle Clifford,2500,2500,480
+,,,,,,,,,,,Thomas James Brodie,2900,2900,550
+,,,,,,,,,,,Noah Hanifin,3300,3300,600
+,,,,,,,,,,,Rasmus Andersson,3500,3500,700
+,,,,,,,,,,,Oliver Kylington,3500,3500,700
+,,,,,,,,,,,Paul LaDue,4000,4000,700
+,,,,,,,,,,,Alec Martinez,4000,4000,700
+,,,,,,,,,,,Sean Walker,4000,4000,800
+,,,,,,,,,,,Travis Hamonic,4000,4000,800
+,,,,,,,,,,,Tobias Björnfot,5000,5000,900
+,,,,,,,,,,,Ben Hutton,5000,5000,900
+,,,,,,,,,,,Joakim Ryan,5000,5000,900
+,,,,,,,,,,,Michael Stone,5000,5000,950
+,,,,,,,,,,,Derek Forbort,7000,7000,1300
+,,,,,,,,,,,Logan Couture,1000,1000,148
+,,,,,,,,,,,Tomas Hertl,1050,1050,155
+,,,,,,,,,,,Timo Meier,1050,1050,155
+,,,,,,,,,,,Jack Eichel,1100,1100,170
+,,,,,,,,,,,Jeff Skinner,1100,1100,160
+,,,,,,,,,,,Evander Kane,1150,1150,180
+,,,,,,,,,,,Victor Olofsson,1150,1150,175
+,,,,,,,,,,,Patrick Marleau,1500,1500,250
+,,,,,,,,,,,Brent Burns,1600,1600,270
+,,,,,,,,,,,Kevin Labanc,1600,1600,270
+,,,,,,,,,,,Lukas Radil,1700,1700,285
+,,,,,,,,,,,Marcus Sörensen,1700,1700,285
+,,,,,,,,,,,Danil Yurtaikin,1700,1700,285
+,,,,,,,,,,,Jonny Brodzinski,1800,1800,310
+,,,,,,,,,,,Marcus Johansson,1800,1800,295
+,,,,,,,,,,,Sam Reinhart,1800,1800,310
+,,,,,,,,,,,Dylan Gambrell,1900,1900,330
+,,,,,,,,,,,Kyle Okposo,1900,1900,335
+,,,,,,,,,,,Lean Bergmann,2000,2000,360
+,,,,,,,,,,,Joe Thornton,2000,2000,360
+,,,,,,,,,,,Jimmy Vesey,2000,2000,350
+,,,,,,,,,,,Erik Karlsson,2200,2200,390
+,,,,,,,,,,,Melker Karlsson,2200,2200,390
+,,,,,,,,,,,Casey Mittelstadt,2200,2200,380
+,,,,,,,,,,,Evan Rodrigues,2200,2200,380
+,,,,,,,,,,,Barclay Goodrow,2500,2500,460
+,,,,,,,,,,,Vladimir Sobotka,2800,2800,475
+,,,,,,,,,,,Rasmus Dahlin,2900,2900,510
+,,,,,,,,,,,Zemgus Girgensons,2900,2900,510
+,,,,,,,,,,,Johan Larsson,2900,2900,510
+,,,,,,,,,,,Rasmus Ristolainen,2900,2900,510
+,,,,,,,,,,,Marc-Edouard Vlasic,3300,3300,575
+,,,,,,,,,,,Colin Miller,3500,3500,600
+,,,,,,,,,,,Tim Heed,4000,4000,750
+,,,,,,,,,,,Jacob Middleton,4000,4000,750
+,,,,,,,,,,,Radim Simek,4000,4000,750
+,,,,,,,,,,,Henri Jokiharju,4000,4000,700
+,,,,,,,,,,,Jake McCabe,4500,4500,800
+,,,,,,,,,,,Brenden Dillon,5000,5000,900
+,,,,,,,,,,,Mario Ferraro,5000,5000,900
+,,,,,,,,,,,Marco Scandella,5000,5000,900

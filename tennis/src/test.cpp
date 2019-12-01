@@ -56,7 +56,6 @@ int main(int argc, char** argv)
         add_bitset(bits, 1);
     }
     bit_log.close();
-*/
     //unsigned int num = std::atoi(argv[1]);
     unsigned long long num = 33;
     std::cout << (num & -num) << std::endl;
@@ -66,6 +65,8 @@ int main(int argc, char** argv)
     
     //combo(nums,std::atoi(argv[2])); 
     //__int128 num = __uint128(1)<<78;
+*/
+    
     return 0;
 }
 template <typename T>
