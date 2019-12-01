@@ -14,9 +14,13 @@
 #include <map>
 #include <queue>
 #include <climits>
+#include <memory>
 #include "readDKOdds.h"
 #include <stdlib.h>
 
+/*List of commands which will be used multiple times, so not to include
+    entire std namespace.
+*/
 using std::cout;
 using std::endl;
 using std::vector;
@@ -25,6 +29,7 @@ using std::set;
 using std::for_each;
 using std::priority_queue;
 using std::unordered_map;
+using std::shared_ptr;
 
 class Player;
 class DKSlate;
@@ -58,13 +63,16 @@ class Player{
                                     team(newTeam),
                                     id(newID),
                                     position(newPosition) {};
+        /*Mainly using the copy constructor to know when copies are happening and try to avoid them
+            since the potential combinations are very large and it could degrade overall performance.
+        */   
         Player(const Player &rhs):  salary(rhs.salary),
                                     nameid(rhs.nameid),
                                     name(rhs.name),
                                     matchup(rhs.matchup),
                                     team(rhs.team),
                                     id(rhs.id),
-                                    position(rhs.position) { cout << "copied!!" << endl; };
+                                    position(rhs.position) { /*cout << "copied!!" << endl;*/ };
 
         void setName(std::string newName) { name = newName; };
         void setMatchup(std::string newMatchup) { matchup = newMatchup; };
@@ -97,28 +105,28 @@ namespace std{
 }
 class Lineup{
     private:
-        vector<Player *> lineup;
+        vector<shared_ptr<Player>> lineup;
 
     public:
-        Lineup(vector<Player *> &lhs) : lineup(lhs) {};
+        Lineup(vector<shared_ptr<Player>> &lhs) : lineup(lhs) {};
         ~Lineup(){};
 
         int getLineupSalary() const;
 };
 class DKSlate{
     private:
-        vector<Player*> players;
-        set< set<Player*> > hashLineups;
-        std::unordered_set<Player*> dogs;
-        vector<Player*> goalies;
-        vector<Player*> defensemen;
-        vector< vector<Player*> > combo_D;
-        vector<Player*> wingers;
-        vector< vector<Player*> > combo_W;
-        vector<Player*> centers;
-        vector< vector<Player*> > combo_C;
-        vector<Player*> utility;
-        vector<vector<Player *>> lineups;
+        vector<shared_ptr<Player>> players;
+        set< set<shared_ptr<Player>> > hashLineups;
+        std::unordered_set<shared_ptr<Player>> dogs;
+        vector<shared_ptr<Player>> goalies;
+        vector<shared_ptr<Player>> defensemen;
+        vector< vector<shared_ptr<Player>> > combo_D;
+        vector<shared_ptr<Player>> wingers;
+        vector< vector<shared_ptr<Player>> > combo_W;
+        vector<shared_ptr<Player>> centers;
+        vector< vector<shared_ptr<Player>> > combo_C;
+        vector<shared_ptr<Player>> utility;
+        vector<vector<shared_ptr<Player>>> lineups;
         int indexMinOdds, indexMaxPoints;
         int dog_count;
         enum Site { fanduel, draftkings };
@@ -128,7 +136,7 @@ class DKSlate{
         void nextCombo(unsigned long long &);
         
     public:
-        DKSlate(int dogs):dog_count(dogs){ lineups.reserve(1000000); };
+        DKSlate(int dogs):dog_count(dogs){  };
         DKSlate():dog_count(0){};
         ~DKSlate(){};
 
@@ -139,14 +147,14 @@ class DKSlate{
         size_t numLineups() const { return lineups.size(); };
         size_t numPlayers() const { return goalies.size() + utility.size(); };
         int getLineupSalary(int) const;
-        int getLineupSalary(const vector<Player *> &) const;
+        int getLineupSalary(const vector<shared_ptr<Player>> &) const;
         double getLineupPoints(int) const;
         double getLineupOdds(int) const;
-        double getLineupOdds(vector<Player*> &) const;
+        double getLineupOdds(vector<shared_ptr<Player>> &) const;
         void readRecordsDK(std::string);
         void readRecordsFanDuel(std::string);
         void make_combos();
-        void setToVec(set<Player*> &, vector<Player*> &);
+        void setToVec(set<shared_ptr<Player>> &, vector<shared_ptr<Player>> &);
         int lineup_salary(const unsigned long long);
         bool head2head(const unsigned long long);
         bool dog_check(const unsigned long long);
@@ -160,20 +168,20 @@ class DKSlate{
 	    void setSport(std::string);
         template <class T>
         bool lineupExists(vector<T> &);
-        bool teamCount(vector<Player*> &);
-        void makeCombos(vector<Player*> &, vector< vector<Player*> > &, int idx, int contents);
-        void helpMakeCombos(vector<Player*> &, vector< vector<Player*> > &, int idx, int contents, vector<int> &);
-        void decreasify(vector<Player*> &);
-        //bool operator<(const vector<Player *> &, const vector<Player *> &);
+        bool teamCount(vector<shared_ptr<Player>> &);
+        void makeCombos(vector<shared_ptr<Player>> &, vector< vector<shared_ptr<Player>> > &, int idx, int contents);
+        void helpMakeCombos(vector<shared_ptr<Player>> &, vector< vector<shared_ptr<Player>> > &, int idx, int contents, vector<int> &);
+        void decreasify(vector<shared_ptr<Player>> &);
+        //bool operator<(const vector<shared_ptr<Player>> &, const vector<shared_ptr<Player>> &);
 
 };
 /*class myComparator{
     public:
-        int operator()(const vector<Player *> &lhs, const vector<Player *> &rhs) { return lhs.getLineupOdds() > rhs.getLineupOdds(); };
+        int operator()(const vector<shared_ptr<Player>> &lhs, const vector<shared_ptr<Player>> &rhs) { return lhs.getLineupOdds() > rhs.getLineupOdds(); };
 };
 */
 struct compareLineups{
-    bool operator()(vector<Player*> &v1, vector<Player*> &v2){
+    bool operator()(vector<shared_ptr<Player>> &v1, vector<shared_ptr<Player>> &v2){
         double total1(1), total2(1);
         for(auto &vec : v1){
             total1 *= vec->getOdds();
@@ -185,14 +193,14 @@ struct compareLineups{
     }
 }; 
 struct sortSalary{
-    bool operator()(Player* &p1, Player* &p2){
+    bool operator()(shared_ptr<Player> &p1, shared_ptr<Player> &p2){
         return (p1->getSalary() > p2->getSalary());
     }
 };
-void DKSlate::decreasify(vector<Player*> &vec){
+void DKSlate::decreasify(vector<shared_ptr<Player>> &vec){
     auto it = vec.begin();
     while(it != vec.end()){
-        auto maxIT = std::max_element(it, vec.end(), [](Player* &p1, Player* &p2){ return p1->getOdds() < p2->getOdds(); });
+        auto maxIT = std::max_element(it, vec.end(), [](shared_ptr<Player> &p1, shared_ptr<Player> &p2){ return p1->getOdds() < p2->getOdds(); });
         maxIT = std::find_end(it, vec.end(), maxIT, maxIT+1);
         if(it == maxIT){
             ++it;
@@ -217,7 +225,7 @@ double DKSlate::getLineupPoints(int i) const{
 
     return points;
 }
-/*double DKSlate::getLineupOdds(const vector<Player*> &v1){
+/*double DKSlate::getLineupOdds(const vector<shared_ptr<Player>> &v1){
     double total(1);
     for(auto i(0); i < v1.size(); ++i) total *= v1[i]->getOdds();
     return total;
@@ -231,7 +239,7 @@ double DKSlate::getLineupOdds(int i) const{
 
     return total;
 }
-int DKSlate::getLineupSalary(const vector<Player *> &line) const{
+int DKSlate::getLineupSalary(const vector<shared_ptr<Player>> &line) const{
     int salary(0);
     for(auto i(0); i < line.size(); ++i)
         salary += line[i]->getSalary();
@@ -310,16 +318,16 @@ void DKMapping(std::map<std::string, std::string> &DKtoRoto){
     fin.close();
 }
 void DKSlate::readRecordsDK(std::string file){ 
-    set<Player*> setGoalies;
-    set<Player*> setDefensemen;
-    set<Player*> setWingers;
-    set<Player*> setCenters;
+    set<shared_ptr<Player>> setGoalies;
+    set<shared_ptr<Player>> setDefensemen;
+    set<shared_ptr<Player>> setWingers;
+    set<shared_ptr<Player>> setCenters;
 
-    /*vector<Player*> goalies;
-    vector<Player*> defensemen;
-    vector<Player*> wingers;
-    vector<Player*> centers;
-    vector<Player*> utility;*/
+    /*vector<shared_ptr<Player>> goalies;
+    vector<shared_ptr<Player>> defensemen;
+    vector<shared_ptr<Player>> wingers;
+    vector<shared_ptr<Player>> centers;
+    vector<shared_ptr<Player>> utility;*/
     // File pointer 
     std::fstream fin; 
     std::string path, filename,rotoStart,DKOdds;
@@ -394,20 +402,23 @@ void DKSlate::readRecordsDK(std::string file){
         //Player constructor to know what some of the elements of the row vector mean
         //Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, std::string newPosition):
 
-        Player * player;
+        shared_ptr<Player> player;
 
         if(site == draftkings){
             std::transform(row[2].begin(), row[2].end(), row[2].begin(), ::toupper);
-            player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3], row[0]);
+            shared_ptr<Player> temp_player = std::make_shared<Player>(Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3], row[0]));
+            //cout << "Before Copy" << endl;
+            player = std::move(temp_player);
             if(row.size() == 10) player->setPoints(std::stod(row[9]));
             else player->setPoints(0.0);
         }
         else if(site == fanduel){
             std::transform(row[3].begin(), row[3].end(), row[3].begin(), ::toupper);
-            player = new Player(std::stoi(row[7]),row[3] + " (" + row[0] + ")", row[3], matchup, row[9], row[0], row[1]);
+            player = std::make_shared<Player>(Player(std::stoi(row[7]),row[3] + " (" + row[0] + ")", row[3], matchup, row[9], row[0], row[1]));
         }
         
-        slate.insert(player->getName());
+        //cout << "Making a Copy?" << endl;
+        slate.emplace(player->getName());
 
         //if(playersPlaying.find(player->getName()) == playersPlaying.end()){
         if(false){
@@ -488,7 +499,7 @@ void DKSlate::readRecordsDK(std::string file){
     } 
 
     /* This will find the average Odds for each position, then remove everyone >= average*/
-    //set<Player *>::iterator it_temp;
+    //set<shared_ptr<Player>>::iterator it_temp;
     setToVec(setGoalies, goalies);
     setToVec(setWingers, wingers);
     setToVec(setCenters, centers);
@@ -505,7 +516,7 @@ void DKSlate::readRecordsDK(std::string file){
     double sum(0);
     double percent(1);
     double average(0);
-    std::for_each(wingers.begin(), wingers.end(), [&sum](Player* loop){
+    std::for_each(wingers.begin(), wingers.end(), [&sum](shared_ptr<Player> loop){
         sum += loop->getOdds();
     });
     //average = percent * double(sum)/double(wingers.size());
@@ -525,12 +536,12 @@ void DKSlate::readRecordsDK(std::string file){
     //cout << "Wingers: " << wingers.size() << endl;
  
     sum = 0;
-    std::for_each(centers.begin(), centers.end(), [&sum](Player* loop){
+    std::for_each(centers.begin(), centers.end(), [&sum](shared_ptr<Player> loop){
         sum += loop->getOdds();
     });
     percent = 0.9;
     //average = percent * double(sum)/double(centers.size());
-    average = 2.8;
+    average = 3.0;
     cout << "Centers Average (before reduction): " << average << endl;
     //if(centers.size() >= 100) average *= 0.75;
     //cout << "Centers: " << average << " : " << centers.size() << endl;
@@ -538,19 +549,19 @@ void DKSlate::readRecordsDK(std::string file){
         if( double((*it)->getOdds()) <= average ) it = centers.erase(it);
         else ++it;
     }
-    //decreasify(centers);
+    decreasify(centers);
     for(auto it = centers.begin(); it != centers.end(); ){
         cout << (*it)->getPosition() << "," << (*it)->getTeam() << "," << (*it)->getName() << "," << (*it)->getSalary() << "," << (*it)->getOdds() << endl;
         ++it;
     }
     //cout << "Centers: " << centers.size() << endl;
     sum = 0;
-    std::for_each(defensemen.begin(), defensemen.end(), [&sum](Player* loop){
+    std::for_each(defensemen.begin(), defensemen.end(), [&sum](shared_ptr<Player> loop){
         sum += loop->getOdds();
     });
     percent = 1.1;
     //average = percent * double(sum)/double(defensemen.size());
-    average = 1.5;
+    average = 2.0;
     cout << "Defensemen Average (before reduction): " << average << endl;
     //if(defensemen.size() >= 100) average *= 0.75;
     //cout << "Defensemen: " << average << " : " << defensemen.size() << endl;
@@ -564,16 +575,16 @@ void DKSlate::readRecordsDK(std::string file){
         ++it;
     } 
 
-    std::for_each(wingers.begin(), wingers.end(), [&](Player* loop){ utility.push_back(loop); });
+    std::for_each(wingers.begin(), wingers.end(), [&](shared_ptr<Player> loop){ utility.push_back(loop); });
     //FanDuel has 4 Wingers and DraftKings has 3 Wingers and a Utility
     //So this block adds Centers to Utility for Draftkings
     if(site == draftkings){
-        std::for_each(centers.begin(), centers.end(), [&](Player* loop){ utility.push_back(loop); });
+        std::for_each(centers.begin(), centers.end(), [&](shared_ptr<Player> loop){ utility.push_back(loop); });
         std::sort(utility.begin(), utility.end(), sortSalary());
         decreasify(utility);
     }
     //Not adding defensemen as utility b/c they rarely are worth the money.  This can be changed.
-    //std::for_each(defensemen.begin(), defensemen.end(), [&](Player* loop){ utility.push_back(loop); });
+    //std::for_each(defensemen.begin(), defensemen.end(), [&](shared_ptr<Player> loop){ utility.push_back(loop); });
     /*Averages from each "goal scoring" position is above.*/
     
         
@@ -608,7 +619,7 @@ int DKSlate::lineup_salary(const unsigned long long combo){
     return salary;
 }
 void DKSlate::get_lineup(const unsigned long long combo){
-    vector<Player *> lineup;
+    vector<shared_ptr<Player>> lineup;
     int count(0);
     for(int i(0); i < players.size(); ++i){
         if((combo >> i) & 1ULL){
@@ -630,10 +641,10 @@ bool DKSlate::head2head(const unsigned long long combo){
     }
     return false; 
 }
-bool DKSlate::teamCount(vector<Player*> &vec){
+bool DKSlate::teamCount(vector<shared_ptr<Player>> &vec){
     unordered_map<string, int> counts;
     auto it = counts.end();
-    for_each(vec.begin(), vec.end(), [&counts](Player* &p1){ 
+    for_each(vec.begin(), vec.end(), [&counts](shared_ptr<Player> &p1){ 
         if(counts.find(p1->getTeam()) == counts.end()) counts[p1->getTeam()] = 1;
         else counts[p1->getTeam()] += 1;   
     });
@@ -645,7 +656,7 @@ bool DKSlate::teamCount(vector<Player*> &vec){
     }
     else{
         counts.clear();
-        for_each(vec.begin(), vec.end(), [&counts](Player* &p1){
+        for_each(vec.begin(), vec.end(), [&counts](shared_ptr<Player> &p1){
             if(p1->getPosition() != "G"){
                 if(counts.find(p1->getTeam()) == counts.end()) counts[p1->getTeam()] = 1;
                 else counts[p1->getTeam()] += 1;
@@ -661,7 +672,7 @@ bool DKSlate::teamCount(vector<Player*> &vec){
 }
 bool DKSlate::dog_check(const unsigned long long combo){
     int count(0);
-    std::unordered_set<Player *>::iterator it;
+    std::unordered_set<shared_ptr<Player>>::iterator it;
     for(int i(0); i < players.size(); ++i){
         if((combo >> i) & 1ULL){
             it = dogs.find(players[i]);
@@ -670,17 +681,17 @@ bool DKSlate::dog_check(const unsigned long long combo){
     }
     return (count > dog_count);
 }
-void DKSlate::setToVec(set<Player*> &original, vector<Player*> &target){
-    for_each(original.begin(), original.end(), [&target](Player* loop){ target.push_back(loop); });
+void DKSlate::setToVec(set<shared_ptr<Player>> &original, vector<shared_ptr<Player>> &target){
+    for_each(original.begin(), original.end(), [&target](shared_ptr<Player> loop){ target.push_back(loop); });
 }
-void DKSlate::makeCombos(vector<Player*> &names, vector< vector<Player*> > &combos, int idx, int contents){
+void DKSlate::makeCombos(vector<shared_ptr<Player>> &names, vector< vector<shared_ptr<Player>> > &combos, int idx, int contents){
     vector<int> items;
     helpMakeCombos(names, combos, idx, contents, items);
 }
-void DKSlate::helpMakeCombos(vector<Player*> &names, vector< vector<Player*> > &combos, int idx, int contents, vector<int> &nameList){
+void DKSlate::helpMakeCombos(vector<shared_ptr<Player>> &names, vector< vector<shared_ptr<Player>> > &combos, int idx, int contents, vector<int> &nameList){
     //cout << idx << "," << contents << "," << nameList.size() << "," << names.size() << endl;
     if(contents == 0){
-        vector<Player*> temp;
+        vector<shared_ptr<Player>> temp;
         std::for_each(nameList.begin(), nameList.end(), [&names, &temp](int a){ temp.push_back(names[a]); });
         combos.push_back(temp);
         nameList.pop_back();
@@ -710,6 +721,7 @@ bool DKSlate::helpLineupExists(vector<T> &first, vector<T> &second){
 }*/
 void DKSlate::make_combos(){
     unsigned int upperSalary, lowerSalary, count(0);
+    unsigned int total(0);
     std::fstream fout;
     if(site == draftkings){
         fout.open("/home/trihard8/repo/projects/leagues/src/nhl/DK_run_count.txt", ios::out);
@@ -729,16 +741,20 @@ void DKSlate::make_combos(){
     cout << combo_W.size() << endl;
     cout << combo_C.size() << endl;
     cout << combo_D.size() << endl;
-    cout << "Total: " << goalies.size()*combo_W.size()*combo_D.size()*combo_C.size()*utility.size() << endl;
+    total = goalies.size()*combo_W.size()*combo_D.size()*combo_C.size()*utility.size();
+    cout << "Total: " <<  total << endl;
+    cout << "Max Size: " << lineups.max_size() << endl;
+    if(total < lineups.max_size()) lineups.reserve(total);
+    else exit(1);
 
     string pass;
     cout << "Press Enter to Continue!" << endl;
     cin >> pass;
     
-    set<Player*> hashLineup;
+    set<shared_ptr<Player>> hashLineup;
     if(sport == 3){
         vector<int> goalieSalary;
-        vector< priority_queue<vector<Player*>, vector< vector<Player*> >, compareLineups> > pq;
+        vector< priority_queue<vector<shared_ptr<Player>>, vector< vector<shared_ptr<Player>> >, compareLineups> > pq;
         pq.resize(goalieSalary.size());
    
         for(auto &goalie : goalies){
@@ -746,11 +762,11 @@ void DKSlate::make_combos(){
             //cout << goalie->getName() << " : " << goalie->getSalary() << endl;
         }
         //std::cin >> pass;
-        vector<Player*> lineup;
+        vector<shared_ptr<Player>> lineup;
         int currentSalary(0); 
-        int minGoalie = (*std::min_element(goalies.begin(), goalies.end(), [](Player* &p1, Player* &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
-        int maxGoalie = (*std::max_element(goalies.begin(), goalies.end(), [](Player* &p1, Player* &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
-        //auto maxIT = std::max_element(it, vec.end(), [](Player* &p1, Player* &p2){ return p1->getOdds() < p2->getOdds(); });
+        int minGoalie = (*std::min_element(goalies.begin(), goalies.end(), [](shared_ptr<Player> &p1, shared_ptr<Player> &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
+        int maxGoalie = (*std::max_element(goalies.begin(), goalies.end(), [](shared_ptr<Player> &p1, shared_ptr<Player> &p2){ return p1->getSalary() < p2->getSalary(); }))->getSalary();
+        //auto maxIT = std::max_element(it, vec.end(), [](shared_ptr<Player> &p1, shared_ptr<Player> &p2){ return p1->getOdds() < p2->getOdds(); });
         
         for(auto &pairW : combo_W){
             for(auto &W : pairW){
@@ -780,7 +796,7 @@ void DKSlate::make_combos(){
                                     lineups.push_back(lineup);
                                     //currentSalary = getLineupSalary(lineups.size()-1);
                                     if(currentSalary <= upperSalary && currentSalary > lowerSalary && !(lineupExists(lineup)) && teamCount(lineup)){
-                                        for_each(lineup.begin(), lineup.end(), [&hashLineup](Player* &loop){ hashLineup.insert(loop); });
+                                        for_each(lineup.begin(), lineup.end(), [&hashLineup](shared_ptr<Player> &loop){ hashLineup.insert(loop); });
                                         hashLineups.insert(hashLineup);
                                         hashLineup.clear();
                                         printLineup(lineups.size()-1);
