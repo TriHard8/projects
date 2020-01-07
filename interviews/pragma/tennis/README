@@ -1,0 +1,21 @@
+This group of scripts is dependent on having python3, scripting location of /bin/bash and g++ to compile a cpp file on your system.
+
+The most complicated bash command is in the player_count.sh file, which is only a single line:
+    for i in `cat "${1}" | tail -n +2 | awk -F"," '{printf $8" "}'`; do echo -n "${i} - "; echo `grep     $i "${2}" | wc -l`; done;
+
+In the "nhl.tar.gz" file, the following bash command is run to calculate maximum odds on lineups for nhl, per goalie:
+    for i in `head -26 RotoStartingLines.csv | tail -22 | awk '{printf $2" "}END{printf "\n"}'`;do echo -n "${i} "; grep -i "${i}" 20191130_testing_DK.csv | awk -F"," -v max=0 '{if($11>max){max=$11}}END{print max}'; done | sort -n --field-separator=' ' --key=2
+
+The file 'pragma_execute.sh' is a wrapper which compiles the .cpp file as well as correctly calls the "true" wrapper script to run the executable that I use to generate tennis lineups for fantasy tennis.  You can run these commands on your own without running the "pragma_execute.sh" script:
+
+    1) g++ -std=c++11 lineups.cpp -o lineups
+    2) ./full_gen.sh 20191030_TEN_DKSalaries.csv tennis
+
+The full_gen.sh script takes 2 arguments, 1 is the raw fantasy participant file and the sport designation, in this case tennis.  This script calls runs 4 other scripts, which are designed to be run independently if needed, with the proper arguments:
+
+    1) generate_lineups.py python script which creates a bash script to be executed which creates all possible lineups.
+    2) generate_lineups.sh bash script which creates all possible lineups
+    3) maxiize.py python script which grabs the maximum lineup from each pairing, then removes the duplicates with awk '!x[$0]++' and outputs to final.csv
+    4) player_count.sh bash script takes the original file with participants and this final.csv file, which will then count the number of lineups each player is in. 
+
+The above script calls are meant to be capable of being called independently, which is why they're separated into different files.

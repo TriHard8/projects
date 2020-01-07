@@ -1,0 +1,5 @@
+This script is just using the following single line command:
+
+for i in `head -26 RotoStartingLines.csv | tail -22 | awk '{printf $2" "}END{printf "\n"}'`;do echo -n "${i} "; grep -i "${i}" 20191130_testing_DK.csv | awk -F"," -v max=0 '{if($11>max){max=$11}}END{print max}'; done | sort -n --field-separator=' ' --key=2
+
+This looks at the entire file of possible lineups, in this case 78259, and finds the maximum for each goalie.  The reason for head -26 | tail -22 is because the first 26 lines in the file are goalies, but the first 4 are not needed as they're from earlier games.
