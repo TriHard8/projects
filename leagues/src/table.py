@@ -7,12 +7,12 @@ from datetime import timedelta
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 #url = "https://www.espn.com/nhl/scoreboard"
-urls = ["https://sportsbook.draftkings.com/leagues/tennis/9732181?category=game-lines&subcategory=money-line",
-        "https://sportsbook.draftkings.com/leagues/tennis/8956734?category=game-lines&subcategory=money-line"
-]
+dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/1808?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/1809?category=game-lines&subcategory=money-line"]
+fd_urls = ["https://sportsbook.fanduel.com/sports/navigation/1010.1/9874.3"]
 
 matches = []
-for url in urls:
+def getSoup(url):
     response = requests.get(url, headers=headers)
     #Always want a status code of 200, which means everything downloaded
     if response.status_code != 200:
@@ -21,7 +21,10 @@ for url in urls:
         exit(1)
     #print(response.content)
     
-    soup = BeautifulSoup(response.content, 'html.parser')
+    return BeautifulSoup(response.content, 'html.parser')
+
+for url in dk_urls:
+    soup = getSoup(url)
     table = soup.find_all('div', class_ = 'sportsbook-offer-category-card')
     table = table[0]
     for row in table.find_all('div', class_ = 'sportsbook-event-accordion__wrapper expanded'):
@@ -44,5 +47,16 @@ for url in urls:
             match.append(odds.text)
         matches.append(match)
 
+print("DraftKings")
 for i in matches:
     print(i)
+
+matches = []
+print("FanDuel")
+'''
+for url in fd_urls:
+    soup = getSoup(url)
+    print(soup)
+    for player in soup.find_all('div', class_ = 'eventTitle home'):
+        print(player)    
+'''
