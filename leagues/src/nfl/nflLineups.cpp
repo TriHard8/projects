@@ -40,12 +40,12 @@ class Player{
     private:
         int salary;
         double points, odds;
-        std::string nameid, name, matchup, team, id, position;     
+        string nameid, name, matchup, team, id, position;     
     
     public:
         Player() {};
         ~Player() {};
-        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, double newOdds, double newPoints, std::string newPosition):
+        Player(int newSalary, string newNameID, string newName, string newMatchup, string newTeam, string newID, double newOdds, double newPoints, string newPosition):
                                     salary(newSalary),
                                     nameid(newNameID),
                                     name(newName),
@@ -55,7 +55,7 @@ class Player{
                                     odds(newOdds),
                                     points(newPoints),
                                     position(newPosition) {};
-        Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, std::string newPosition):
+        Player(int newSalary, string newNameID, string newName, string newMatchup, string newTeam, string newID, string newPosition):
                                     salary(newSalary),
                                     nameid(newNameID),
                                     name(newName),
@@ -74,21 +74,21 @@ class Player{
                                     id(rhs.id),
                                     position(rhs.position) { /*cout << "copied!!" << endl;*/ };
 
-        void setName(std::string newName) { name = newName; };
-        void setMatchup(std::string newMatchup) { matchup = newMatchup; };
-        void setTeam(std::string newTeam) { team = newTeam; };
-        void setId(std::string newID) { id = newID; };
-        void setNameID(std::string newNameID) { nameid = newNameID; };
+        void setName(string newName) { name = newName; };
+        void setMatchup(string newMatchup) { matchup = newMatchup; };
+        void setTeam(string newTeam) { team = newTeam; };
+        void setId(string newID) { id = newID; };
+        void setNameID(string newNameID) { nameid = newNameID; };
         void setSalary(int newSalary) { salary = newSalary; };
         void setOdds(double newOdds) { odds = newOdds; };
         void setPoints(double newPoints) { points = newPoints; };
-        void setPosition(std::string newPosition) { position = newPosition; };
-        std::string getName() const { return name; };
-        std::string getMatchup() const { return matchup; };
-        std::string getTeam() const { return team; };
-        std::string getID() const { return id; };
-        std::string getNameID() const { return nameid; };
-        std::string getPosition() const { return position; };
+        void setPosition(string newPosition) { position = newPosition; };
+        string getName() const { return name; };
+        string getMatchup() const { return matchup; };
+        string getTeam() const { return team; };
+        string getID() const { return id; };
+        string getNameID() const { return nameid; };
+        string getPosition() const { return position; };
         int getSalary() const { return salary; };
         double getOdds() const { return odds; };
         double getPoints() const { return points; };
@@ -99,7 +99,7 @@ namespace std{
     template<>
         struct hash<Player>{
             size_t operator()(const Player &rhs) const{
-                return hash<std::string>()(rhs.getName()+rhs.getPosition());
+                return hash<string>()(rhs.getName()+rhs.getPosition());
             }
         };
 }
@@ -118,7 +118,6 @@ class DKSlate{
         vector<shared_ptr<Player>> players;
         set< set<shared_ptr<Player>> > hashLineups;
         std::unordered_set<shared_ptr<Player>> dogs;
-        //vector<shared_ptr<Player>> goalies;
         vector<shared_ptr<Player>> rbs;
         vector< vector<shared_ptr<Player>> > combo_R;
         vector<shared_ptr<Player>> wrs;
@@ -131,7 +130,8 @@ class DKSlate{
         int dog_count;
         enum Site { fanduel, draftkings };
         Site site;
-	    unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
+        enum Sport { nascar, golf, mma, tennis, nhl, nfl, nba, mlb };
+	    Sport sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
                                 //3 for nhl, 4 for nfl
         void nextCombo(unsigned long long &);
         
@@ -151,8 +151,8 @@ class DKSlate{
         double getLineupPoints(int) const;
         double getLineupOdds(int) const;
         double getLineupOdds(vector<shared_ptr<Player>> &) const;
-        void readRecordsDK(std::string);
-        void readRecordsFanDuel(std::string);
+        void readRecordsDK(string);
+        void readRecordsFanDuel(string);
         void make_combos();
         void setToVec(set<shared_ptr<Player>> &, vector<shared_ptr<Player>> &);
         int lineup_salary(const unsigned long long);
@@ -163,9 +163,9 @@ class DKSlate{
         void printLineup(int) const;
         void printDogs() const;
         Site getSite() const { return site; };
-	    std::string getSport() const { if(sport == 1) return "tennis/mma"; else if(sport == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
-        void setSite(std::string);
-	    void setSport(std::string);
+	    string getSport() const;
+        void setSite(string);
+	    void setSport(string);
         template <class T>
         bool lineupExists(vector<T> &);
         bool teamCount(vector<shared_ptr<Player>> &);
@@ -197,6 +197,27 @@ struct sortSalary{
         return (p1->getSalary() > p2->getSalary());
     }
 };
+string DKSlate::getSport() const{
+    switch(sport){
+        case golf: return "golf";
+            break;
+        case nascar: return "nascar";
+            break;
+        case tennis: return "tennis";
+            break;
+        case mma: return "mma";
+            break;
+        case nfl: return "nfl";
+            break;
+        case nhl: return "nhl";
+            break;
+        case nba: return "nba";
+            break;
+        case mlb: return "mlb";
+            break;
+        default: return "Invalid Sport Type";
+    }
+}
 void DKSlate::decreasify(vector<shared_ptr<Player>> &vec){
     auto it = vec.begin();
     while(it != vec.end()){
@@ -233,7 +254,7 @@ double DKSlate::getLineupPoints(int i) const{
 double DKSlate::getLineupOdds(int i) const{
     double total(1);
     //start this loop at 1, b/c the goalie doesn't have odds
-    for(auto j(0); j < lineups[i].size()-1; ++j){
+    for(auto j(0); j < lineups[i].size(); ++j){
         total *= lineups[i][j]->getOdds();
     }
 
@@ -262,13 +283,13 @@ int DKSlate::getLineupSalary(int i) const{
 }
 void DKSlate::printLineup(int i) const{
     if(site == draftkings){
+        cout << lineups[i][3]->getNameID() << ",";
+        cout << lineups[i][4]->getNameID() << ",";
         cout << lineups[i][0]->getNameID() << ",";
         cout << lineups[i][1]->getNameID() << ",";
         cout << lineups[i][2]->getNameID() << ",";
-        cout << lineups[i][3]->getNameID() << ",";
-        cout << lineups[i][4]->getNameID() << ",";
         cout << lineups[i][5]->getNameID() << ",";
-        //cout << lineups[i][6]->getNameID() << ",";
+        cout << lineups[i][6]->getNameID() << ",";
         //cout << lineups[i][8]->getNameID() << ",";
         //cout << lineups[i][7]->getNameID() << ",";
     }
@@ -301,14 +322,14 @@ void DKSlate::printLineups(unsigned int lines=0) const{
         printLineup(i);
     }
 }
-void DKMapping(std::map<std::string, std::string> &DKtoRoto){
-    std::string line, word;
-    vector<std::string> row;
+void DKMapping(std::map<string, string> &DKtoRoto){
+    string line, word;
+    vector<string> row;
     std::fstream fin;
     fin.open("/home/trihard8/repo/projects/leagues/src/nfl/DKtoRoto.csv", ios::in);
     while(getline(fin, line)){
         std::transform(line.begin(), line.end(), line.begin(), ::toupper);
-            std::stringstream ss(line);
+            stringstream ss(line);
         row.clear();
         while(getline(ss, word,',')){
             row.push_back(word); 
@@ -317,7 +338,7 @@ void DKMapping(std::map<std::string, std::string> &DKtoRoto){
     }
     fin.close();
 }
-void DKSlate::readRecordsDK(std::string file){ 
+void DKSlate::readRecordsDK(string file){ 
     set<shared_ptr<Player>> setQBs;
     set<shared_ptr<Player>> setRBs;
     set<shared_ptr<Player>> setWRs;
@@ -325,12 +346,12 @@ void DKSlate::readRecordsDK(std::string file){
 
     // File pointer 
     std::fstream fin; 
-    std::string path, filename,rotoStart,DKOdds;
-    set<std::string> playersPlaying;
-    set<std::string> slate;
-    set<std::string> playerCheck;
-    std::map<std::string, std::string> DKtoRoto;
-    vector<std::string> diff;
+    string path, filename,rotoStart,DKOdds;
+    set<string> playersPlaying;
+    set<string> slate;
+    set<string> playerCheck;
+    std::map<string, string> DKtoRoto;
+    vector<string> diff;
     unsigned found = file.find_last_of("/");
     path.assign(file.begin(), file.begin()+found+1);
     filename.assign(file.begin()+found+1, file.begin()+found+9);
@@ -340,11 +361,11 @@ void DKSlate::readRecordsDK(std::string file){
   
 
     /*This section reads in the data from the Draft Kings Gambling stats for Odds of scoring for the game*/
-    vector< vector<std::string> > Odds;
+    vector< vector<string> > Odds;
     DKOdds = path + "DKscoringOdds.csv";
     csv2StringVector(DKOdds, Odds);
     /*The below is for debugging*/
-    /*std::for_each(Odds.begin(), Odds.end(), [](vector<std::string> &loop){
+    /*std::for_each(Odds.begin(), Odds.end(), [](vector<string> &loop){
         cout << loop[0] << "," << loop[3] << endl;
     });
     cout << "******" << endl;
@@ -353,9 +374,9 @@ void DKSlate::readRecordsDK(std::string file){
 
     // Read the Data from the file 
     // as String Vector 
-    vector<std::string> row; 
-    std::string line, word, matchup; 
-    std::stringstream ss;
+    vector<string> row; 
+    string line, word, matchup; 
+    stringstream ss;
   
     fin.open(rotoStart, ios::in);
     while(getline(fin, line)){
@@ -395,7 +416,7 @@ void DKSlate::readRecordsDK(std::string file){
 
         ss >> matchup;
         //Player constructor to know what some of the elements of the row vector mean
-        //Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, std::string newPosition):
+        //Player(int newSalary, string newNameID, string newName, string newMatchup, string newTeam, string newID, string newPosition):
 
         shared_ptr<Player> player;
 
@@ -417,7 +438,7 @@ void DKSlate::readRecordsDK(std::string file){
 
         //if(playersPlaying.find(player->getName()) == playersPlaying.end()){
         if(false){
-            if(row[0].find('W') != std::string::npos){
+            if(row[0].find('W') != string::npos){
                 continue;
                 //cout << player->getName() << endl;
             }
@@ -428,7 +449,7 @@ void DKSlate::readRecordsDK(std::string file){
             if(site == draftkings) pos = row[0];
             else if(site == fanduel) pos = row[1];
 
-            if(pos.find('Q') != std::string::npos){
+            if(pos.find('Q') != string::npos){
                 setQBs.insert(player);
             }
             else{
@@ -476,9 +497,9 @@ void DKSlate::readRecordsDK(std::string file){
                     //utility.insert(player);
                     /*cout << "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP" << endl;
                     cout << player->getName() << std::endl;*/
-                    if(pos.find('B') != std::string::npos) setRBs.insert(player);
-                    else if(pos.find('W') != std::string::npos) setWRs.insert(player);
-                    else if(pos.find('T') != std::string::npos) setTEs.insert(player);
+                    if(pos.find('B') != string::npos) setRBs.insert(player);
+                    else if(pos.find('W') != string::npos) setWRs.insert(player);
+                    else if(pos.find('T') != string::npos) setTEs.insert(player);
                 }
             }
         }
@@ -582,7 +603,7 @@ void DKSlate::readRecordsDK(std::string file){
     /*Averages from each "goal scoring" position is above.*/
     
         
-    /*std::for_each(playersPlaying.begin(), playersPlaying.end(), [&slate,&diff](std::string a){ if(slate.find(a) == slate.end()) { cout << a << endl; diff.push_back(a); }});
+    /*std::for_each(playersPlaying.begin(), playersPlaying.end(), [&slate,&diff](string a){ if(slate.find(a) == slate.end()) { cout << a << endl; diff.push_back(a); }});
     if(diff.size() != 0){
         
     }
@@ -623,8 +644,8 @@ void DKSlate::get_lineup(const unsigned long long combo){
     lineups.push_back(lineup);
 }
 bool DKSlate::head2head(const unsigned long long combo){
-    std::unordered_set<std::string> matchups;
-    std::unordered_set<std::string>::iterator it;
+    std::unordered_set<string> matchups;
+    std::unordered_set<string>::iterator it;
     for(int i(0); i < players.size(); ++i){
         if((combo >> i) & 1ULL){
             it = matchups.find(players[i]->getMatchup());
@@ -728,7 +749,7 @@ void DKSlate::make_combos(){
         lowerSalary = 52500;
     }
     
-    makeCombos(wrs, combo_W,0,2);
+    makeCombos(wrs, combo_W,0,3);
     makeCombos(rbs, combo_R,0,2);
     makeCombos(tes, combo_T,0,1); 
 
@@ -746,12 +767,13 @@ void DKSlate::make_combos(){
     cin >> pass;
     
     set<shared_ptr<Player>> hashLineup;
-    if(sport == 4){
+    if(sport == nfl){
         //vector< priority_queue<vector<shared_ptr<Player>>, vector< vector<shared_ptr<Player>> >, compareLineups> > pq;
         //pq.resize(goalieSalary.size());
    
         vector<shared_ptr<Player>> lineup;
         int currentSalary(0); 
+        cout << "RB,RB,WR,WR,WR,TE,FLEX,Salary,Odds" << endl;
         for(auto &pairW : combo_W){
             for(auto &W : pairW){
                 lineup.push_back(W);
@@ -821,19 +843,11 @@ int main(int argc, char *argv[]){
         return 1;
     }
     slate.setDogCount(0);
-    slate.setSite(std::string(argv[1]));
-    slate.setSport(std::string(argv[2]));
-    slate.readRecordsDK(std::string(argv[3]));
+    slate.setSite(string(argv[1]));
+    slate.setSport(string(argv[2]));
+    slate.readRecordsDK(string(argv[3]));
     cout << "CSV was read!" << " There are " << slate.numPlayers() << " players." << endl;
     slate.make_combos();
-/*
-    cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << endl;
-    cout << "Lineup with the best betting odds is:" << endl;
-    slate.printLineup(slate.getIndexMinOdds());
-    slate.printLineup(slate.getIndexMaxPoints());
-*/
-    //slate.printLineups();
-    //slate.printDogs();
     return 0;
 }
 bool Player::operator==(const Player &rhs) const{
@@ -842,7 +856,7 @@ bool Player::operator==(const Player &rhs) const{
     else
         return false;
 }
-void DKSlate::setSite(std::string origin){
+void DKSlate::setSite(string origin){
     for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
     if(origin == "draftkings") site = draftkings;
     else if(origin == "fanduel") site = fanduel;
@@ -851,16 +865,18 @@ void DKSlate::setSite(std::string origin){
         exit(1);
     }
 }
-void DKSlate::setSport(std::string origin){
+void DKSlate::setSport(string origin){
     for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
-    if(origin == "nascar" || origin == "golf") sport = 2;
-    else if(origin == "tennis" || origin == "mma") sport = 1;
-    else if(origin == "nba" || origin == "mlb") sport = 0;
-    else if(origin == "nhl") sport = 3;
-    else if(origin == "nfl") sport = 4;
+    if(origin == "nascar") sport = nascar;
+    else if(origin == "golf") sport = golf;
+    else if(origin == "tennis") sport = tennis;
+    else if(origin == "mma") sport = mma;
+    else if(origin == "nba") sport = nba;
+    else if(origin == "mlb") sport = mlb;
+    else if(origin == "nhl") sport = nhl;
+    else if(origin == "nfl") sport = nfl;
     else{
         std::cerr << "Invalid SPORT argument provided!" << endl;
         exit(2);
     }
-
 }

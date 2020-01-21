@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     if(sock == -1) return 1;
 
     int port = 54000;
-    std::string ipAddress = "10.0.0.243";
+    std::string ipAddress = "192.168.1.191";
     sockaddr_in hint;
     hint.sin_family = AF_INET;
     hint.sin_port = htons(port);

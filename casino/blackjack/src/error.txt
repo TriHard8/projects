@@ -1,0 +1,149 @@
+c++    -c -o table.o table.cpp
+In file included from table.cpp:1:
+In file included from ./table.h:11:
+./dealer.h:14:32: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        std::string decision() override;
+                               ^
+./dealer.h:15:40: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        std::string getTopCard() const override;
+                                       ^
+In file included from table.cpp:1:
+In file included from ./table.h:12:
+./player.h:17:32: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        std::string decision() override;
+                               ^
+./player.h:18:39: warning: 'override' keyword is a C++11 extension [-Wc++11-extensions]
+        long long getBankroll() const override;
+                                      ^
+table.cpp:24:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto it_dealer = std::prev(players.end());
+    ^
+table.cpp:32:17: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+            for(auto it = players.begin(); it != players.end(); ++it) (*it)->newDeal();
+                ^
+table.cpp:34:21: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+                for(auto it = players.begin(); it != players.end(); ++it){
+                    ^
+table.cpp:41:17: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+            for(auto it = players.begin(); it != players.end(); ++it){
+                ^
+table.cpp:80:17: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+            for(auto it = players.begin(); it != it_dealer; it++){
+                ^
+In file included from table.cpp:1:
+In file included from ./table.h:3:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:265:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference:15:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:628:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1515:36: error: no matching constructor for initialization of 'std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >'
+                ::new ((void*)__p) _Tp(__a0);
+                                   ^   ~~~~
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:1589:25: note: in instantiation of function template specialization 'std::__1::allocator_traits<std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::construct<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > >' requested here
+        __alloc_traits::construct(this->__alloc(),
+                        ^
+table.cpp:5:13: note: in instantiation of member function 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::push_back' requested here
+    players.push_back(std::unique_ptr<Participant> (new Player));
+            ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2563:5: note: candidate constructor not viable: 1st argument ('const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >') would lose const qualifier
+    unique_ptr(unique_ptr&);
+    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2582:49: note: candidate constructor not viable: no known conversion from 'const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >' to 'std::__1::nullptr_t' for 1st argument
+    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR unique_ptr(nullptr_t) _NOEXCEPT
+                                                ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2588:40: note: candidate constructor not viable: no known conversion from 'const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >' to 'pointer' (aka 'Participant *') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY explicit unique_ptr(pointer __p) _NOEXCEPT
+                                       ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2667:31: note: candidate constructor not viable: no known conversion from 'const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >' to '__rv<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > >' for 1st argument
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(__rv<unique_ptr> __u)
+                              ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2565:9: note: candidate template ignored: deduced type 'unique_ptr<Participant, std::__1::default_delete<Participant> > &' of 1st parameter does not match adjusted type 'const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >' of argument [with _Up = Participant, _Ep = std::__1::default_delete<Participant>]
+        unique_ptr(unique_ptr<_Up, _Ep>&);
+        ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2576:49: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR unique_ptr() _NOEXCEPT
+                                                ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:2678:31: note: candidate constructor not viable: requires 2 arguments, but 1 was provided
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(pointer __p, deleter_type __d)
+                              ^
+In file included from table.cpp:1:
+In file included from ./table.h:3:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:1576:21: error: no matching member function for call to 'construct'
+    __alloc_traits::construct(__a, _VSTD::__to_raw_pointer(__v.__end_), _VSTD::forward<_Up>(__x));
+    ~~~~~~~~~~~~~~~~^~~~~~~~~
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:1595:9: note: in instantiation of function template specialization 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::__push_back_slow_path<const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > >' requested here
+        __push_back_slow_path(__x);
+        ^
+table.cpp:5:13: note: in instantiation of member function 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::push_back' requested here
+    players.push_back(std::unique_ptr<Participant> (new Player));
+            ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1513:21: note: candidate template ignored: substitution failure [with _Tp = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, _A0 = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >]
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1507:21: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1519:21: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1526:21: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1618:17: error: use of undeclared identifier 'construct'
+                construct(__a, _VSTD::__to_raw_pointer(__end2-1), _VSTD::move_if_noexcept(*--__end1));
+                ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:892:21: note: in instantiation of function template specialization 'std::__1::allocator_traits<std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::__construct_backward<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > *>' requested here
+    __alloc_traits::__construct_backward(this->__alloc(), this->__begin_, this->__end_, __v.__begin_);
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:1578:5: note: in instantiation of member function 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::__swap_out_circular_buffer' requested here
+    __swap_out_circular_buffer(__v);
+    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector:1595:9: note: in instantiation of function template specialization 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::__push_back_slow_path<const std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > >' requested here
+        __push_back_slow_path(__x);
+        ^
+table.cpp:5:13: note: in instantiation of member function 'std::__1::vector<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, std::__1::allocator<std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> > > >::push_back' requested here
+    players.push_back(std::unique_ptr<Participant> (new Player));
+            ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1507:21: note: must qualify identifier to find this declaration in dependent base class
+        static void construct(allocator_type& __a, _Tp* __p)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1513:21: note: must qualify identifier to find this declaration in dependent base class
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1519:21: note: must qualify identifier to find this declaration in dependent base class
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1526:21: note: must qualify identifier to find this declaration in dependent base class
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1618:17: error: no matching function for call to 'construct'
+                construct(__a, _VSTD::__to_raw_pointer(__end2-1), _VSTD::move_if_noexcept(*--__end1));
+                ^~~~~~~~~
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1513:21: note: candidate template ignored: substitution failure [with _Tp = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, _A0 = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >]
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1507:21: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1519:21: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1526:21: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1618:17: error: no matching function for call to 'construct'
+                construct(__a, _VSTD::__to_raw_pointer(__end2-1), _VSTD::move_if_noexcept(*--__end1));
+                ^~~~~~~~~
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1513:21: note: candidate template ignored: substitution failure [with _Tp = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >, _A0 = std::__1::unique_ptr<Participant, std::__1::default_delete<Participant> >]
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0)
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1519:21: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1526:21: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p, const _A0& __a0,
+                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory:1507:21: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+        static void construct(allocator_type& __a, _Tp* __p)
+                    ^
+9 warnings and 5 errors generated.
+make: *** [table.o] Error 1
