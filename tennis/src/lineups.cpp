@@ -76,7 +76,7 @@ class DKSlate{
         std::vector<Player*> players;
         std::unordered_set<Player*> dogs;
         std::vector<std::vector<Player *>> lineups;
-        int indexMinOdds, indexMaxPoints;
+        int indexMinOdds, indexMaxOdds, indexMaxPoints;
         int dog_count;
         unsigned short site;
 	unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
@@ -88,6 +88,7 @@ class DKSlate{
         ~DKSlate(){};
 
         int getIndexMinOdds() const { return indexMinOdds; };
+        int getIndexMaxOdds() const { return indexMaxOdds; };
         int getIndexMaxPoints() const{ return indexMaxPoints; };
         void setDogCount(int dogs) { dog_count = dogs; };
         int getDogCount() const { return dog_count; };
@@ -307,7 +308,8 @@ void DKSlate::make_combos(){
     
     unsigned long long ones = 1ULL<<n;
     unsigned long long combo = (1ULL << k) - 1ULL; 
-    int current_salary(0), minOdds(INT_MAX), maxPoints(-INT_MAX);
+    int current_salary(0), maxPoints(-INT_MAX);
+    float tempOdds(0), minOdds(std::numeric_limits<float>::max()), maxOdds(std::numeric_limits<float>::min());
     bool matches(false);
     int count(0);
 
@@ -321,6 +323,7 @@ void DKSlate::make_combos(){
 *   I'll then need to do 4 nested loops with each of the 4 uint64s.
 */
     indexMinOdds = -1000;   
+    indexMaxOdds = 1000;   
     indexMaxPoints = -1000;
     while(combo < ones){
         current_salary = lineup_salary(combo);
@@ -333,9 +336,14 @@ void DKSlate::make_combos(){
         } 
         get_lineup(combo);
         printLineup(lineups.size()-1);
-        if(getLineupOdds(lineups.size()-1) < minOdds){
+        tempOdds = getLineupOdds(lineups.size()-1);
+        if( tempOdds < minOdds){
             indexMinOdds = lineups.size() - 1;
-            minOdds = getLineupOdds(lineups.size() - 1); 
+            minOdds = tempOdds; 
+        }
+        if(tempOdds > maxOdds){
+            indexMaxOdds = lineups.size() - 1;
+            maxOdds = tempOdds; 
         }
         if(getLineupPoints(lineups.size()-1) > maxPoints){
             indexMaxPoints = lineups.size() - 1;
@@ -361,7 +369,7 @@ int main(int argc, char *argv[]){
     slate.make_combos();
     std::cout << "Combinations have been completed with " << slate.numLineups() << " lineups!" << std::endl;
     std::cout << "Lineup with the best betting odds is:" << std::endl;
-    slate.printLineup(slate.getIndexMinOdds());
+    slate.printLineup(slate.getIndexMaxOdds());
     slate.printLineup(slate.getIndexMaxPoints());
     //slate.printLineups();
     //slate.printDogs();

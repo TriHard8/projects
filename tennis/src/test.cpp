@@ -19,6 +19,7 @@ template <typename T>
 void combo(const T &, int);
 int main(int argc, char** argv)
 {
+    cout << "Max value for float: " << std::numeric_limits<float>::max() << endl;
 /*    vector<string> row;
     fstream ifile;
     string temp, line, word;

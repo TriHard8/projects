@@ -48,8 +48,12 @@ for url in dk_urls:
         matches.append(match)
 
 print("DraftKings")
-for i in matches:
-    print(i)
+for match in matches:
+    for i in range(len(match)):
+        if i == len(match)-1:
+            print(match[i])
+        else:
+            print(match[i],end=',')    
 
 matches = []
 print("FanDuel")

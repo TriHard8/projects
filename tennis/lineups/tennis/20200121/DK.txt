@@ -1,0 +1,39 @@
+20200122,Ricardas Berankis,Sam Querrey,+210,-265
+20200122,Guido Pella,Gregoire Barrere,-220,+170
+20200122,Daniel Evans,Yoshihito Nishioka,-125,+102
+20200122,Marton Fucsovics,Jannik Sinner,+106,-130
+20200122,Tommy Paul,Grigor Dimitrov,+215,-278
+20200122,Benoit Paire,Marin Cilic,+188,-240
+20200122,Matteo Berrettini,Tennys Sandgren,-385,+295
+20200122,Diego Sebastian Schwartzman,Alejandro Davidovich Fokina,-530,+380
+20200122,Stefanos Tsitsipas,Philipp Kohlschreiber,-715,+500
+20200122,Cristian Garin,Milos Raonic,+225,-295
+20200122,Michael Mmoh,Roberto Bautista-Agut,+550,-835
+20200122,Marc Polmans,Dusan Lajovic,+280,-375
+20200122,Hubert Hurkacz,John Millman,-124,+100
+20200122,Jordan Thompson,Fabio Fognini,+135,-167
+20200122,Filip Krajinovic,Roger Federer,+1500,-3335
+20200122,Paula Badosa Gibert,Petra Kvitova,+1200,-2500
+20200122,Iga Swiatek,Timea Babos,-148,+120
+20200122,Kristyna Pliskova,Heather Watson,-106,-117
+20200122,Shuai Zhang,Caty Mcnally,-180,+145
+20200122,Naomi Osaka,Saisai Zheng,-590,+425
+20200122,Astra Sharma,Anett Kontaveit,+310,-400
+20200122,Carla Suarez Navarro,Aryna Sabalenka,+340,-455
+20200122,Anastasia Pavlyuchenkova,Nina Stojanovic,-295,+230
+20200122,Julia Goerges,Petra Martic,-127,+104
+20200122,Taylor Townsend,Jessica Pegula,+128,-159
+20200122,Ann Li,Sofia Kenin,+360,-480
+20200122,Sara Sorribes Tormo,Veronika Kudermetova,+205,-265
+20200122,Ekaterina Alexandrova,Barbora Krejcikova,-420,+310
+20200122,Ons Jabeur,Caroline Garcia,-150,+120
+20200122,Alison Riske,Lin Zhu,-195,+155
+20200122,Caroline Wozniacki,Dayana Yastremska,+130,-162
+20200122,Elise Mertens,Danka Kovinic,-715,+500
+20200122,Ashleigh Barty,Polona Hercog,-910,+600
+20200122,Cori Gauff,Sorana Cirstea,-177,+140
+20200122,Greet Minnen,Elena Rybakina,+210,-275
+20200122,Nao Hibino,Maria Sakkari,+285,-375
+20200122,Qiang Wang,Fiona Ferro,-315,+250
+20200122,Tamara Zidansek,Serena Williams,+2000,-10000
+20200122,Madison Keys,Arantxa Rus,-1667,+900
