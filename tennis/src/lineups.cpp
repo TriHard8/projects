@@ -239,10 +239,10 @@ void DKSlate::readRecordsDK(std::string file){
         }
         if(dog_count){
             players.push_back(player);
-            if(player->getOdds() <= 0.5) dogs.insert(player);
+            if(player->getOdds() <= 0.5238) dogs.insert(player);
         }
         else if(!dog_count){
-            if(player->getOdds() > 0.5) players.push_back(player);
+            if(player->getOdds() > 0.5238) players.push_back(player);
         }
         //delete player;
     } 
