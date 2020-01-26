@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-minDogs = 2
+minDogs = 0
 maxDogs = 2
 sport = sys.argv[2]
 date = sys.argv[1]

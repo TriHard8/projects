@@ -78,9 +78,14 @@ class DKSlate{
         std::vector<std::vector<Player *>> lineups;
         int indexMinOdds, indexMaxOdds, indexMaxPoints;
         int dog_count;
-        unsigned short site;
-	unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
+        //unsigned short site;
+	    //unsigned short sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
         void nextCombo(unsigned long long &);
+        enum Site { fanduel, draftkings };
+        Site site;
+        enum Sport { nascar, golf, mma, tennis, nhl, nfl, nba, mlb };
+	    Sport sport;  //1 for sports like tennis/mma and 2 for sports like golf/nascar
+                                //3 for nhl, 4 for nfl
         
     public:
         DKSlate(int dogs):dog_count(dogs){};
@@ -99,7 +104,7 @@ class DKSlate{
         float getLineupPoints(int) const;
         float getLineupOdds(int) const;
         void readRecordsDK(std::string);
-        void readRecordsFanDuel(std::string);
+        //void readRecordsFanDuel(std::string);
         void make_combos();
         int lineup_salary(const unsigned long long);
         bool head2head(const unsigned long long);
@@ -108,10 +113,12 @@ class DKSlate{
         void printLineups(unsigned int) const;
         void printLineup(int) const;
         void printDogs() const;
-        std::string getSite() const { if(site == 1) return "DraftKings"; else if(site == 2) return "FanDuel"; };
-	std::string getSport() const { if(site == 1) return "tennis/mma"; else if(site == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
+        Site getSite() const { return site; };
+        string getSport() const;
+        //std::string getSite() const { if(site == 1) return "DraftKings"; else if(site == 2) return "FanDuel"; };
+	    //std::string getSport() const { if(site == 1) return "tennis/mma"; else if(site == 2) return "golf/nascar"; else return "mlb/nfl/nba/nhl"; };
         void setSite(std::string);
-	void setSport(std::string);
+	    void setSport(std::string);
         //bool operator<(const std::vector<Player *> &, const std::vector<Player *> &);
 
 };
@@ -120,6 +127,27 @@ class DKSlate{
         int operator()(const std::vector<Player *> &lhs, const std::vector<Player *> &rhs) { return lhs.getLineupOdds() > rhs.getLineupOdds(); };
 };
 */
+string DKSlate::getSport() const{
+    switch(sport){
+        case golf: return "golf";
+            break;
+        case nascar: return "nascar";
+            break;
+        case tennis: return "tennis";
+            break;
+        case mma: return "mma";
+            break;
+        case nfl: return "nfl";
+            break;
+        case nhl: return "nhl";
+            break;
+        case nba: return "nba";
+            break;
+        case mlb: return "mlb";
+            break;
+        default: return "Invalid Sport Type";
+    }
+}
 void DKSlate::nextCombo(unsigned long long &num){
     unsigned long long x = num & -num;  //This is suspect, but it works to always give 1.
     unsigned long long y = num + x;
@@ -165,9 +193,13 @@ int DKSlate::getLineupSalary(int i) const{
 }
 void DKSlate::printLineup(int i) const{
     for(auto j(0); j < lineups[i].size(); ++j){
-        std::cout << lineups[i][j]->getNameID() << ",";
-        //std::cout << lineups[i][j]->getID() << ",";
-        //std::cout << lineups[i][j]->getName() << ",";
+        if(site == draftkings){
+            cout << lineups[i][j]->getNameID() << ",";
+        }
+        else if(site == fanduel){
+            cout << lineups[i][j]->getID() << ":";
+            std::cout << lineups[i][j]->getName() << ",";
+        }
     }
     //std::cout << lineups[i]->getSalary() << ",";
     std::cout << getLineupSalary(i) << ",";
@@ -202,8 +234,13 @@ void DKSlate::readRecordsDK(std::string file){
   
         // read an entire row and 
         // store it in a string variable 'line' 
-        //std::cout << line << std::endl;
-        if(line[1] != ',') getline(fin, line);
+        if(site == draftkings){
+            if(line[1] != ',') getline(fin, line);
+        }
+        else if(site == fanduel){
+            if(line[2] == ',') getline(fin, line);
+        }
+        //cout << line << endl;
   
         // used for breaking words 
         stringstream s(line); 
@@ -216,30 +253,31 @@ void DKSlate::readRecordsDK(std::string file){
             // of a row to a vector 
             row.push_back(word); 
         } 
-        if(site == 1) ss.str(row[6]); //Set matchup for DraftKings
-        else if(site == 2) ss.str(row[8]); //Set matchup for FanDuel
+        if(site == draftkings) ss.str(row[6]); //Set matchup for DraftKings
+        else if(site == fanduel) ss.str(row[8]); //Set matchup for FanDuel
 
         ss >> matchup;
         //Player constructor to know what some of the elements of the row vector mean
         //Player(int newSalary, std::string newNameID, std::string newName, std::string newMatchup, std::string newTeam, std::string newID, int newOdds, float newPoints):
 
         Player * player;
-        if(site == 1){
+        if(site == draftkings){
             float prob = std::stof(row[9]);
             //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
             //else prob = 100.0/(prob + 100.0);
             player = new Player(std::stoi(row[5]),row[1], row[2], matchup, row[7], row[3],prob,std::stof(row[10]));
             //cout << player->getName() << " : " << player->getOdds() << endl; 
         }
-        else if(site == 2){
-            float prob = std::stof(row[15]);
+        else if(site == fanduel){
+            float prob = std::stof(row[14]);
             //if(prob < 0.0) prob = (-(prob)/((-(prob))+100.0));
             //else prob = 100.0/(prob + 100.0);
-            player = new Player(std::stoi(row[7]),row[3] + " (" + row[1] + ")", row[3], matchup, row[9], row[1], prob, std::stoi(row[16]));
+            player = new Player(std::stoi(row[7]),row[3] + " (" + row[0] + ")", row[3], matchup, row[9], row[0], prob, std::stoi(row[16]));
         }
         if(dog_count){
             players.push_back(player);
             if(player->getOdds() <= 0.5238) dogs.insert(player);
+            //cout << player->getName() << endl;
         }
         else if(!dog_count){
             if(player->getOdds() > 0.5238) players.push_back(player);
@@ -278,6 +316,7 @@ bool DKSlate::head2head(const unsigned long long combo){
     std::unordered_set<std::string>::iterator it;
     for(int i(0); i < players.size(); ++i){
         if((combo >> i) & 1ULL){
+            //cout << players[i]->getMatchup() << endl;
             it = matchups.find(players[i]->getMatchup());
             if(it == matchups.end()) matchups.insert(players[i]->getMatchup());
             else return true;
@@ -300,10 +339,15 @@ void DKSlate::make_combos(){
     unsigned int n = players.size();
     unsigned int upperSalary(50000), lowerSalary(40000);
     int k = 6;  //This is the setting for tennis (i.e. 6 players in the slate's lineup)
-    if(site == 2){
-        k = 5;
+    if(site == draftkings){
+        k = 6;
         upperSalary = 50000;
-        lowerSalary = 40000;
+        lowerSalary = 45000;
+    }
+    else if(site == fanduel){
+        k = 6;
+        upperSalary = 100;
+        lowerSalary = 85;
     }
     
     unsigned long long ones = 1ULL<<n;
@@ -330,6 +374,7 @@ void DKSlate::make_combos(){
         matches = head2head(combo);
 
         if(current_salary > upperSalary || current_salary < lowerSalary || matches || dog_check(combo)){
+            //cout << lowerSalary << " : " << current_salary << " : " << upperSalary << endl;
             count++;
             nextCombo(combo);
             continue;
@@ -383,21 +428,25 @@ bool Player::operator==(const Player &rhs) const{
 }
 void DKSlate::setSite(std::string origin){
     for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
-    if(origin == "draftkings") site = 1;
-    else if(origin == "fanduel") site = 2;
+    if(origin == "draftkings") site = draftkings;
+    else if(origin == "fanduel") site = fanduel;
     else{
         std::cerr << "Invalid SITE argument provided!" << std::endl;
         exit(1);
     }
 }
-void DKSlate::setSport(std::string origin){
+void DKSlate::setSport(string origin){
     for(auto i(0); i < origin.size(); ++i) origin[i] = std::tolower(origin[i]);
-    if(origin == "nascar" || origin == "golf") sport = 2;
-    else if(origin == "tennis" || origin == "mma") sport = 1;
-    else if(origin == "nfl" || origin == "nba" || origin == "nhl" || origin == "mlb") sport = 0;
+    if(origin == "nascar") sport = nascar;
+    else if(origin == "golf") sport = golf;
+    else if(origin == "tennis") sport = tennis;
+    else if(origin == "mma") sport = mma;
+    else if(origin == "nba") sport = nba;
+    else if(origin == "mlb") sport = mlb;
+    else if(origin == "nhl") sport = nhl;
+    else if(origin == "nfl") sport = nfl;
     else{
-        std::cerr << "Invalid SPORT argument provided!" << std::endl;
+        std::cerr << "Invalid SPORT argument provided!" << endl;
         exit(2);
     }
-
 }
