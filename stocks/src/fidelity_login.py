@@ -44,7 +44,7 @@ with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
             pwd = f.readline().rstrip('\n')
             break
 
-stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
+stock_list = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')) 
 
 driver = webdriver.Chrome()
 driver.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
@@ -158,6 +158,7 @@ with open(stock_list, 'r') as f:
                                         imp_vol_call = 0.0
                                     else:
                                         delta_put = float(data.string)
+                                
                         #if count == 5:
                         #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
                         #print("{},{},{},{},{}".format(symbol,last_price_call,strike,formatdate(expiry),(ask_call+strike)/float(price) - 1))
