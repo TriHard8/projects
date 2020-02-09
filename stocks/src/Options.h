@@ -6,6 +6,10 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <algorithm>
+
+using std::cout;
+using std::endl;
 
 class Option{
     private:
@@ -30,6 +34,7 @@ class Option{
         int getOpenIntPut() const { return open_int_put; };
         int getExpiration() const { return expiry; };
         float getStrike () const { return strike; };
+        float getCurrent() const { return current_price; };
         bool getUpDown() const { return updown; };
         std::string getSymbol() const { return symbol; };
 };

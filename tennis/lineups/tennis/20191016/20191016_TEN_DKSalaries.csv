@@ -1,17 +1,17 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Julia Goerges (13581835),Julia Goerges,13581835,P,9900,Goerges@Doi 10/16/2019 12:00PM ET,Goerges,49.4,-355,0,-360,,-350
-P,Karen Khachanov (13581830),Karen Khachanov,13581830,P,9600,Khachanov@Kohlschreiber 10/16/2019 11:30AM ET,Khachanov,46.68,-308,0,-315,,-300
-P,Jo-Wilfried Tsonga (13581826),Jo-Wilfried Tsonga,13581826,P,9400,Tsonga@Simon 10/16/2019 12:30PM ET,Tsonga,57.4,-303,0,-315,,-290
-P,Stan Wawrinka (13581828),Stan Wawrinka,13581828,P,9100,Lopez@Wawrinka 10/16/2019 01:50PM ET,Wawrinka,56.36,-213,0,-205,,-220
-P,Jelena Ostapenko (13581837),Jelena Ostapenko,13581837,P,8800,Ostapenko@Mcnally 10/16/2019 01:15PM ET,Ostapenko,34.73,-185,0,-200,,-170
-P,Karolina Muchova (13581840),Karolina Muchova,13581840,P,8600,Muchova@Vekic 10/16/2019 01:00PM ET,Muchova,57.31,-169,0,-177,,-160
-P,Grigor Dimitrov (13581831),Grigor Dimitrov,13581831,P,8300,Dimitrov@Querrey 10/16/2019 12:30PM ET,Dimitrov,46.46,-153,0,-155,,-150
-P,Filip Krajinovic (13581833),Filip Krajinovic,13581833,P,7900,Krajinovic@Evans 10/16/2019 01:50PM ET,Krajinovic,53.88,-122,0,-124,,-120
-P,Daniel Evans (13581834),Daniel Evans,13581834,P,7300,Krajinovic@Evans 10/16/2019 01:50PM ET,Evans,48.48,100,0,100,,100
-P,Sam Querrey (13581832),Sam Querrey,13581832,P,7000,Dimitrov@Querrey 10/16/2019 12:30PM ET,Querrey,54.25,127,0,123,,130
-P,Donna Vekic (13581839),Donna Vekic,13581839,P,6900,Muchova@Vekic 10/16/2019 01:00PM ET,Vekic,54.78,140,0,140,,140
-P,Caty Mcnally (13581838),Caty Mcnally,13581838,P,6600,Ostapenko@Mcnally 10/16/2019 01:15PM ET,Mcnally,35.62,155,0,160,,150
-P,Feliciano Lopez (13581827),Feliciano Lopez,13581827,P,6200,Lopez@Wawrinka 10/16/2019 01:50PM ET,Lopez,47.05,170,0,160,,180
-P,Philipp Kohlschreiber (13581829),Philipp Kohlschreiber,13581829,P,5800,Khachanov@Kohlschreiber 10/16/2019 11:30AM ET,Kohlschreiber,46.7,248,0,245,,250
-P,Gilles Simon (13581825),Gilles Simon,13581825,P,5500,Tsonga@Simon 10/16/2019 12:30PM ET,Simon,45.21,240,0,240,,240
-P,Misaki Doi (13581836),Misaki Doi,13581836,P,5100,Goerges@Doi 10/16/2019 12:00PM ET,Doi,37.78,283,0,275,,290
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Julia Goerges (13581835),Julia Goerges,13581835,P,9900,Goerges@Doi 10/16/2019 12:00PM ET,Goerges,49.4,-355,0,-360,,-350,,,,1
+P,Karen Khachanov (13581830),Karen Khachanov,13581830,P,9600,Khachanov@Kohlschreiber 10/16/2019 11:30AM ET,Khachanov,46.68,-308,0,-315,,-300,,,,1
+P,Jo-Wilfried Tsonga (13581826),Jo-Wilfried Tsonga,13581826,P,9400,Tsonga@Simon 10/16/2019 12:30PM ET,Tsonga,57.4,-303,0,-315,,-290,,,,0
+P,Stan Wawrinka (13581828),Stan Wawrinka,13581828,P,9100,Lopez@Wawrinka 10/16/2019 01:50PM ET,Wawrinka,56.36,-213,0,-205,,-220,,,,1
+P,Jelena Ostapenko (13581837),Jelena Ostapenko,13581837,P,8800,Ostapenko@Mcnally 10/16/2019 01:15PM ET,Ostapenko,34.73,-185,0,-200,,-170,,,,1
+P,Karolina Muchova (13581840),Karolina Muchova,13581840,P,8600,Muchova@Vekic 10/16/2019 01:00PM ET,Muchova,57.31,-169,0,-177,,-160,,,,1
+P,Grigor Dimitrov (13581831),Grigor Dimitrov,13581831,P,8300,Dimitrov@Querrey 10/16/2019 12:30PM ET,Dimitrov,46.46,-153,0,-155,,-150,,,,0
+P,Filip Krajinovic (13581833),Filip Krajinovic,13581833,P,7900,Krajinovic@Evans 10/16/2019 01:50PM ET,Krajinovic,53.88,-122,0,-124,,-120,,,,1
+P,Daniel Evans (13581834),Daniel Evans,13581834,P,7300,Krajinovic@Evans 10/16/2019 01:50PM ET,Evans,48.48,100,0,100,,100,,,,0
+P,Sam Querrey (13581832),Sam Querrey,13581832,P,7000,Dimitrov@Querrey 10/16/2019 12:30PM ET,Querrey,54.25,127,0,123,,130,,,,1
+P,Donna Vekic (13581839),Donna Vekic,13581839,P,6900,Muchova@Vekic 10/16/2019 01:00PM ET,Vekic,54.78,140,0,140,,140,,,,0
+P,Caty Mcnally (13581838),Caty Mcnally,13581838,P,6600,Ostapenko@Mcnally 10/16/2019 01:15PM ET,Mcnally,35.62,155,0,160,,150,,,,0
+P,Feliciano Lopez (13581827),Feliciano Lopez,13581827,P,6200,Lopez@Wawrinka 10/16/2019 01:50PM ET,Lopez,47.05,170,0,160,,180,,,,0
+P,Philipp Kohlschreiber (13581829),Philipp Kohlschreiber,13581829,P,5800,Khachanov@Kohlschreiber 10/16/2019 11:30AM ET,Kohlschreiber,46.7,248,0,245,,250,,,,0
+P,Gilles Simon (13581825),Gilles Simon,13581825,P,5500,Tsonga@Simon 10/16/2019 12:30PM ET,Simon,45.21,240,0,240,,240,,,,1
+P,Misaki Doi (13581836),Misaki Doi,13581836,P,5100,Goerges@Doi 10/16/2019 12:00PM ET,Doi,37.78,283,0,275,,290,,,,0

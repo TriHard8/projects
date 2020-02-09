@@ -1,17 +1,17 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Daniel Evans (13563053),Daniel Evans,13563053,P,10100,Tomic@Evans 10/14/2019 12:30PM ET,Evans,48.33,-328,0,-335,-300,-350
-P,Kristyna Pliskova (13563054),Kristyna Pliskova,13563054,P,9700,Bolsova Zadoinov@Pliskova 10/14/2019 01:15PM ET,Pliskova,44.13,-285,0,-286,-290,-280
-P,Jo-Wilfried Tsonga (13563055),Jo-Wilfried Tsonga,13563055,P,9400,Tsonga@Sonego 10/14/2019 12:20PM ET,Tsonga,57.07,-278,0,-295,-260,-280
-P,Corentin Moutet (13563056),Corentin Moutet,13563056,P,9300,Moutet@Tipsarevic 10/14/2019 01:50PM ET,Moutet,31.75,-262,0,-265,-270,-250
-P,Guido Pella (13563057),Guido Pella,13563057,P,8700,Gojowczyk@Pella 10/14/2019 11:00AM ET,Pella,49.74,-193,0,-200,-190,-190
-P,Adrian Mannarino (13563058),Adrian Mannarino,13563058,P,8300,Dzumhur@Mannarino 10/14/2019 01:00PM ET,Mannarino,46.39,-120,0,-120,,-120
-P,Karolina Muchova (13563059),Karolina Muchova,13563059,P,8000,Muchova@Kuznetsova 10/14/2019 11:30AM ET,Muchova,56.75,-130,0,-127,-134,-130
-P,Mandy Minella (13563060),Mandy Minella,13563060,P,7800,Minella@Allertova 10/14/2019 12:00PM ET,Minella,31.3,-121,0,-125,-112,-125
-P,Denisa Allertova (13563061),Denisa Allertova,13563061,P,7600,Minella@Allertova 10/14/2019 12:00PM ET,Allertova,11.03,69,0,102,1,105
-P,Svetlana Kuznetsova (13563062),Svetlana Kuznetsova,13563062,P,7400,Muchova@Kuznetsova 10/14/2019 11:30AM ET,Kuznetsova,47.45,109,0,104,114,110
-P,Damir Dzumhur (13563063),Damir Dzumhur,13563063,P,7100,Dzumhur@Mannarino 10/14/2019 01:00PM ET,Dzumhur,36.89,51,0,1,,100
-P,Peter Gojowczyk (13563064),Peter Gojowczyk,13563064,P,6600,Gojowczyk@Pella 10/14/2019 11:00AM ET,Gojowczyk,36.67,162,0,160,160,165
-P,Lorenzo Sonego (13563065),Lorenzo Sonego,13563065,P,6300,Tsonga@Sonego 10/14/2019 12:20PM ET,Sonego,46.37,227,0,225,215,240
-P,Janko Tipsarevic (13563066),Janko Tipsarevic,13563066,P,6100,Moutet@Tipsarevic 10/14/2019 01:50PM ET,Tipsarevic,40.67,212,0,210,215,210
-P,Aliona Bolsova Zadoinov (13563067),Aliona Bolsova Zadoinov,13563067,P,5900,Bolsova Zadoinov@Pliskova 10/14/2019 01:15PM ET,Bolsova Zadoinov,47.96,230,0,220,230,240
-P,Bernard Tomic (13563068),Bernard Tomic,13563068,P,5700,Tomic@Evans 10/14/2019 12:30PM ET,Tomic,36.52,262,0,250,245,290
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Daniel Evans (13563053),Daniel Evans,13563053,P,10100,Tomic@Evans 10/14/2019 12:30PM ET,Evans,48.33,-328,0,-335,-300,-350,,,,1
+P,Kristyna Pliskova (13563054),Kristyna Pliskova,13563054,P,9700,Bolsova Zadoinov@Pliskova 10/14/2019 01:15PM ET,Pliskova,44.13,-285,0,-286,-290,-280,,,,1
+P,Jo-Wilfried Tsonga (13563055),Jo-Wilfried Tsonga,13563055,P,9400,Tsonga@Sonego 10/14/2019 12:20PM ET,Tsonga,57.07,-278,0,-295,-260,-280,,,,1
+P,Corentin Moutet (13563056),Corentin Moutet,13563056,P,9300,Moutet@Tipsarevic 10/14/2019 01:50PM ET,Moutet,31.75,-262,0,-265,-270,-250,,,,0
+P,Guido Pella (13563057),Guido Pella,13563057,P,8700,Gojowczyk@Pella 10/14/2019 11:00AM ET,Pella,49.74,-193,0,-200,-190,-190,,,,1
+P,Adrian Mannarino (13563058),Adrian Mannarino,13563058,P,8300,Dzumhur@Mannarino 10/14/2019 01:00PM ET,Mannarino,46.39,-120,0,-120,,-120,,,,1
+P,Karolina Muchova (13563059),Karolina Muchova,13563059,P,8000,Muchova@Kuznetsova 10/14/2019 11:30AM ET,Muchova,56.75,-130,0,-127,-134,-130,,,,1
+P,Mandy Minella (13563060),Mandy Minella,13563060,P,7800,Minella@Allertova 10/14/2019 12:00PM ET,Minella,31.3,-121,0,-125,-112,-125,,,,0
+P,Denisa Allertova (13563061),Denisa Allertova,13563061,P,7600,Minella@Allertova 10/14/2019 12:00PM ET,Allertova,11.03,69,0,102,1,105,,,,1
+P,Svetlana Kuznetsova (13563062),Svetlana Kuznetsova,13563062,P,7400,Muchova@Kuznetsova 10/14/2019 11:30AM ET,Kuznetsova,47.45,109,0,104,114,110,,,,0
+P,Damir Dzumhur (13563063),Damir Dzumhur,13563063,P,7100,Dzumhur@Mannarino 10/14/2019 01:00PM ET,Dzumhur,36.89,51,0,1,,100,,,,0
+P,Peter Gojowczyk (13563064),Peter Gojowczyk,13563064,P,6600,Gojowczyk@Pella 10/14/2019 11:00AM ET,Gojowczyk,36.67,162,0,160,160,165,,,,0
+P,Lorenzo Sonego (13563065),Lorenzo Sonego,13563065,P,6300,Tsonga@Sonego 10/14/2019 12:20PM ET,Sonego,46.37,227,0,225,215,240,,,,0
+P,Janko Tipsarevic (13563066),Janko Tipsarevic,13563066,P,6100,Moutet@Tipsarevic 10/14/2019 01:50PM ET,Tipsarevic,40.67,212,0,210,215,210,,,,1
+P,Aliona Bolsova Zadoinov (13563067),Aliona Bolsova Zadoinov,13563067,P,5900,Bolsova Zadoinov@Pliskova 10/14/2019 01:15PM ET,Bolsova Zadoinov,47.96,230,0,220,230,240,,,,0
+P,Bernard Tomic (13563068),Bernard Tomic,13563068,P,5700,Tomic@Evans 10/14/2019 12:30PM ET,Tomic,36.52,262,0,250,245,290,,,,0

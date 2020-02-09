@@ -1,19 +1,19 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,Win/Loss
-P,Roger Federer (13527587),Roger Federer,13527587,P,10700,Federer@Ramos-Vinolas 10/08/2019 06:30AM ET,Federer,68.83,-983,0,-1000,-1050,-900,1
-P,Daniil Medvedev (13527589),Daniil Medvedev,13527589,P,10400,Norrie@Medvedev 10/08/2019 07:50AM ET,Medvedev,61.98,-828,0,-835,-850,-800,1
-P,Maria Sakkari (13527591),Maria Sakkari,13527591,P,9700,Sakkari@Voegele 10/08/2019 06:15AM ET,Sakkari,50.34,-269,0,-278,,-260,-1
-P,Belinda Bencic (13527601),Belinda Bencic,13527601,P,9400,Bencic@Friedsam 10/08/2019 12:30PM ET,Bencic,52.74,-320,0,-315,,-325,0
-P,Alison Van Uytvanck (13527597),Alison Van Uytvanck,13527597,P,8900,Van Uytvanck@Bonaventure 10/08/2019 08:45AM ET,Van Uytvanck,50,-298,0,-295,,-300,1
-P,Donna Vekic (13527603),Donna Vekic,13527603,P,8700,Vekic@Hercog 10/08/2019 01:45PM ET,Vekic,54.9,-233,0,-245,,-220,1
-P,Julia Goerges (13527595),Julia Goerges,13527595,P,8400,Goerges@Gasparyan 10/08/2019 07:30AM ET,Goerges,49.72,-235,0,-240,,-230,1
-P,Laura Siegemund (13527594),Laura Siegemund,13527594,P,7900,Siegemund@Ferro 10/08/2019 06:15AM ET,Siegemund,36.9,-156,0,-167,,-145,1
-P,Katerina Siniakova (13527599),Katerina Siniakova,13527599,P,7600,Siniakova@Mladenovic 10/08/2019 10:00AM ET,Siniakova,43.14,-124,0,-127,,-120,0
-P,Kristina Mladenovic (13527600),Kristina Mladenovic,13527600,P,7200,Siniakova@Mladenovic 10/08/2019 10:00AM ET,Mladenovic,43.9,102,0,104,,100,1
-P,Fiona Ferro (13527593),Fiona Ferro,13527593,P,6800,Siegemund@Ferro 10/08/2019 06:15AM ET,Ferro,47.88,129,0,133,,125,0
-P,Polona Hercog (13527604),Polona Hercog,13527604,P,6300,Vekic@Hercog 10/08/2019 01:45PM ET,Hercog,43.38,185,0,190,,180,0
-P,Margarita Gasparyan (13527596),Margarita Gasparyan,13527596,P,6100,Goerges@Gasparyan 10/08/2019 07:30AM ET,Gasparyan,37.93,189,0,188,,190,0
-P,Ysaline Bonaventure (13527598),Ysaline Bonaventure,13527598,P,5800,Van Uytvanck@Bonaventure 10/08/2019 08:45AM ET,Bonaventure,33.75,240,0,230,,250,0
-P,Anna-Lena Friedsam (13527602),Anna-Lena Friedsam,13527602,P,5400,Bencic@Friedsam 10/08/2019 12:30PM ET,Friedsam,40.86,253,0,240,,265,1
-P,Stefanie Voegele (13527592),Stefanie Voegele,13527592,P,5100,Sakkari@Voegele 10/08/2019 06:15AM ET,Voegele,35.18,218,0,215,,220,-1
-P,Cameron Norrie (13527590),Cameron Norrie,13527590,P,4400,Norrie@Medvedev 10/08/2019 07:50AM ET,Norrie,43.79,582,0,575,570,600,0
-P,Albert Ramos-Vinolas (13527588),Albert Ramos-Vinolas,13527588,P,4200,Federer@Ramos-Vinolas 10/08/2019 06:30AM ET,Ramos-Vinolas,50.88,660,0,650,680,650,0
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Roger Federer (13527587),Roger Federer,13527587,P,10700,Federer@Ramos-Vinolas 10/08/2019 06:30AM ET,Federer,68.83,-983,0,-1000,-1050,-900,,,,1
+P,Daniil Medvedev (13527589),Daniil Medvedev,13527589,P,10400,Norrie@Medvedev 10/08/2019 07:50AM ET,Medvedev,61.98,-828,0,-835,-850,-800,,,,1
+P,Maria Sakkari (13527591),Maria Sakkari,13527591,P,9700,Sakkari@Voegele 10/08/2019 06:15AM ET,Sakkari,50.34,-269,0,-278,,-260,,,,-1
+P,Belinda Bencic (13527601),Belinda Bencic,13527601,P,9400,Bencic@Friedsam 10/08/2019 12:30PM ET,Bencic,52.74,-320,0,-315,,-325,,,,0
+P,Alison Van Uytvanck (13527597),Alison Van Uytvanck,13527597,P,8900,Van Uytvanck@Bonaventure 10/08/2019 08:45AM ET,Van Uytvanck,50,-298,0,-295,,-300,,,,1
+P,Donna Vekic (13527603),Donna Vekic,13527603,P,8700,Vekic@Hercog 10/08/2019 01:45PM ET,Vekic,54.9,-233,0,-245,,-220,,,,1
+P,Julia Goerges (13527595),Julia Goerges,13527595,P,8400,Goerges@Gasparyan 10/08/2019 07:30AM ET,Goerges,49.72,-235,0,-240,,-230,,,,1
+P,Laura Siegemund (13527594),Laura Siegemund,13527594,P,7900,Siegemund@Ferro 10/08/2019 06:15AM ET,Siegemund,36.9,-156,0,-167,,-145,,,,1
+P,Katerina Siniakova (13527599),Katerina Siniakova,13527599,P,7600,Siniakova@Mladenovic 10/08/2019 10:00AM ET,Siniakova,43.14,-124,0,-127,,-120,,,,0
+P,Kristina Mladenovic (13527600),Kristina Mladenovic,13527600,P,7200,Siniakova@Mladenovic 10/08/2019 10:00AM ET,Mladenovic,43.9,102,0,104,,100,,,,1
+P,Fiona Ferro (13527593),Fiona Ferro,13527593,P,6800,Siegemund@Ferro 10/08/2019 06:15AM ET,Ferro,47.88,129,0,133,,125,,,,0
+P,Polona Hercog (13527604),Polona Hercog,13527604,P,6300,Vekic@Hercog 10/08/2019 01:45PM ET,Hercog,43.38,185,0,190,,180,,,,0
+P,Margarita Gasparyan (13527596),Margarita Gasparyan,13527596,P,6100,Goerges@Gasparyan 10/08/2019 07:30AM ET,Gasparyan,37.93,189,0,188,,190,,,,0
+P,Ysaline Bonaventure (13527598),Ysaline Bonaventure,13527598,P,5800,Van Uytvanck@Bonaventure 10/08/2019 08:45AM ET,Bonaventure,33.75,240,0,230,,250,,,,0
+P,Anna-Lena Friedsam (13527602),Anna-Lena Friedsam,13527602,P,5400,Bencic@Friedsam 10/08/2019 12:30PM ET,Friedsam,40.86,253,0,240,,265,,,,1
+P,Stefanie Voegele (13527592),Stefanie Voegele,13527592,P,5100,Sakkari@Voegele 10/08/2019 06:15AM ET,Voegele,35.18,218,0,215,,220,,,,-1
+P,Cameron Norrie (13527590),Cameron Norrie,13527590,P,4400,Norrie@Medvedev 10/08/2019 07:50AM ET,Norrie,43.79,582,0,575,570,600,,,,0
+P,Albert Ramos-Vinolas (13527588),Albert Ramos-Vinolas,13527588,P,4200,Federer@Ramos-Vinolas 10/08/2019 06:30AM ET,Ramos-Vinolas,50.88,660,0,650,680,650,,,,0

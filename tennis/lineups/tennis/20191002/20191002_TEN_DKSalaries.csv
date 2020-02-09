@@ -1,25 +1,25 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,Fanduel,BetUS,Win/Loss
-P,Bianca Vanessa Andreescu (13498315),Bianca Vanessa Andreescu,13498315,P,10200,Brady@Andreescu 10/03/2019 07:30AM ET,Andreescu,63.35,-340,0,-335,-360,-325,1
-P,Naomi Osaka (13498314),Naomi Osaka,13498314,P,10000,Osaka@Riske 10/03/2019 01:45AM ET,Osaka,60.91,-285,0,-286,-300,-270,1
-P,Caroline Wozniacki (13498313),Caroline Wozniacki,13498313,P,9800,Siniakova@Wozniacki 10/03/2019 12:30AM ET,Wozniacki,52.81,-227,0,-220,-240,-220,1
-P,Marin Cilic (13498312),Marin Cilic,13498312,P,9600,Cilic@Chung 10/03/2019 02:00AM ET,Cilic,49.09,-214,0,-225,-196,-220,0
-P,Jordan Thompson (13498311),Jordan Thompson,13498311,P,9400,Daniel@Thompson 10/02/2019 10:00PM ET,Thompson,51.32,-198,0,-210,-194,-190,0
-P,Alexander Zverev (13498310),Alexander Zverev,13498310,P,9200,Zverev@Auger-Aliassime 10/03/2019 09:00AM ET,Zverev,51.92,-199,0,-200,-196,-200,1
-P,John Millman (13498309),John Millman,13498309,P,9000,Millman@Harris 10/02/2019 11:20PM ET,Millman,46.3,-190,0,-200,-190,-180,1
-P,Diego Sebastian Schwartzman (13498308),Diego Sebastian Schwartzman,13498308,P,8800,Schwartzman@Querrey 10/03/2019 06:30AM ET,Schwartzman,51.52,-177,0,-177,-178,-175,0
-P,Stefanos Tsitsipas (13498307),Stefanos Tsitsipas,13498307,P,8600,Tsitsipas@Basilashvili 10/03/2019 04:30AM ET,Tsitsipas,56.19,-178,0,-180,-184,-170,1
-P,John Isner (13498306),John Isner,13498306,P,8400,Evans@Isner 10/03/2019 02:30AM ET,Isner,62.64,-167,0,-167,-174,-160,1
-P,Ekaterina Alexandrova (13498305),Ekaterina Alexandrova,13498305,P,8200,Kasatkina@Alexandrova 10/03/2019 04:30AM ET,Alexandrova,47.03,-145,0,-155,-140,-140,0
-P,David Goffin (13498304),David Goffin,13498304,P,8000,Shapovalov@Goffin 10/03/2019 12:40AM ET,Goffin,51.77,-133,0,-132,-132,-135,1
-P,Denis Shapovalov (13498303),Denis Shapovalov,13498303,P,7600,Shapovalov@Goffin 10/03/2019 12:40AM ET,Shapovalov,47.27,112,0,107,114,115,0
-P,Daria Kasatkina (13498302),Daria Kasatkina,13498302,P,7400,Kasatkina@Alexandrova 10/03/2019 04:30AM ET,Kasatkina,32.4,122,0,125,120,120,1
-P,Sam Querrey (13498301),Sam Querrey,13498301,P,7200,Schwartzman@Querrey 10/03/2019 06:30AM ET,Querrey,55.13,148,0,140,150,155,1
-P,Nikoloz Basilashvili (13498300),Nikoloz Basilashvili,13498300,P,7000,Tsitsipas@Basilashvili 10/03/2019 04:30AM ET,Basilashvili,45.63,149,0,143,154,150,0
-P,Daniel Evans (13498299),Daniel Evans,13498299,P,6400,Evans@Isner 10/03/2019 02:30AM ET,Evans,49.02,140,0,133,148,140,0
-P,Lloyd Harris (13498298),Lloyd Harris,13498298,P,6200,Millman@Harris 10/02/2019 11:20PM ET,Harris,39.32,160,0,160,160,160,0
-P,Felix Auger-Aliassime (13498297),Felix Auger-Aliassime,13498297,P,6000,Zverev@Auger-Aliassime 10/03/2019 09:00AM ET,Auger-Aliassime,50.2,164,0,155,166,170,0
-P,Taro Daniel (13498296),Taro Daniel,13498296,P,5800,Daniel@Thompson 10/02/2019 10:00PM ET,Daniel,36.43,165,0,165,164,165,1
-P,Katerina Siniakova (13498295),Katerina Siniakova,13498295,P,5400,Siniakova@Wozniacki 10/03/2019 12:30AM ET,Siniakova,43.59,183,0,170,198,180,0
-P,Hyeon Chung (13498294),Hyeon Chung,13498294,P,5200,Cilic@Chung 10/03/2019 02:00AM ET,Chung,38.88,174,0,175,166,180,1
-P,Alison Riske (13498293),Alison Riske,13498293,P,5000,Osaka@Riske 10/03/2019 01:45AM ET,Riske,47.05,230,0,220,240,230,0
-P,Jennifer Brady (13498292),Jennifer Brady,13498292,P,4800,Brady@Andreescu 10/03/2019 07:30AM ET,Brady,50.27,270,0,255,290,265,0
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,Fanduel,BetUS,,,,Win/Loss
+P,Bianca Vanessa Andreescu (13498315),Bianca Vanessa Andreescu,13498315,P,10200,Brady@Andreescu 10/03/2019 07:30AM ET,Andreescu,63.35,-340,0,-335,-360,-325,,,,1
+P,Naomi Osaka (13498314),Naomi Osaka,13498314,P,10000,Osaka@Riske 10/03/2019 01:45AM ET,Osaka,60.91,-285,0,-286,-300,-270,,,,1
+P,Caroline Wozniacki (13498313),Caroline Wozniacki,13498313,P,9800,Siniakova@Wozniacki 10/03/2019 12:30AM ET,Wozniacki,52.81,-227,0,-220,-240,-220,,,,1
+P,Marin Cilic (13498312),Marin Cilic,13498312,P,9600,Cilic@Chung 10/03/2019 02:00AM ET,Cilic,49.09,-214,0,-225,-196,-220,,,,0
+P,Jordan Thompson (13498311),Jordan Thompson,13498311,P,9400,Daniel@Thompson 10/02/2019 10:00PM ET,Thompson,51.32,-198,0,-210,-194,-190,,,,0
+P,Alexander Zverev (13498310),Alexander Zverev,13498310,P,9200,Zverev@Auger-Aliassime 10/03/2019 09:00AM ET,Zverev,51.92,-199,0,-200,-196,-200,,,,1
+P,John Millman (13498309),John Millman,13498309,P,9000,Millman@Harris 10/02/2019 11:20PM ET,Millman,46.3,-190,0,-200,-190,-180,,,,1
+P,Diego Sebastian Schwartzman (13498308),Diego Sebastian Schwartzman,13498308,P,8800,Schwartzman@Querrey 10/03/2019 06:30AM ET,Schwartzman,51.52,-177,0,-177,-178,-175,,,,0
+P,Stefanos Tsitsipas (13498307),Stefanos Tsitsipas,13498307,P,8600,Tsitsipas@Basilashvili 10/03/2019 04:30AM ET,Tsitsipas,56.19,-178,0,-180,-184,-170,,,,1
+P,John Isner (13498306),John Isner,13498306,P,8400,Evans@Isner 10/03/2019 02:30AM ET,Isner,62.64,-167,0,-167,-174,-160,,,,1
+P,Ekaterina Alexandrova (13498305),Ekaterina Alexandrova,13498305,P,8200,Kasatkina@Alexandrova 10/03/2019 04:30AM ET,Alexandrova,47.03,-145,0,-155,-140,-140,,,,0
+P,David Goffin (13498304),David Goffin,13498304,P,8000,Shapovalov@Goffin 10/03/2019 12:40AM ET,Goffin,51.77,-133,0,-132,-132,-135,,,,1
+P,Denis Shapovalov (13498303),Denis Shapovalov,13498303,P,7600,Shapovalov@Goffin 10/03/2019 12:40AM ET,Shapovalov,47.27,112,0,107,114,115,,,,0
+P,Daria Kasatkina (13498302),Daria Kasatkina,13498302,P,7400,Kasatkina@Alexandrova 10/03/2019 04:30AM ET,Kasatkina,32.4,122,0,125,120,120,,,,1
+P,Sam Querrey (13498301),Sam Querrey,13498301,P,7200,Schwartzman@Querrey 10/03/2019 06:30AM ET,Querrey,55.13,148,0,140,150,155,,,,1
+P,Nikoloz Basilashvili (13498300),Nikoloz Basilashvili,13498300,P,7000,Tsitsipas@Basilashvili 10/03/2019 04:30AM ET,Basilashvili,45.63,149,0,143,154,150,,,,0
+P,Daniel Evans (13498299),Daniel Evans,13498299,P,6400,Evans@Isner 10/03/2019 02:30AM ET,Evans,49.02,140,0,133,148,140,,,,0
+P,Lloyd Harris (13498298),Lloyd Harris,13498298,P,6200,Millman@Harris 10/02/2019 11:20PM ET,Harris,39.32,160,0,160,160,160,,,,0
+P,Felix Auger-Aliassime (13498297),Felix Auger-Aliassime,13498297,P,6000,Zverev@Auger-Aliassime 10/03/2019 09:00AM ET,Auger-Aliassime,50.2,164,0,155,166,170,,,,0
+P,Taro Daniel (13498296),Taro Daniel,13498296,P,5800,Daniel@Thompson 10/02/2019 10:00PM ET,Daniel,36.43,165,0,165,164,165,,,,1
+P,Katerina Siniakova (13498295),Katerina Siniakova,13498295,P,5400,Siniakova@Wozniacki 10/03/2019 12:30AM ET,Siniakova,43.59,183,0,170,198,180,,,,0
+P,Hyeon Chung (13498294),Hyeon Chung,13498294,P,5200,Cilic@Chung 10/03/2019 02:00AM ET,Chung,38.88,174,0,175,166,180,,,,1
+P,Alison Riske (13498293),Alison Riske,13498293,P,5000,Osaka@Riske 10/03/2019 01:45AM ET,Riske,47.05,230,0,220,240,230,,,,0
+P,Jennifer Brady (13498292),Jennifer Brady,13498292,P,4800,Brady@Andreescu 10/03/2019 07:30AM ET,Brady,50.27,270,0,255,290,265,,,,0

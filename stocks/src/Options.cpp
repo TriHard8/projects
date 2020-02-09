@@ -32,15 +32,15 @@ Option::Option( std::string newSymbol, int newDate, float newStrike, float newPr
 
 int main(int argc, char **argv){
     std::fstream fin;
-    fin.open("/home/trihard8/repo/projects/stocks/data/20190912_fidelity_option_output.csv", std::ios::in);
+    fin.open(argv[1], std::ios::in);
     std::vector<std::string> row;
     std::string line, word;
     std::vector<Option *> options;
 
     std::stringstream ss;
 
-    //while(getline(fin, line)){
-    while(getline(std::cin, line)){
+    while(getline(fin, line)){
+    //while(getline(std::cin, line)){
         row.clear();
     
         std::stringstream s(line);
@@ -57,14 +57,26 @@ int main(int argc, char **argv){
                                     );
         options.push_back(option);
     }
+    int i(1);
     for(auto it = options.begin(); it != options.end(); ++it){
         if(!(*it)->getUpDown() && (*it)->getVolCall() > 2 * (*it)->getOpenIntCall()){
-            std::cout << "Call -> " << (*it)->getSymbol() << " : " << (*it)->getExpiration() << "( " << (*it)->getStrike() << " ) : " << (*it)->getVolCall() << "( " << (*it)->getOpenIntCall() << " )" << std::endl;
+            cout << i << ": ";
+            cout << "Call -> " << (*it)->getSymbol() << " : " << (*it)->getExpiration() << "( " << (*it)->getCurrent() << " : " << (*it)->getStrike() << " ) : " << (*it)->getVolCall() << "( " << (*it)->getOpenIntCall() << " )" << endl;
+            ++i;
         }
         if((*it)->getUpDown() && (*it)->getVolPut() > 2 * (*it)->getOpenIntPut()){
-            std::cout << "Put -> " << (*it)->getSymbol() << " : " << (*it)->getExpiration() << "( " << (*it)->getStrike() << " ) : " << (*it)->getVolPut() << "( " << (*it)->getOpenIntPut() << " )" << std::endl;
+            cout << i << ": ";
+            cout << "Put -> " << (*it)->getSymbol() << " : " << (*it)->getExpiration() << "( " << (*it)->getCurrent() << " : " << (*it)->getStrike() << " ) : " << (*it)->getVolPut() << "( " << (*it)->getOpenIntPut() << " )" << endl;
+            ++i;
         }
     }
-    
+    {
+        auto it = *std::max_element(options.begin(), options.end(), [](Option *thing1, Option *thing2){ return thing1->getVolCall() < thing2->getVolCall(); });
+        cout << "Call Call Volume -> " << it->getSymbol() << " : " << it->getExpiration() << "( " << it->getCurrent() << " : " << it->getStrike() << " ) : " << it->getVolCall() << "( " << it->getOpenIntCall() << " )" << endl;
+
+        it = *std::max_element(options.begin(), options.end(), [](Option *thing1, Option *thing2){ return thing1->getVolPut() < thing2->getVolPut(); });
+        cout << "Max Put Volume -> " << it->getSymbol() << " : " << it->getExpiration() << "( " << it->getCurrent() << " : " << it->getStrike() << " ) : " << it->getVolPut() << "( " << it->getOpenIntPut() << " )" << endl;
+    }
+
     return 0;
 }

@@ -1,19 +1,19 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Roger Federer (13617587),Roger Federer,13617587,P,11000,Albot@Federer 10/23/2019 01:00PM ET,Federer,68.66,-3112,0,-3335,-3000,-3000
-P,Gael Monfils (13617593),Gael Monfils,13617593,P,10100,Monfils@Novak 10/23/2019 09:00AM ET,Monfils,56.15,-502,0,-530,-500,-475
-P,Stan Wawrinka (13617586),Stan Wawrinka,13617586,P,9800,Wawrinka@Cuevas 10/23/2019 11:00AM ET,Wawrinka,57.04,-480,0,-480,-460,-500
-P,Jan-Lennard Struff (13617591),Jan-Lennard Struff,13617591,P,9400,Struff@Laaksonen 10/23/2019 02:30PM ET,Struff,52.17,-308,0,-305,-320,-300
-P,Alex De Minaur (13617590),Alex De Minaur,13617590,P,9100,Fritz@De Minaur 10/23/2019 02:20PM ET,De Minaur,53.06,-160,0,-165,-156,-160
-P,Karen Khachanov (13617597),Karen Khachanov,13617597,P,8900,Khachanov@Fucsovics 10/23/2019 12:50PM ET,Khachanov,46.84,-268,0,-275,-280,-250
-P,David Goffin (13617582),David Goffin,13617582,P,8500,Cilic@Goffin 10/23/2019 09:00AM ET,Goffin,51.62,-173,0,-177,-162,-180
-P,Matteo Berrettini (13617596),Matteo Berrettini,13617596,P,8200,Dimitrov@Berrettini 10/23/2019 11:30AM ET,Berrettini,56.52,-171,0,-175,-174,-165
-P,Daniel Evans (13617584),Daniel Evans,13617584,P,7900,Evans@Tiafoe 10/23/2019 11:00AM ET,Evans,48.15,-138,0,-139,-140,-135
-P,Frances Tiafoe (13617583),Frances Tiafoe,13617583,P,7200,Evans@Tiafoe 10/23/2019 11:00AM ET,Tiafoe,45.48,115,0,112,118,115
-P,Grigor Dimitrov (13617595),Grigor Dimitrov,13617595,P,6900,Dimitrov@Berrettini 10/23/2019 11:30AM ET,Dimitrov,46.87,144,0,140,148,145
-P,Marin Cilic (13617581),Marin Cilic,13617581,P,6500,Cilic@Goffin 10/23/2019 09:00AM ET,Cilic,47.95,146,0,140,138,160
-P,Marton Fucsovics (13617598),Marton Fucsovics,13617598,P,6000,Khachanov@Fucsovics 10/23/2019 12:50PM ET,Fucsovics,44.86,217,0,215,225,210
-P,Taylor Fritz (13617589),Taylor Fritz,13617589,P,5800,Fritz@De Minaur 10/23/2019 02:20PM ET,Fritz,48.49,135,0,132,132,140
-P,Henri Laaksonen (13617592),Henri Laaksonen,13617592,P,5600,Struff@Laaksonen 10/23/2019 02:30PM ET,Laaksonen,40.94,243,0,230,250,250
-P,Pablo Cuevas (13617585),Pablo Cuevas,13617585,P,5200,Wawrinka@Cuevas 10/23/2019 11:00AM ET,Cuevas,48.23,370,0,360,350,400
-P,Dennis Novak (13617594),Dennis Novak,13617594,P,4800,Monfils@Novak 10/23/2019 09:00AM ET,Novak,38.53,382,0,390,380,375
-P,Radu Albot (13617588),Radu Albot,13617588,P,4000,Albot@Federer 10/23/2019 01:00PM ET,Albot,46.88,1533,0,1500,1700,1400
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Roger Federer (13617587),Roger Federer,13617587,P,11000,Albot@Federer 10/23/2019 01:00PM ET,Federer,68.66,-3112,0,-3335,-3000,-3000,,,,1
+P,Gael Monfils (13617593),Gael Monfils,13617593,P,10100,Monfils@Novak 10/23/2019 09:00AM ET,Monfils,56.15,-502,0,-530,-500,-475,,,,1
+P,Stan Wawrinka (13617586),Stan Wawrinka,13617586,P,9800,Wawrinka@Cuevas 10/23/2019 11:00AM ET,Wawrinka,57.04,-480,0,-480,-460,-500,,,,1
+P,Jan-Lennard Struff (13617591),Jan-Lennard Struff,13617591,P,9400,Struff@Laaksonen 10/23/2019 02:30PM ET,Struff,52.17,-308,0,-305,-320,-300,,,,1
+P,Alex De Minaur (13617590),Alex De Minaur,13617590,P,9100,Fritz@De Minaur 10/23/2019 02:20PM ET,De Minaur,53.06,-160,0,-165,-156,-160,,,,1
+P,Karen Khachanov (13617597),Karen Khachanov,13617597,P,8900,Khachanov@Fucsovics 10/23/2019 12:50PM ET,Khachanov,46.84,-268,0,-275,-280,-250,,,,1
+P,David Goffin (13617582),David Goffin,13617582,P,8500,Cilic@Goffin 10/23/2019 09:00AM ET,Goffin,51.62,-173,0,-177,-162,-180,,,,1
+P,Matteo Berrettini (13617596),Matteo Berrettini,13617596,P,8200,Dimitrov@Berrettini 10/23/2019 11:30AM ET,Berrettini,56.52,-171,0,-175,-174,-165,,,,1
+P,Daniel Evans (13617584),Daniel Evans,13617584,P,7900,Evans@Tiafoe 10/23/2019 11:00AM ET,Evans,48.15,-138,0,-139,-140,-135,,,,0
+P,Frances Tiafoe (13617583),Frances Tiafoe,13617583,P,7200,Evans@Tiafoe 10/23/2019 11:00AM ET,Tiafoe,45.48,115,0,112,118,115,,,,1
+P,Grigor Dimitrov (13617595),Grigor Dimitrov,13617595,P,6900,Dimitrov@Berrettini 10/23/2019 11:30AM ET,Dimitrov,46.87,144,0,140,148,145,,,,0
+P,Marin Cilic (13617581),Marin Cilic,13617581,P,6500,Cilic@Goffin 10/23/2019 09:00AM ET,Cilic,47.95,146,0,140,138,160,,,,0
+P,Marton Fucsovics (13617598),Marton Fucsovics,13617598,P,6000,Khachanov@Fucsovics 10/23/2019 12:50PM ET,Fucsovics,44.86,217,0,215,225,210,,,,0
+P,Taylor Fritz (13617589),Taylor Fritz,13617589,P,5800,Fritz@De Minaur 10/23/2019 02:20PM ET,Fritz,48.49,135,0,132,132,140,,,,0
+P,Henri Laaksonen (13617592),Henri Laaksonen,13617592,P,5600,Struff@Laaksonen 10/23/2019 02:30PM ET,Laaksonen,40.94,243,0,230,250,250,,,,0
+P,Pablo Cuevas (13617585),Pablo Cuevas,13617585,P,5200,Wawrinka@Cuevas 10/23/2019 11:00AM ET,Cuevas,48.23,370,0,360,350,400,,,,0
+P,Dennis Novak (13617594),Dennis Novak,13617594,P,4800,Monfils@Novak 10/23/2019 09:00AM ET,Novak,38.53,382,0,390,380,375,,,,0
+P,Radu Albot (13617588),Radu Albot,13617588,P,4000,Albot@Federer 10/23/2019 01:00PM ET,Albot,46.88,1533,0,1500,1700,1400,,,,0

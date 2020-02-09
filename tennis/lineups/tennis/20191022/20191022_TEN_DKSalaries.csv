@@ -1,17 +1,17 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Stefanos Tsitsipas (13610124),Stefanos Tsitsipas,13610124,P,10300,Ramos-Vinolas@Tsitsipas 10/22/2019 01:00PM ET,Tsitsipas,56.2,-657,0,-670,-650,-650
-P,Alexander Zverev (13610122),Alexander Zverev,13610122,P,9900,Zverev@Fritz 10/22/2019 11:00AM ET,Zverev,53.44,-410,0,-420,-410,-400
-P,Roberto Bautista-Agut (13610126),Roberto Bautista-Agut,13610126,P,9600,Bautista-Agut@Copil 10/22/2019 02:20PM ET,Bautista-Agut,56.51,-330,0,-335,-330,-325
-P,Dominic Thiem (13610132),Dominic Thiem,13610132,P,9100,Tsonga@Thiem 10/22/2019 11:30AM ET,Thiem,57.35,-208,0,-220,-205,-200
-P,Richard Gasquet (13610120),Richard Gasquet,13610120,P,8800,Gasquet@Londero 10/22/2019 11:00AM ET,Gasquet,44.09,-208,0,-220,-205,-200
-P,Milos Raonic (13610129),Milos Raonic,13610129,P,8600,Raonic@Chung 10/22/2019 09:20AM ET,Raonic,63.1,-185,0,-190,-186,-180
-P,Nikoloz Basilashvili (13610131),Nikoloz Basilashvili,13610131,P,8400,Verdasco@Basilashvili 10/22/2019 09:40AM ET,Basilashvili,45.16,-157,0,-155,-160,-155
-P,Philipp Kohlschreiber (13610134),Philipp Kohlschreiber,13610134,P,7800,Kohlschreiber@Sinner 10/22/2019 12:50PM ET,Kohlschreiber,46.43,-134,0,-130,-136,-135
-P,Jannik Sinner (13610135),Jannik Sinner,13610135,P,7400,Kohlschreiber@Sinner 10/22/2019 12:50PM ET,Sinner,37.38,112,0,105,116,115
-P,Fernando Verdasco (13610130),Fernando Verdasco,13610130,P,6900,Verdasco@Basilashvili 10/22/2019 09:40AM ET,Verdasco,47.33,132,0,125,136,135
-P,Hyeon Chung (13610128),Hyeon Chung,13610128,P,6700,Raonic@Chung 10/22/2019 09:20AM ET,Chung,39.32,155,0,150,156,160
-P,Juan Ignacio Londero (13610121),Juan Ignacio Londero,13610121,P,6400,Gasquet@Londero 10/22/2019 11:00AM ET,Londero,46.86,171,0,170,172,170
-P,Jo-Wilfried Tsonga (13610133),Jo-Wilfried Tsonga,13610133,P,6200,Tsonga@Thiem 10/22/2019 11:30AM ET,Tsonga,56.6,171,0,170,174,170
-P,Marius Copil (13610127),Marius Copil,13610127,P,5500,Bautista-Agut@Copil 10/22/2019 02:20PM ET,Copil,35.98,263,0,255,270,265
-P,Taylor Fritz (13610123),Taylor Fritz,13610123,P,5300,Zverev@Fritz 10/22/2019 11:00AM ET,Fritz,48.05,320,0,320,320,320
-P,Albert Ramos-Vinolas (13610125),Albert Ramos-Vinolas,13610125,P,4800,Ramos-Vinolas@Tsitsipas 10/22/2019 01:00PM ET,Ramos-Vinolas,50.23,480,0,475,490,475
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Stefanos Tsitsipas (13610124),Stefanos Tsitsipas,13610124,P,10300,Ramos-Vinolas@Tsitsipas 10/22/2019 01:00PM ET,Tsitsipas,56.2,-657,0,-670,-650,-650,,,,1
+P,Alexander Zverev (13610122),Alexander Zverev,13610122,P,9900,Zverev@Fritz 10/22/2019 11:00AM ET,Zverev,53.44,-410,0,-420,-410,-400,,,,0
+P,Roberto Bautista-Agut (13610126),Roberto Bautista-Agut,13610126,P,9600,Bautista-Agut@Copil 10/22/2019 02:20PM ET,Bautista-Agut,56.51,-330,0,-335,-330,-325,,,,1
+P,Dominic Thiem (13610132),Dominic Thiem,13610132,P,9100,Tsonga@Thiem 10/22/2019 11:30AM ET,Thiem,57.35,-208,0,-220,-205,-200,,,,1
+P,Richard Gasquet (13610120),Richard Gasquet,13610120,P,8800,Gasquet@Londero 10/22/2019 11:00AM ET,Gasquet,44.09,-208,0,-220,-205,-200,,,,1
+P,Milos Raonic (13610129),Milos Raonic,13610129,P,8600,Raonic@Chung 10/22/2019 09:20AM ET,Raonic,63.1,-185,0,-190,-186,-180,,,,0
+P,Nikoloz Basilashvili (13610131),Nikoloz Basilashvili,13610131,P,8400,Verdasco@Basilashvili 10/22/2019 09:40AM ET,Basilashvili,45.16,-157,0,-155,-160,-155,,,,0
+P,Philipp Kohlschreiber (13610134),Philipp Kohlschreiber,13610134,P,7800,Kohlschreiber@Sinner 10/22/2019 12:50PM ET,Kohlschreiber,46.43,-134,0,-130,-136,-135,,,,0
+P,Jannik Sinner (13610135),Jannik Sinner,13610135,P,7400,Kohlschreiber@Sinner 10/22/2019 12:50PM ET,Sinner,37.38,112,0,105,116,115,,,,1
+P,Fernando Verdasco (13610130),Fernando Verdasco,13610130,P,6900,Verdasco@Basilashvili 10/22/2019 09:40AM ET,Verdasco,47.33,132,0,125,136,135,,,,1
+P,Hyeon Chung (13610128),Hyeon Chung,13610128,P,6700,Raonic@Chung 10/22/2019 09:20AM ET,Chung,39.32,155,0,150,156,160,,,,1
+P,Juan Ignacio Londero (13610121),Juan Ignacio Londero,13610121,P,6400,Gasquet@Londero 10/22/2019 11:00AM ET,Londero,46.86,171,0,170,172,170,,,,0
+P,Jo-Wilfried Tsonga (13610133),Jo-Wilfried Tsonga,13610133,P,6200,Tsonga@Thiem 10/22/2019 11:30AM ET,Tsonga,56.6,171,0,170,174,170,,,,0
+P,Marius Copil (13610127),Marius Copil,13610127,P,5500,Bautista-Agut@Copil 10/22/2019 02:20PM ET,Copil,35.98,263,0,255,270,265,,,,0
+P,Taylor Fritz (13610123),Taylor Fritz,13610123,P,5300,Zverev@Fritz 10/22/2019 11:00AM ET,Fritz,48.05,320,0,320,320,320,,,,1
+P,Albert Ramos-Vinolas (13610125),Albert Ramos-Vinolas,13610125,P,4800,Ramos-Vinolas@Tsitsipas 10/22/2019 01:00PM ET,Ramos-Vinolas,50.23,480,0,475,490,475,,,,0

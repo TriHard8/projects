@@ -9,6 +9,7 @@ import my_utils as my
 import time
 from selenium import webdriver
 from selenium.webdriver.common import action_chains, keys
+from selenium.webdriver.chrome.options import Options
 
 def formatdate(oldDate):
     mon = ""
@@ -46,6 +47,10 @@ with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
 
 stock_list = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')) 
 
+
+#options = Options()
+#options.add_argument("--headless")
+#driver = webdriver.Chrome(options=options)
 driver = webdriver.Chrome()
 driver.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
 action = action_chains.ActionChains(driver)

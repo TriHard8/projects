@@ -1,16 +1,16 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Andy Murray (13574894),Andy Murray,13574894,P,10900,Coppejans@Murray 10/15/2019 01:30PM ET,Murray,46.02,-1217,0,-1250,-1200,-1200
-P,Elise Mertens (13574895),Elise Mertens,13574895,P,10300,Mertens@Bonaventure 10/15/2019 01:00PM ET,Mertens,51.85,-555,0,-560,-550,
-P,Gilles Simon (13574896),Gilles Simon,13574896,P,9700,Darcis@Simon 10/15/2019 12:00PM ET,Simon,44.51,-362,0,-375,-360,-350
-P,Ugo Humbert (13574897),Ugo Humbert,13574897,P,9200,Kovalik@Humbert 10/15/2019 01:00PM ET,Humbert,45.59,-355,0,-375,-340,-350
-P,Filip Krajinovic (13574898),Filip Krajinovic,13574898,P,8800,Ruud@Krajinovic 10/15/2019 01:50PM ET,Krajinovic,53.36,-227,0,-235,-215,-230
-P,Anastasia Pavlyuchenkova (13574899),Anastasia Pavlyuchenkova,13574899,P,8600,Sakkari@Pavlyuchenkova 10/15/2019 01:00PM ET,Pavlyuchenkova,43.91,-193,0,-195,-194,-190
-P,Andrea Petkovic (13574900),Andrea Petkovic,13574900,P,8000,Giorgi@Petkovic 10/15/2019 01:15PM ET,Petkovic,42.8,-122,0,-122,-124,-120
-P,Yuichi Sugita (13574901),Yuichi Sugita,13574901,P,7700,Sugita@Ymer 10/15/2019 12:30PM ET,Sugita,13.1,-129,0,-124,-132,-130
-P,Elias Ymer (13574902),Elias Ymer,13574902,P,7300,Sugita@Ymer 10/15/2019 12:30PM ET,Ymer,31.82,107,0,100,112,110
-P,Camila Giorgi (13574903),Camila Giorgi,13574903,P,7000,Giorgi@Petkovic 10/15/2019 01:15PM ET,Giorgi,44.01,102,0,100,106,100
-P,Maria Sakkari (13574904),Maria Sakkari,13574904,P,6400,Sakkari@Pavlyuchenkova 10/15/2019 01:00PM ET,Sakkari,50.34,161,0,155,164,165
-P,Casper Ruud (13574905),Casper Ruud,13574905,P,6100,Ruud@Krajinovic 10/15/2019 01:50PM ET,Ruud,48.11,185,0,185,180,190
-P,Steve Darcis (13574906),Steve Darcis,13574906,P,5800,Darcis@Simon 10/15/2019 12:00PM ET,Darcis,32.48,287,0,280,290,290
-P,Jozef Kovalik (13574907),Jozef Kovalik,13574907,P,5400,Kovalik@Humbert 10/15/2019 01:00PM ET,Kovalik,19.66,280,0,280,270,290
-P,Kimmer Coppejans (13574909),Kimmer Coppejans,13574909,P,4200,Coppejans@Murray 10/15/2019 01:30PM ET,Coppejans,32.38,793,0,800,830,750
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Andy Murray (13574894),Andy Murray,13574894,P,10900,Coppejans@Murray 10/15/2019 01:30PM ET,Murray,46.02,-1217,0,-1250,-1200,-1200,,,,1
+P,Elise Mertens (13574895),Elise Mertens,13574895,P,10300,Mertens@Bonaventure 10/15/2019 01:00PM ET,Mertens,51.85,-555,0,-560,-550,,,,,1
+P,Gilles Simon (13574896),Gilles Simon,13574896,P,9700,Darcis@Simon 10/15/2019 12:00PM ET,Simon,44.51,-362,0,-375,-360,-350,,,,1
+P,Ugo Humbert (13574897),Ugo Humbert,13574897,P,9200,Kovalik@Humbert 10/15/2019 01:00PM ET,Humbert,45.59,-355,0,-375,-340,-350,,,,1
+P,Filip Krajinovic (13574898),Filip Krajinovic,13574898,P,8800,Ruud@Krajinovic 10/15/2019 01:50PM ET,Krajinovic,53.36,-227,0,-235,-215,-230,,,,1
+P,Anastasia Pavlyuchenkova (13574899),Anastasia Pavlyuchenkova,13574899,P,8600,Sakkari@Pavlyuchenkova 10/15/2019 01:00PM ET,Pavlyuchenkova,43.91,-193,0,-195,-194,-190,,,,1
+P,Andrea Petkovic (13574900),Andrea Petkovic,13574900,P,8000,Giorgi@Petkovic 10/15/2019 01:15PM ET,Petkovic,42.8,-122,0,-122,-124,-120,,,,1
+P,Yuichi Sugita (13574901),Yuichi Sugita,13574901,P,7700,Sugita@Ymer 10/15/2019 12:30PM ET,Sugita,13.1,-129,0,-124,-132,-130,,,,1
+P,Elias Ymer (13574902),Elias Ymer,13574902,P,7300,Sugita@Ymer 10/15/2019 12:30PM ET,Ymer,31.82,107,0,100,112,110,,,,0
+P,Camila Giorgi (13574903),Camila Giorgi,13574903,P,7000,Giorgi@Petkovic 10/15/2019 01:15PM ET,Giorgi,44.01,102,0,100,106,100,,,,0
+P,Maria Sakkari (13574904),Maria Sakkari,13574904,P,6400,Sakkari@Pavlyuchenkova 10/15/2019 01:00PM ET,Sakkari,50.34,161,0,155,164,165,,,,0
+P,Casper Ruud (13574905),Casper Ruud,13574905,P,6100,Ruud@Krajinovic 10/15/2019 01:50PM ET,Ruud,48.11,185,0,185,180,190,,,,0
+P,Steve Darcis (13574906),Steve Darcis,13574906,P,5800,Darcis@Simon 10/15/2019 12:00PM ET,Darcis,32.48,287,0,280,290,290,,,,0
+P,Jozef Kovalik (13574907),Jozef Kovalik,13574907,P,5400,Kovalik@Humbert 10/15/2019 01:00PM ET,Kovalik,19.66,280,0,280,270,290,,,,0
+P,Kimmer Coppejans (13574909),Kimmer Coppejans,13574909,P,4200,Coppejans@Murray 10/15/2019 01:30PM ET,Coppejans,32.38,793,0,800,830,750,,,,0

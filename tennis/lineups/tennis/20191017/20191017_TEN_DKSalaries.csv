@@ -1,17 +1,17 @@
-Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS
-P,Andrea Petkovic (13590570),Andrea Petkovic,13590570,P,10000,Petkovic@Lottner 10/17/2019 12:00PM ET,Petkovic,42.89,-345,0,-345,-340,-350
-P,Mikael Ymer (13590569),Mikael Ymer,13590569,P,9800,Stebe@Ymer 10/17/2019 01:50PM ET,Ymer,47.47,-338,0,-335,-330,-350
-P,Andy Murray (13590561),Andy Murray,13590561,P,9600,Murray@Cuevas 10/17/2019 12:30PM ET,Murray,47.6,-330,0,-345,-320,-325
-P,Marin Cilic (13590564),Marin Cilic,13590564,P,9400,Karlovic@Cilic 10/17/2019 01:00PM ET,Cilic,47.7,-295,0,-295,-300,-290
-P,Julia Goerges (13590572),Julia Goerges,13590572,P,8900,Goerges@Cirstea 10/17/2019 01:15PM ET,Goerges,50.05,-270,0,-250,-290,-270
-P,Denis Shapovalov (13590566),Denis Shapovalov,13590566,P,8700,Popyrin@Shapovalov 10/17/2019 12:30PM ET,Shapovalov,46.62,-268,0,-275,-280,-250
-P,David Goffin (13590562),David Goffin,13590562,P,8400,Goffin@Humbert 10/17/2019 01:50PM ET,Goffin,52.4,-276,0,-278,-290,-260
-P,Anastasia Pavlyuchenkova (13590574),Anastasia Pavlyuchenkova,13590574,P,7900,Pavlyuchenkova@Gracheva 10/17/2019 11:30AM ET,Pavlyuchenkova,44.44,-201,0,-210,-194,-200
-P,Varvara Gracheva (13590575),Varvara Gracheva,13590575,P,7300,Pavlyuchenkova@Gracheva 10/17/2019 11:30AM ET,Gracheva,50.01,166,0,165,164,170
-P,Alexei Popyrin (13590567),Alexei Popyrin,13590567,P,6800,Popyrin@Shapovalov 10/17/2019 12:30PM ET,Popyrin,40.09,215,0,210,225,210
-P,Ugo Humbert (13590563),Ugo Humbert,13590563,P,6400,Goffin@Humbert 10/17/2019 01:50PM ET,Humbert,46.38,223,0,220,230,220
-P,Sorana Cirstea (13590573),Sorana Cirstea,13590573,P,6000,Goerges@Cirstea 10/17/2019 01:15PM ET,Cirstea,50.2,222,0,200,235,230
-P,Ivo Karlovic (13590565),Ivo Karlovic,13590565,P,5800,Karlovic@Cilic 10/17/2019 01:00PM ET,Karlovic,50.86,235,0,225,240,240
-P,Cedrik-Marcel Stebe (13590568),Cedrik-Marcel Stebe,13590568,P,5600,Stebe@Ymer 10/17/2019 01:50PM ET,Stebe,35.03,270,0,260,260,290
-P,Pablo Cuevas (13590560),Pablo Cuevas,13590560,P,5400,Murray@Cuevas 10/17/2019 12:30PM ET,Cuevas,48.85,262,0,260,260,265
-P,Antonia Lottner (13590571),Antonia Lottner,13590571,P,5200,Petkovic@Lottner 10/17/2019 12:00PM ET,Lottner,36.73,273,0,260,270,290
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame,,,DK,FanDuel,BetUS,,,,Win/Loss
+P,Andrea Petkovic (13590570),Andrea Petkovic,13590570,P,10000,Petkovic@Lottner 10/17/2019 12:00PM ET,Petkovic,42.89,-345,0,-345,-340,-350,,,,0
+P,Mikael Ymer (13590569),Mikael Ymer,13590569,P,9800,Stebe@Ymer 10/17/2019 01:50PM ET,Ymer,47.47,-338,0,-335,-330,-350,,,,0
+P,Andy Murray (13590561),Andy Murray,13590561,P,9600,Murray@Cuevas 10/17/2019 12:30PM ET,Murray,47.6,-330,0,-345,-320,-325,,,,1
+P,Marin Cilic (13590564),Marin Cilic,13590564,P,9400,Karlovic@Cilic 10/17/2019 01:00PM ET,Cilic,47.7,-295,0,-295,-300,-290,,,,1
+P,Julia Goerges (13590572),Julia Goerges,13590572,P,8900,Goerges@Cirstea 10/17/2019 01:15PM ET,Goerges,50.05,-270,0,-250,-290,-270,,,,1
+P,Denis Shapovalov (13590566),Denis Shapovalov,13590566,P,8700,Popyrin@Shapovalov 10/17/2019 12:30PM ET,Shapovalov,46.62,-268,0,-275,-280,-250,,,,1
+P,David Goffin (13590562),David Goffin,13590562,P,8400,Goffin@Humbert 10/17/2019 01:50PM ET,Goffin,52.4,-276,0,-278,-290,-260,,,,0
+P,Anastasia Pavlyuchenkova (13590574),Anastasia Pavlyuchenkova,13590574,P,7900,Pavlyuchenkova@Gracheva 10/17/2019 11:30AM ET,Pavlyuchenkova,44.44,-201,0,-210,-194,-200,,,,1
+P,Varvara Gracheva (13590575),Varvara Gracheva,13590575,P,7300,Pavlyuchenkova@Gracheva 10/17/2019 11:30AM ET,Gracheva,50.01,166,0,165,164,170,,,,0
+P,Alexei Popyrin (13590567),Alexei Popyrin,13590567,P,6800,Popyrin@Shapovalov 10/17/2019 12:30PM ET,Popyrin,40.09,215,0,210,225,210,,,,0
+P,Ugo Humbert (13590563),Ugo Humbert,13590563,P,6400,Goffin@Humbert 10/17/2019 01:50PM ET,Humbert,46.38,223,0,220,230,220,,,,1
+P,Sorana Cirstea (13590573),Sorana Cirstea,13590573,P,6000,Goerges@Cirstea 10/17/2019 01:15PM ET,Cirstea,50.2,222,0,200,235,230,,,,0
+P,Ivo Karlovic (13590565),Ivo Karlovic,13590565,P,5800,Karlovic@Cilic 10/17/2019 01:00PM ET,Karlovic,50.86,235,0,225,240,240,,,,0
+P,Cedrik-Marcel Stebe (13590568),Cedrik-Marcel Stebe,13590568,P,5600,Stebe@Ymer 10/17/2019 01:50PM ET,Stebe,35.03,270,0,260,260,290,,,,1
+P,Pablo Cuevas (13590560),Pablo Cuevas,13590560,P,5400,Murray@Cuevas 10/17/2019 12:30PM ET,Cuevas,48.85,262,0,260,260,265,,,,0
+P,Antonia Lottner (13590571),Antonia Lottner,13590571,P,5200,Petkovic@Lottner 10/17/2019 12:00PM ET,Lottner,36.73,273,0,260,270,290,,,,1
