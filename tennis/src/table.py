@@ -9,9 +9,11 @@ from selenium import webdriver
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 #url = "https://www.espn.com/nhl/scoreboard"
-dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/13908704?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/13840860?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/12161358?category=game-lines&subcategory=money-line" ]
+dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/14794323?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/14590284?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/66823319?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/14806603?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/14137730?category=game-lines&subcategory=money-line" ]
 fd_urls = ["https://sportsbook.fanduel.com/sports/navigation/1010.1/9874.3"]
 betUS_urls = [  "https://www.betus.com.pa/sportsbook/mens-tennis-odds.aspx",
                 "https://www.betus.com.pa/sportsbook/womens-tennis-odds.aspx"]
@@ -72,26 +74,34 @@ def getBetUS(urls):
     for url in urls:
         soup = getSoup(url)
         tables = soup.find_all('div', class_ = 'game-block')
-        matches = []
         for table in tables:
             date = formatDateBetUS(table.find('h4', class_ = 'sport-header').text.strip())
             for match in table.find_all('div', class_ = 'normal'):
                 time = formatTimeBetUS(match.find('span', class_ = 'time').find('a').text)
                 visitor = match.find('tr', class_ = 'visitor').find('td', class_ = 'team').text.strip()
                 node = match.find('tr', class_ = 'visitor').find('td', class_ = 'money').find('a')
-                visitorML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
+                if node is not None:
+                    visitorML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
+                else:
+                    visitorML = ""
                 home = match.find('tr', class_ = 'home').find('td', class_ = 'team').text.strip()
                 node = match.find('tr', class_ = 'home').find('td', class_ = 'money').find('a')
-                homeML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
+                if node is not None:
+                    homeML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
+                else:
+                    homeML = ""
                 matches.append([date, visitor, home, visitorML, homeML])
-        return matches
+    return matches
      
 def getDraftKings(urls):
     matches = []
     for url in urls:
         soup = getSoup(url)
         table = soup.find_all('div', class_ = 'sportsbook-offer-category-card')
-        table = table[0]
+        if len(table) == 0:
+            continue
+        else:
+            table = table[0]
         for row in table.find_all('div', class_ = 'sportsbook-event-accordion__wrapper expanded'):
             match = []
             schedule = row.find('span', class_ = 'sportsbook-event-accordion__date').text
@@ -122,7 +132,7 @@ for match in matches:
         else:
             print(match[i],end=',')    
 
-matches = getBetUS(["https://www.betus.com.pa/sportsbook/mens-tennis-odds.aspx"])
+matches = getBetUS(betUS_urls)
 print("BetUS")
 for match in matches:
     for i in range(len(match)):

@@ -23,7 +23,7 @@ class DKTennis:
         return "{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(self.position, self.nameID, self.name, self.ID, self.rosterPosition, self.salary, self.gameInfo, self.teamAbbrev, self.avgPointsPerGame, self.avgImpliedOdds, self.points, self.DKOdds, self.FDOdds, self.betUSOdds)
 
     def bettingInfo(self):
-        return "{},{},{},{}".format(self.name, self.DKOdds, self.FDOdds, self.betUSOdds)
+        return "{},{},{},{},{}".format(self.name, self.salary, self.DKOdds, self.FDOdds, self.betUSOdds)
 
 class FDTennis:
     def __init__(self, player):
