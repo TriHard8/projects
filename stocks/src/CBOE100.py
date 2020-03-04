@@ -24,3 +24,4 @@ for record in soup.findAll('tr'):
     if m: company = m.groups()[0]
     sp_100.write("{}\n".format(company))
 
+sp_100.write("SPY,S&P 500 ETF\n")

@@ -27,6 +27,7 @@ for url in urls:
         if "Symbol" in company:
             if not categories:
                 sp_500.write("{}\n".format(company))
+                sp_500.write("SPY,S&P 500 ETF\n")
                 categories = True;
         else:        
             sp_500.write("{}\n".format(company))
