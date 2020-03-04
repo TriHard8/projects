@@ -23,7 +23,8 @@ def predicting(post0, post1):
     return "fav"    
 
 accuracy = []
-predict = True
+dog_accuracy = []
+predict = False
 if predict:
     runs = 1
 else:
@@ -78,7 +79,7 @@ for i in range(runs):
 
 ################################
     
-    correct = wrong = 0
+    fav_correct = fav_wrong = dog_correct = dog_wrong = 0
     
     for test in test_data:
         j = np.delete(test, last_column, 0)
@@ -93,19 +94,23 @@ for i in range(runs):
         if predict:
             print(predicting(post0, post1))
         else:
-            #if test[last_column] == 1:
             if(post1 > post0 and test[last_column] == 1):
-                correct += 1
+                fav_correct += 1
             elif(post0 > post1 and test[last_column] == 0):
-                correct += 1
+                dog_correct += 1
+            elif(post1 > post0 and test[last_column] == 0):
+                fav_wrong += 1
             else:
-                wrong += 1
+                dog_wrong += 1
 
     if not predict:
-        if 100*correct/(correct+wrong) > 90:
+        if 100*(fav_correct+dog_correct)/(fav_correct+dog_correct+fav_wrong+dog_wrong) > 90:
             print("Almost Perfect")
-        accuracy.append(100*correct/(correct+wrong))
+        accuracy.append((fav_correct+dog_correct)/(fav_correct+dog_correct+fav_wrong+dog_wrong))
+        if dog_correct+dog_wrong > 0:
+            dog_accuracy.append(dog_correct/(dog_correct+dog_wrong))
     
 if not predict:
+    print("Dog Accuracy Average: " + str(np.average(dog_accuracy)))
     print("Accuracy Average: " + str(np.average(accuracy)))
     print("Accuracy Standard Deviation: " + str(np.std(accuracy)))

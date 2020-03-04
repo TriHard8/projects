@@ -5,15 +5,12 @@ import bs4
 from bs4 import BeautifulSoup
 from datetime import date
 from datetime import timedelta
-from selenium import webdriver
+#from selenium import webdriver
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 #url = "https://www.espn.com/nhl/scoreboard"
-dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/14794323?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/14590284?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/66823319?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/14806603?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/14137730?category=game-lines&subcategory=money-line" ]
+dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/68857637?category=game-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/18972667?category=game-lines&subcategory=money-line" ]
 fd_urls = ["https://sportsbook.fanduel.com/sports/navigation/1010.1/9874.3"]
 betUS_urls = [  "https://www.betus.com.pa/sportsbook/mens-tennis-odds.aspx",
                 "https://www.betus.com.pa/sportsbook/womens-tennis-odds.aspx"]

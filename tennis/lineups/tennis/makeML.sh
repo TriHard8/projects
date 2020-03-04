@@ -51,3 +51,9 @@ $script "${base_dir}20200224/20200224_TEN_DKSalaries_early.csv" >> $output
 $script "${base_dir}20200224/20200224_TEN_DKSalaries_late.csv" >> $output
 $script "${base_dir}20200225/20200225_TEN_DKSalaries_early.csv" >> $output
 $script "${base_dir}20200225/20200225_TEN_DKSalaries_late.csv" >> $output
+$script "${base_dir}20200226/20200226_TEN_DKSalaries_early.csv" >> $output
+$script "${base_dir}20200226/20200226_TEN_DKSalaries_late.csv" >> $output
+$script "${base_dir}20200227/20200227_TEN_DKSalaries_early.csv" >> $output
+$script "${base_dir}20200227/20200227_TEN_DKSalaries_late.csv" >> $output
+$script "${base_dir}20200228/20200228_TEN_DKSalaries.csv" >> $output
+$script "${base_dir}20200302/20200302_TEN_DKSalaries.csv" >> $output
