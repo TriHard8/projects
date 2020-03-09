@@ -1,0 +1,286 @@
+20200307,Liverpool,LIV,2,AFC Bournemouth,BOU,1
+20200307,Arsenal,ARS,1,West Ham United,WHU,0
+20200307,Crystal Palace,CRY,1,Watford,WAT,0
+20200307,Sheffield United,SHU,1,Norwich City,NOR,0
+20200307,Southampton,SOUT,0,Newcastle United,NEW,1
+20200307,Wolverhampton Wanderers,WOLV,0,Brighton & Hove Albion,BHA,0
+20200307,Burnley,BUR,1,Tottenham Hotspur,TOT,1
+20200301,Everton,EVE,1,Manchester United,MAN,1
+20200301,Tottenham Hotspur,TOT,2,Wolverhampton Wanderers,WOLV,3
+20200229,Brighton & Hove Albion,BHA,0,Crystal Palace,CRY,1
+20200229,AFC Bournemouth,BOU,2,Chelsea,CHE,2
+20200229,Newcastle United,NEW,0,Burnley,BUR,0
+20200229,West Ham United,WHU,3,Southampton,SOUT,1
+20200229,Watford,WAT,3,Liverpool,LIV,0
+20200229,Aston Villa,AVL,,Sheffield United,SHU,
+20200228,Norwich City,NOR,1,Leicester City,LEI,0
+20200224,Liverpool,LIV,3,West Ham United,WHU,2
+20200223,Manchester United,MAN,3,Watford,WAT,0
+20200223,Wolverhampton Wanderers,WOLV,3,Norwich City,NOR,0
+20200223,Arsenal,ARS,3,Everton,EVE,2
+20200222,Chelsea,CHE,2,Tottenham Hotspur,TOT,1
+20200222,Burnley,BUR,3,AFC Bournemouth,BOU,0
+20200222,Crystal Palace,CRY,1,Newcastle United,NEW,0
+20200222,Sheffield United,SHU,1,Brighton & Hove Albion,BHA,1
+20200222,Southampton,SOUT,2,Aston Villa,AVL,0
+20200222,Leicester City,LEI,0,Manchester City,MNC,1
+20200219,Manchester City,MNC,2,West Ham United,WHU,0
+20200217,Chelsea,CHE,0,Manchester United,MAN,2
+20200216,Aston Villa,AVL,2,Tottenham Hotspur,TOT,3
+20200216,Arsenal,ARS,4,Newcastle United,NEW,0
+20200215,Southampton,SOUT,1,Burnley,BUR,2
+20200215,Norwich City,NOR,0,Liverpool,LIV,1
+20200214,Wolverhampton Wanderers,WOLV,0,Leicester City,LEI,0
+20200209,Sheffield United,SHU,2,AFC Bournemouth,BOU,1
+20200208,Everton,EVE,3,Crystal Palace,CRY,1
+20200208,Brighton & Hove Albion,BHA,1,Watford,WAT,1
+20200202,Burnley,BUR,0,Arsenal,ARS,0
+20200202,Tottenham Hotspur,TOT,2,Manchester City,MNC,0
+20200201,Leicester City,LEI,2,Chelsea,CHE,2
+20200201,AFC Bournemouth,BOU,2,Aston Villa,AVL,1
+20200201,Crystal Palace,CRY,0,Sheffield United,SHU,1
+20200201,Liverpool,LIV,4,Southampton,SOUT,0
+20200201,Newcastle United,NEW,0,Norwich City,NOR,0
+20200201,Watford,WAT,2,Everton,EVE,3
+20200201,West Ham United,WHU,3,Brighton & Hove Albion,BHA,3
+20200201,Manchester United,MAN,0,Wolverhampton Wanderers,WOLV,0
+20200129,West Ham United,WHU,0,Liverpool,LIV,2
+20200123,Wolverhampton Wanderers,WOLV,1,Liverpool,LIV,2
+20200122,Leicester City,LEI,4,West Ham United,WHU,1
+20200122,Tottenham Hotspur,TOT,2,Norwich City,NOR,1
+20200122,Manchester United,MAN,0,Burnley,BUR,2
+20200121,AFC Bournemouth,BOU,3,Brighton & Hove Albion,BHA,1
+20200121,Aston Villa,AVL,2,Watford,WAT,1
+20200121,Crystal Palace,CRY,0,Southampton,SOUT,2
+20200121,Everton,EVE,2,Newcastle United,NEW,2
+20200121,Sheffield United,SHU,0,Manchester City,MNC,1
+20200121,Chelsea,CHE,2,Arsenal,ARS,2
+20200119,Burnley,BUR,2,Leicester City,LEI,1
+20200119,Liverpool,LIV,2,Manchester United,MAN,0
+20200118,Watford,WAT,0,Tottenham Hotspur,TOT,0
+20200118,Arsenal,ARS,1,Sheffield United,SHU,1
+20200118,Brighton & Hove Albion,BHA,1,Aston Villa,AVL,1
+20200118,Manchester City,MNC,2,Crystal Palace,CRY,2
+20200118,Norwich City,NOR,1,AFC Bournemouth,BOU,0
+20200118,Southampton,SOUT,2,Wolverhampton Wanderers,WOLV,3
+20200118,West Ham United,WHU,1,Everton,EVE,1
+20200118,Newcastle United,NEW,1,Chelsea,CHE,0
+20200112,AFC Bournemouth,BOU,0,Watford,WAT,3
+20200112,Aston Villa,AVL,1,Manchester City,MNC,6
+20200111,Crystal Palace,CRY,1,Arsenal,ARS,1
+20200111,Chelsea,CHE,3,Burnley,BUR,0
+20200111,Everton,EVE,1,Brighton & Hove Albion,BHA,0
+20200111,Leicester City,LEI,1,Southampton,SOUT,2
+20200111,Manchester United,MAN,4,Norwich City,NOR,0
+20200111,Wolverhampton Wanderers,WOLV,1,Newcastle United,NEW,1
+20200111,Tottenham Hotspur,TOT,0,Liverpool,LIV,1
+20200110,Sheffield United,SHU,1,West Ham United,WHU,0
+20200102,Liverpool,LIV,2,Sheffield United,SHU,0
+20200101,Brighton & Hove Albion,BHA,1,Chelsea,CHE,1
+20200101,Burnley,BUR,1,Aston Villa,AVL,2
+20200101,Newcastle United,NEW,0,Leicester City,LEI,3
+20200101,Southampton,SOUT,1,Tottenham Hotspur,TOT,0
+20200101,Watford,WAT,2,Wolverhampton Wanderers,WOLV,1
+20200101,Manchester City,MNC,2,Everton,EVE,1
+20200101,Norwich City,NOR,1,Crystal Palace,CRY,1
+20200101,West Ham United,WHU,4,AFC Bournemouth,BOU,0
+20200101,Arsenal,ARS,2,Manchester United,MAN,0
+20191229,Arsenal,ARS,1,Chelsea,CHE,2
+20191229,Liverpool,LIV,1,Wolverhampton Wanderers,WOLV,0
+20191229,Manchester City,MNC,2,Sheffield United,SHU,0
+20191228,Brighton & Hove Albion,BHA,2,AFC Bournemouth,BOU,0
+20191228,Newcastle United,NEW,1,Everton,EVE,2
+20191228,Southampton,SOUT,1,Crystal Palace,CRY,1
+20191228,Watford,WAT,3,Aston Villa,AVL,0
+20191228,Norwich City,NOR,2,Tottenham Hotspur,TOT,2
+20191228,West Ham United,WHU,1,Leicester City,LEI,2
+20191228,Burnley,BUR,0,Manchester United,MAN,2
+20191227,Wolverhampton Wanderers,WOLV,3,Manchester City,MNC,2
+20191226,Tottenham Hotspur,TOT,2,Brighton & Hove Albion,BHA,1
+20191226,AFC Bournemouth,BOU,1,Arsenal,ARS,1
+20191226,Aston Villa,AVL,1,Norwich City,NOR,0
+20191226,Chelsea,CHE,0,Southampton,SOUT,2
+20191226,Crystal Palace,CRY,2,West Ham United,WHU,1
+20191226,Everton,EVE,1,Burnley,BUR,0
+20191226,Sheffield United,SHU,1,Watford,WAT,1
+20191226,Manchester United,MAN,4,Newcastle United,NEW,1
+20191226,Leicester City,LEI,0,Liverpool,LIV,4
+20191222,Watford,WAT,2,Manchester United,MAN,0
+20191222,Tottenham Hotspur,TOT,0,Chelsea,CHE,2
+20191221,Everton,EVE,0,Arsenal,ARS,0
+20191221,AFC Bournemouth,BOU,0,Burnley,BUR,1
+20191221,Aston Villa,AVL,1,Southampton,SOUT,3
+20191221,Brighton & Hove Albion,BHA,0,Sheffield United,SHU,1
+20191221,Newcastle United,NEW,1,Crystal Palace,CRY,0
+20191221,Norwich City,NOR,1,Wolverhampton Wanderers,WOLV,2
+20191221,Manchester City,MNC,3,Leicester City,LEI,1
+20191216,Crystal Palace,CRY,1,Brighton & Hove Albion,BHA,1
+20191215,Manchester United,MAN,1,Everton,EVE,1
+20191215,Wolverhampton Wanderers,WOLV,1,Tottenham Hotspur,TOT,2
+20191215,Arsenal,ARS,0,Manchester City,MNC,3
+20191214,Liverpool,LIV,2,Watford,WAT,0
+20191214,Burnley,BUR,1,Newcastle United,NEW,0
+20191214,Chelsea,CHE,0,AFC Bournemouth,BOU,1
+20191214,Leicester City,LEI,1,Norwich City,NOR,1
+20191214,Sheffield United,SHU,2,Aston Villa,AVL,0
+20191214,Southampton,SOUT,0,West Ham United,WHU,1
+20191209,West Ham United,WHU,1,Arsenal,ARS,3
+20191208,Aston Villa,AVL,1,Leicester City,LEI,4
+20191208,Newcastle United,NEW,2,Southampton,SOUT,1
+20191208,Norwich City,NOR,1,Sheffield United,SHU,2
+20191208,Brighton & Hove Albion,BHA,2,Wolverhampton Wanderers,WOLV,2
+20191207,Everton,EVE,3,Chelsea,CHE,1
+20191207,AFC Bournemouth,BOU,0,Liverpool,LIV,3
+20191207,Tottenham Hotspur,TOT,5,Burnley,BUR,0
+20191207,Watford,WAT,0,Crystal Palace,CRY,0
+20191207,Manchester City,MNC,1,Manchester United,MAN,2
+20191205,Sheffield United,SHU,0,Newcastle United,NEW,2
+20191205,Arsenal,ARS,1,Brighton & Hove Albion,BHA,2
+20191204,Chelsea,CHE,2,Aston Villa,AVL,1
+20191204,Leicester City,LEI,2,Watford,WAT,0
+20191204,Manchester United,MAN,2,Tottenham Hotspur,TOT,1
+20191204,Southampton,SOUT,2,Norwich City,NOR,1
+20191204,Wolverhampton Wanderers,WOLV,2,West Ham United,WHU,0
+20191204,Liverpool,LIV,5,Everton,EVE,2
+20191203,Crystal Palace,CRY,1,AFC Bournemouth,BOU,0
+20191203,Burnley,BUR,1,Manchester City,MNC,4
+20191201,Norwich City,NOR,2,Arsenal,ARS,2
+20191201,Wolverhampton Wanderers,WOLV,1,Sheffield United,SHU,1
+20191201,Leicester City,LEI,2,Everton,EVE,1
+20191201,Manchester United,MAN,2,Aston Villa,AVL,2
+20191130,Newcastle United,NEW,2,Manchester City,MNC,2
+20191130,Burnley,BUR,0,Crystal Palace,CRY,2
+20191130,Chelsea,CHE,0,West Ham United,WHU,1
+20191130,Liverpool,LIV,2,Brighton & Hove Albion,BHA,1
+20191130,Tottenham Hotspur,TOT,3,AFC Bournemouth,BOU,2
+20191130,Southampton,SOUT,2,Watford,WAT,1
+20191125,Aston Villa,AVL,2,Newcastle United,NEW,0
+20191124,Sheffield United,SHU,3,Manchester United,MAN,3
+20191123,West Ham United,WHU,2,Tottenham Hotspur,TOT,3
+20191123,AFC Bournemouth,BOU,1,Wolverhampton Wanderers,WOLV,2
+20191123,Arsenal,ARS,2,Southampton,SOUT,2
+20191123,Brighton & Hove Albion,BHA,0,Leicester City,LEI,2
+20191123,Crystal Palace,CRY,1,Liverpool,LIV,2
+20191123,Everton,EVE,0,Norwich City,NOR,2
+20191123,Watford,WAT,0,Burnley,BUR,3
+20191123,Manchester City,MNC,2,Chelsea,CHE,1
+20191110,Manchester United,MAN,3,Brighton & Hove Albion,BHA,1
+20191110,Wolverhampton Wanderers,WOLV,2,Aston Villa,AVL,1
+20191110,Liverpool,LIV,3,Manchester City,MNC,1
+20191109,Chelsea,CHE,2,Crystal Palace,CRY,0
+20191109,Burnley,BUR,3,West Ham United,WHU,0
+20191109,Newcastle United,NEW,2,AFC Bournemouth,BOU,1
+20191109,Southampton,SOUT,1,Everton,EVE,2
+20191109,Tottenham Hotspur,TOT,1,Sheffield United,SHU,1
+20191109,Leicester City,LEI,2,Arsenal,ARS,0
+20191108,Norwich City,NOR,0,Watford,WAT,2
+20191103,Crystal Palace,CRY,0,Leicester City,LEI,2
+20191103,Everton,EVE,1,Tottenham Hotspur,TOT,1
+20191102,AFC Bournemouth,BOU,1,Manchester United,MAN,0
+20191102,Arsenal,ARS,1,Wolverhampton Wanderers,WOLV,1
+20191102,Aston Villa,AVL,1,Liverpool,LIV,2
+20191102,Brighton & Hove Albion,BHA,2,Norwich City,NOR,0
+20191102,Manchester City,MNC,2,Southampton,SOUT,1
+20191102,Sheffield United,SHU,3,Burnley,BUR,0
+20191102,West Ham United,WHU,2,Newcastle United,NEW,3
+20191102,Watford,WAT,1,Chelsea,CHE,2
+20191027,Newcastle United,NEW,1,Wolverhampton Wanderers,WOLV,1
+20191027,Arsenal,ARS,2,Crystal Palace,CRY,2
+20191027,Liverpool,LIV,2,Tottenham Hotspur,TOT,1
+20191027,Norwich City,NOR,1,Manchester United,MAN,3
+20191026,Manchester City,MNC,3,Aston Villa,AVL,0
+20191026,Brighton & Hove Albion,BHA,3,Everton,EVE,2
+20191026,Watford,WAT,0,AFC Bournemouth,BOU,0
+20191026,West Ham United,WHU,1,Sheffield United,SHU,1
+20191026,Burnley,BUR,2,Chelsea,CHE,4
+20191025,Southampton,SOUT,0,Leicester City,LEI,9
+20191021,Sheffield United,SHU,1,Arsenal,ARS,0
+20191020,Manchester United,MAN,1,Liverpool,LIV,1
+20191019,Everton,EVE,2,West Ham United,WHU,0
+20191019,AFC Bournemouth,BOU,0,Norwich City,NOR,0
+20191019,Aston Villa,AVL,2,Brighton & Hove Albion,BHA,1
+20191019,Chelsea,CHE,1,Newcastle United,NEW,0
+20191019,Leicester City,LEI,2,Burnley,BUR,1
+20191019,Tottenham Hotspur,TOT,1,Watford,WAT,1
+20191019,Wolverhampton Wanderers,WOLV,1,Southampton,SOUT,1
+20191019,Crystal Palace,CRY,0,Manchester City,MNC,2
+20191006,Arsenal,ARS,1,AFC Bournemouth,BOU,0
+20191006,Manchester City,MNC,0,Wolverhampton Wanderers,WOLV,2
+20191006,Southampton,SOUT,1,Chelsea,CHE,4
+20191006,Newcastle United,NEW,1,Manchester United,MAN,0
+20191005,Brighton & Hove Albion,BHA,3,Tottenham Hotspur,TOT,0
+20191005,Burnley,BUR,1,Everton,EVE,0
+20191005,Liverpool,LIV,2,Leicester City,LEI,1
+20191005,Norwich City,NOR,1,Aston Villa,AVL,5
+20191005,Watford,WAT,0,Sheffield United,SHU,0
+20191005,West Ham United,WHU,1,Crystal Palace,CRY,2
+20190930,Manchester United,MAN,1,Arsenal,ARS,1
+20190929,Leicester City,LEI,5,Newcastle United,NEW,0
+20190928,Sheffield United,SHU,0,Liverpool,LIV,1
+20190928,AFC Bournemouth,BOU,2,West Ham United,WHU,2
+20190928,Aston Villa,AVL,2,Burnley,BUR,2
+20190928,Chelsea,CHE,2,Brighton & Hove Albion,BHA,0
+20190928,Crystal Palace,CRY,2,Norwich City,NOR,0
+20190928,Tottenham Hotspur,TOT,2,Southampton,SOUT,1
+20190928,Wolverhampton Wanderers,WOLV,2,Watford,WAT,0
+20190928,Everton,EVE,1,Manchester City,MNC,3
+20190922,Crystal Palace,CRY,1,Wolverhampton Wanderers,WOLV,1
+20190922,West Ham United,WHU,2,Manchester United,MAN,0
+20190922,Arsenal,ARS,3,Aston Villa,AVL,2
+20190922,Chelsea,CHE,1,Liverpool,LIV,2
+20190921,Leicester City,LEI,2,Tottenham Hotspur,TOT,1
+20190921,Burnley,BUR,2,Norwich City,NOR,0
+20190921,Everton,EVE,0,Sheffield United,SHU,2
+20190921,Manchester City,MNC,8,Watford,WAT,0
+20190921,Newcastle United,NEW,0,Brighton & Hove Albion,BHA,0
+20190920,Southampton,SOUT,1,AFC Bournemouth,BOU,3
+20190916,Aston Villa,AVL,0,West Ham United,WHU,0
+20190915,AFC Bournemouth,BOU,3,Everton,EVE,1
+20190915,Watford,WAT,2,Arsenal,ARS,2
+20190914,Liverpool,LIV,3,Newcastle United,NEW,1
+20190914,Brighton & Hove Albion,BHA,1,Burnley,BUR,1
+20190914,Manchester United,MAN,1,Leicester City,LEI,0
+20190914,Sheffield United,SHU,0,Southampton,SOUT,1
+20190914,Tottenham Hotspur,TOT,4,Crystal Palace,CRY,0
+20190914,Wolverhampton Wanderers,WOLV,2,Chelsea,CHE,5
+20190914,Norwich City,NOR,3,Manchester City,MNC,2
+20190901,Everton,EVE,3,Wolverhampton Wanderers,WOLV,2
+20190901,Arsenal,ARS,2,Tottenham Hotspur,TOT,2
+20190831,Southampton,SOUT,1,Manchester United,MAN,1
+20190831,Chelsea,CHE,2,Sheffield United,SHU,2
+20190831,Crystal Palace,CRY,1,Aston Villa,AVL,0
+20190831,Leicester City,LEI,3,AFC Bournemouth,BOU,1
+20190831,Manchester City,MNC,4,Brighton & Hove Albion,BHA,0
+20190831,Newcastle United,NEW,1,Watford,WAT,1
+20190831,West Ham United,WHU,2,Norwich City,NOR,0
+20190831,Burnley,BUR,0,Liverpool,LIV,3
+20190825,AFC Bournemouth,BOU,1,Manchester City,MNC,3
+20190825,Tottenham Hotspur,TOT,0,Newcastle United,NEW,1
+20190825,Wolverhampton Wanderers,WOLV,1,Burnley,BUR,1
+20190824,Norwich City,NOR,2,Chelsea,CHE,3
+20190824,Brighton & Hove Albion,BHA,0,Southampton,SOUT,2
+20190824,Manchester United,MAN,1,Crystal Palace,CRY,2
+20190824,Sheffield United,SHU,1,Leicester City,LEI,2
+20190824,Watford,WAT,1,West Ham United,WHU,3
+20190824,Liverpool,LIV,3,Arsenal,ARS,1
+20190823,Aston Villa,AVL,2,Everton,EVE,0
+20190819,Wolverhampton Wanderers,WOLV,1,Manchester United,MAN,1
+20190818,Sheffield United,SHU,1,Crystal Palace,CRY,0
+20190818,Chelsea,CHE,1,Leicester City,LEI,1
+20190817,Arsenal,ARS,2,Burnley,BUR,1
+20190817,Aston Villa,AVL,1,AFC Bournemouth,BOU,2
+20190817,Brighton & Hove Albion,BHA,1,West Ham United,WHU,1
+20190817,Everton,EVE,1,Watford,WAT,0
+20190817,Norwich City,NOR,3,Newcastle United,NEW,1
+20190817,Southampton,SOUT,1,Liverpool,LIV,2
+20190817,Manchester City,MNC,2,Tottenham Hotspur,TOT,2
+20190811,Leicester City,LEI,0,Wolverhampton Wanderers,WOLV,0
+20190811,Newcastle United,NEW,0,Arsenal,ARS,1
+20190811,Manchester United,MAN,4,Chelsea,CHE,0
+20190810,West Ham United,WHU,0,Manchester City,MNC,5
+20190810,AFC Bournemouth,BOU,1,Sheffield United,SHU,1
+20190810,Burnley,BUR,3,Southampton,SOUT,0
+20190810,Crystal Palace,CRY,0,Everton,EVE,0
+20190810,Watford,WAT,0,Brighton & Hove Albion,BHA,3
+20190810,Tottenham Hotspur,TOT,3,Aston Villa,AVL,1
+20190809,Liverpool,LIV,4,Norwich City,NOR,1

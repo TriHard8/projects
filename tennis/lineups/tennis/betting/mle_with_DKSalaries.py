@@ -24,7 +24,7 @@ def predicting(post0, post1):
 
 accuracy = []
 dog_accuracy = []
-predict = False
+predict = True
 if predict:
     runs = 1
 else:

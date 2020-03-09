@@ -45,7 +45,7 @@ with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
             pwd = f.readline().rstrip('\n')
             break
 
-stock_list = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')) 
+stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
 
 
 #options = Options()
