@@ -1,0 +1,79 @@
+20200310,Jaguares de Córdoba,COR,0,Cúcuta Deportivo,CUC,3
+20200310,La Equidad,EQD,1,Deportivo Pasto,PAS,1
+20200308,Boyacá Chicó,CHI,2,Alianza Petrolera,APA,2
+20200308,Envigado,ENV,2,Rionegro Águilas,RION,2
+20200308,Independiente Santa Fe,SFE,2,Atlético Nacional,NAL,2
+20200308,Deportes Tolima,TOL,1,Patriotas,PAT,0
+20200307,Once Caldas,CAL,1,América de Cali,AME,1
+20200307,Independiente Medellín,DIM,1,Millonarios,MIL,0
+20200307,Bucaramanga,BUC,1,Atlético Junior,JUN,1
+20200306,Deportivo Cali,DCI,2,Deportivo Pereira,PER,2
+20200303,Millonarios,MIL,0,Independiente Santa Fe,SFE,0
+20200301,Deportivo Pasto,PAS,1,La Equidad,EQD,2
+20200301,Rionegro Águilas,RION,1,Envigado,ENV,1
+20200301,Cúcuta Deportivo,CUC,0,Bucaramanga,BUC,1
+20200301,Deportivo Pereira,PER,1,Once Caldas,CAL,3
+20200229,Patriotas,PAT,1,Boyacá Chicó,CHI,1
+20200229,Atlético Nacional,NAL,1,Independiente Medellín,DIM,1
+20200229,América de Cali,AME,1,Deportivo Cali,DCI,1
+20200229,Alianza Petrolera,APA,0,Deportes Tolima,TOL,1
+20200228,Atlético Junior,JUN,3,Jaguares de Córdoba,COR,2
+20200224,Jaguares de Córdoba,COR,1,Alianza Petrolera,APA,3
+20200223,Deportes Tolima,TOL,0,Atlético Junior,JUN,0
+20200223,La Equidad,EQD,4,Cúcuta Deportivo,CUC,1
+20200223,Bucaramanga,BUC,2,Rionegro Águilas,RION,0
+20200223,Once Caldas,CAL,0,Patriotas,PAT,0
+20200222,Boyacá Chicó,CHI,0,Deportivo Pereira,PER,1
+20200222,Independiente Medellín,DIM,1,Atlético Nacional,NAL,3
+20200221,Deportivo Pasto,PAS,1,Envigado,ENV,0
+20200221,Independiente Santa Fe,SFE,2,América de Cali,AME,0
+20200218,Deportivo Pereira,PER,1,Jaguares de Córdoba,COR,0
+20200216,Patriotas,PAT,0,Independiente Santa Fe,SFE,2
+20200216,Envigado,ENV,4,Bucaramanga,BUC,0
+20200216,Atlético Junior,JUN,0,Once Caldas,CAL,0
+20200216,Cúcuta Deportivo,CUC,0,Deportivo Pasto,PAS,0
+20200215,América de Cali,AME,2,Independiente Medellín,DIM,0
+20200215,Millonarios,MIL,2,Boyacá Chicó,CHI,1
+20200215,Atlético Nacional,NAL,2,Deportivo Cali,DCI,2
+20200214,Rionegro Águilas,RION,1,Deportes Tolima,TOL,1
+20200214,Alianza Petrolera,APA,1,La Equidad,EQD,0
+20200211,Boyacá Chicó,CHI,0,Atlético Nacional,NAL,3
+20200210,Once Caldas,CAL,1,Rionegro Águilas,RION,1
+20200209,La Equidad,EQD,3,Deportivo Pereira,PER,3
+20200209,Jaguares de Córdoba,COR,4,Millonarios,MIL,1
+20200208,Cúcuta Deportivo,CUC,0,Alianza Petrolera,APA,2
+20200208,Deportivo Cali,DCI,2,América de Cali,AME,1
+20200208,Independiente Santa Fe,SFE,3,Atlético Junior,JUN,1
+20200207,Independiente Medellín,DIM,3,Patriotas,PAT,1
+20200207,Deportivo Pasto,PAS,4,Bucaramanga,BUC,0
+20200207,Deportes Tolima,TOL,3,Envigado,ENV,0
+20200204,Envigado,ENV,0,Once Caldas,CAL,1
+20200204,Patriotas,PAT,0,Deportivo Cali,DCI,0
+20200203,Alianza Petrolera,APA,0,Deportivo Pasto,PAS,1
+20200203,Rionegro Águilas,RION,1,Independiente Santa Fe,SFE,0
+20200202,Deportivo Pereira,PER,2,Cúcuta Deportivo,CUC,0
+20200202,Millonarios,MIL,2,La Equidad,EQD,2
+20200202,América de Cali,AME,1,Boyacá Chicó,CHI,0
+20200201,Bucaramanga,BUC,0,Deportes Tolima,TOL,0
+20200201,Atlético Junior,JUN,1,Independiente Medellín,DIM,0
+20200201,Atlético Nacional,NAL,1,Jaguares de Córdoba,COR,2
+20200130,Alianza Petrolera,APA,1,Deportivo Pereira,PER,0
+20200130,Cúcuta Deportivo,CUC,1,Millonarios,MIL,1
+20200130,Independiente Santa Fe,SFE,1,Envigado,ENV,1
+20200129,Jaguares de Córdoba,COR,2,América de Cali,AME,2
+20200129,Boyacá Chicó,CHI,1,Patriotas,PAT,0
+20200129,La Equidad,EQD,3,Atlético Nacional,NAL,4
+20200129,Deportivo Pasto,PAS,,Deportes Tolima,TOL,
+20200128,Once Caldas,CAL,1,Bucaramanga,BUC,1
+20200128,Independiente Medellín,DIM,2,Rionegro Águilas,RION,1
+20200128,Deportivo Cali,DCI,0,Atlético Junior,JUN,0
+20200126,Patriotas,PAT,1,Cúcuta Deportivo,CUC,1
+20200126,Atlético Nacional,NAL,2,Deportivo Pereira,PER,0
+20200126,Millonarios,MIL,1,Deportivo Pasto,PAS,2
+20200125,Envigado,ENV,1,Boyacá Chicó,CHI,0
+20200125,Bucaramanga,BUC,0,Deportivo Cali,DCI,2
+20200125,Atlético Junior,JUN,2,La Equidad,EQD,0
+20200125,América de Cali,AME,3,Alianza Petrolera,APA,1
+20200124,Rionegro Águilas,RION,2,Jaguares de Córdoba,COR,0
+20200124,Once Caldas,CAL,0,Independiente Santa Fe,SFE,0
+20200123,Deportes Tolima,TOL,2,Independiente Medellín,DIM,2

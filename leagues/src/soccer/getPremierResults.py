@@ -21,11 +21,13 @@ def getTeamScore(bsTeam):
 
 if __name__ == "__main__":
     driver = webdriver.Chrome()
-    base_url = "https://www.espn.com/soccer/scoreboard/_/league/eng.1/date/"
-    current_date = my.modify_x_date(my.date_for_files(), -1)
+    premier = "https://www.espn.com/soccer/scoreboard/_/league/eng.1/date/"
+    colombian = "https://www.espn.com/soccer/scoreboard/_/league/COL.1/date/"
+    base_url = "https://www.espn.com/soccer/scoreboard/_/league/COL.1/date/"
+    current_date = my.modify_x_date(my.date_for_files(), 0)
     #current_date = "20191206"
-    #end_date = 20200228
-    end_date = 20190808
+    end_date = 20200123
+    #end_date = 20190808
     ofile = open("gamedays.txt", 'w')
     while(int(current_date) >= end_date):
         try:
@@ -42,12 +44,14 @@ if __name__ == "__main__":
             ofile.flush()
 
         for game in games:
-            strGame = current_date + ',' 
-            home = game.find('div', class_ = ['team team-a', 'team team-a tied'])
-            strGame += getTeamScore(home) + ','
-            visitor = game.find('div', class_ = ['team team-b', 'team team-b tied'])
-            strGame += getTeamScore(visitor)
-            print(strGame, flush=True)
+            if game.find('span', class_ = 'game-time').text.strip() == "FT":
+                strGame = current_date + ',' 
+                home = game.find('div', class_ = ['team team-a', 'team team-a tied'])
+                strGame += getTeamScore(home) + ','
+                visitor = game.find('div', class_ = ['team team-b', 'team team-b tied'])
+                strGame += getTeamScore(visitor)
+                print(strGame, flush=True)
+
         current_date = my.modify_x_date(current_date, -1)
 
     driver.close()
