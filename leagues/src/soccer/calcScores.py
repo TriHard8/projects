@@ -54,6 +54,8 @@ def fillGame(line):
 if __name__ == "__main__":
     games = []
     teams = {}
+    homeTeam = "MIL"
+    awayTeam = "CAL"
     totalHomeGoals = 0
     totalAwayGoals = 0
     avgHomeGoals = avgHomeConceded = 0
@@ -88,5 +90,12 @@ if __name__ == "__main__":
     print(avgHomeConceded)
     print(avgAwayConceded)
     
+    homeAttack = teams[homeTeam].homeAttackStrength(avgHomeGoals) * teams[awayTeam].awayDefenseStrength(avgAwayGoals) * avgHomeGoals
+    awayAttack = teams[awayTeam].awayAttackStrength(avgAwayGoals) * teams[homeTeam].homeDefenseStrength(avgHomeGoals) * avgAwayGoals
+
     for team in teams.values():
         print(team)
+
+    print("{} : {}".format(homeTeam, homeAttack))
+    print("{} : {}".format(awayTeam, awayAttack))
+    
