@@ -54,8 +54,9 @@ def fillGame(line):
 if __name__ == "__main__":
     games = []
     teams = {}
-    homeTeam = "MIL"
-    awayTeam = "CAL"
+    #full_teams = {}
+    homeTeam = sys.argv[2]
+    awayTeam = sys.argv[3]
     totalHomeGoals = 0
     totalAwayGoals = 0
     avgHomeGoals = avgHomeConceded = 0
@@ -67,8 +68,10 @@ if __name__ == "__main__":
             game = fillGame(line.strip())
             if game.homeTeam.abbrev not in teams:
                 teams[game.homeTeam.abbrev] = teamTotals(game.homeTeam.abbrev)
+                #full_teams[game.homeTeam.team] = teamTotals(game.homeTeam.team)
             if game.visitorTeam.abbrev not in teams:
                 teams[game.visitorTeam.abbrev] = teamTotals(game.visitorTeam.abbrev)
+                #full_teams[game.visitorTeam.team] = teamTotals(game.visitorTeam.team)
             
             teams[game.homeTeam.abbrev].homeGames += 1
             teams[game.homeTeam.abbrev].selfHomeScore += game.homeTeam.score
@@ -77,6 +80,13 @@ if __name__ == "__main__":
             teams[game.visitorTeam.abbrev].selfAwayScore += game.visitorTeam.score
             teams[game.visitorTeam.abbrev].oppHomeScore += game.homeTeam.score
 
+            #full_teams[game.homeTeam.team].homeGames += 1
+            #full_teams[game.homeTeam.team].selfHomeScore += game.homeTeam.score
+            #full_teams[game.homeTeam.team].oppAwayScore += game.visitorTeam.score
+            #full_teams[game.visitorTeam.team].awayGames += 1
+            #full_teams[game.visitorTeam.team].selfAwayScore += game.visitorTeam.score
+            #full_teams[game.visitorTeam.team].oppHomeScore += game.homeTeam.score
+
             totalHomeGoals += game.homeTeam.score
             totalAwayGoals += game.visitorTeam.score
             games.append(game)
@@ -84,17 +94,23 @@ if __name__ == "__main__":
     avgHomeGoals = avgAwayConceded = totalHomeGoals/len(games)
     avgAwayGoals = avgHomeConceded = totalAwayGoals/len(games)
 
-    print(len(games))
-    print(avgHomeGoals)
-    print(avgAwayGoals)
-    print(avgHomeConceded)
-    print(avgAwayConceded)
+    #print(len(games))
+    #print(avgHomeGoals)
+    #print(avgAwayGoals)
+    #print(avgHomeConceded)
+    #print(avgAwayConceded)
     
     homeAttack = teams[homeTeam].homeAttackStrength(avgHomeGoals) * teams[awayTeam].awayDefenseStrength(avgAwayGoals) * avgHomeGoals
     awayAttack = teams[awayTeam].awayAttackStrength(avgAwayGoals) * teams[homeTeam].homeDefenseStrength(avgHomeGoals) * avgAwayGoals
 
+    #homeAttack = full_teams[homeTeam].homeAttackStrength(avgHomeGoals) * full_teams[awayTeam].awayDefenseStrength(avgAwayGoals) * avgHomeGoals
+    #awayAttack = full_teams[awayTeam].awayAttackStrength(avgAwayGoals) * full_teams[homeTeam].homeDefenseStrength(avgHomeGoals) * avgAwayGoals
+
     for team in teams.values():
         print(team)
+
+    #for team in full_teams.values():
+    #    print(team)
 
     print("{} : {}".format(homeTeam, homeAttack))
     print("{} : {}".format(awayTeam, awayAttack))

@@ -19,38 +19,64 @@ def getTeamScore(bsTeam):
     final.append(bsTeam.find('span', class_ = ['score icon-font-after', 'score icon-font-before']).text.strip())
     return my.list_2_csv(final)
 
+def getGameDays(gameday_file):
+    x = set()
+    with open(gameday_file, 'r') as f:
+        for line in f:
+            x.add(line.strip())
+
+    return x
+ 
 if __name__ == "__main__":
     driver = webdriver.Chrome()
     premier = "https://www.espn.com/soccer/scoreboard/_/league/eng.1/date/"
     colombian = "https://www.espn.com/soccer/scoreboard/_/league/COL.1/date/"
-    base_url = "https://www.espn.com/soccer/scoreboard/_/league/COL.1/date/"
-    current_date = my.modify_x_date(my.date_for_files(), 0)
-    #current_date = "20191206"
-    end_date = 20200123
+    mexico = "https://www.espn.com/soccer/scoreboard/_/league/mex.1/date/"
+    germany = "https://www.espn.com/soccer/scoreboard/_/league/ger.1/date/"
+    turkey = "https://www.espn.com/soccer/scoreboard/_/league/tur.1/date/"
+    english_national = "https://www.espn.com/soccer/scoreboard/_/league/eng.5/date/"
+    chile = "https://www.espn.com/soccer/scoreboard/_/league/chi.1/date/"
+    australia = "https://www.espn.com/soccer/scoreboard/_/league/AUS.1/date/"
+    costa_rica = "https://www.espn.com/soccer/scoreboard/_/league/crc.1/date/"
+    guatemala = "https://www.espn.com/soccer/scoreboard/_/league/gua.1/date/"
+    honduras = "https://www.espn.com/soccer/scoreboard/_/league/hon.1/date/"
+    base_url = honduras
+    current_date = my.modify_x_date(my.date_for_files(), -1)
+    #current_date = "20190816"
+    end_date = 20200110
     #end_date = 20190808
     ofile = open("gamedays.txt", 'w')
+    if len(sys.argv) > 1:
+        gamedays = getGameDays(sys.argv[1])
+    else:
+        gamedays = set()
+
     while(int(current_date) >= end_date):
-        try:
-            driver.set_page_load_timeout(10)
-            driver.get("{}{}".format(base_url, current_date))
-        except:
-            pass
+        if current_date not in gamedays:
+            try:
+                driver.set_page_load_timeout(10)
+                driver.get("{}{}".format(base_url, current_date))
+            except:
+                driver.close()
+                driver = webdriver.Chrome()
+                driver.set_page_load_timeout(10)
+                driver.get("{}{}".format(base_url, current_date))
 
-        innerHTML = driver.execute_script("return document.body.innerHTML")
-        soup = my.get_soup_str(innerHTML)
-        games = soup.find_all('div', {"class" : "main-container"})
-        if len(games) != 0:
-            ofile.write("{}\n".format(current_date))
-            ofile.flush()
+            innerHTML = driver.execute_script("return document.body.innerHTML")
+            soup = my.get_soup_str(innerHTML)
+            games = soup.find_all('div', {"class" : "main-container"})
+            if len(games) != 0:
+                ofile.write("{}\n".format(current_date))
+                ofile.flush()
 
-        for game in games:
-            if game.find('span', class_ = 'game-time').text.strip() == "FT":
-                strGame = current_date + ',' 
-                home = game.find('div', class_ = ['team team-a', 'team team-a tied'])
-                strGame += getTeamScore(home) + ','
-                visitor = game.find('div', class_ = ['team team-b', 'team team-b tied'])
-                strGame += getTeamScore(visitor)
-                print(strGame, flush=True)
+            for game in games:
+                if game.find('span', class_ = 'game-time').text.strip() == "FT":
+                    strGame = current_date + ',' 
+                    home = game.find('div', class_ = ['team team-a', 'team team-a tied'])
+                    strGame += getTeamScore(home) + ','
+                    visitor = game.find('div', class_ = ['team team-b', 'team team-b tied'])
+                    strGame += getTeamScore(visitor)
+                    print(strGame, flush=True)
 
         current_date = my.modify_x_date(current_date, -1)
 

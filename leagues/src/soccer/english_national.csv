@@ -1,0 +1,445 @@
+20200310,Dagenham & Redbridge,D&R,1,AFC Fylde,FYL,2
+20200310,Notts County,NOTT,3,Aldershot Town,ALD,1
+20200310,Woking,WOK,1,Barnet,BAR,3
+20200307,AFC Fylde,FYL,0,Solihull Moors,SOL,0
+20200307,Aldershot Town,ALD,0,Dagenham & Redbridge,D&R,1
+20200307,Barrow,BRW,0,Notts County,NOTT,2
+20200307,Chorley,CHO,1,Chesterfield,CHES,2
+20200307,Dover,DOV,0,Yeovil Town,YEO,1
+20200307,FC Halifax Town,HAL,0,Woking,WOK,2
+20200307,Hartlepool United,HART,0,Ebbsfleet United,EBB,1
+20200307,Maidenhead Utd,MAID,0,Boreham Wood,BOR,1
+20200307,Stockport County,STO,1,Barnet,BAR,1
+20200307,Sutton United,SUT,2,Torquay United,TQU,0
+20200307,Wrexham,WRX,0,Eastleigh,ELH,0
+20200307,Harrogate Town,HAR,1,Bromley,BROM,1
+20200303,AFC Fylde,FYL,1,Notts County,NOTT,2
+20200303,Barnet,BAR,2,Boreham Wood,BOR,2
+20200303,Chesterfield,CHES,3,Harrogate Town,HAR,4
+20200303,Chorley,CHO,1,Eastleigh,ELH,2
+20200303,FC Halifax Town,HAL,1,Sutton United,SUT,0
+20200303,Solihull Moors,SOL,0,Hartlepool United,HART,1
+20200229,Barrow,BRW,2,Dagenham & Redbridge,D&R,1
+20200229,Boreham Wood,BOR,1,Hartlepool United,HART,1
+20200229,Bromley,BROM,0,Sutton United,SUT,1
+20200229,Ebbsfleet United,EBB,0,Stockport County,STO,1
+20200229,Solihull Moors,SOL,3,Dover,DOV,0
+20200229,Torquay United,TQU,2,Chorley,CHO,0
+20200229,Woking,WOK,2,Maidenhead Utd,MAID,0
+20200229,Yeovil Town,YEO,3,Wrexham,WRX,0
+20200225,Aldershot Town,ALD,3,Boreham Wood,BOR,2
+20200225,Maidenhead Utd,MAID,1,Ebbsfleet United,EBB,3
+20200222,Boreham Wood,BOR,1,Yeovil Town,YEO,0
+20200222,Bromley,BROM,0,Wrexham,WRX,2
+20200222,Chesterfield,CHES,4,Ebbsfleet United,EBB,0
+20200222,Chorley,CHO,0,Barnet,BAR,1
+20200222,Dagenham & Redbridge,D&R,2,Solihull Moors,SOL,0
+20200222,Dover,DOV,5,AFC Fylde,FYL,1
+20200222,Harrogate Town,HAR,3,Eastleigh,ELH,0
+20200222,Hartlepool United,HART,2,Notts County,NOTT,0
+20200222,Maidenhead Utd,MAID,1,Aldershot Town,ALD,2
+20200222,Torquay United,TQU,1,FC Halifax Town,HAL,0
+20200222,Woking,WOK,1,Stockport County,STO,1
+20200222,Sutton United,SUT,2,Barrow,BRW,2
+20200218,Barrow,BRW,1,Dover,DOV,0
+20200215,Ebbsfleet United,EBB,1,Chorley,CHO,0
+20200215,Notts County,NOTT,1,Woking,WOK,1
+20200215,Stockport County,STO,1,Bromley,BROM,0
+20200211,Eastleigh,ELH,2,AFC Fylde,FYL,2
+20200211,Harrogate Town,HAR,3,Yeovil Town,YEO,0
+20200211,Solihull Moors,SOL,1,Barnet,BAR,0
+20200208,Chesterfield,CHES,3,Wrexham,WRX,2
+20200208,Bromley,BROM,2,Solihull Moors,SOL,2
+20200208,Dagenham & Redbridge,D&R,1,Stockport County,STO,1
+20200208,Hartlepool United,HART,2,Aldershot Town,ALD,0
+20200204,Dover,DOV,2,Barrow,BRW,1
+20200201,AFC Fylde,FYL,1,Boreham Wood,BOR,2
+20200201,Aldershot Town,ALD,1,Harrogate Town,HAR,1
+20200201,Barnet,BAR,2,Hartlepool United,HART,1
+20200201,Barrow,BRW,2,Torquay United,TQU,1
+20200201,Eastleigh,ELH,2,Woking,WOK,0
+20200201,Ebbsfleet United,EBB,1,Sutton United,SUT,1
+20200201,FC Halifax Town,HAL,2,Bromley,BROM,1
+20200201,Solihull Moors,SOL,0,Maidenhead Utd,MAID,2
+20200201,Stockport County,STO,0,Dover,DOV,2
+20200201,Wrexham,WRX,0,Dagenham & Redbridge,D&R,0
+20200201,Yeovil Town,YEO,1,Chorley,CHO,1
+20200201,Notts County,NOTT,3,Chesterfield,CHES,0
+20200128,Eastleigh,ELH,0,Aldershot Town,ALD,0
+20200128,Ebbsfleet United,EBB,2,Woking,WOK,1
+20200128,FC Halifax Town,HAL,4,Dover,DOV,2
+20200128,Solihull Moors,SOL,0,Barrow,BRW,0
+20200125,Boreham Wood,BOR,1,Barrow,BRW,1
+20200125,Bromley,BROM,1,Barnet,BAR,2
+20200125,Chesterfield,CHES,1,AFC Fylde,FYL,1
+20200125,Chorley,CHO,0,FC Halifax Town,HAL,1
+20200125,Dagenham & Redbridge,D&R,2,Notts County,NOTT,0
+20200125,Dover,DOV,2,Aldershot Town,ALD,0
+20200125,Harrogate Town,HAR,0,Wrexham,WRX,2
+20200125,Hartlepool United,HART,2,Stockport County,STO,0
+20200125,Maidenhead Utd,MAID,2,Eastleigh,ELH,0
+20200125,Sutton United,SUT,0,Solihull Moors,SOL,0
+20200125,Torquay United,TQU,0,Ebbsfleet United,EBB,0
+20200125,Woking,WOK,1,Yeovil Town,YEO,0
+20200118,AFC Fylde,FYL,2,Torquay United,TQU,3
+20200118,Aldershot Town,ALD,3,Chorley,CHO,3
+20200118,Eastleigh,ELH,0,Chesterfield,CHES,2
+20200118,Ebbsfleet United,EBB,0,Harrogate Town,HAR,2
+20200118,FC Halifax Town,HAL,5,Maidenhead Utd,MAID,2
+20200118,Notts County,NOTT,0,Dover,DOV,0
+20200118,Solihull Moors,SOL,0,Boreham Wood,BOR,2
+20200118,Stockport County,STO,0,Sutton United,SUT,0
+20200118,Wrexham,WRX,3,Woking,WOK,0
+20200118,Yeovil Town,YEO,2,Hartlepool United,HART,2
+20200118,Barrow,BRW,2,Bromley,BROM,0
+20200111,Dover,DOV,1,Hartlepool United,HART,1
+20200107,Hartlepool United,HART,2,Eastleigh,ELH,1
+20200104,Barnet,BAR,1,FC Halifax Town,HAL,1
+20200104,Barrow,BRW,7,Ebbsfleet United,EBB,0
+20200104,Chesterfield,CHES,1,Sutton United,SUT,0
+20200104,Dagenham & Redbridge,D&R,0,Torquay United,TQU,0
+20200104,Harrogate Town,HAR,1,Maidenhead Utd,MAID,0
+20200104,Notts County,NOTT,2,Bromley,BROM,1
+20200104,Stockport County,STO,1,Boreham Wood,BOR,3
+20200104,Woking,WOK,1,Chorley,CHO,0
+20200104,Wrexham,WRX,1,Aldershot Town,ALD,2
+20200104,Yeovil Town,YEO,0,Solihull Moors,SOL,0
+20200101,AFC Fylde,FYL,0,Barrow,BRW,1
+20200101,Aldershot Town,ALD,3,Eastleigh,ELH,1
+20200101,Boreham Wood,BOR,0,Barnet,BAR,0
+20200101,Bromley,BROM,3,Dover,DOV,0
+20200101,Chorley,CHO,0,Wrexham,WRX,2
+20200101,Ebbsfleet United,EBB,1,Dagenham & Redbridge,D&R,1
+20200101,FC Halifax Town,HAL,0,Stockport County,STO,0
+20200101,Hartlepool United,HART,0,Harrogate Town,HAR,1
+20200101,Maidenhead Utd,MAID,0,Notts County,NOTT,0
+20200101,Solihull Moors,SOL,3,Chesterfield,CHES,0
+20200101,Sutton United,SUT,6,Woking,WOK,2
+20200101,Torquay United,TQU,0,Yeovil Town,YEO,2
+20191228,Sutton United,SUT,3,Yeovil Town,YEO,2
+20191228,AFC Fylde,FYL,1,Stockport County,STO,2
+20191228,Aldershot Town,ALD,0,Barnet,BAR,0
+20191228,Boreham Wood,BOR,2,Eastleigh,ELH,2
+20191228,Bromley,BROM,3,Dagenham & Redbridge,D&R,0
+20191228,Chorley,CHO,0,Harrogate Town,HAR,2
+20191228,Ebbsfleet United,EBB,0,Dover,DOV,1
+20191228,FC Halifax Town,HAL,1,Chesterfield,CHES,0
+20191228,Hartlepool United,HART,2,Barrow,BRW,2
+20191228,Maidenhead Utd,MAID,2,Wrexham,WRX,0
+20191228,Solihull Moors,SOL,0,Notts County,NOTT,1
+20191228,Torquay United,TQU,4,Woking,WOK,1
+20191226,Dagenham & Redbridge,D&R,1,Ebbsfleet United,EBB,1
+20191226,Woking,WOK,0,Sutton United,SUT,2
+20191226,Barrow,BRW,1,AFC Fylde,FYL,1
+20191226,Chesterfield,CHES,2,Solihull Moors,SOL,2
+20191226,Dover,DOV,3,Bromley,BROM,0
+20191226,Harrogate Town,HAR,4,Hartlepool United,HART,1
+20191226,Notts County,NOTT,3,Maidenhead Utd,MAID,0
+20191226,Stockport County,STO,5,FC Halifax Town,HAL,1
+20191226,Wrexham,WRX,3,Chorley,CHO,1
+20191226,Yeovil Town,YEO,6,Torquay United,TQU,2
+20191221,AFC Fylde,FYL,2,Yeovil Town,YEO,2
+20191221,Aldershot Town,ALD,2,Stockport County,STO,1
+20191221,Boreham Wood,BOR,2,Harrogate Town,HAR,1
+20191221,Bromley,BROM,2,Eastleigh,ELH,3
+20191221,Chorley,CHO,1,Dover,DOV,1
+20191221,FC Halifax Town,HAL,2,Notts County,NOTT,4
+20191221,Hartlepool United,HART,1,Dagenham & Redbridge,D&R,0
+20191221,Maidenhead Utd,MAID,1,Barnet,BAR,4
+20191221,Sutton United,SUT,3,Wrexham,WRX,1
+20191221,Torquay United,TQU,0,Chesterfield,CHES,3
+20191210,AFC Fylde,FYL,0,Sutton United,SUT,0
+20191210,Chesterfield,CHES,1,Yeovil Town,YEO,2
+20191207,Barrow,BRW,1,Aldershot Town,ALD,0
+20191207,Chesterfield,CHES,1,Bromley,BROM,2
+20191207,Dagenham & Redbridge,D&R,1,Maidenhead Utd,MAID,2
+20191207,Dover,DOV,0,Boreham Wood,BOR,2
+20191207,Eastleigh,ELH,1,Ebbsfleet United,EBB,1
+20191207,Harrogate Town,HAR,2,Torquay United,TQU,1
+20191207,Notts County,NOTT,1,Sutton United,SUT,1
+20191207,Stockport County,STO,4,Chorley,CHO,2
+20191207,Woking,WOK,2,Hartlepool United,HART,1
+20191207,Wrexham,WRX,2,Solihull Moors,SOL,0
+20191207,Yeovil Town,YEO,2,FC Halifax Town,HAL,0
+20191207,Barnet,BAR,2,AFC Fylde,FYL,1
+20191203,Eastleigh,ELH,0,Wrexham,WRX,2
+20191130,Aldershot Town,ALD,2,Chesterfield,CHES,2
+20191130,Boreham Wood,BOR,1,Woking,WOK,0
+20191130,Bromley,BROM,1,Yeovil Town,YEO,1
+20191130,Chorley,CHO,1,Dagenham & Redbridge,D&R,0
+20191130,Ebbsfleet United,EBB,2,Wrexham,WRX,1
+20191130,Maidenhead Utd,MAID,0,Barrow,BRW,4
+20191130,Sutton United,SUT,3,Harrogate Town,HAR,1
+20191130,Torquay United,TQU,1,Stockport County,STO,5
+20191126,Barnet,BAR,5,Ebbsfleet United,EBB,2
+20191126,Barrow,BRW,2,Chorley,CHO,2
+20191126,Chesterfield,CHES,1,Hartlepool United,HART,5
+20191126,Dagenham & Redbridge,D&R,1,Sutton United,SUT,2
+20191126,Dover,DOV,3,Maidenhead Utd,MAID,4
+20191126,Eastleigh,ELH,3,Torquay United,TQU,2
+20191126,Harrogate Town,HAR,2,FC Halifax Town,HAL,2
+20191126,Notts County,NOTT,2,Boreham Wood,BOR,2
+20191126,Stockport County,STO,1,Solihull Moors,SOL,4
+20191126,Woking,WOK,2,Bromley,BROM,1
+20191126,Wrexham,WRX,0,AFC Fylde,FYL,1
+20191126,Yeovil Town,YEO,2,Aldershot Town,ALD,2
+20191123,AFC Fylde,FYL,3,Dagenham & Redbridge,D&R,0
+20191123,Aldershot Town,ALD,2,Notts County,NOTT,1
+20191123,Barrow,BRW,2,Barnet,BAR,1
+20191123,Chorley,CHO,1,Torquay United,TQU,0
+20191123,Dover,DOV,1,Solihull Moors,SOL,1
+20191123,FC Halifax Town,HAL,1,Eastleigh,ELH,1
+20191123,Harrogate Town,HAR,3,Chesterfield,CHES,1
+20191123,Hartlepool United,HART,2,Boreham Wood,BOR,2
+20191123,Stockport County,STO,1,Ebbsfleet United,EBB,1
+20191123,Sutton United,SUT,0,Bromley,BROM,2
+20191123,Wrexham,WRX,3,Yeovil Town,YEO,3
+20191123,Maidenhead Utd,MAID,2,Woking,WOK,3
+20191116,Barnet,BAR,1,Stockport County,STO,2
+20191116,Boreham Wood,BOR,2,Maidenhead Utd,MAID,1
+20191116,Bromley,BROM,3,Harrogate Town,HAR,3
+20191116,Chesterfield,CHES,2,Chorley,CHO,3
+20191116,Dagenham & Redbridge,D&R,6,Aldershot Town,ALD,1
+20191116,Ebbsfleet United,EBB,2,Hartlepool United,HART,2
+20191116,Notts County,NOTT,0,Barrow,BRW,3
+20191116,Solihull Moors,SOL,3,AFC Fylde,FYL,1
+20191116,Torquay United,TQU,1,Sutton United,SUT,2
+20191116,Woking,WOK,0,FC Halifax Town,HAL,0
+20191116,Yeovil Town,YEO,0,Dover,DOV,1
+20191109,Stockport County,STO,1,Dagenham & Redbridge,D&R,0
+20191105,Hartlepool United,HART,0,Solihull Moors,SOL,1
+20191102,AFC Fylde,FYL,0,Dover,DOV,0
+20191102,Aldershot Town,ALD,2,Maidenhead Utd,MAID,0
+20191102,Barnet,BAR,2,Chorley,CHO,1
+20191102,Barrow,BRW,1,Sutton United,SUT,0
+20191102,Eastleigh,ELH,4,Harrogate Town,HAR,2
+20191102,Ebbsfleet United,EBB,2,Chesterfield,CHES,2
+20191102,FC Halifax Town,HAL,2,Torquay United,TQU,4
+20191102,Notts County,NOTT,2,Hartlepool United,HART,2
+20191102,Solihull Moors,SOL,2,Dagenham & Redbridge,D&R,1
+20191102,Stockport County,STO,1,Woking,WOK,3
+20191102,Wrexham,WRX,1,Bromley,BROM,0
+20191102,Yeovil Town,YEO,1,Boreham Wood,BOR,1
+20191029,Boreham Wood,BOR,0,Aldershot Town,ALD,0
+20191029,Bromley,BROM,2,Stockport County,STO,2
+20191029,Chorley,CHO,0,Ebbsfleet United,EBB,4
+20191029,Dagenham & Redbridge,D&R,0,Barrow,BRW,2
+20191029,Dover,DOV,3,Eastleigh,ELH,1
+20191029,Harrogate Town,HAR,2,Barnet,BAR,1
+20191029,Maidenhead Utd,MAID,1,AFC Fylde,FYL,1
+20191029,Sutton United,SUT,0,FC Halifax Town,HAL,1
+20191029,Torquay United,TQU,1,Wrexham,WRX,0
+20191029,Woking,WOK,0,Notts County,NOTT,4
+20191026,Boreham Wood,BOR,0,AFC Fylde,FYL,2
+20191026,Bromley,BROM,5,FC Halifax Town,HAL,0
+20191026,Chorley,CHO,1,Yeovil Town,YEO,2
+20191026,Dagenham & Redbridge,D&R,2,Wrexham,WRX,1
+20191026,Dover,DOV,0,Stockport County,STO,1
+20191026,Harrogate Town,HAR,1,Aldershot Town,ALD,0
+20191026,Hartlepool United,HART,2,Barnet,BAR,0
+20191026,Maidenhead Utd,MAID,1,Solihull Moors,SOL,0
+20191026,Sutton United,SUT,2,Ebbsfleet United,EBB,3
+20191026,Torquay United,TQU,4,Barrow,BRW,2
+20191026,Woking,WOK,1,Eastleigh,ELH,1
+20191026,Chesterfield,CHES,1,Notts County,NOTT,0
+20191015,Wrexham,WRX,0,Chesterfield,CHES,1
+20191012,Aldershot Town,ALD,0,Hartlepool United,HART,3
+20191012,Barnet,BAR,2,Woking,WOK,2
+20191012,Eastleigh,ELH,0,Chorley,CHO,0
+20191012,Ebbsfleet United,EBB,1,Maidenhead Utd,MAID,2
+20191012,FC Halifax Town,HAL,0,Boreham Wood,BOR,2
+20191012,Notts County,NOTT,2,Torquay United,TQU,0
+20191012,Solihull Moors,SOL,2,Bromley,BROM,1
+20191012,Yeovil Town,YEO,1,Harrogate Town,HAR,2
+20191009,Stockport County,STO,2,Hartlepool United,HART,1
+20191008,AFC Fylde,FYL,1,Chesterfield,CHES,3
+20191008,Aldershot Town,ALD,4,Dover,DOV,0
+20191008,Barnet,BAR,1,Bromley,BROM,2
+20191008,Barrow,BRW,3,Boreham Wood,BOR,1
+20191008,Eastleigh,ELH,2,Maidenhead Utd,MAID,1
+20191008,Ebbsfleet United,EBB,2,Torquay United,TQU,4
+20191008,FC Halifax Town,HAL,0,Chorley,CHO,0
+20191008,Notts County,NOTT,2,Dagenham & Redbridge,D&R,0
+20191008,Solihull Moors,SOL,2,Sutton United,SUT,0
+20191008,Wrexham,WRX,1,Harrogate Town,HAR,1
+20191008,Yeovil Town,YEO,3,Woking,WOK,1
+20191005,Boreham Wood,BOR,1,Solihull Moors,SOL,0
+20191005,Bromley,BROM,1,Barrow,BRW,2
+20191005,Chesterfield,CHES,1,Eastleigh,ELH,2
+20191005,Chorley,CHO,0,Aldershot Town,ALD,0
+20191005,Dagenham & Redbridge,D&R,1,Barnet,BAR,1
+20191005,Dover,DOV,2,Notts County,NOTT,2
+20191005,Hartlepool United,HART,2,Yeovil Town,YEO,1
+20191005,Maidenhead Utd,MAID,0,FC Halifax Town,HAL,1
+20191005,Sutton United,SUT,0,Stockport County,STO,0
+20191005,Torquay United,TQU,2,AFC Fylde,FYL,1
+20191005,Woking,WOK,1,Wrexham,WRX,1
+20191005,Harrogate Town,HAR,2,Ebbsfleet United,EBB,0
+20191001,AFC Fylde,FYL,0,Barnet,BAR,4
+20191001,Solihull Moors,SOL,3,Wrexham,WRX,1
+20190928,Barnet,BAR,0,Solihull Moors,SOL,0
+20190928,Barrow,BRW,2,Maidenhead Utd,MAID,0
+20190928,Chesterfield,CHES,2,Aldershot Town,ALD,1
+20190928,Dagenham & Redbridge,D&R,0,Chorley,CHO,0
+20190928,Eastleigh,ELH,1,Hartlepool United,HART,1
+20190928,Harrogate Town,HAR,2,Sutton United,SUT,0
+20190928,Notts County,NOTT,2,AFC Fylde,FYL,0
+20190928,Stockport County,STO,0,Torquay United,TQU,4
+20190928,Woking,WOK,1,Boreham Wood,BOR,2
+20190928,Wrexham,WRX,1,Ebbsfleet United,EBB,0
+20190928,Yeovil Town,YEO,3,Bromley,BROM,1
+20190928,Dover,DOV,0,FC Halifax Town,HAL,2
+20190924,AFC Fylde,FYL,3,Wrexham,WRX,2
+20190924,Aldershot Town,ALD,1,Yeovil Town,YEO,3
+20190924,Boreham Wood,BOR,1,Notts County,NOTT,2
+20190924,Bromley,BROM,1,Woking,WOK,0
+20190924,Chorley,CHO,1,Barrow,BRW,3
+20190924,Ebbsfleet United,EBB,3,Barnet,BAR,0
+20190924,FC Halifax Town,HAL,0,Harrogate Town,HAR,1
+20190924,Hartlepool United,HART,1,Chesterfield,CHES,1
+20190924,Maidenhead Utd,MAID,1,Dover,DOV,2
+20190924,Solihull Moors,SOL,2,Stockport County,STO,0
+20190924,Sutton United,SUT,0,Dagenham & Redbridge,D&R,2
+20190924,Torquay United,TQU,2,Eastleigh,ELH,3
+20190921,Aldershot Town,ALD,1,Wrexham,WRX,0
+20190921,Boreham Wood,BOR,4,Stockport County,STO,0
+20190921,Bromley,BROM,2,Notts County,NOTT,1
+20190921,Chorley,CHO,1,Woking,WOK,1
+20190921,Ebbsfleet United,EBB,0,Barrow,BRW,3
+20190921,FC Halifax Town,HAL,4,Barnet,BAR,2
+20190921,Hartlepool United,HART,0,Dover,DOV,2
+20190921,Maidenhead Utd,MAID,1,Harrogate Town,HAR,1
+20190921,Solihull Moors,SOL,0,Yeovil Town,YEO,1
+20190921,Sutton United,SUT,4,Chesterfield,CHES,0
+20190921,Torquay United,TQU,0,Dagenham & Redbridge,D&R,0
+20190921,AFC Fylde,FYL,3,Eastleigh,ELH,1
+20190917,Barnet,BAR,2,Aldershot Town,ALD,0
+20190914,Barnet,BAR,1,Maidenhead Utd,MAID,0
+20190914,Barrow,BRW,3,Solihull Moors,SOL,0
+20190914,Chesterfield,CHES,1,Torquay United,TQU,0
+20190914,Dagenham & Redbridge,D&R,3,Hartlepool United,HART,1
+20190914,Dover,DOV,1,Chorley,CHO,1
+20190914,Eastleigh,ELH,1,Bromley,BROM,1
+20190914,Harrogate Town,HAR,0,Boreham Wood,BOR,0
+20190914,Notts County,NOTT,1,FC Halifax Town,HAL,0
+20190914,Stockport County,STO,1,Aldershot Town,ALD,2
+20190914,Woking,WOK,2,Ebbsfleet United,EBB,2
+20190914,Yeovil Town,YEO,3,AFC Fylde,FYL,2
+20190914,Wrexham,WRX,1,Sutton United,SUT,1
+20190907,Aldershot Town,ALD,1,Barrow,BRW,2
+20190907,Boreham Wood,BOR,3,Dover,DOV,1
+20190907,Bromley,BROM,2,Chesterfield,CHES,1
+20190907,Chorley,CHO,3,Stockport County,STO,0
+20190907,Ebbsfleet United,EBB,1,Eastleigh,ELH,1
+20190907,FC Halifax Town,HAL,0,Yeovil Town,YEO,2
+20190907,Maidenhead Utd,MAID,0,Dagenham & Redbridge,D&R,1
+20190907,Sutton United,SUT,1,Notts County,NOTT,1
+20190907,Torquay United,TQU,4,Harrogate Town,HAR,2
+20190907,Hartlepool United,HART,1,Woking,WOK,1
+20190904,Dagenham & Redbridge,D&R,1,Bromley,BROM,1
+20190903,Barrow,BRW,0,Hartlepool United,HART,1
+20190903,Chesterfield,CHES,2,FC Halifax Town,HAL,3
+20190903,Dover,DOV,1,Ebbsfleet United,EBB,1
+20190903,Eastleigh,ELH,2,Boreham Wood,BOR,0
+20190903,Harrogate Town,HAR,2,Chorley,CHO,0
+20190903,Notts County,NOTT,0,Solihull Moors,SOL,0
+20190903,Stockport County,STO,2,AFC Fylde,FYL,1
+20190903,Woking,WOK,1,Torquay United,TQU,1
+20190903,Wrexham,WRX,2,Maidenhead Utd,MAID,2
+20190903,Yeovil Town,YEO,1,Sutton United,SUT,0
+20190831,Bromley,BROM,2,AFC Fylde,FYL,2
+20190831,Chesterfield,CHES,1,Dagenham & Redbridge,D&R,1
+20190831,Eastleigh,ELH,1,Barnet,BAR,2
+20190831,Ebbsfleet United,EBB,1,Aldershot Town,ALD,2
+20190831,FC Halifax Town,HAL,2,Solihull Moors,SOL,1
+20190831,Harrogate Town,HAR,0,Dover,DOV,2
+20190831,Sutton United,SUT,0,Maidenhead Utd,MAID,3
+20190831,Torquay United,TQU,1,Hartlepool United,HART,2
+20190831,Woking,WOK,3,Barrow,BRW,2
+20190831,Wrexham,WRX,1,Stockport County,STO,2
+20190831,Yeovil Town,YEO,3,Notts County,NOTT,1
+20190831,Chorley,CHO,1,Boreham Wood,BOR,3
+20190826,AFC Fylde,FYL,0,Harrogate Town,HAR,0
+20190826,Aldershot Town,ALD,1,Sutton United,SUT,1
+20190826,Barnet,BAR,2,Torquay United,TQU,2
+20190826,Barrow,BRW,1,FC Halifax Town,HAL,2
+20190826,Boreham Wood,BOR,1,Ebbsfleet United,EBB,2
+20190826,Dagenham & Redbridge,D&R,3,Yeovil Town,YEO,2
+20190826,Dover,DOV,1,Woking,WOK,2
+20190826,Hartlepool United,HART,4,Wrexham,WRX,2
+20190826,Maidenhead Utd,MAID,1,Bromley,BROM,2
+20190826,Notts County,NOTT,5,Chorley,CHO,1
+20190826,Stockport County,STO,2,Chesterfield,CHES,0
+20190826,Solihull Moors,SOL,1,Eastleigh,ELH,2
+20190824,Bromley,BROM,1,Boreham Wood,BOR,0
+20190824,Chesterfield,CHES,2,Barrow,BRW,2
+20190824,Chorley,CHO,0,Hartlepool United,HART,0
+20190824,Eastleigh,ELH,1,Dagenham & Redbridge,D&R,1
+20190824,Ebbsfleet United,EBB,2,Notts County,NOTT,2
+20190824,FC Halifax Town,HAL,4,AFC Fylde,FYL,1
+20190824,Harrogate Town,HAR,2,Stockport County,STO,1
+20190824,Sutton United,SUT,1,Dover,DOV,2
+20190824,Woking,WOK,2,Solihull Moors,SOL,0
+20190824,Wrexham,WRX,1,Barnet,BAR,1
+20190824,Yeovil Town,YEO,1,Maidenhead Utd,MAID,2
+20190824,Torquay United,TQU,2,Aldershot Town,ALD,0
+20190818,Notts County,NOTT,1,Wrexham,WRX,1
+20190817,AFC Fylde,FYL,1,Woking,WOK,4
+20190817,Aldershot Town,ALD,1,FC Halifax Town,HAL,1
+20190817,Barnet,BAR,2,Chesterfield,CHES,2
+20190817,Boreham Wood,BOR,0,Sutton United,SUT,1
+20190817,Dagenham & Redbridge,D&R,4,Harrogate Town,HAR,2
+20190817,Dover,DOV,1,Torquay United,TQU,2
+20190817,Hartlepool United,HART,2,Bromley,BROM,3
+20190817,Maidenhead Utd,MAID,4,Chorley,CHO,1
+20190817,Solihull Moors,SOL,2,Ebbsfleet United,EBB,1
+20190817,Stockport County,STO,2,Eastleigh,ELH,0
+20190817,Barrow,BRW,1,Yeovil Town,YEO,0
+20190813,Aldershot Town,ALD,0,Bromley,BROM,1
+20190813,Barnet,BAR,0,Dover,DOV,1
+20190813,Chesterfield,CHES,1,Woking,WOK,2
+20190813,Chorley,CHO,1,Solihull Moors,SOL,6
+20190813,Dagenham & Redbridge,D&R,0,Boreham Wood,BOR,3
+20190813,Eastleigh,ELH,1,Sutton United,SUT,1
+20190813,Ebbsfleet United,EBB,1,Yeovil Town,YEO,3
+20190813,Harrogate Town,HAR,0,Notts County,NOTT,2
+20190813,Hartlepool United,HART,2,AFC Fylde,FYL,2
+20190813,Stockport County,STO,3,Barrow,BRW,2
+20190813,Torquay United,TQU,0,Maidenhead Utd,MAID,2
+20190813,Wrexham,WRX,1,FC Halifax Town,HAL,0
+20190810,AFC Fylde,FYL,1,Ebbsfleet United,EBB,0
+20190810,Barrow,BRW,2,Eastleigh,ELH,0
+20190810,Boreham Wood,BOR,2,Chesterfield,CHES,2
+20190810,Bromley,BROM,3,Torquay United,TQU,3
+20190810,Dover,DOV,2,Wrexham,WRX,1
+20190810,FC Halifax Town,HAL,1,Dagenham & Redbridge,D&R,0
+20190810,Maidenhead Utd,MAID,0,Hartlepool United,HART,1
+20190810,Solihull Moors,SOL,2,Aldershot Town,ALD,1
+20190810,Sutton United,SUT,2,Chorley,CHO,2
+20190810,Woking,WOK,1,Harrogate Town,HAR,0
+20190810,Yeovil Town,YEO,1,Stockport County,STO,1
+20190810,Notts County,NOTT,1,Barnet,BAR,2
+20190806,AFC Fylde,FYL,0,Chorley,CHO,0
+20190806,Barrow,BRW,0,Harrogate Town,HAR,3
+20190806,Boreham Wood,BOR,2,Wrexham,WRX,2
+20190806,Bromley,BROM,3,Ebbsfleet United,EBB,1
+20190806,Dover,DOV,1,Dagenham & Redbridge,D&R,2
+20190806,FC Halifax Town,HAL,2,Hartlepool United,HART,0
+20190806,Maidenhead Utd,MAID,1,Chesterfield,CHES,1
+20190806,Notts County,NOTT,1,Stockport County,STO,1
+20190806,Solihull Moors,SOL,3,Torquay United,TQU,0
+20190806,Sutton United,SUT,1,Barnet,BAR,1
+20190806,Woking,WOK,0,Aldershot Town,ALD,1
+20190806,Yeovil Town,YEO,1,Eastleigh,ELH,0
+20190803,Stockport County,STO,0,Maidenhead Utd,MAID,1
+20190803,Aldershot Town,ALD,1,AFC Fylde,FYL,2
+20190803,Barnet,BAR,1,Yeovil Town,YEO,0
+20190803,Chesterfield,CHES,1,Dover,DOV,2
+20190803,Chorley,CHO,0,Bromley,BROM,0
+20190803,Dagenham & Redbridge,D&R,0,Woking,WOK,2
+20190803,Eastleigh,ELH,1,Notts County,NOTT,0
+20190803,Ebbsfleet United,EBB,1,FC Halifax Town,HAL,4
+20190803,Harrogate Town,HAR,2,Solihull Moors,SOL,2
+20190803,Hartlepool United,HART,1,Sutton United,SUT,3
+20190803,Torquay United,TQU,2,Boreham Wood,BOR,1
+20190803,Wrexham,WRX,2,Barrow,BRW,1

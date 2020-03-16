@@ -1,0 +1,86 @@
+20200314,Perez Zeledon,ZEL,1,Saprissa,SAP,1
+20200314,Alajuelense,ALA,6,Universidad De Costa Rica,UCR,1
+20200308,Universidad De Costa Rica,UCR,0,Grecia,GRE,4
+20200308,Limon,LIM,0,Jicaral,JICA,1
+20200308,Santos,SAN,3,Guadalupe,GUA,4
+20200308,Herediano,HER,3,Alajuelense,ALA,3
+20200307,Perez Zeledon,ZEL,0,San Carlos,SCA,4
+20200307,Saprissa,SAP,3,Cartagines,CART,1
+20200305,Guadalupe,GUA,2,Saprissa,SAP,1
+20200301,Universidad De Costa Rica,UCR,3,Guadalupe,GUA,0
+20200301,Limon,LIM,1,Alajuelense,ALA,0
+20200301,Santos,SAN,1,Cartagines,CART,3
+20200301,Saprissa,SAP,5,San Carlos,SCA,3
+20200229,Grecia,GRE,0,Herediano,HER,0
+20200229,Perez Zeledon,ZEL,2,Jicaral,JICA,0
+20200223,Limon,LIM,3,Santos,SAN,0
+20200223,Perez Zeledon,ZEL,0,Herediano,HER,1
+20200222,Guadalupe,GUA,0,Cartagines,CART,0
+20200222,Alajuelense,ALA,1,Jicaral,JICA,0
+20200222,San Carlos,SCA,1,Grecia,GRE,0
+20200222,Saprissa,SAP,3,Universidad De Costa Rica,UCR,1
+20200219,Guadalupe,GUA,1,Santos,SAN,0
+20200216,Cartagines,CART,1,Limon,LIM,0
+20200216,Universidad De Costa Rica,UCR,2,Perez Zeledon,ZEL,0
+20200216,Grecia,GRE,0,Saprissa,SAP,0
+20200216,Jicaral,JICA,0,Guadalupe,GUA,0
+20200216,Santos,SAN,0,Alajuelense,ALA,1
+20200215,Herediano,HER,3,San Carlos,SCA,3
+20200213,Perez Zeledon,ZEL,3,Santos,SAN,3
+20200212,Grecia,GRE,0,Limon,LIM,0
+20200212,Jicaral,JICA,0,Saprissa,SAP,0
+20200212,Alajuelense,ALA,3,Guadalupe,GUA,2
+20200212,Herediano,HER,3,Cartagines,CART,0
+20200212,San Carlos,SCA,2,Universidad De Costa Rica,UCR,2
+20200209,Cartagines,CART,3,San Carlos,SCA,2
+20200209,Universidad De Costa Rica,UCR,2,Jicaral,JICA,2
+20200209,Limon,LIM,1,Perez Zeledon,ZEL,2
+20200209,Santos,SAN,1,Herediano,HER,1
+20200209,Saprissa,SAP,1,Alajuelense,ALA,1
+20200208,Guadalupe,GUA,0,Grecia,GRE,0
+20200205,Jicaral,JICA,2,Cartagines,CART,1
+20200205,Limon,LIM,0,Saprissa,SAP,1
+20200205,Santos,SAN,5,San Carlos,SCA,2
+20200205,Herediano,HER,5,Universidad De Costa Rica,UCR,2
+20200205,Perez Zeledon,ZEL,1,Guadalupe,GUA,1
+20200204,Alajuelense,ALA,5,Grecia,GRE,1
+20200130,Guadalupe,GUA,0,Herediano,HER,0
+20200129,Grecia,GRE,1,Jicaral,JICA,0
+20200129,Universidad De Costa Rica,UCR,2,Limon,LIM,1
+20200129,Cartagines,CART,0,Perez Zeledon,ZEL,3
+20200129,San Carlos,SCA,1,Alajuelense,ALA,1
+20200129,Saprissa,SAP,1,Santos,SAN,0
+20200126,Jicaral,JICA,2,San Carlos,SCA,1
+20200126,Limon,LIM,0,Guadalupe,GUA,0
+20200126,Herediano,HER,4,Saprissa,SAP,1
+20200126,Santos,SAN,3,Universidad De Costa Rica,UCR,0
+20200125,Alajuelense,ALA,1,Cartagines,CART,1
+20200125,Perez Zeledon,ZEL,1,Grecia,GRE,4
+20200123,Santos,SAN,0,Jicaral,JICA,0
+20200122,Limon,LIM,0,Herediano,HER,2
+20200122,Universidad De Costa Rica,UCR,1,Alajuelense,ALA,2
+20200122,Guadalupe,GUA,0,San Carlos,SCA,2
+20200122,Cartagines,CART,4,Grecia,GRE,3
+20200122,Saprissa,SAP,0,Perez Zeledon,ZEL,0
+20200119,Cartagines,CART,1,Saprissa,SAP,2
+20200119,Grecia,GRE,1,Universidad De Costa Rica,UCR,0
+20200119,Jicaral,JICA,2,Limon,LIM,1
+20200119,Alajuelense,ALA,0,Herediano,HER,0
+20200119,San Carlos,SCA,3,Perez Zeledon,ZEL,2
+20200116,Saprissa,SAP,3,Guadalupe,GUA,0
+20200115,Limon,LIM,1,San Carlos,SCA,2
+20200115,Universidad De Costa Rica,UCR,0,Cartagines,CART,0
+20200115,Santos,SAN,1,Grecia,GRE,0
+20200115,Herediano,HER,1,Jicaral,JICA,0
+20200115,Perez Zeledon,ZEL,3,Alajuelense,ALA,1
+20200112,Cartagines,CART,2,Santos,SAN,2
+20200112,Jicaral,JICA,3,Perez Zeledon,ZEL,1
+20200112,Alajuelense,ALA,4,Limon,LIM,1
+20200304,Grecia,GRE,1,Santos,SAN,1
+20200304,Jicaral,JICA,1,Herediano,HER,1
+20200304,Cartagines,CART,2,Universidad De Costa Rica,UCR,1
+20200304,Alajuelense,ALA,2,Perez Zeledon,ZEL,0
+20200304,San Carlos,SCA,1,Limon,LIM,1
+20200111,Guadalupe,GUA,5,Universidad De Costa Rica,UCR,0
+20200111,San Carlos,SCA,0,Saprissa,SAP,1
+20200111,Herediano,HER,3,Grecia,GRE,3
