@@ -6,6 +6,8 @@
 using std::unique_ptr;
 using std::string;
 using std::vector;
+using std::cout;
+using std::endl;
 
 void printStats(int *, int);
 int main(int argc, char ** argv){
@@ -20,7 +22,7 @@ int main(int argc, char ** argv){
     const int nstars = 1;
     const int nrolls = std::stoi(string(argv[3]));
     vector<int> dice;
-    unique_ptr<Dice> game = std::make_unique<Dice> (std::stoi(string(argv[1])), std::stoi(string(argv[2])));
+    unique_ptr<Dice> game = std::make_unique<Dice>(std::stoi(string(argv[1])), std::stoi(string(argv[2])));
 
     int p[num] = {};
 
@@ -30,6 +32,7 @@ int main(int argc, char ** argv){
         for(auto &die : dice){
             roll += die;
         }
+        cout << "Roll is: " << roll << endl;
         if(roll != 7){
             count_no_7++;
             if(count_no_7 > max7){
@@ -42,24 +45,24 @@ int main(int argc, char ** argv){
         if(!established){
             if(roll == 2 || roll == 3 || roll == 12){
                 bankroll -= bet;
-                std::cout << "No point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << std::endl;
+                cout << "No point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << endl;
             }
             else if(roll == 7 || roll == 11){
                 bankroll += bet;
-                std::cout << "No point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << std::endl;
+                cout << "No point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << endl;
             }
             else{
                 established = on;
                 point = roll;
-                std::cout << "Point will be: " << roll << std::endl;
-                //std::cout << "Point is established @: " << point << std::endl;
+                cout << "Point will be: " << roll << endl;
+                //cout << "Point is established @: " << point << endl;
             }
         }
         else{
             if(roll == 7){
                 bankroll -= (bet * 3);
                 established = off;
-                std::cout << "Point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << std::endl;
+                cout << "Point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << endl;
             }
             if(roll == point){
                 if(point == 6 || point == 8){
@@ -73,25 +76,26 @@ int main(int argc, char ** argv){
                 }
                 bankroll += bet;
                 established = off;
-                std::cout << "Point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << std::endl;
+                cout << "Point: " << roll << ": Your bankroll is " << bankroll << " press enter for next roll" << endl;
             }
         }
+        //std::cin.ignore();
         ++p[roll-2];
         if(bankroll <= 0){
             printStats(p, num);
             exit(1);
         }
-        //std::cout << roll << std::endl;
+        //cout << roll << endl;
     }
     printStats(p, num);
-    std::cout << max7 << std::endl;
+    cout << max7 << endl;
 
     return 0;
 }
 
 void printStats(int *p, int num){
     for(int i(0); i < num; ++i){
-        std::cout << i+2 << ": " << p[i] << std::endl;
+        cout << i+2 << ": " << p[i] << endl;
     }
     
 }

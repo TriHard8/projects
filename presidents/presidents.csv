@@ -1,0 +1,52 @@
+Presidency ,President ,Wikipedia Entry,Took office ,Left office ,Party ,Home State,Elected,,,,,,,
+1,George Washington,http://en.wikipedia.org/wiki/George_Washington,30/04/1789,4/03/1797,Independent ,Virginia,1,,,,,,,
+2,John Adams,http://en.wikipedia.org/wiki/John_Adams,4/03/1797,4/03/1801,Federalist ,Massachusetts,1,,,,,,,
+3,Thomas Jefferson,http://en.wikipedia.org/wiki/Thomas_Jefferson,4/03/1801,4/03/1809,Democratic-Republican ,Virginia,1,,,,,,,
+4,James Madison,http://en.wikipedia.org/wiki/James_Madison,4/03/1809,4/03/1817,Democratic-Republican ,Virginia,1,,,,,,,
+5,James Monroe,http://en.wikipedia.org/wiki/James_Monroe,4/03/1817,4/03/1825,Democratic-Republican ,Virginia,1,,,,,,,
+6,John Quincy Adams,http://en.wikipedia.org/wiki/John_Quincy_Adams,4/03/1825,4/03/1829,Democratic-Republican/National Republican ,Massachusetts,1,,,,,,,
+7,Andrew Jackson,http://en.wikipedia.org/wiki/Andrew_Jackson,4/03/1829,4/03/1837,Democratic ,Tennessee,1,,,,,,,
+8,Martin Van Buren,http://en.wikipedia.org/wiki/Martin_Van_Buren,4/03/1837,4/03/1841,Democratic ,New York,1,,,,,,,
+9,William Henry Harrison,http://en.wikipedia.org/wiki/William_Henry_Harrison,4/03/1841,4/04/1841,Whig,Ohio,1,,,,,,,
+10,John Tyler,http://en.wikipedia.org/wiki/John_Tyler,4/04/1841,4/03/1845,Whig,Virginia,0,,,,,,,
+11,James K. Polk,http://en.wikipedia.org/wiki/James_K._Polk,4/03/1845,4/03/1849,Democratic ,Tennessee,1,,,,,,,
+12,Zachary Taylor,http://en.wikipedia.org/wiki/Zachary_Taylor,4/03/1849,9/07/1850,Whig,Louisiana,1,,,,,,,
+13,Millard Fillmore,http://en.wikipedia.org/wiki/Millard_Fillmore,9/07/1850,4/03/1853,Whig,New York,0,,,,,,,
+14,Franklin Pierce,http://en.wikipedia.org/wiki/Franklin_Pierce,4/03/1853,4/03/1857,Democratic ,New Hampshire,1,,,,,,,
+15,James Buchanan,http://en.wikipedia.org/wiki/James_Buchanan,4/03/1857,4/03/1861,Democratic ,Pennsylvania,1,,,,,,,
+16,Abraham Lincoln,http://en.wikipedia.org/wiki/Abraham_Lincoln,4/03/1861,15/04/1865,Republican/National Union,Illinois,1,,,,,,,
+17,Andrew Johnson,http://en.wikipedia.org/wiki/Andrew_Johnson,15/04/1865,4/03/1869,Democratic/National Union,Tennessee,0,,,,,,,
+18,Ulysses S. Grant,http://en.wikipedia.org/wiki/Ulysses_S._Grant,4/03/1869,4/03/1877,Republican ,Ohio,1,,,,,,,
+19,Rutherford B. Hayes,http://en.wikipedia.org/wiki/Rutherford_B._Hayes,4/03/1877,4/03/1881,Republican ,Ohio,1,,,,,,,
+20,James A. Garfield,http://en.wikipedia.org/wiki/James_A._Garfield,4/03/1881,19/09/1881,Republican ,Ohio,1,,,,,,,
+21,Chester A. Arthur,http://en.wikipedia.org/wiki/Chester_A._Arthur,19/09/1881,4/03/1885,Republican ,New York,1,,,,,,,
+22,Grover Cleveland,http://en.wikipedia.org/wiki/Grover_Cleveland,4/03/1885,4/03/1889,Democratic ,New York,1,,,,,0.873497939329978,,
+23,Benjamin Harrison,http://en.wikipedia.org/wiki/Benjamin_Harrison,4/03/1889,4/03/1893,Republican ,Indiana,1,,,,,1.87349793932998,,
+24,Grover Cleveland (2nd term),http://en.wikipedia.org/wiki/Grover_Cleveland,4/03/1893,4/03/1897,Democratic ,New York,1,,,,,,,
+25,William McKinley,http://en.wikipedia.org/wiki/William_McKinley,4/03/1897,14/9/1901,Republican ,Ohio,1,,,,,,,
+26,Theodore Roosevelt,http://en.wikipedia.org/wiki/Theodore_Roosevelt,14/9/1901,4/3/1909,Republican ,New York,1,,,,,,,
+27,William Howard Taft,http://en.wikipedia.org/wiki/William_Howard_Taft,4/3/1909,4/03/1913,Republican ,Ohio,1,,,,,,,
+28,Woodrow Wilson,http://en.wikipedia.org/wiki/Woodrow_Wilson,4/03/1913,4/03/1921,Democratic ,New Jersey,1,,,,,,,
+29,Warren G. Harding,http://en.wikipedia.org/wiki/Warren_G._Harding,4/03/1921,2/8/1923,Republican ,Ohio,1,,,,(K31-J31)/J31,,(1+L31)^(1/I31)-1,(1+N31)^I31-1
+30,Calvin Coolidge,http://en.wikipedia.org/wiki/Calvin_Coolidge,2/8/1923,4/03/1929,Republican ,Massachusetts,1,6,100,25,-75.00%,-20.63%,-20.63%,-0.75
+31,Herbert Hoover,http://en.wikipedia.org/wiki/Herbert_Hoover,4/03/1929,4/03/1933,Republican ,Iowa,1,4,21.95,6.88,-68.66%,-25.18%,-25.18%,-0.686560364464692
+32,Franklin D. Roosevelt,http://en.wikipedia.org/wiki/Franklin_D._Roosevelt,4/03/1933,12/4/1945,Democratic,New York,1,12,6.88,12.89,87.35%,5.37%,5.37%,0.873546511627905
+33,Harry S. Truman,http://en.wikipedia.org/wiki/Harry_S._Truman,12/4/1945,20/01/1953,Democratic,Missouri,1,8,12.89,24.52,90.22%,8.37%,8.37%,0.902249806051203
+34,Dwight D. Eisenhower,http://en.wikipedia.org/wiki/Dwight_D._Eisenhower,20/01/1953,20/01/1961,Republican ,Texas,1,8,24.52,54.9,123.90%,10.60%,10.60%,1.23898858075041
+35,John F. Kennedy,http://en.wikipedia.org/wiki/John_F._Kennedy,20/01/1961,22/11/1963,Democratic,Massachusetts,1,,54.9,,,,,
+36,Lyndon B. Johnson,http://en.wikipedia.org/wiki/Lyndon_B._Johnson,22/11/1963,20/1/1969,Democratic,Texas,1,8,,103.06,87.72%,8.19%,8.19%,0.877231329690347
+37,Richard Nixon,http://en.wikipedia.org/wiki/Richard_Nixon,20/1/1969,9/8/1974,Republican,California,1,,103.06,,,,,
+38,Gerald Ford,http://en.wikipedia.org/wiki/Gerald_Ford,9/8/1974,20/01/1977,Republican,Michigan,0,8,,100.82,-2.17%,-0.27%,-0.27%,-0.021734911701922
+39,Jimmy Carter,http://en.wikipedia.org/wiki/Jimmy_Carter,20/01/1977,20/01/1981,Democratic ,Georgia,1,4,100.82,127.47,26.43%,,6.04%,0.264332473715533
+40,Ronald Reagan,http://en.wikipedia.org/wiki/Ronald_Reagan,20/01/1981,20/01/1989,Republican ,California,1,8,127.47,276.31,116.76%,,10.15%,1.16764728955833
+41,George H. W. Bush,http://en.wikipedia.org/wiki/George_H._W._Bush,20/01/1989,20/01/1993,Republican ,Texas,1,4,276.31,418.68,51.53%,,10.95%,0.515254605334588
+42,Bill Clinton,http://en.wikipedia.org/wiki/Bill_Clinton,20/01/1993,20/01/2001,Democratic ,Arkansas,1,8,418.68,1426.69,240.76%,,16.56%,2.40759052259482
+43,George W. Bush,http://en.wikipedia.org/wiki/George_W._Bush,20/01/2001,20/01/2009,Republican ,Texas,1,8,1426.69,968.75,-32.10%,,-4.72%,-0.320980731623548
+44,Barack Obama,http://en.wikipedia.org/wiki/Barack_Obama,20/01/2009,20/01/2017,  Democratic   ,Illinois,1,8,968.75,2085.18,115.24%,,10.06%,1.15244387096774
+45,Donald J Trump,https://en.wikipedia.org/wiki/Donald_Trump,20/01/2017,Current,Republican,New York,1,3,2085.18,2304.92,10.54%,,3.40%,0.105381789581715
+,,,,,,,,3,2085.18,3380,62.10%,,17.47%,0.620963178238809
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,Democrats,9.10%,
+,,,,,,,,,,,,Republicans,-1.96%,
+,,,,,,,,,,,,Republicans,-0.20%,
+,,,,,,,,,,,,Republicans,7.36%,

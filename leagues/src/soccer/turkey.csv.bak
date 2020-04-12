@@ -1,0 +1,226 @@
+20200313,Ankaragucu,ANK,2,Caykur Rizespor,CAY,1
+20200313,Kasimpasa,KAS,2,Goztepe,GOZ,0
+20200311,Yeni Malatyaspor,YEN,1,Trabzonspor,TRAB,3
+20200309,Genclerbirligi,GEN,1,Antalyaspor,ANT,1
+20200308,Kasimpasa,KAS,5,Kayserispor,KAY,1
+20200308,Caykur Rizespor,CAY,1,Alanyaspor K,ALA,1
+20200308,Sivasspor,SIV,2,Galatasaray,GAL,2
+20200307,Yeni Malatyaspor,YEN,1,Konyaspor,KNY,1
+20200307,Gazisehir Gaziantep,GAZ,1,Trabzonspor,TRAB,1
+20200307,Goztepe,GOZ,0,Istanbul Basaksehir,IST,3
+20200307,Fenerbahce,FEN,2,Denizlispor,DZL,2
+20200306,Besiktas,BES,2,Ankaragucu,ANK,1
+20200302,Istanbul Basaksehir,IST,3,Gazisehir Gaziantep,GAZ,1
+20200302,Kayserispor,KAY,1,Goztepe,GOZ,0
+20200301,Denizlispor,DZL,2,Yeni Malatyaspor,YEN,0
+20200301,Ankaragucu,ANK,0,Sivasspor,SIV,3
+20200301,Galatasaray,GAL,3,Genclerbirligi,GEN,0
+20200229,Konyaspor,KNY,0,Kasimpasa,KAS,0
+20200229,Trabzonspor,TRAB,5,Caykur Rizespor,CAY,2
+20200229,Antalyaspor,ANT,2,Fenerbahce,FEN,2
+20200228,Alanyaspor K,ALA,1,Besiktas,BES,2
+20200224,Caykur Rizespor,CAY,1,Istanbul Basaksehir,IST,2
+20200224,Kasimpasa,KAS,2,Denizlispor,DZL,0
+20200223,Yeni Malatyaspor,YEN,1,Antalyaspor,ANT,2
+20200223,Genclerbirligi,GEN,1,Ankaragucu,ANK,0
+20200223,Fenerbahce,FEN,1,Galatasaray,GAL,3
+20200222,Kayserispor,KAY,2,Konyaspor,KNY,2
+20200222,Goztepe,GOZ,1,Gazisehir Gaziantep,GAZ,1
+20200222,Besiktas,BES,2,Trabzonspor,TRAB,2
+20200221,Sivasspor,SIV,1,Alanyaspor K,ALA,0
+20200217,Antalyaspor,ANT,3,Kasimpasa,KAS,1
+20200217,Gazisehir Gaziantep,GAZ,2,Caykur Rizespor,CAY,0
+20200216,Alanyaspor K,ALA,0,Genclerbirligi,GEN,1
+20200216,Trabzonspor,TRAB,2,Sivasspor,SIV,1
+20200216,Galatasaray,GAL,1,Yeni Malatyaspor,YEN,0
+20200215,Denizlispor,DZL,0,Kayserispor,KAY,1
+20200215,Konyaspor,KNY,1,Goztepe,GOZ,3
+20200215,Ankaragucu,ANK,2,Fenerbahce,FEN,1
+20200214,Istanbul Basaksehir,IST,1,Besiktas,BES,0
+20200209,Kayserispor,KAY,2,Antalyaspor,ANT,2
+20200209,Sivasspor,SIV,1,Istanbul Basaksehir,IST,1
+20200209,Kasimpasa,KAS,0,Galatasaray,GAL,3
+20200208,Konyaspor,KNY,0,Denizlispor,DZL,0
+20200208,Besiktas,BES,3,Gazisehir Gaziantep,GAZ,0
+20200208,Genclerbirligi,GEN,0,Trabzonspor,TRAB,2
+20200208,Fenerbahce,FEN,1,Alanyaspor K,ALA,1
+20200207,Yeni Malatyaspor,YEN,0,Ankaragucu,ANK,1
+20200203,Denizlispor,DZL,1,Goztepe,GOZ,1
+20200202,Ankaragucu,ANK,1,Kasimpasa,KAS,1
+20200202,Alanyaspor K,ALA,2,Yeni Malatyaspor,YEN,1
+20200202,Gazisehir Gaziantep,GAZ,5,Sivasspor,SIV,1
+20200202,Galatasaray,GAL,4,Kayserispor,KAY,1
+20200201,Antalyaspor,ANT,0,Konyaspor,KNY,0
+20200201,Caykur Rizespor,CAY,1,Besiktas,BES,2
+20200201,Trabzonspor,TRAB,2,Fenerbahce,FEN,1
+20200131,Istanbul Basaksehir,IST,3,Genclerbirligi,GEN,1
+20200127,Sivasspor,SIV,1,Caykur Rizespor,CAY,1
+20200126,Denizlispor,DZL,0,Antalyaspor,ANT,3
+20200126,Goztepe,GOZ,2,Besiktas,BES,1
+20200126,Konyaspor,KNY,0,Galatasaray,GAL,3
+20200125,Kayserispor,KAY,1,Ankaragucu,ANK,1
+20200125,Kasimpasa,KAS,1,Alanyaspor K,ALA,2
+20200125,Fenerbahce,FEN,2,Istanbul Basaksehir,IST,0
+20200124,Genclerbirligi,GEN,1,Gazisehir Gaziantep,GAZ,0
+20200120,Caykur Rizespor,CAY,2,Genclerbirligi,GEN,0
+20200119,Antalyaspor,ANT,0,Goztepe,GOZ,3
+20200119,Galatasaray,GAL,2,Denizlispor,DZL,1
+20200119,Trabzonspor,TRAB,6,Kasimpasa,KAS,0
+20200119,Besiktas,BES,1,Sivasspor,SIV,2
+20200118,Alanyaspor K,ALA,5,Kayserispor,KAY,1
+20200118,Istanbul Basaksehir,IST,4,Yeni Malatyaspor,YEN,1
+20200118,Gazisehir Gaziantep,GAZ,0,Fenerbahce,FEN,2
+20200117,Ankaragucu,ANK,0,Konyaspor,KNY,1
+20191229,Sivasspor,SIV,1,Goztepe,GOZ,0
+20191229,Alanyaspor K,ALA,2,Konyaspor,KNY,1
+20191229,Gazisehir Gaziantep,GAZ,1,Yeni Malatyaspor,YEN,1
+20191229,Caykur Rizespor,CAY,1,Fenerbahce,FEN,2
+20191228,Ankaragucu,ANK,2,Denizlispor,DZL,2
+20191228,Istanbul Basaksehir,IST,5,Kasimpasa,KAS,1
+20191228,Trabzonspor,TRAB,6,Kayserispor,KAY,2
+20191228,Galatasaray,GAL,5,Antalyaspor,ANT,0
+20191227,Besiktas,BES,4,Genclerbirligi,GEN,1
+20191223,Denizlispor,DZL,1,Alanyaspor K,ALA,5
+20191223,Konyaspor,KNY,0,Trabzonspor,TRAB,1
+20191222,Genclerbirligi,GEN,2,Sivasspor,SIV,2
+20191222,Kayserispor,KAY,1,Istanbul Basaksehir,IST,4
+20191222,Fenerbahce,FEN,3,Besiktas,BES,1
+20191221,Yeni Malatyaspor,YEN,0,Caykur Rizespor,CAY,2
+20191221,Kasimpasa,KAS,3,Gazisehir Gaziantep,GAZ,4
+20191221,Goztepe,GOZ,2,Galatasaray,GAL,1
+20191220,Antalyaspor,ANT,2,Ankaragucu,ANK,2
+20191215,Gazisehir Gaziantep,GAZ,3,Kayserispor,KAY,0
+20191215,Sivasspor,SIV,3,Fenerbahce,FEN,1
+20191215,Besiktas,BES,0,Yeni Malatyaspor,YEN,2
+20191214,Caykur Rizespor,CAY,0,Kasimpasa,KAS,3
+20191214,Genclerbirligi,GEN,3,Goztepe,GOZ,1
+20191214,Galatasaray,GAL,2,Ankaragucu,ANK,2
+20191213,Alanyaspor K,ALA,0,Antalyaspor,ANT,0
+20191209,Kayserispor,KAY,1,Caykur Rizespor,CAY,0
+20191208,Konyaspor,KNY,0,Gazisehir Gaziantep,GAZ,0
+20191208,Antalyaspor,ANT,1,Trabzonspor,TRAB,3
+20191208,Denizlispor,DZL,1,Istanbul Basaksehir,IST,1
+20191208,Kasimpasa,KAS,2,Besiktas,BES,3
+20191207,Yeni Malatyaspor,YEN,1,Sivasspor,SIV,3
+20191207,Ankaragucu,ANK,1,Goztepe,GOZ,3
+20191207,Galatasaray,GAL,1,Alanyaspor K,ALA,0
+20191206,Fenerbahce,FEN,5,Genclerbirligi,GEN,2
+20191202,Besiktas,BES,4,Kayserispor,KAY,1
+20191201,Gazisehir Gaziantep,GAZ,1,Denizlispor,DZL,2
+20191201,Istanbul Basaksehir,IST,2,Antalyaspor,ANT,0
+20191201,Trabzonspor,TRAB,1,Galatasaray,GAL,1
+20191130,Caykur Rizespor,CAY,3,Konyaspor,KNY,1
+20191130,Sivasspor,SIV,2,Kasimpasa,KAS,0
+20191130,Alanyaspor K,ALA,5,Ankaragucu,ANK,0
+20191130,Goztepe,GOZ,2,Fenerbahce,FEN,2
+20191129,Genclerbirligi,GEN,3,Yeni Malatyaspor,YEN,3
+20191125,Antalyaspor,ANT,1,Gazisehir Gaziantep,GAZ,1
+20191124,Kayserispor,KAY,1,Sivasspor,SIV,4
+20191124,Alanyaspor K,ALA,0,Goztepe,GOZ,1
+20191124,Kasimpasa,KAS,1,Genclerbirligi,GEN,2
+20191124,Yeni Malatyaspor,YEN,0,Fenerbahce,FEN,0
+20191123,Denizlispor,DZL,2,Caykur Rizespor,CAY,0
+20191123,Ankaragucu,ANK,0,Trabzonspor,TRAB,3
+20191123,Konyaspor,KNY,0,Besiktas,BES,1
+20191122,Galatasaray,GAL,0,Istanbul Basaksehir,IST,1
+20191110,Goztepe,GOZ,1,Yeni Malatyaspor,YEN,1
+20191110,Trabzonspor,TRAB,1,Alanyaspor K,ALA,0
+20191110,Besiktas,BES,1,Denizlispor,DZL,0
+20191110,Istanbul Basaksehir,IST,2,Ankaragucu,ANK,1
+20191109,Genclerbirligi,GEN,2,Kayserispor,KAY,1
+20191109,Caykur Rizespor,CAY,1,Antalyaspor,ANT,0
+20191109,Sivasspor,SIV,2,Konyaspor,KNY,0
+20191109,Gazisehir Gaziantep,GAZ,0,Galatasaray,GAL,2
+20191108,Fenerbahce,FEN,3,Kasimpasa,KAS,2
+20191104,Ankaragucu,ANK,1,Gazisehir Gaziantep,GAZ,2
+20191103,Denizlispor,DZL,0,Sivasspor,SIV,2
+20191103,Kasimpasa,KAS,2,Yeni Malatyaspor,YEN,2
+20191103,Kayserispor,KAY,1,Fenerbahce,FEN,0
+20191102,Konyaspor,KNY,1,Genclerbirligi,GEN,1
+20191102,Alanyaspor K,ALA,0,Istanbul Basaksehir,IST,0
+20191102,Trabzonspor,TRAB,0,Goztepe,GOZ,1
+20191102,Antalyaspor,ANT,1,Besiktas,BES,2
+20191101,Galatasaray,GAL,2,Caykur Rizespor,CAY,0
+20191028,Istanbul Basaksehir,IST,2,Trabzonspor,TRAB,2
+20191027,Yeni Malatyaspor,YEN,4,Kayserispor,KAY,0
+20191027,Genclerbirligi,GEN,0,Denizlispor,DZL,2
+20191027,Goztepe,GOZ,1,Kasimpasa,KAS,4
+20191027,Besiktas,BES,1,Galatasaray,GAL,0
+20191026,Sivasspor,SIV,2,Antalyaspor,ANT,1
+20191026,Gazisehir Gaziantep,GAZ,1,Alanyaspor K,ALA,1
+20191026,Fenerbahce,FEN,5,Konyaspor,KNY,1
+20191025,Caykur Rizespor,CAY,2,Ankaragucu,ANK,0
+20191021,Konyaspor,KNY,0,Yeni Malatyaspor,YEN,2
+20191020,Kayserispor,KAY,1,Kasimpasa,KAS,1
+20191020,Alanyaspor K,ALA,5,Caykur Rizespor,CAY,2
+20191020,Denizlispor,DZL,1,Fenerbahce,FEN,2
+20191019,Antalyaspor,ANT,0,Genclerbirligi,GEN,6
+20191019,Istanbul Basaksehir,IST,2,Goztepe,GOZ,1
+20191019,Trabzonspor,TRAB,4,Gazisehir Gaziantep,GAZ,1
+20191019,Ankaragucu,ANK,0,Besiktas,BES,0
+20191018,Galatasaray,GAL,3,Sivasspor,SIV,2
+20191006,Sivasspor,SIV,3,Ankaragucu,ANK,1
+20191006,Besiktas,BES,2,Alanyaspor K,ALA,0
+20191006,Caykur Rizespor,CAY,1,Trabzonspor,TRAB,2
+20191006,Gazisehir Gaziantep,GAZ,1,Istanbul Basaksehir,IST,2
+20191005,Kasimpasa,KAS,1,Konyaspor,KNY,4
+20191005,Goztepe,GOZ,4,Kayserispor,KAY,0
+20191005,Genclerbirligi,GEN,0,Galatasaray,GAL,0
+20190930,Gazisehir Gaziantep,GAZ,1,Goztepe,GOZ,1
+20190927,Istanbul Basaksehir,IST,5,Caykur Rizespor,CAY,0
+20190923,Besiktas,BES,1,Istanbul Basaksehir,IST,1
+20190923,Sivasspor,SIV,2,Trabzonspor,TRAB,1
+20190922,Caykur Rizespor,CAY,1,Gazisehir Gaziantep,GAZ,2
+20190922,Genclerbirligi,GEN,1,Alanyaspor K,ALA,1
+20190922,Yeni Malatyaspor,YEN,1,Galatasaray,GAL,1
+20190921,Kasimpasa,KAS,3,Antalyaspor,ANT,0
+20190921,Kayserispor,KAY,1,Denizlispor,DZL,1
+20190921,Fenerbahce,FEN,2,Ankaragucu,ANK,1
+20190920,Goztepe,GOZ,1,Konyaspor,KNY,0
+20190916,Alanyaspor K,ALA,3,Fenerbahce,FEN,1
+20190915,Ankaragucu,ANK,0,Yeni Malatyaspor,YEN,4
+20190915,Caykur Rizespor,CAY,0,Goztepe,GOZ,0
+20190915,Denizlispor,DZL,0,Konyaspor,KNY,1
+20190915,Trabzonspor,TRAB,2,Genclerbirligi,GEN,2
+20190914,Istanbul Basaksehir,IST,1,Sivasspor,SIV,1
+20190914,Antalyaspor,ANT,2,Kayserispor,KAY,2
+20190914,Gazisehir Gaziantep,GAZ,3,Besiktas,BES,2
+20190901,Genclerbirligi,GEN,1,Istanbul Basaksehir,IST,2
+20190901,Sivasspor,SIV,1,Gazisehir Gaziantep,GAZ,1
+20190901,Fenerbahce,FEN,1,Trabzonspor,TRAB,1
+20190901,Yeni Malatyaspor,YEN,2,Alanyaspor K,ALA,3
+20190831,Konyaspor,KNY,2,Antalyaspor,ANT,2
+20190831,Besiktas,BES,1,Caykur Rizespor,CAY,1
+20190831,Goztepe,GOZ,0,Denizlispor,DZL,0
+20190830,Kasimpasa,KAS,0,Ankaragucu,ANK,1
+20190830,Kayserispor,KAY,2,Galatasaray,GAL,3
+20190826,Gazisehir Gaziantep,GAZ,4,Genclerbirligi,GEN,1
+20190825,Caykur Rizespor,CAY,2,Sivasspor,SIV,1
+20190825,Trabzonspor,TRAB,2,Yeni Malatyaspor,YEN,1
+20190825,Antalyaspor,ANT,0,Denizlispor,DZL,2
+20190825,Galatasaray,GAL,1,Konyaspor,KNY,1
+20190824,Ankaragucu,ANK,1,Kayserispor,KAY,1
+20190824,Alanyaspor K,ALA,4,Kasimpasa,KAS,1
+20190824,Istanbul Basaksehir,IST,1,Fenerbahce,FEN,2
+20191216,Istanbul Basaksehir,IST,1,Konyaspor,KNY,1
+20191216,Trabzonspor,TRAB,1,Denizlispor,DZL,2
+20191004,Fenerbahce,FEN,0,Antalyaspor,ANT,1
+20191004,Yeni Malatyaspor,YEN,5,Denizlispor,DZL,1
+20190929,Konyaspor,KNY,2,Kayserispor,KAY,1
+20190929,Ankaragucu,ANK,2,Genclerbirligi,GEN,1
+20190929,Antalyaspor,ANT,3,Yeni Malatyaspor,YEN,0
+20190929,Trabzonspor,TRAB,4,Besiktas,BES,1
+20190913,Galatasaray,GAL,1,Kasimpasa,KAS,0
+20190823,Besiktas,BES,3,Goztepe,GOZ,0
+20190819,Fenerbahce,FEN,5,Gazisehir Gaziantep,GAZ,0
+20190818,Konyaspor,KNY,0,Ankaragucu,ANK,0
+20190818,Goztepe,GOZ,0,Antalyaspor,ANT,1
+20190818,Kasimpasa,KAS,1,Trabzonspor,TRAB,1
+20190818,Yeni Malatyaspor,YEN,3,Istanbul Basaksehir,IST,0
+20190817,Genclerbirligi,GEN,0,Caykur Rizespor,CAY,1
+20190817,Kayserispor,KAY,0,Alanyaspor K,ALA,1
+20190817,Sivasspor,SIV,3,Besiktas,BES,0
+20190816,Denizlispor,DZL,2,Galatasaray,GAL,0
+20190928,Denizlispor,DZL,0,Kasimpasa,KAS,1
+20190928,Alanyaspor K,ALA,1,Sivasspor,SIV,1
+20190928,Galatasaray,GAL,0,Fenerbahce,FEN,0

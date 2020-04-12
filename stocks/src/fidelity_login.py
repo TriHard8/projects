@@ -71,6 +71,22 @@ with open(stock_list, 'r') as f:
         symbol = line.strip().split(',')[0]
         
         driver.get("{0}{1}".format(option_page, symbol))
+        #try:
+        #    driver.find_element_by_xpath("//a[@title='Click to show or hide.']").click() 
+        #except:
+        #    pass
+        buttons = driver.find_elements_by_xpath("//a[@title='Click to show or hide.']")
+        #if buttons[0].is_displayed():
+        #    buttons[0].click()
+        for x in range(len(buttons)-1,0,-1):
+            try:
+                actions = action_chains.ActionChains(driver)
+                actions.move_to_element(buttons[x]).perform()
+                if buttons[x].is_displayed():
+                    buttons[x].click()
+            except:
+                continue
+
         innerHTML = driver.execute_script("return document.body.innerHTML")
         soup = my.get_soup_str(innerHTML)
         price = "No Options"
@@ -86,6 +102,8 @@ with open(stock_list, 'r') as f:
     
         #print("{0} : {1} : {2}".format(symbol, price, updown))
 
+        #for button in soup.find_all("a", {"title" : "Click to show or hide."}):
+        #    print("this")
         for table in soup.find_all("div", {"class" : "symbol-results-data-table"}):
             for header in table.find_all("thead", {"class" : "js-lock-target"}):
                 '''
@@ -105,7 +123,11 @@ with open(stock_list, 'r') as f:
             
             for body in table.find_all("tbody"):
                 for row in body.find_all("tr"):
-                    m = re.match(days_to_expiry_regex, row['id'])
+                    try:
+                        m = re.match(days_to_expiry_regex, row['id'])
+                    except:
+                        print(symbol)
+                        continue
                     if m:
                         days_to_expiry = int(m.group(2))
                         expiry = m.group(1)
@@ -114,15 +136,15 @@ with open(stock_list, 'r') as f:
                         for data in row.find_all("td"):
                             if data.has_attr("name"):
                                 if data["name"] == "Ask Calls":
-                                    ask_call = float(data.string)
+                                    ask_call = float(data.string.replace(',',''))
                                 elif data["name"] == "Strike":
                                     strike = float(data.string.replace(',',''))
                                 elif data["name"] == "Last Calls":
-                                    last_price_call = float(data.string)
+                                    last_price_call = float(data.string.replace(',',''))
                                 elif data["name"] == "Change Calls":
-                                    daily_change_call = float(data.string)
+                                    daily_change_call = float(data.string.replace(',',''))
                                 elif data["name"] == "Bid Calls":
-                                    bid_call = float(data.string)
+                                    bid_call = float(data.string.replace(',',''))
                                 elif data["name"] == "Volume Calls":
                                     datum = data.find("span")
                                     vol_call = int(datum.string.replace(",",""))
@@ -138,15 +160,15 @@ with open(stock_list, 'r') as f:
                                     if data.string == "--":
                                         imp_vol_call = 0.0
                                     else:
-                                        delta_call = float(data.string)
+                                        delta_call = float(data.string.replace(',',''))
                                 elif data["name"] == "Ask Puts":
-                                    ask_put = float(data.string)
+                                    ask_put = float(data.string.replace(',',''))
                                 elif data["name"] == "Last Puts":
-                                    last_price_put = float(data.string)
+                                    last_price_put = float(data.string.replace(',',''))
                                 elif data["name"] == "Change Puts":
-                                    daily_change_put = float(data.string)
+                                    daily_change_put = float(data.string.replace(',',''))
                                 elif data["name"] == "Bid Puts":
-                                    bid_put = float(data.string)
+                                    bid_put = float(data.string.replace(',',''))
                                 elif data["name"] == "Volume Puts":
                                     datum = data.find("span")
                                     vol_put = int(datum.string.replace(",",""))
@@ -162,7 +184,7 @@ with open(stock_list, 'r') as f:
                                     if data.string == "--":
                                         imp_vol_call = 0.0
                                     else:
-                                        delta_put = float(data.string)
+                                        delta_put = float(data.string.replace(',',''))
                                 
                         #if count == 5:
                         #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))

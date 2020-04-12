@@ -308,7 +308,7 @@ void DKMapping(std::map<std::string, std::string> &DKtoRoto){
     fin.open("/home/trihard8/repo/projects/leagues/src/nhl/DKtoRoto.csv", ios::in);
     while(getline(fin, line)){
         std::transform(line.begin(), line.end(), line.begin(), ::toupper);
-            std::stringstream ss(line);
+        std::stringstream ss(line);
         row.clear();
         while(getline(ss, word,',')){
             row.push_back(word); 

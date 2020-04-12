@@ -1,0 +1,104 @@
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
+struct BSTNode{
+    int value;
+    BSTNode *left;
+    BSTNode *right;
+};
+
+BSTNode* getNewNode(int);
+void addNode(BSTNode* &, int);
+void inOrder(BSTNode* &);
+void preOrder(BSTNode* &);
+void postOrder(BSTNode* &);
+
+int main(int argc, char **argv){
+    BSTNode *node;
+    addNode(node, 8);
+    addNode(node, 19);
+    addNode(node, 3);
+    addNode(node, 37);
+    addNode(node, -1);
+    addNode(node, 17);
+    addNode(node, 10); 
+    addNode(node, 5); 
+    addNode(node, 25); 
+
+    inOrder(node);
+    cout << "**" << endl;
+    preOrder(node);
+    cout << "**" << endl;
+    postOrder(node);
+    //cout << node->value << endl;
+    return 0;
+}
+
+BSTNode* getNewNode(int num){
+    BSTNode *temp = new BSTNode();
+    temp->value = num;
+    temp->left = nullptr;
+    temp->right = nullptr;
+
+    return temp;
+}
+void addNode(BSTNode * &tree, int num){
+    BSTNode *node = getNewNode(num);
+    BSTNode *curr = tree;
+    if(tree == nullptr){
+        tree = node;
+        return;
+    }
+    while(true){
+        if(node->value <= curr->value){
+            if(curr->left == nullptr){
+                curr->left = node;
+                return; 
+            }
+            else{
+                curr = curr->left;
+            }
+        } 
+        else{
+            if(curr->right == nullptr){
+                curr->right = node;
+                return; 
+            }
+            else{
+                curr = curr->right;
+            }
+        }
+    }
+}
+void inOrder(BSTNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    inOrder(tree->left);
+    cout << tree->value << endl;
+    inOrder(tree->right);
+
+    return;
+}
+void preOrder(BSTNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    cout << tree->value << endl;
+    preOrder(tree->left);
+    preOrder(tree->right);
+
+    return;
+}
+void postOrder(BSTNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    postOrder(tree->left);
+    postOrder(tree->right);
+    cout << tree->value << endl;
+
+    return;
+}

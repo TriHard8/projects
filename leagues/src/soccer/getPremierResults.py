@@ -40,10 +40,10 @@ if __name__ == "__main__":
     costa_rica = "https://www.espn.com/soccer/scoreboard/_/league/crc.1/date/"
     guatemala = "https://www.espn.com/soccer/scoreboard/_/league/gua.1/date/"
     honduras = "https://www.espn.com/soccer/scoreboard/_/league/hon.1/date/"
-    base_url = honduras
-    current_date = my.modify_x_date(my.date_for_files(), -1)
+    base_url = australia
+    current_date = my.modify_x_date(my.date_for_files(), 0)
     #current_date = "20190816"
-    end_date = 20200110
+    end_date = 20200317
     #end_date = 20190808
     ofile = open("gamedays.txt", 'w')
     if len(sys.argv) > 1:

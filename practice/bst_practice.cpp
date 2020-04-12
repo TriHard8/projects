@@ -3,57 +3,105 @@
 using std::cout;
 using std::endl;
 
-struct Node{
-    int data;
-    Node *left;
-    Node *right;
+struct binNode{
+    int value;
+    binNode* left;
+    binNode* right;
 };
-void addBST(Node * &, int);
-void inOrder(Node *);
-void preOrder(Node *);
-void postOrder(Node *);
-Node* getNewNode(int);
 
-int main(){
-    Node* bst = NULL;
-    addBST(bst, 8);
-    addBST(bst, 9);
-    addBST(bst, 8);
-    addBST(bst, 7);
-    addBST(bst, 1000);
-    addBST(bst, 3);
-    inOrder(bst);
+binNode* newNode(int);
+void insertBST(binNode* &, int);
+void inOrder(binNode* &);
+void preOrder(binNode* &);
+void postOrder(binNode* &);
 
+int main(int argc, char **argv){
+    binNode* tree;
+    insertBST(tree, 8);
+    insertBST(tree, 3);
+    insertBST(tree, 19);
+    insertBST(tree, 5);
+    insertBST(tree, 17);
+    insertBST(tree, -1);
+    insertBST(tree, 37);
+    insertBST(tree, 10);
+    insertBST(tree, 25);
+    
+    cout << "**" << endl;
+    inOrder(tree);
+    cout << "**" << endl;
+    preOrder(tree);
+    cout << "**" << endl;
+    postOrder(tree);
     return 0;
 }
-Node* getNewNode(int data){
-    Node* temp = new Node;
-    temp->data = data;
-    temp->left = NULL;
-    temp->right = NULL;
+
+binNode* newNode(int num){
+    binNode* temp = new binNode();
+    temp->value = num;
+    temp->left = nullptr;
+    temp->right = nullptr;
 
     return temp;
 }
-void addBST(Node* &root, int data){
-    if(root == NULL) root = getNewNode(data);
-    else if(data <= root->data) addBST(root->left, data);
-    else addBST(root->right, data);
+
+void insertBST(binNode* &tree, int num){
+    binNode* temp = newNode(num);
+    binNode* curr = tree;
+    if(tree == nullptr){
+        tree = temp;
+        return;
+    }
+    while(true){
+        if(temp->value <= curr->value){
+            if(curr->left == nullptr){
+                curr->left = temp;
+                return;
+            }
+            else{
+                curr = curr->left;
+            }
+        }
+        else{
+            if(curr->right == nullptr){
+                curr->right = temp;
+                return;
+            }
+            else{
+                curr = curr->right;
+            }
+        }
+    } 
+    return; //should never reach this point;
 }
-void inOrder(Node * root){
-    if (root == NULL) return;
-    if(root->left != NULL) inOrder(root->left);
-    cout << "IN: " << root->data << endl;
-    if(root->right != NULL) inOrder(root->right);
+
+void inOrder(binNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    inOrder(tree->left);
+    cout << tree->value << endl;
+    inOrder(tree->right);
+    return;
 }
-void preOrder(Node * root){
-    if(root == NULL) return;
-    cout << "PRE: " << root->data << endl;
-    if(root->left != NULL) preOrder(root->left);
-    if(root->right != NULL) preOrder(root->right);
+
+void preOrder(binNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    cout << tree->value << endl;
+    preOrder(tree->left);
+    preOrder(tree->right);
+    return;
 }
-void postOrder(Node * root){
-    if(root == NULL) return;
-    if(root->left != NULL) postOrder(root->left);
-    if(root->right != NULL) postOrder(root->right);
-    cout << "POST: " << root->data << endl;
+
+void postOrder(binNode* &tree){
+    if(tree == nullptr){
+        return;
+    }
+    postOrder(tree->left);
+    postOrder(tree->right);
+    cout << tree->value << endl;
+    return;
 }
+
