@@ -37,14 +37,17 @@ if __name__ == "__main__":
     english_national = "https://www.espn.com/soccer/scoreboard/_/league/eng.5/date/"
     chile = "https://www.espn.com/soccer/scoreboard/_/league/chi.1/date/"
     australia = "https://www.espn.com/soccer/scoreboard/_/league/AUS.1/date/"
-    costa_rica = "https://www.espn.com/soccer/scoreboard/_/league/crc.1/date/"
+    costaRica = "https://www.espn.com/soccer/scoreboard/_/league/crc.1/date/"
     guatemala = "https://www.espn.com/soccer/scoreboard/_/league/gua.1/date/"
     honduras = "https://www.espn.com/soccer/scoreboard/_/league/hon.1/date/"
-    base_url = australia
+    germany = "https://www.espn.com/soccer/scoreboard/_/league/GER.1/date/"
+    germany2 = "https://www.espn.com/soccer/scoreboard/_/league/ger.2/date/"
+ 
+    base_url = costaRica
     current_date = my.modify_x_date(my.date_for_files(), 0)
-    #current_date = "20190816"
-    end_date = 20200317
-    #end_date = 20190808
+    #current_date = "20200527"
+    end_date = 20200516
+    #end_date = 20200516
     ofile = open("gamedays.txt", 'w')
     if len(sys.argv) > 1:
         gamedays = getGameDays(sys.argv[1])

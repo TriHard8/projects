@@ -1,0 +1,229 @@
+20200308,Dynamo Dresden,SGD,2,FC Erzgebirge Aue,ERZ,1
+20200308,Holstein Kiel,HOL,1,SpVgg Greuther Furth,FUR,1
+20200308,SV Sandhausen,SVS,2,St Pauli,STP,2
+20200306,Nurnberg,NUR,0,Hannover 96,HAN,3
+20200306,VfL Osnabruck,OSN,2,SV Wehen Wiesbaden,WEH,6
+20200302,Hannover 96,HAN,3,Holstein Kiel,HOL,1
+20200229,FC Erzgebirge Aue,ERZ,3,Hamburg SV,HSV,0
+20200229,SpVgg Greuther Furth,FUR,2,VfB Stuttgart,STU,0
+20200229,SV Darmstadt 98,DRM,2,1. FC Heidenheim,FCH,0
+20200228,Karlsruher SC,KAR,0,Nurnberg,NUR,1
+20200228,SSV Jahn Regensburg,JAHN,1,Dynamo Dresden,SGD,2
+20200223,Nurnberg,NUR,1,SV Darmstadt 98,DRM,2
+20200223,SV Sandhausen,SVS,0,Karlsruher SC,KAR,2
+20200223,Arminia Bielefeld,DSC,1,Hannover 96,HAN,0
+20200217,VfL Bochum,BOC,0,VfB Stuttgart,STU,1
+20200215,Hannover 96,HAN,1,Hamburg SV,HSV,1
+20200215,SpVgg Greuther Furth,FUR,2,Arminia Bielefeld,DSC,4
+20200215,SSV Jahn Regensburg,JAHN,1,SV Wehen Wiesbaden,WEH,0
+20200214,1. FC Heidenheim,FCH,2,Nurnberg,NUR,2
+20200214,St Pauli,STP,0,Dynamo Dresden,SGD,0
+20200210,Holstein Kiel,HOL,2,St Pauli,STP,1
+20200207,Dynamo Dresden,SGD,2,SV Darmstadt 98,DRM,3
+20200207,SV Sandhausen,SVS,0,1. FC Heidenheim,FCH,1
+20200203,VfL Bochum,BOC,1,Hamburg SV,HSV,3
+20200202,1. FC Heidenheim,FCH,0,Dynamo Dresden,SGD,0
+20200202,Nurnberg,NUR,2,SV Sandhausen,SVS,0
+20200202,SV Darmstadt 98,DRM,2,VfL Osnabruck,OSN,2
+20200201,Hannover 96,HAN,2,SV Wehen Wiesbaden,WEH,2
+20200201,Karlsruher SC,KAR,0,Holstein Kiel,HOL,2
+20200201,St Pauli,STP,1,VfB Stuttgart,STU,1
+20200131,FC Erzgebirge Aue,ERZ,0,Arminia Bielefeld,DSC,0
+20200131,SSV Jahn Regensburg,JAHN,0,SpVgg Greuther Furth,FUR,2
+20200130,Hamburg SV,HSV,4,Nurnberg,NUR,1
+20200129,VfB Stuttgart,STU,3,1. FC Heidenheim,FCH,0
+20200129,Dynamo Dresden,SGD,1,Karlsruher SC,KAR,0
+20200129,Holstein Kiel,HOL,1,SV Darmstadt 98,DRM,1
+20200129,VfL Osnabruck,OSN,1,SV Sandhausen,SVS,3
+20200128,Arminia Bielefeld,DSC,2,VfL Bochum,BOC,0
+20200128,SpVgg Greuther Furth,FUR,3,St Pauli,STP,0
+20200128,SSV Jahn Regensburg,JAHN,1,Hannover 96,HAN,0
+20200128,SV Wehen Wiesbaden,WEH,1,FC Erzgebirge Aue,ERZ,0
+20191222,1. FC Heidenheim,FCH,3,VfL Osnabruck,OSN,1
+20191222,SV Sandhausen,SVS,2,Holstein Kiel,HOL,2
+20191222,VfL Bochum,BOC,2,SSV Jahn Regensburg,JAHN,3
+20191220,Karlsruher SC,KAR,0,SV Wehen Wiesbaden,WEH,1
+20191220,Nurnberg,NUR,2,Dynamo Dresden,SGD,0
+20191216,SV Darmstadt 98,DRM,1,VfB Stuttgart,STU,1
+20191213,FC Erzgebirge Aue,ERZ,1,SSV Jahn Regensburg,JAHN,0
+20191213,VfL Bochum,BOC,2,Hannover 96,HAN,1
+20191209,VfB Stuttgart,STU,3,Nurnberg,NUR,1
+20191207,Hannover 96,HAN,3,FC Erzgebirge Aue,ERZ,2
+20191207,Holstein Kiel,HOL,2,VfL Osnabruck,OSN,4
+20191207,SpVgg Greuther Furth,FUR,3,VfL Bochum,BOC,1
+20191206,Arminia Bielefeld,DSC,2,Karlsruher SC,KAR,2
+20191206,Hamburg SV,HSV,0,1. FC Heidenheim,FCH,1
+20191201,1. FC Heidenheim,FCH,1,SpVgg Greuther Furth,FUR,0
+20191201,SV Darmstadt 98,DRM,1,Arminia Bielefeld,DSC,3
+20191201,SV Sandhausen,SVS,2,VfB Stuttgart,STU,1
+20191129,Karlsruher SC,KAR,4,SSV Jahn Regensburg,JAHN,1
+20191129,VfL Osnabruck,OSN,2,Hamburg SV,HSV,1
+20191125,Hannover 96,HAN,1,SV Darmstadt 98,DRM,2
+20191124,SpVgg Greuther Furth,FUR,0,Nurnberg,NUR,0
+20191124,SSV Jahn Regensburg,JAHN,3,1. FC Heidenheim,FCH,1
+20191124,VfB Stuttgart,STU,3,Karlsruher SC,KAR,0
+20191123,Arminia Bielefeld,DSC,1,SV Sandhausen,SVS,1
+20191123,Hamburg SV,HSV,2,Dynamo Dresden,SGD,1
+20191123,SV Wehen Wiesbaden,WEH,3,Holstein Kiel,HOL,6
+20200301,Arminia Bielefeld,DSC,1,SV Wehen Wiesbaden,WEH,0
+20200301,St Pauli,STP,3,VfL Osnabruck,OSN,1
+20200301,VfL Bochum,BOC,4,SV Sandhausen,SVS,4
+20200222,Dynamo Dresden,SGD,1,VfL Bochum,BOC,2
+20200222,Hamburg SV,HSV,0,St Pauli,STP,2
+20200222,Holstein Kiel,HOL,0,1. FC Heidenheim,FCH,1
+20200222,VfB Stuttgart,STU,2,SSV Jahn Regensburg,JAHN,0
+20200221,SV Wehen Wiesbaden,WEH,1,SpVgg Greuther Furth,FUR,1
+20200221,VfL Osnabruck,OSN,0,FC Erzgebirge Aue,ERZ,0
+20200216,FC Erzgebirge Aue,ERZ,1,Holstein Kiel,HOL,2
+20200216,Karlsruher SC,KAR,1,VfL Osnabruck,OSN,1
+20200216,SV Darmstadt 98,DRM,1,SV Sandhausen,SVS,0
+20200209,Arminia Bielefeld,DSC,6,SSV Jahn Regensburg,JAHN,0
+20200209,SpVgg Greuther Furth,FUR,1,Hannover 96,HAN,3
+20200209,SV Wehen Wiesbaden,WEH,0,VfL Bochum,BOC,1
+20200208,Hamburg SV,HSV,2,Karlsruher SC,KAR,0
+20200208,VfB Stuttgart,STU,3,FC Erzgebirge Aue,ERZ,0
+20200208,VfL Osnabruck,OSN,0,Nurnberg,NUR,1
+20191221,FC Erzgebirge Aue,ERZ,3,SpVgg Greuther Furth,FUR,1
+20191221,Hannover 96,HAN,2,VfB Stuttgart,STU,2
+20191221,St Pauli,STP,3,Arminia Bielefeld,DSC,0
+20191221,SV Darmstadt 98,DRM,2,Hamburg SV,HSV,2
+20191215,Nurnberg,NUR,2,Holstein Kiel,HOL,2
+20191215,SV Sandhausen,SVS,1,Hamburg SV,HSV,1
+20191215,VfL Osnabruck,OSN,3,Dynamo Dresden,SGD,0
+20191214,1. FC Heidenheim,FCH,0,Arminia Bielefeld,DSC,0
+20191214,Karlsruher SC,KAR,1,SpVgg Greuther Furth,FUR,5
+20191214,St Pauli,STP,3,SV Wehen Wiesbaden,WEH,1
+20191208,Dynamo Dresden,SGD,1,SV Sandhausen,SVS,1
+20191208,SSV Jahn Regensburg,JAHN,1,St Pauli,STP,0
+20191208,SV Wehen Wiesbaden,WEH,0,SV Darmstadt 98,DRM,0
+20191122,FC Erzgebirge Aue,ERZ,3,St Pauli,STP,1
+20191122,VfL Bochum,BOC,1,VfL Osnabruck,OSN,1
+20191108,Dynamo Dresden,SGD,1,SV Wehen Wiesbaden,WEH,0
+20191108,St Pauli,STP,1,VfL Bochum,BOC,1
+20191104,VfL Bochum,BOC,3,Nurnberg,NUR,1
+20191103,Arminia Bielefeld,DSC,2,Holstein Kiel,HOL,1
+20191103,SV Wehen Wiesbaden,WEH,1,Hamburg SV,HSV,1
+20191103,VfB Stuttgart,STU,3,Dynamo Dresden,SGD,1
+20191101,Hannover 96,HAN,1,SV Sandhausen,SVS,1
+20191101,SSV Jahn Regensburg,JAHN,3,VfL Osnabruck,OSN,3
+20191028,SV Sandhausen,SVS,0,SV Wehen Wiesbaden,WEH,0
+20191027,1. FC Heidenheim,FCH,1,St Pauli,STP,0
+20191027,Nurnberg,NUR,1,SSV Jahn Regensburg,JAHN,1
+20191027,VfL Osnabruck,OSN,0,SpVgg Greuther Furth,FUR,0
+20191026,Dynamo Dresden,SGD,0,Arminia Bielefeld,DSC,1
+20191026,Hamburg SV,HSV,6,VfB Stuttgart,STU,2
+20191026,Karlsruher SC,KAR,3,Hannover 96,HAN,3
+20191025,Holstein Kiel,HOL,2,VfL Bochum,BOC,1
+20191025,SV Darmstadt 98,DRM,1,FC Erzgebirge Aue,ERZ,0
+20191021,Arminia Bielefeld,DSC,1,Hamburg SV,HSV,1
+20191020,Hannover 96,HAN,0,VfL Osnabruck,OSN,0
+20191020,VfB Stuttgart,STU,0,Holstein Kiel,HOL,1
+20191020,VfL Bochum,BOC,3,Karlsruher SC,KAR,3
+20191019,SSV Jahn Regensburg,JAHN,1,SV Sandhausen,SVS,0
+20191019,St Pauli,STP,0,SV Darmstadt 98,DRM,1
+20191019,SV Wehen Wiesbaden,WEH,0,1. FC Heidenheim,FCH,0
+20191018,FC Erzgebirge Aue,ERZ,4,Nurnberg,NUR,3
+20191018,SpVgg Greuther Furth,FUR,2,Dynamo Dresden,SGD,0
+20191007,VfL Osnabruck,OSN,0,Arminia Bielefeld,DSC,1
+20191006,1. FC Heidenheim,FCH,2,VfL Bochum,BOC,3
+20191006,Holstein Kiel,HOL,1,SSV Jahn Regensburg,JAHN,2
+20191006,Nurnberg,NUR,1,St Pauli,STP,1
+20191005,Dynamo Dresden,SGD,0,Hannover 96,HAN,2
+20191005,Hamburg SV,HSV,2,SpVgg Greuther Furth,FUR,0
+20191005,SV Sandhausen,SVS,2,FC Erzgebirge Aue,ERZ,2
+20191004,SV Darmstadt 98,DRM,1,Karlsruher SC,KAR,1
+20191004,VfB Stuttgart,STU,1,SV Wehen Wiesbaden,WEH,2
+20190930,Hannover 96,HAN,0,Nurnberg,NUR,4
+20190929,FC Erzgebirge Aue,ERZ,4,Dynamo Dresden,SGD,1
+20190929,SpVgg Greuther Furth,FUR,0,Holstein Kiel,HOL,3
+20190929,St Pauli,STP,2,SV Sandhausen,SVS,0
+20190927,Arminia Bielefeld,DSC,0,VfB Stuttgart,STU,1
+20190927,SV Wehen Wiesbaden,WEH,2,VfL Osnabruck,OSN,0
+20190921,Nurnberg,NUR,1,Karlsruher SC,KAR,1
+20190921,SV Sandhausen,SVS,1,VfL Bochum,BOC,1
+20190921,SV Wehen Wiesbaden,WEH,2,Arminia Bielefeld,DSC,5
+20190921,VfB Stuttgart,STU,2,SpVgg Greuther Furth,FUR,0
+20190920,1. FC Heidenheim,FCH,1,SV Darmstadt 98,DRM,0
+20190920,Holstein Kiel,HOL,1,Hannover 96,HAN,2
+20190916,St Pauli,STP,2,Hamburg SV,HSV,0
+20190915,FC Erzgebirge Aue,ERZ,1,VfL Osnabruck,OSN,0
+20190915,SV Darmstadt 98,DRM,3,Nurnberg,NUR,3
+20190915,VfL Bochum,BOC,2,Dynamo Dresden,SGD,2
+20190902,VfB Stuttgart,STU,2,VfL Bochum,BOC,1
+20190901,Hamburg SV,HSV,3,Hannover 96,HAN,0
+20190901,Holstein Kiel,HOL,1,FC Erzgebirge Aue,ERZ,1
+20190901,VfL Osnabruck,OSN,3,Karlsruher SC,KAR,0
+20200307,1. FC Heidenheim,FCH,3,Karlsruher SC,KAR,1
+20200307,Hamburg SV,HSV,2,SSV Jahn Regensburg,JAHN,1
+20200307,SV Darmstadt 98,DRM,0,VfL Bochum,BOC,0
+20191130,Dynamo Dresden,SGD,1,Holstein Kiel,HOL,2
+20191130,Nurnberg,NUR,0,SV Wehen Wiesbaden,WEH,2
+20191130,St Pauli,STP,0,Hannover 96,HAN,1
+20191130,VfL Bochum,BOC,2,FC Erzgebirge Aue,ERZ,0
+20191111,Karlsruher SC,KAR,1,FC Erzgebirge Aue,ERZ,1
+20191110,1. FC Heidenheim,FCH,4,Hannover 96,HAN,0
+20191110,Nurnberg,NUR,1,Arminia Bielefeld,DSC,5
+20191110,SV Darmstadt 98,DRM,2,SSV Jahn Regensburg,JAHN,2
+20191102,FC Erzgebirge Aue,ERZ,1,1. FC Heidenheim,FCH,1
+20191102,SpVgg Greuther Furth,FUR,3,SV Darmstadt 98,DRM,1
+20191102,St Pauli,STP,2,Karlsruher SC,KAR,2
+20190928,Karlsruher SC,KAR,1,1. FC Heidenheim,FCH,1
+20190928,SSV Jahn Regensburg,JAHN,2,Hamburg SV,HSV,2
+20190928,VfL Bochum,BOC,2,SV Darmstadt 98,DRM,2
+20190922,Dynamo Dresden,SGD,2,SSV Jahn Regensburg,JAHN,1
+20190922,Hamburg SV,HSV,4,FC Erzgebirge Aue,ERZ,0
+20190922,VfL Osnabruck,OSN,1,St Pauli,STP,1
+20190914,1. FC Heidenheim,FCH,3,Holstein Kiel,HOL,0
+20190914,Hannover 96,HAN,0,Arminia Bielefeld,DSC,2
+20190914,SSV Jahn Regensburg,JAHN,2,VfB Stuttgart,STU,3
+20190913,Karlsruher SC,KAR,1,SV Sandhausen,SVS,0
+20190913,SpVgg Greuther Furth,FUR,2,SV Wehen Wiesbaden,WEH,1
+20190831,Arminia Bielefeld,DSC,2,SpVgg Greuther Furth,FUR,2
+20190831,Dynamo Dresden,SGD,3,St Pauli,STP,3
+20190831,SV Wehen Wiesbaden,WEH,0,SSV Jahn Regensburg,JAHN,5
+20190830,Nurnberg,NUR,2,1. FC Heidenheim,FCH,2
+20190830,SV Sandhausen,SVS,1,SV Darmstadt 98,DRM,0
+20190826,St Pauli,STP,2,Holstein Kiel,HOL,1
+20190825,1. FC Heidenheim,FCH,0,SV Sandhausen,SVS,2
+20190825,Karlsruher SC,KAR,2,Hamburg SV,HSV,4
+20190825,Nurnberg,NUR,1,VfL Osnabruck,OSN,0
+20190824,Hannover 96,HAN,1,SpVgg Greuther Furth,FUR,1
+20190824,SSV Jahn Regensburg,JAHN,1,Arminia Bielefeld,DSC,3
+20190824,VfL Bochum,BOC,3,SV Wehen Wiesbaden,WEH,3
+20190823,FC Erzgebirge Aue,ERZ,0,VfB Stuttgart,STU,0
+20190823,SV Darmstadt 98,DRM,0,Dynamo Dresden,SGD,0
+20190816,Hamburg SV,HSV,1,VfL Bochum,BOC,0
+20190816,SV Sandhausen,SVS,3,Nurnberg,NUR,2
+20190805,Nurnberg,NUR,0,Hamburg SV,HSV,4
+20190804,1. FC Heidenheim,FCH,2,VfB Stuttgart,STU,2
+20190804,FC Erzgebirge Aue,ERZ,3,SV Wehen Wiesbaden,WEH,2
+20190804,SV Darmstadt 98,DRM,2,Holstein Kiel,HOL,0
+20190802,SV Sandhausen,SVS,0,VfL Osnabruck,OSN,1
+20190802,VfL Bochum,BOC,3,Arminia Bielefeld,DSC,3
+20190802,St Pauli,STP,1,SpVgg Greuther Furth,FUR,3
+20190729,Arminia Bielefeld,DSC,1,St Pauli,STP,1
+20190728,Hamburg SV,HSV,1,SV Darmstadt 98,DRM,1
+20190728,SpVgg Greuther Furth,FUR,0,FC Erzgebirge Aue,ERZ,2
+20190728,SSV Jahn Regensburg,JAHN,3,VfL Bochum,BOC,1
+20190728,SV Wehen Wiesbaden,WEH,1,Karlsruher SC,KAR,2
+20190727,Dynamo Dresden,SGD,0,Nurnberg,NUR,1
+20190727,Holstein Kiel,HOL,1,SV Sandhausen,SVS,1
+20190727,VfL Osnabruck,OSN,1,1. FC Heidenheim,FCH,3
+20191109,Holstein Kiel,HOL,1,Hamburg SV,HSV,1
+20191109,SV Sandhausen,SVS,3,SpVgg Greuther Furth,FUR,2
+20191109,VfL Osnabruck,OSN,1,VfB Stuttgart,STU,0
+20190819,VfL Osnabruck,OSN,4,SV Darmstadt 98,DRM,0
+20190818,Dynamo Dresden,SGD,2,1. FC Heidenheim,FCH,1
+20190818,Holstein Kiel,HOL,2,Karlsruher SC,KAR,1
+20190818,SpVgg Greuther Furth,FUR,1,SSV Jahn Regensburg,JAHN,0
+20190817,Arminia Bielefeld,DSC,3,FC Erzgebirge Aue,ERZ,1
+20190817,SV Wehen Wiesbaden,WEH,0,Hannover 96,HAN,3
+20190817,VfB Stuttgart,STU,2,St Pauli,STP,1
+20190803,Karlsruher SC,KAR,4,Dynamo Dresden,SGD,2
+20190803,Hannover 96,HAN,1,SSV Jahn Regensburg,JAHN,1
+20190726,VfB Stuttgart,STU,2,Hannover 96,HAN,1
+20200309,VfB Stuttgart,STU,1,Arminia Bielefeld,DSC,1
+20200516,FC Erzgebirge Aue,ERZ,3,SV Sandhausen,SVS,1
+20200516,Karlsruher SC,KAR,2,SV Darmstadt 98,DRM,0
+20200516,SSV Jahn Regensburg,JAHN,2,Holstein Kiel,HOL,2
+20200516,VfL Bochum,BOC,3,1. FC Heidenheim,FCH,0

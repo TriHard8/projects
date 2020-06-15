@@ -1,0 +1,5 @@
+league,league_team_site
+MLB,https://www.basketball-reference.com/teams/
+MLB,https://www.pro-football-reference.com/teams/
+MLB,https://www.hockey-reference.com/teams/
+MLB,https://www.baseball-reference.com/teams/
