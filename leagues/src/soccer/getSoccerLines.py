@@ -72,6 +72,7 @@ def getBetUS(urls, gameday):
     with open('/home/trihard8/repo/projects/leagues/src/soccer/leagueNameMapping.csv', 'r') as f:
         next(f)
         for line in f:
+            #print(line.strip())
             temp = line.strip().split(',')
             teams[temp[0]] = temp[1]
  

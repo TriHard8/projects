@@ -2,6 +2,7 @@
 
 import requests
 import bs4
+import re
 from bs4 import BeautifulSoup
 from datetime import date
 from datetime import timedelta
@@ -9,11 +10,11 @@ from datetime import timedelta
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 #url = "https://www.espn.com/nhl/scoreboard"
-dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/68857637?category=game-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/18972667?category=game-lines&subcategory=money-line" ]
+dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/2168?category=match-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/2169?category=match-lines&subcategory=money-line" ]
 fd_urls = ["https://sportsbook.fanduel.com/sports/navigation/1010.1/9874.3"]
-betUS_urls = [  "https://www.betus.com.pa/sportsbook/mens-tennis-odds.aspx",
-                "https://www.betus.com.pa/sportsbook/womens-tennis-odds.aspx"]
+betUS_urls = [  "https://www.betus.com.pa/sportsbook/us_open_women_2020-tennis-odds.aspx",
+                "https://www.betus.com.pa/sportsbook/us_open_men_2020-tennis-odds.aspx"]
                 
 def getSoup(url):
     response = requests.get(url, headers=headers)
@@ -48,6 +49,12 @@ def formatDateBetUS(oldDate):
         print("ERROR in date generation!\n{}\n{}".format(oldDate,newDate))
     return newDate
 
+def MLtoOdds(num):
+    if num < 0:
+        return abs(num)/(abs(num) + 100)
+    else:
+        return 100/(num + 100)
+
 def formatTimeBetUS(oldTime):
     newTime = ""
     time = oldTime.split(':')
@@ -72,21 +79,35 @@ def getBetUS(urls):
         soup = getSoup(url)
         tables = soup.find_all('div', class_ = 'game-block')
         for table in tables:
-            date = formatDateBetUS(table.find('h4', class_ = 'sport-header').text.strip())
+            date = formatDateBetUS(table.find('span', class_ = 'date font-weight-normal').text.strip())
             for match in table.find_all('div', class_ = 'normal'):
-                time = formatTimeBetUS(match.find('span', class_ = 'time').find('a').text)
-                visitor = match.find('tr', class_ = 'visitor').find('td', class_ = 'team').text.strip()
-                node = match.find('tr', class_ = 'visitor').find('td', class_ = 'money').find('a')
+                time = formatTimeBetUS(match.find('span', class_ = 'time').find('span').text)
+                visitor = match.find('div', class_ = re.compile('.*visitor.*')).find('div', class_ = re.compile('.*team.*')).text.strip()
+                visitorML = match.find('div', class_ = re.compile('.*visitor-lines.*')).find('span', id = re.compile('.*VisitorMoneyLine.*'))
+                if visitorML:
+                    visitorML = visitorML.text.strip()
+                else:
+                    visitorML = ""
+                '''
                 if node is not None:
                     visitorML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
                 else:
                     visitorML = ""
-                home = match.find('tr', class_ = 'home').find('td', class_ = 'team').text.strip()
-                node = match.find('tr', class_ = 'home').find('td', class_ = 'money').find('a')
+                '''
+                home = match.find('div', class_ = re.compile('.*home.*')).find('div', class_ = re.compile('.*team.*')).text.strip()
+                #home = match.find('tr', class_ = 'home').find('td', class_ = 'team').text.strip()
+                #node = match.find('tr', class_ = 'home').find('td', class_ = 'money').find('a')
+                homeML = match.find('div', class_ = re.compile('.*home-lines.*')).find('span', id = re.compile('.*MoneyLine.*'))
+                if homeML:
+                    homeML = homeML.text.strip()
+                else:
+                    homeML = ""
+                '''
                 if node is not None:
                     homeML = "".join([t for t in node.contents if type(t) == bs4.element.NavigableString])
                 else:
                     homeML = ""
+                '''
                 matches.append([date, visitor, home, visitorML, homeML])
     return matches
      
@@ -120,23 +141,71 @@ def getDraftKings(urls):
             matches.append(match)
     return matches
 
-matches = getDraftKings(dk_urls)
-print("DraftKings")
-for match in matches:
-    for i in range(len(match)):
-        if i == len(match)-1:
-            print(match[i])
-        else:
-            print(match[i],end=',')    
+betUS2DK = {}
+with open("/home/trihard8/repo/projects/tennis/src/betUS2DKNames.csv", 'r') as f:
+    for line in f:
+        line = line.strip().split(',')
+        betUS2DK[line[0]] = line[1]
 
-matches = getBetUS(betUS_urls)
-print("BetUS")
+players = {}
+print("DraftKings")
+matches = getDraftKings(dk_urls)
 for match in matches:
+    if match[3] == '':
+        continue
+    if match[4] == '':
+        continue
+    if match[3] == 'Ev':
+        match[3] = "+100"
+    if match[4] == 'Ev':
+        match[4] == "100"
+    players[match[1]] = [MLtoOdds(int(match[3]))]
+    players[match[2]] = [MLtoOdds(int(match[4]))]
+    '''
     for i in range(len(match)):
         if i == len(match)-1:
             print(match[i])
         else:
             print(match[i],end=',')    
+    '''
+print("BetUS")
+matches = getBetUS(betUS_urls)
+for match in matches:
+    print(type(match[1]))
+    if match[1] in betUS2DK.keys():
+        match[1] = betUS2DK[match[1]]
+    if match[2] in betUS2DK.keys():
+        match[2] = betUS2DK[match[2]]
+    if match[3] == '':
+        continue
+    if match[4] == '':
+        continue
+    if match[3] == 'Ev':
+        match[3] = "+100"
+    if match[4] == 'Ev':
+        match[4] = "+100"
+    if match[1] not in players.keys():
+        print(match[1])
+        players[match[1]] = [MLtoOdds(int(match[3]))]
+    else:
+        players[match[1]].append(MLtoOdds(int(match[3])))
+        
+    if match[2] not in players.keys():
+        print(match[2])
+        players[match[2]] = [MLtoOdds(int(match[4]))]
+    else:
+        players[match[2]].append(MLtoOdds(int(match[4])))
+
+    '''
+    for i in range(len(match)):
+        if i == len(match)-1:
+            print(match[i])
+        else:
+            print(match[i],end=',')    
+    '''
+
+for key,value in players.items():
+    print(key, value)
 
 print("FanDuel")
 '''

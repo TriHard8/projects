@@ -56,7 +56,8 @@ def get_soup(site):
         print("Invalid Status Code")
         exit(1)
     #print(response.content)
-    return bs.BeautifulSoup(r.content, 'html.parser')
+    #return bs.BeautifulSoup(r.content, 'html.parser')
+    return bs.BeautifulSoup(r.content, 'lxml')
  
 def get_soup_str(html):
     return bs.BeautifulSoup(html, 'html.parser')
