@@ -76,5 +76,7 @@ for lineup in itertools.combinations(players, 5):
 heapq.heapify(points)
 #print(heapq.nlargest(20,points))
 
+print(maxPoints)
+
 for p in heapq.nlargest(int(sys.argv[1]),points):
     print(my.list_2_csv(points2Lineups[p]), end='')

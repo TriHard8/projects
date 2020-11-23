@@ -258,7 +258,7 @@ class Reference():
                 gamesOfile = open("{}refNbaGames2020.csv".format(self.data_dir), 'w')
                 gamesOfile.write("date,home,visitor,site\n")
                 dates = set()
-                months = ["October", "November", "December", "January", "February", "March", "July", "August"]
+                months = ["October", "November", "December", "January", "February", "March", "July", "August", "September"]
                 for month in months:
                     soup = my.get_soup("https://www.basketball-reference.com/leagues/NBA_2020_games-{}.html".format(month.lower()))
                     table = soup.find('table', {'id' : 'schedule'})

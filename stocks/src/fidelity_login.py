@@ -4,6 +4,7 @@ import re
 import os
 import sys
 configfile = "{0}/repo/projects/utils/".format(os.path.expanduser('~'))
+#configfile = "{0}/repo/projects/utils/".format(os.path.expanduser('/home/trihard8'))
 sys.path.append(os.path.dirname(os.path.expanduser(configfile)))
 import my_utils as my
 import time
@@ -45,13 +46,22 @@ with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
             pwd = f.readline().rstrip('\n')
             break
 
-stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
 
-
-#options = Options()
-#options.add_argument("--headless")
+options = Options()
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_experimental_option('useAutomationExtension',False)
+#options.add_argument("headless")
+options.add_argument("window-size=1920,1080")
+options.add_argument("allow-running-insecure-content")
+options.add_argument("ignore-certificate-errors")
+options.add_argument("disable-gpu")
+options.add_argument("disable-extensions")
+options.add_argument("proxy-server='direct://'")
+options.add_argument("proxy-bypass-list=*")
+options.add_argument("start-maximized")
 #driver = webdriver.Chrome(options=options)
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=options)
 driver.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
 action = action_chains.ActionChains(driver)
 
@@ -65,10 +75,16 @@ elem = driver.find_element_by_id("fs-login-button").click()
 time.sleep(5)
 option_page = "https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChain?symbols="
 
+stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/options_stocks.csv".format(os.path.expanduser('~')) 
+
 with open(stock_list, 'r') as f:
-    next(f)
+    if 'options' not in stock_list:
+        next(f)
     for line in f:
         symbol = line.strip().split(',')[0]
+        if '1' in symbol:
+            continue
         
         driver.get("{0}{1}".format(option_page, symbol))
         #try:

@@ -212,7 +212,7 @@ void dBaseNBA::buildPlayerData(){
             "plusMinus int not null);";
 
     build( sql );
-    cout << "Tables Created" << endl;
+    cout << "NBA Tables Created" << endl;
     sql =   "create view fantasy as ( select date, playername, playerteam, cast(fg*2 as decimal(3,1)) as fg," \
             "cast(fg3*1.5 as decimal(3,1)) as fg3, cast(ft as decimal(3,1)) as ft," \
             "cast(1.25*(offrebounds + defrebounds) as decimal(3,1)) as rebounds, cast(assist*1.5 as decimal(3,1)) as assist," \
@@ -223,7 +223,7 @@ void dBaseNBA::buildPlayerData(){
             "join (select playername, playerteam, max(date) as date from fantasy group by playername, playerteam) as B " \
             "on A.date=B.date and A.playername=B.playername and A.playerteam=B.playerteam);";
     build( sql );
-    cout << "Views Created" << endl;
+    cout << "NBA Views Created" << endl;
 }
 vector<vector<string>> dBase::query(const string &sql){
     nontransaction N(*C);
