@@ -76,6 +76,7 @@ time.sleep(5)
 option_page = "https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChain?symbols="
 
 stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')) 
 #stock_list = "{0}/repo/projects/stocks/data/options_stocks.csv".format(os.path.expanduser('~')) 
 
 with open(stock_list, 'r') as f:
@@ -86,7 +87,14 @@ with open(stock_list, 'r') as f:
         if '1' in symbol:
             continue
         
+#        try:
+#            driver.set_page_load_timeout(10) 
         driver.get("{0}{1}".format(option_page, symbol))
+#        except:
+#            driver.close()
+#            driver = webdriver.Chrome(options=options) 
+#            driver.set_page_load_timeout(10) 
+#            driver.get("{0}{1}".format(option_page, symbol))
         #try:
         #    driver.find_element_by_xpath("//a[@title='Click to show or hide.']").click() 
         #except:
@@ -103,113 +111,120 @@ with open(stock_list, 'r') as f:
             except:
                 continue
 
-        innerHTML = driver.execute_script("return document.body.innerHTML")
-        soup = my.get_soup_str(innerHTML)
-        price = "No Options"
-        updown = "down"
-        for line in soup.find_all("div", {"class" : "company-main"}):
-            for number in line.find_all("span", {"class" : "main-number"}):
-                price = number.string[1:].replace(',','')
-            for direction in line.find_all("span", {"class" : "up-down"}):
-                if "green" in direction["style"]: updown = "up" 
-    
-        #for number in soup.find_all("span", {"class" : "main-number"}):
-        #    price = number.string[1:].replace(',','')
-    
-        #print("{0} : {1} : {2}".format(symbol, price, updown))
-
-        #for button in soup.find_all("a", {"title" : "Click to show or hide."}):
-        #    print("this")
-        for table in soup.find_all("div", {"class" : "symbol-results-data-table"}):
-            for header in table.find_all("thead", {"class" : "js-lock-target"}):
-                '''
-                    Because there is a class = "js-lock-target clone" which the header results
-                    to a list as ["js-lock-target", "clone"]
-                '''
-                #if len(header['class']) == 1:
-                #    for rows in header.find_all("th"): 
-                #        if rows.has_attr('name'):
-                #            print(rows['name'])
-            strike_date = ""
-            days_to_expiry_regex = "(.+)\(([0-9]+)\s+.+"
-            days_to_expiry = ""
-            ask_call = bid_call = strike = last_price_call = daily_change_call = imp_vol_call = delta_call = 0.0
-            ask_put = bid_put = last_price_put = daily_change_put = imp_vol_put = delta_put = 0.0
-            count = vol_call = open_int_call = vol_put = open_int_put = 0
+        try:
+            innerHTML = driver.execute_script("return document.body.innerHTML")
             
-            for body in table.find_all("tbody"):
-                for row in body.find_all("tr"):
-                    try:
-                        m = re.match(days_to_expiry_regex, row['id'])
-                    except:
-                        print(symbol)
-                        continue
-                    if m:
-                        days_to_expiry = int(m.group(2))
-                        expiry = m.group(1)
-                    else:
-                        count += 1
-                        for data in row.find_all("td"):
-                            if data.has_attr("name"):
-                                if data["name"] == "Ask Calls":
-                                    ask_call = float(data.string.replace(',',''))
-                                elif data["name"] == "Strike":
-                                    strike = float(data.string.replace(',',''))
-                                elif data["name"] == "Last Calls":
-                                    last_price_call = float(data.string.replace(',',''))
-                                elif data["name"] == "Change Calls":
-                                    daily_change_call = float(data.string.replace(',',''))
-                                elif data["name"] == "Bid Calls":
-                                    bid_call = float(data.string.replace(',',''))
-                                elif data["name"] == "Volume Calls":
-                                    datum = data.find("span")
-                                    vol_call = int(datum.string.replace(",",""))
-                                elif data["name"] == "Open Int Calls":
-                                    datum = data.find("span")
-                                    open_int_call = int(datum.string.replace(",",""))
-                                elif data["name"] == "Imp Vol Calls":
-                                    if data.string == "--":
-                                        imp_vol_call = 0.0
-                                    else:
-                                        imp_vol_call = float(data.string.strip().rstrip('%'))
-                                elif data["name"] == "Delta Calls":
-                                    if data.string == "--":
-                                        imp_vol_call = 0.0
-                                    else:
-                                        delta_call = float(data.string.replace(',',''))
-                                elif data["name"] == "Ask Puts":
-                                    ask_put = float(data.string.replace(',',''))
-                                elif data["name"] == "Last Puts":
-                                    last_price_put = float(data.string.replace(',',''))
-                                elif data["name"] == "Change Puts":
-                                    daily_change_put = float(data.string.replace(',',''))
-                                elif data["name"] == "Bid Puts":
-                                    bid_put = float(data.string.replace(',',''))
-                                elif data["name"] == "Volume Puts":
-                                    datum = data.find("span")
-                                    vol_put = int(datum.string.replace(",",""))
-                                elif data["name"] == "Open Int Puts":
-                                    datum = data.find("span")
-                                    open_int_put = int(datum.string.replace(",",""))
-                                elif data["name"] == "Imp Vol Puts":
-                                    if data.string == "--":
-                                        imp_vol_call = 0.0
-                                    else:
-                                        imp_vol_put = float(data.string.rstrip('%'))
-                                elif data["name"] == "Delta Puts":
-                                    if data.string == "--":
-                                        imp_vol_call = 0.0
-                                    else:
-                                        delta_put = float(data.string.replace(',',''))
+            soup = my.get_soup_str(innerHTML)
+            price = "No Options"
+            updown = "down"
+            for line in soup.find_all("div", {"class" : "company-main"}):
+                for number in line.find_all("span", {"class" : "main-number"}):
+                    price = number.string[1:].replace(',','')
+                for direction in line.find_all("span", {"class" : "up-down"}):
+                    if "green" in direction["style"]: updown = "up" 
+    
+            #for number in soup.find_all("span", {"class" : "main-number"}):
+            #    price = number.string[1:].replace(',','')
+    
+            #print("{0} : {1} : {2}".format(symbol, price, updown))
+    
+            #for button in soup.find_all("a", {"title" : "Click to show or hide."}):
+            #    print("this")
+            for table in soup.find_all("div", {"class" : "symbol-results-data-table"}):
+                for header in table.find_all("thead", {"class" : "js-lock-target"}):
+                    '''
+                        Because there is a class = "js-lock-target clone" which the header results
+                        to a list as ["js-lock-target", "clone"]
+                    '''
+                    #if len(header['class']) == 1:
+                    #    for rows in header.find_all("th"): 
+                    #        if rows.has_attr('name'):
+                    #            print(rows['name'])
+                strike_date = ""
+                days_to_expiry_regex = "(.+)\(([0-9]+)\s+.+"
+                days_to_expiry = ""
+                ask_call = bid_call = strike = last_price_call = daily_change_call = imp_vol_call = delta_call = 0.0
+                ask_put = bid_put = last_price_put = daily_change_put = imp_vol_put = delta_put = 0.0
+                count = vol_call = open_int_call = vol_put = open_int_put = 0
+                
+                for body in table.find_all("tbody"):
+                    for row in body.find_all("tr"):
+                        try:
+                            m = re.match(days_to_expiry_regex, row['id'])
+                        except:
+                            print(symbol)
+                            continue
+                        if m:
+                            days_to_expiry = int(m.group(2))
+                            expiry = m.group(1)
+                        else:
+                            count += 1
+                            for data in row.find_all("td"):
+                                if data.has_attr("name"):
+                                    if data["name"] == "Ask Calls":
+                                        ask_call = float(data.string.replace(',',''))
+                                    elif data["name"] == "Strike":
+                                        strike = float(data.string.replace(',',''))
+                                    elif data["name"] == "Last Calls":
+                                        last_price_call = float(data.string.replace(',',''))
+                                    elif data["name"] == "Change Calls":
+                                        daily_change_call = float(data.string.replace(',',''))
+                                    elif data["name"] == "Bid Calls":
+                                        bid_call = float(data.string.replace(',',''))
+                                    elif data["name"] == "Volume Calls":
+                                        datum = data.find("span")
+                                        vol_call = int(datum.string.replace(",",""))
+                                    elif data["name"] == "Open Int Calls":
+                                        datum = data.find("span")
+                                        open_int_call = int(datum.string.replace(",",""))
+                                    elif data["name"] == "Imp Vol Calls":
+                                        if data.string == "--":
+                                            imp_vol_call = 0.0
+                                        else:
+                                            imp_vol_call = float(data.string.strip().rstrip('%'))
+                                    elif data["name"] == "Delta Calls":
+                                        if data.string == "--":
+                                            imp_vol_call = 0.0
+                                        else:
+                                            delta_call = float(data.string.replace(',',''))
+                                    elif data["name"] == "Ask Puts":
+                                        ask_put = float(data.string.replace(',',''))
+                                    elif data["name"] == "Last Puts":
+                                        last_price_put = float(data.string.replace(',',''))
+                                    elif data["name"] == "Change Puts":
+                                        daily_change_put = float(data.string.replace(',',''))
+                                    elif data["name"] == "Bid Puts":
+                                        bid_put = float(data.string.replace(',',''))
+                                    elif data["name"] == "Volume Puts":
+                                        datum = data.find("span")
+                                        vol_put = int(datum.string.replace(",",""))
+                                    elif data["name"] == "Open Int Puts":
+                                        datum = data.find("span")
+                                        open_int_put = int(datum.string.replace(",",""))
+                                    elif data["name"] == "Imp Vol Puts":
+                                        if data.string == "--":
+                                            imp_vol_call = 0.0
+                                        else:
+                                            imp_vol_put = float(data.string.rstrip('%'))
+                                    elif data["name"] == "Delta Puts":
+                                        if data.string == "--":
+                                            imp_vol_call = 0.0
+                                        else:
+                                            delta_put = float(data.string.replace(',',''))
                                 
-                        #if count == 5:
-                        #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
-                        #print("{},{},{},{},{}".format(symbol,last_price_call,strike,formatdate(expiry),(ask_call+strike)/float(price) - 1))
-                        print("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(symbol,formatdate(expiry),strike,price,updown,
-                                                                                          last_price_call,daily_change_call,bid_call,ask_call,vol_call,open_int_call, imp_vol_call,delta_call,
-                                                                                          last_price_put,daily_change_put,bid_put,ask_put,vol_put,open_int_put,imp_vol_put,delta_put
-                                                                                         )
-                             )
-                        #elif count == 10:
-                        #    count = 0                 
+                            #if count == 5:
+                            #print("{},{},{},{}".format(symbol,strike,expiry,(ask+strike)/float(price) - 1))
+                            #print("{},{},{},{},{}".format(symbol,last_price_call,strike,formatdate(expiry),(ask_call+strike)/float(price) - 1))
+                            print("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(symbol,formatdate(expiry),strike,price,updown,
+                                                                                              last_price_call,daily_change_call,bid_call,ask_call,vol_call,open_int_call, imp_vol_call,delta_call,
+                                                                                              last_price_put,daily_change_put,bid_put,ask_put,vol_put,open_int_put,imp_vol_put,delta_put
+                                                                                             )
+                                 )
+                            #elif count == 10:
+                            #    count = 0                 
+
+        except:
+            print("Problem with {}".format(symbol))
+
+
 driver.close()
