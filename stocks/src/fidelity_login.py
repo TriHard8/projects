@@ -37,6 +37,35 @@ def formatdate(oldDate):
     else:
         return newDate
 
+def getFidelityDriver():
+    options = Options()
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_experimental_option('useAutomationExtension',False)
+    #options.add_argument("headless")
+    options.add_argument("window-size=1920,1080")
+    options.add_argument("allow-running-insecure-content")
+    options.add_argument("ignore-certificate-errors")
+    options.add_argument("disable-gpu")
+    options.add_argument("disable-extensions")
+    options.add_argument("proxy-server='direct://'")
+    options.add_argument("proxy-bypass-list=*")
+    options.add_argument("start-maximized")
+    #driver = webdriver.Chrome(options=options)
+    driv = webdriver.Chrome(options=options)
+    driv.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
+    action = action_chains.ActionChains(driv)
+    
+    time.sleep(2)
+    elem = driv.find_element_by_id("userId-input")
+    elem.send_keys(user + keys.Keys.TAB)
+    elem = driv.find_element_by_id("password")
+    elem.send_keys(pwd + keys.Keys.TAB)
+    elem = driv.find_element_by_id("fs-login-button").click()
+    
+    time.sleep(5)
+    return driv
+
 user = ""
 pwd = ""
 with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
@@ -47,61 +76,65 @@ with open("{0}/password".format(os.path.expanduser('~')), 'r') as f:
             break
 
 
-options = Options()
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-dev-shm-usage")
-options.add_experimental_option('useAutomationExtension',False)
-#options.add_argument("headless")
-options.add_argument("window-size=1920,1080")
-options.add_argument("allow-running-insecure-content")
-options.add_argument("ignore-certificate-errors")
-options.add_argument("disable-gpu")
-options.add_argument("disable-extensions")
-options.add_argument("proxy-server='direct://'")
-options.add_argument("proxy-bypass-list=*")
-options.add_argument("start-maximized")
-#driver = webdriver.Chrome(options=options)
-driver = webdriver.Chrome(options=options)
-driver.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
-action = action_chains.ActionChains(driver)
-
-time.sleep(2)
-elem = driver.find_element_by_id("userId-input")
-elem.send_keys(user + keys.Keys.TAB)
-elem = driver.find_element_by_id("password")
-elem.send_keys(pwd + keys.Keys.TAB)
-elem = driver.find_element_by_id("fs-login-button").click()
-
-time.sleep(5)
+driver = getFidelityDriver()
 option_page = "https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChain?symbols="
 
-stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')) 
 #stock_list = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')) 
-#stock_list = "{0}/repo/projects/stocks/data/options_stocks.csv".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/options_stocks1.csv".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/options_stocks2.csv".format(os.path.expanduser('~')) 
+#stock_list = "{0}/repo/projects/stocks/data/options_stocks3.csv".format(os.path.expanduser('~')) 
+stock_list = "{0}/repo/projects/stocks/data/options_stocks4.csv".format(os.path.expanduser('~')) 
 
+ofile = open("/home/trihard8/repo/projects/stocks/src/junk.err", 'a+')
 with open(stock_list, 'r') as f:
     if 'options' not in stock_list:
         next(f)
+    symbol_limit = 0
     for line in f:
         symbol = line.strip().split(',')[0]
         if '1' in symbol:
             continue
         
-#        try:
-#            driver.set_page_load_timeout(10) 
-        driver.get("{0}{1}".format(option_page, symbol))
-#        except:
-#            driver.close()
-#            driver = webdriver.Chrome(options=options) 
-#            driver.set_page_load_timeout(10) 
-#            driver.get("{0}{1}".format(option_page, symbol))
+        symbol_limit += 1
+        #print("***",symbol_limit)
+        if symbol_limit == 150:
+            os.system("mpg123 ~/Downloads/Flipper-7032-Free-Loops.com.mp3")
+            ofile.write("Closing to keep memory footprint lower.\n")
+            ofile.flush()
+            driver.close()
+            time.sleep(30)
+            driver = getFidelityDriver()
+            symbol_limit = 1
+        result = None
+        while result is None:
+            try:
+                ofile.write("Loading page for {}\n".format(symbol))
+                ofile.flush()
+                driver.set_page_load_timeout(30) 
+                driver.get("{0}{1}".format(option_page, symbol))
+                ofile.write("Finished loading page {}\n".format(symbol))
+                result = driver.find_elements_by_xpath("//a[@title='Click to show or hide.']")
+                ofile.flush()
+            except:
+                #driver.close()
+                os.system("mpg123 ~/Downloads/Dog\ Howling\ At\ Moon-SoundBible.com-1369876823.mp3")
+                ofile.write("Sleeping before reopening a new browser\n")
+                ofile.flush()
+                time.sleep(30)
+                driver = getFidelityDriver()
+                symbol_limit = 1
+                #driver.set_page_load_timeout(10) 
+                #time.sleep(5)
+                #driver.get("{0}{1}".format(option_page, symbol))
+        
         #try:
         #    driver.find_element_by_xpath("//a[@title='Click to show or hide.']").click() 
         #except:
         #    pass
-        buttons = driver.find_elements_by_xpath("//a[@title='Click to show or hide.']")
         #if buttons[0].is_displayed():
         #    buttons[0].click()
+        buttons = result
         for x in range(len(buttons)-1,0,-1):
             try:
                 actions = action_chains.ActionChains(driver)

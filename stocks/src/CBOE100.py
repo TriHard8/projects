@@ -16,12 +16,18 @@ r = requests.get(url, headers=headers)
 soup = bsoup(r.content, 'html.parser')
 
 company=""
+companies = set()
 for record in soup.findAll('tr'):
     company = ""
     for data in record.findAll('td'):
         company = company + "," + data.text
     m = re.match(r'^,([a-zA-Z\.]+,.+),.+,.+$', company)
     if m: company = m.groups()[0]
+    companies.add(company)
     sp_100.write("{}\n".format(company))
 
+companies.add("SPY,S&P 500 ETF\n")
 sp_100.write("SPY,S&P 500 ETF\n")
+
+for company in sorted(list(companies)):
+    print(company)

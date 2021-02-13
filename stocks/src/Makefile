@@ -1,8 +1,13 @@
-options: options.o
-	g++ -std=c++11 options.o -o options
+CC = g++
+CFLAGS = -std=c++11
 
-options.o: Options.cpp
-    g++ -std=c++11 -c Options.cpp
+default: options
+
+options: options.o
+	$(CC) $(CFLAGS) -o options options.o
+
+options.o: options.cpp
+	$(CC) $(CFLAGS) -c options.cpp
 
 clean:
 	rm -f *.o options

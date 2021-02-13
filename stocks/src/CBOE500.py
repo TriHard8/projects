@@ -10,7 +10,8 @@ output_file = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.ex
 sp_500 = open(output_file, 'w+')
     
 
-urls = ["https://www.marketvolume.com/quotes/index_components.asp?s=SP500", "https://www.marketvolume.com/quotes/index_components.asp?s=SP500&row=250"]
+urls = ["https://www.marketvolume.com/quotes/index_components.asp?s=SP500", "https://www.marketvolume.com/quotes/index_components.asp?s=SP500&row=250",
+        "https://www.marketvolume.com/quotes/index_components.asp?s=SP500&row=500"]
 categories = False;
 for url in urls:
     headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36'}
@@ -22,8 +23,10 @@ for url in urls:
         company = ""
         for data in record.findAll('td'):
             company = company + "," + data.text
-        m = re.match(r'^,([a-zA-Z\.]+,.+),.+,.+$', company)
+        m = re.match(r'^,([a-zA-Z\.]+,.*),.+,.+$', company)
         if m: company = m.groups()[0]
+        if ',' == company[-1]:
+            company += " No Company Name Provided"
         if "Symbol" in company:
             if not categories:
                 sp_500.write("{}\n".format(company))
