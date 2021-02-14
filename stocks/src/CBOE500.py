@@ -6,7 +6,7 @@ import re
 import requests
 from bs4 import BeautifulSoup as bsoup
 
-output_file = "{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~'))
+output_file = "{0}/repo/projects/stocks/data/sp500_stocks.csv".format(os.path.expanduser('~'))
 sp_500 = open(output_file, 'w+')
     
 

@@ -258,13 +258,29 @@ def getData(website):
     driver.close()
 
 if __name__ == "__main__":
-    numPools = 4
+    numPools = 8
     stock_list =    [   #"{0}/repo/projects/stocks/data/sp100_stocks.txt".format(os.path.expanduser('~')),
                         #"{0}/repo/projects/stocks/data/sp500_stocks.txt".format(os.path.expanduser('~')),
                         "{0}/repo/projects/stocks/data/options_stocks1.csv".format(os.path.expanduser('~')),
                         "{0}/repo/projects/stocks/data/options_stocks2.csv".format(os.path.expanduser('~')),
                         "{0}/repo/projects/stocks/data/options_stocks3.csv".format(os.path.expanduser('~')),
-                        "{0}/repo/projects/stocks/data/options_stocks4.csv".format(os.path.expanduser('~'))
+                        "{0}/repo/projects/stocks/data/options_stocks4.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks5.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks6.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks7.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks8.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks9.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks10.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks11.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks12.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks13.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks14.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks15.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks16.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks17.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks18.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks19.csv".format(os.path.expanduser('~')),
+                        "{0}/repo/projects/stocks/data/options_stocks20.csv".format(os.path.expanduser('~'))
                     ]
     with Pool(numPools) as p:
         p.map(getData, stock_list)
