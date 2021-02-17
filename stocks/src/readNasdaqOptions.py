@@ -22,7 +22,7 @@ with open(optionsFile, 'r') as f:
         symbols.add(symbol)
 
 symbols = sorted(list(symbols))
-numfiles = 20
+numfiles = 8
 high = int( len(symbols) / numfiles )
 for num in range(numfiles):
     ofile = open("{0}/repo/projects/stocks/data/options_stocks{1}.csv".format(os.path.expanduser('~'), num+1), 'w')

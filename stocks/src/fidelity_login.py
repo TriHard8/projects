@@ -84,7 +84,7 @@ option_page = "https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChai
 #stock_list = "{0}/repo/projects/stocks/data/options_stocks1.csv".format(os.path.expanduser('~')) 
 #stock_list = "{0}/repo/projects/stocks/data/options_stocks2.csv".format(os.path.expanduser('~')) 
 #stock_list = "{0}/repo/projects/stocks/data/options_stocks3.csv".format(os.path.expanduser('~')) 
-stock_list = "{0}/repo/projects/stocks/data/options_stocks4.csv".format(os.path.expanduser('~')) 
+stock_list = "{0}/repo/projects/stocks/data/options_stocks{1}.csv".format(os.path.expanduser('~'), sys.argv[1]) 
 
 ofile = open("/home/trihard8/repo/projects/stocks/src/junk.err", 'a+')
 with open(stock_list, 'r') as f:

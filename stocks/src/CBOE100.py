@@ -17,17 +17,33 @@ soup = bsoup(r.content, 'html.parser')
 
 company=""
 companies = set()
+sp_100.write("Symbol,Company\n")
 for record in soup.findAll('tr'):
     company = ""
     for data in record.findAll('td'):
         company = company + "," + data.text
-    m = re.match(r'^,([a-zA-Z\.]+,.+),.+,.+$', company)
+    m = re.match(r'^,([a-zA-Z\.]+,.*),.+,.+$', company)
+    #m = re.match(r'^,([a-zA-Z\.]+,.+),.+,.+$', company)
     if m: company = m.groups()[0]
-    companies.add(company)
-    sp_100.write("{}\n".format(company))
+    if ',' == company[-1]:
+        company += " No Company Name Provided"
+    if "Symbol" in company:
+        continue
+    else:
+        companies.add(company)
+        sp_100.write("{}\n".format(company))
 
-companies.add("SPY,S&P 500 ETF\n")
+companies.add("SPY,S&P 500 ETF")
 sp_100.write("SPY,S&P 500 ETF\n")
 
-for company in sorted(list(companies)):
-    print(company)
+symbols = sorted(list(companies))
+numfiles = 8
+high = int( len(symbols) / numfiles )
+for num in range(numfiles):
+    ofile = open("{0}/repo/projects/stocks/data/sp100_stocks{1}.csv".format(os.path.expanduser('~'), num+1), 'w')
+    if num == numfiles-1:
+        for symbol in symbols[high*num:]:
+            ofile.write("{0}\n".format(symbol))
+    else:
+        for symbol in symbols[high*num:high*(num+1)]:
+            ofile.write("{0}\n".format(symbol))
