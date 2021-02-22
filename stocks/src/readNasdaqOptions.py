@@ -7,20 +7,28 @@ configfile = "{0}/repo/projects/utils/".format(os.path.expanduser('~'))
 sys.path.append(os.path.dirname(os.path.expanduser(configfile)))
 import my_utils as my
 
-optionsFile = "{0}options.txt".format(my.date_for_files())
+tempOptionsFile = "{0}options.tmp".format(my.date_for_files())
+optionsFile = open("{0}options.txt".format(my.date_for_files()), 'w')
 url = "ftp://ftp.nasdaqtrader.com/symboldirectory/options.txt"
-wget.download(url, out = optionsFile, bar=None)
+wget.download(url, out = tempOptionsFile, bar=None)
 
 symbols = set()
-with open(optionsFile, 'r') as f:
+with open(tempOptionsFile, 'r') as f:
     next(f)
     for line in f:
-        symbol = line.split("|")[0]
+        line = line.strip().split("|")
+        symbol = line[0]
+        line[3] = line[3].replace("/","")
+        line[3] = line[3][4:] + line[3][:4]
+        line = "|".join(line)
         if "Creation" in symbol or "1" in symbol or "2" in symbol or "3" in symbol or "4" in symbol:
             #The 1 above is an indication of Adjusted options
             continue
         symbols.add(symbol)
+        optionsFile.write("{}\n".format(line))
 
+
+os.remove(tempOptionsFile)
 symbols = sorted(list(symbols))
 numfiles = 8
 high = int( len(symbols) / numfiles )

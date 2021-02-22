@@ -58,6 +58,7 @@ int main(int argc, char **argv){
         options.push_back(option);
     }
     int i(1);
+    //int mini(5000), maxi(10000);
     int mini(10000), maxi(INT_MAX);
     for(auto it = options.begin(); it != options.end(); ++it){
         if(!(*it)->getUpDown() && (*it)->getVolCall() > 2 * (*it)->getOpenIntCall() && (*it)->getVolCall() > mini && (*it)->getVolCall() < maxi){
