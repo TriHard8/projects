@@ -30,7 +30,7 @@ with open(tempOptionsFile, 'r') as f:
 
 os.remove(tempOptionsFile)
 symbols = sorted(list(symbols))
-numfiles = 8
+numfiles = int(sys.argv[1])
 high = int( len(symbols) / numfiles )
 for num in range(numfiles):
     ofile = open("{0}/repo/projects/stocks/data/options_stocks{1}.csv".format(os.path.expanduser('~'), num+1), 'w')

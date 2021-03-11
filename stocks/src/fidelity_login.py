@@ -11,6 +11,14 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common import action_chains, keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+def set_viewport_size(driver, width, height):
+    window_size = driver.execute_script("""
+        return [window.outerWidth - window.innerWidth + arguments[0],
+          window.outerHeight - window.innerHeight + arguments[1]];
+        """, width, height)
+    driver.set_window_size(*window_size)
 
 def formatdate(oldDate):
     mon = ""
@@ -38,21 +46,27 @@ def formatdate(oldDate):
         return newDate
 
 def getFidelityDriver():
-    options = Options()
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_experimental_option('useAutomationExtension',False)
-    #options.add_argument("headless")
-    options.add_argument("window-size=1920,1080")
-    options.add_argument("allow-running-insecure-content")
-    options.add_argument("ignore-certificate-errors")
-    options.add_argument("disable-gpu")
-    options.add_argument("disable-extensions")
-    options.add_argument("proxy-server='direct://'")
-    options.add_argument("proxy-bypass-list=*")
-    options.add_argument("start-maximized")
-    #driver = webdriver.Chrome(options=options)
-    driv = webdriver.Chrome(options=options)
+    #options = Options()
+    ##options = webdriver.FirefoxOptions()
+    #options.add_argument("--no-sandbox")
+    #options.add_argument("--disable-dev-shm-usage")
+    #options.add_experimental_option('useAutomationExtension',False)
+    ##options.add_argument("headless")
+    #options.add_argument("window-size=1920,1080")
+    #options.add_argument("allow-running-insecure-content")
+    #options.add_argument("ignore-certificate-errors")
+    #options.add_argument("disable-gpu")
+    #options.add_argument("disable-extensions")
+    #options.add_argument("proxy-server='direct://'")
+    #options.add_argument("proxy-bypass-list=*")
+    #options.add_argument("start-maximized")
+    ##driver = webdriver.Chrome(options=options)
+    #driv = webdriver.Chrome(options=options)
+    caps = DesiredCapabilities().FIREFOX
+    caps["marionette"] = True
+    driv = webdriver.Firefox(capabilities=caps)
+    driv.set_window_size(210, 1100)
+    #print(driv.get_window_size())
     driv.get("https://www.fidelity.com/login/accountposition?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage&AuthOrigUrl=https://scs.fidelity.com/customeronly/accountposition.shtml")
     action = action_chains.ActionChains(driv)
     
@@ -63,6 +77,7 @@ def getFidelityDriver():
     elem.send_keys(pwd + keys.Keys.TAB)
     elem = driv.find_element_by_id("fs-login-button").click()
     
+    #set_viewport_size(driv, 15000, 30000)  
     time.sleep(5)
     return driv
 
@@ -98,7 +113,7 @@ with open(stock_list, 'r') as f:
         
         symbol_limit += 1
         #print("***",symbol_limit)
-        if symbol_limit == 150:
+        if symbol_limit == 1000:
             os.system("mpg123 ~/Downloads/Flipper-7032-Free-Loops.com.mp3")
             ofile.write("Closing to keep memory footprint lower.\n")
             ofile.flush()
@@ -113,8 +128,17 @@ with open(stock_list, 'r') as f:
                 ofile.flush()
                 driver.set_page_load_timeout(30) 
                 driver.get("{0}{1}".format(option_page, symbol))
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight-500);")
+                #last_height = driver.execute_script("return document.body.scrollHeight")
+                #print(last_height,"*****")
+                '''
+                for i in range(4):
+                    print("sleeping 10")
+                    time.sleep(10)
+                '''
                 ofile.write("Finished loading page {}\n".format(symbol))
-                result = driver.find_elements_by_xpath("//a[@title='Click to show or hide.']")
+                #result = driver.find_elements_by_xpath("//a[@title='Click to show or hide.']")
+                result = driver.find_elements_by_xpath("//a[@onclick='toggleRowExpandCollapse(this)']")
                 ofile.flush()
             except:
                 #driver.close()
@@ -135,14 +159,27 @@ with open(stock_list, 'r') as f:
         #if buttons[0].is_displayed():
         #    buttons[0].click()
         buttons = result
-        for x in range(len(buttons)-1,0,-1):
-            try:
-                actions = action_chains.ActionChains(driver)
-                actions.move_to_element(buttons[x]).perform()
-                if buttons[x].is_displayed():
-                    buttons[x].click()
-            except:
-                continue
+        #print(buttons)
+        #driver.execute_script("document.body.style.transform='scale(0.5)';")
+        #time.sleep(5)
+        #for x in range(len(buttons)-1,-1,-1):
+        for x in range(0,len(buttons)):
+            found = True
+            count = 0
+            while found:
+                try:
+                    actions = action_chains.ActionChains(driver)
+                    actions.move_to_element(buttons[x]).perform()
+                    found = False
+                    if buttons[x].is_displayed():
+                        buttons[x].click()
+                except Exception as e:
+                    count += 1
+                    if count > 10:
+                        exit() 
+                    driver.execute_script("window.scrollBy(0, 1000);")
+                    #print(e)
+                    continue
 
         try:
             innerHTML = driver.execute_script("return document.body.innerHTML")
