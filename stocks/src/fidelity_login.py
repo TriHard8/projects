@@ -175,9 +175,11 @@ with open(stock_list, 'r') as f:
                         buttons[x].click()
                 except Exception as e:
                     count += 1
-                    if count > 10:
+                    if count > 100:
+                        print("Possible infinite loop")
+                        driver.close()
                         exit() 
-                    driver.execute_script("window.scrollBy(0, 1000);")
+                    driver.execute_script("window.scrollBy(0, 250);")
                     #print(e)
                     continue
 
