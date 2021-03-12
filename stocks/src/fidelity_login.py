@@ -128,7 +128,7 @@ with open(stock_list, 'r') as f:
                 ofile.flush()
                 driver.set_page_load_timeout(30) 
                 driver.get("{0}{1}".format(option_page, symbol))
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight-500);")
+                #driver.execute_script("window.scrollTo(0, document.body.scrollHeight-500);")
                 #last_height = driver.execute_script("return document.body.scrollHeight")
                 #print(last_height,"*****")
                 '''
@@ -175,12 +175,12 @@ with open(stock_list, 'r') as f:
                         buttons[x].click()
                 except Exception as e:
                     count += 1
-                    if count > 100:
+                    if count > 10000:
                         print("Possible infinite loop")
                         driver.close()
                         exit() 
                     driver.execute_script("window.scrollBy(0, 250);")
-                    #print(e)
+                    print(e)
                     continue
 
         try:
