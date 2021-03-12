@@ -163,7 +163,7 @@ with open(stock_list, 'r') as f:
         #driver.execute_script("document.body.style.transform='scale(0.5)';")
         #time.sleep(5)
         #for x in range(len(buttons)-1,-1,-1):
-        for x in range(0,len(buttons)):
+        for x in range(0,min(20, len(buttons))):
             found = True
             count = 0
             while found:
@@ -180,7 +180,7 @@ with open(stock_list, 'r') as f:
                         driver.close()
                         exit() 
                     driver.execute_script("window.scrollBy(0, 250);")
-                    print(e)
+                    #print(e)
                     continue
 
         try:
@@ -295,8 +295,9 @@ with open(stock_list, 'r') as f:
                             #elif count == 10:
                             #    count = 0                 
 
-        except:
+        except Exception as e:
             print("Problem with {}".format(symbol))
+            print(e)
 
 
 driver.close()

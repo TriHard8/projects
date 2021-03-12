@@ -11,7 +11,7 @@ nasdaq = open(os.path.expanduser("~/repo/projects/stocks/src/{}options.txt".form
 nasdaqSet = set()
 for line in nasdaq:
     line = line.split("|")
-    line = line[0] + "****" + line[3] + "****" + "{:.1f}".format(float(line[4]))
+    line = line[0] + "****" + line[3] #+ "****" + "{:.1f}".format(float(line[4]))
     nasdaqSet.add(line)
 
 data = open(os.path.expanduser("~/repo/projects/stocks/data/{}/final.csv".format(sys.argv[1])), 'r')
@@ -19,7 +19,7 @@ data = open(os.path.expanduser("~/repo/projects/stocks/data/{}/final.csv".format
 for line in data:
     line = line.split(",")
     try:
-        line = line[0] + "****" + line[1] + "****" + "{:.1f}".format(float(line[2]))
+        line = line[0] + "****" + line[1] #+ "****" + "{:.1f}".format(float(line[2]))
     except:
         continue
     try:
