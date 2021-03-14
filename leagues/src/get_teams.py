@@ -2,6 +2,7 @@
 
 import os
 import sys
+import re
 import requests
 import bs4 as bs
 import my_utils as my
@@ -45,6 +46,7 @@ class Reference():
         self.getReferenceLeagues(leagues)
         self.league_ofile.close()
         self.getReferenceTeams()
+        print("Reference Class Created")
 
     def getSportReference(self, league):
         lowerLeague = league.lower()
@@ -57,6 +59,8 @@ class Reference():
             return "pro-football"
         elif lowerLeague == "mlb":
             return "baseball"
+        elif lowerLeague == "epl":
+            return "soccer"
         else:
             return "no sport"
      
@@ -76,7 +80,11 @@ class Reference():
         self.league_ofile.write("league,league_team_site\n")
     
         for league in leagues:
-            self.sites.append("https://www.{}-reference.com/teams/".format(self.getSportReference(league)))
+            if self.getSportReference(league) == "soccer":
+                if league.lower() == "epl":
+                    self.sites.append("https://fbref.com/en/comps/9/Premier-League-Stats")
+            else:
+                self.sites.append("https://www.{}-reference.com/teams/".format(self.getSportReference(league)))
     
         for site in self.sites:
             self.league_ofile.write("{0},{1}\n".format(league, site))
@@ -85,80 +93,97 @@ class Reference():
     
     def getReferenceTeams(self):
         for site in self.sites:
-            soup = my.get_soup(site)
-            if "basketball" in site:
-                team_ofile = open("{0}referenceNbaTeams.csv".format(self.data_dir), 'w')
-                team_ofile.write("team,teamPage\n")
-                activeTeams = soup.find('div', {"id" : "all_teams_active"})
-                for team in activeTeams.find_all('tr', {"class" : "full_table"}):
-                    element = team.find('th', {"class" : "left"})
-                    if "NJN" in element.find('a')['href'][7:]:
-                        teamSite = site + element.find('a')['href'][7:].replace('NJN','BRK')
-                    elif "CHA" in element.find('a')['href'][7:]:
-                        teamSite = site + element.find('a')['href'][7:].replace('CHA','CHO')
-                    elif "NOH" in element.find('a')['href'][7:]:
-                        teamSite = site + element.find('a')['href'][7:].replace('NOH','NOP')
-                    else:    
+            try:
+                soup = my.get_soup(site)
+                if "basketball" in site:
+                    team_ofile = open("{0}referenceNbaTeams.csv".format(self.data_dir), 'w')
+                    team_ofile.write("team,teamPage\n")
+                    activeTeams = soup.find('div', {"id" : "all_teams_active"})
+                    for team in activeTeams.find_all('tr', {"class" : "full_table"}):
+                        element = team.find('th', {"class" : "left"})
+                        if "NJN" in element.find('a')['href'][7:]:
+                            teamSite = site + element.find('a')['href'][7:].replace('NJN','BRK')
+                        elif "CHA" in element.find('a')['href'][7:]:
+                            teamSite = site + element.find('a')['href'][7:].replace('CHA','CHO')
+                        elif "NOH" in element.find('a')['href'][7:]:
+                            teamSite = site + element.find('a')['href'][7:].replace('NOH','NOP')
+                        else:    
+                            teamSite = site + element.find('a')['href'][7:]
+                        team_ofile.write("{0},{1}\n".format(element.text, teamSite))
+                if "football" in site:
+                    team_ofile = open("{0}referenceNflTeams.csv".format(self.data_dir), 'w')
+                    team_ofile.write("team,teamPage\n")
+                    activeTeams = soup.find('table', {"id" : "teams_active"}).find('tbody')
+                    for team in activeTeams.find_all('th', {"class" : "left"}):
+                        teamSite = site + team.find('a')['href'][7:]
+                        team_ofile.write("{0},{1}\n".format(team.text, teamSite))
+                if "hockey" in site:
+                    team_ofile = open("{0}referenceNhlTeams.csv".format(self.data_dir), 'w')
+                    team_ofile.write("team,teamPage\n")
+                    activeTeams = soup.find('table', {'id' : 'active_franchises'})
+                    for team in activeTeams.find_all('tr', {"class" : "full_table"}):
+                        element = team.find('th', {"class" : "left"})
                         teamSite = site + element.find('a')['href'][7:]
-                    team_ofile.write("{0},{1}\n".format(element.text, teamSite))
-            if "football" in site:
-                team_ofile = open("{0}referenceNflTeams.csv".format(self.data_dir), 'w')
-                team_ofile.write("team,teamPage\n")
-                activeTeams = soup.find('table', {"id" : "teams_active"}).find('tbody')
-                for team in activeTeams.find_all('th', {"class" : "left"}):
-                    teamSite = site + team.find('a')['href'][7:]
-                    team_ofile.write("{0},{1}\n".format(team.text, teamSite))
-            if "hockey" in site:
-                team_ofile = open("{0}referenceNhlTeams.csv".format(self.data_dir), 'w')
-                team_ofile.write("team,teamPage\n")
-                activeTeams = soup.find('table', {'id' : 'active_franchises'})
-                for team in activeTeams.find_all('tr', {"class" : "full_table"}):
-                    element = team.find('th', {"class" : "left"})
-                    teamSite = site + element.find('a')['href'][7:]
-                    team_ofile.write("{0},{1}\n".format(element.text, teamSite))
-            if "baseball" in site:
-                team_ofile = open("{0}referenceMlbTeams.csv".format(self.data_dir), 'w')
-                team_ofile.write("team,teamPage\n")
-                activeTeams = soup.find('table', {"id" : "teams_active"}).find('tbody')
-                for team in activeTeams.find_all('td', {"class" : "left"}):
-                    teamSite = site + team.find('a')['href'][7:]
-                    team_ofile.write("{0},{1}\n".format(team.text, teamSite))
+                        team_ofile.write("{0},{1}\n".format(element.text, teamSite))
+                if "baseball" in site:
+                    team_ofile = open("{0}referenceMlbTeams.csv".format(self.data_dir), 'w')
+                    team_ofile.write("team,teamPage\n")
+                    activeTeams = soup.find('table', {"id" : "teams_active"}).find('tbody')
+                    for team in activeTeams.find_all('td', {"class" : "left"}):
+                        teamSite = site + team.find('a')['href'][7:]
+                        team_ofile.write("{0},{1}\n".format(team.text, teamSite))
+                if "fbref" in site:
+                    if site[-21:] == "/Premier-League-Stats":
+                        team_ofile = open("{0}referenceEPLTeams.csv".format(self.data_dir), 'w')
+                    team_ofile.write("team,teamPage\n")
+                    activeTeams = soup.find('table').find('tbody')
+                    for team in activeTeams.find_all('td', {"data-stat" : "squad"}):
+                        info = team.find('th', {"data-stat" : "squad"})
+                        teamSite = "https://fbref.com" + team.find('a')['href']
+                        team_ofile.write("{0},{1}\n".format(team.text.lstrip(), teamSite))
+            except Exception as e:
+                print("Error {} : getReferenceTeams".format(site))
+                print(e)
             
             
     def getPlayers(self, leagues):
         for league in leagues:
-            if "basketball" in self.getSportReference(league):
-                #teamOfile = open("{}refNbaPlayers.csv".format(self.data_dir), 'w')
-                teamOfile = open("{}refNbaRosters.csv".format(self.data_dir), 'w')
-                teamOfile.write("name,team,nameSite,number,pos,height,weight,birthday,experience,college\n")
-                with open("{0}referenceNbaTeams.csv".format(self.data_dir), 'r') as f:
-                    next(f)
-                    for line in f:
-                        line = line.strip().split(',')
-                        team = line[1][-4:-1]
-                        line[1] += '2020.html'    
-                        soup = my.get_soup(line[1])
-                        roster = soup.find('table', {'id' : 'roster'})
-                        print(line[0])
-                        for player in roster.find('tbody').find_all('tr'):
-                            number = player.find('th', {"data-stat" : "number"}).text
-                            name = player.find('td', {"data-stat" : "player"}).text
-                            nameSite = line[1][:-20] + player.find('td', {"data-stat" : "player"}).find('a')['href']
-                            pos = player.find('td', {"data-stat" : "pos"}).text
-                            height = player.find('td', {"data-stat" : "height"}).text
-                            weight = player.find('td', {"data-stat" : "weight"}).text
-                            birthday = player.find('td', {"data-stat" : "birth_date"}).text
-                            exp = player.find('td', {"data-stat" : "years_experience"}).text
-                            if 'R' in exp:
-                                exp = 0
-                            else:
-                                exp = int(exp) 
-                            college = player.find('td', {"data-stat" : "college"}).text
-                            if ',' in college:
-                                college = college.replace(',',':')
-                            #print("{},{},{},{},{},{},{},{},{},{}".format(name, team, nameSite, number, pos, height, weight, birthday, exp, college))
-                            teamOfile.write("{},{},{},{},{},{},{},{},{},{}\n".format(name, team, nameSite, number, pos, height, weight, birthday, exp, college))
-                teamOfile.close() 
+            try:
+                if "basketball" in self.getSportReference(league):
+                    #teamOfile = open("{}refNbaPlayers.csv".format(self.data_dir), 'w')
+                    teamOfile = open("{}refNbaRosters.csv".format(self.data_dir), 'w')
+                    teamOfile.write("name,team,nameSite,number,pos,height,weight,birthday,experience,college\n")
+                    with open("{0}referenceNbaTeams.csv".format(self.data_dir), 'r') as f:
+                        next(f)
+                        for line in f:
+                            line = line.strip().split(',')
+                            team = line[1][-4:-1]
+                            line[1] += '2020.html'    
+                            soup = my.get_soup(line[1])
+                            roster = soup.find('table', {'id' : 'roster'})
+                            print(line[0])
+                            for player in roster.find('tbody').find_all('tr'):
+                                number = player.find('th', {"data-stat" : "number"}).text
+                                name = player.find('td', {"data-stat" : "player"}).text
+                                nameSite = line[1][:-20] + player.find('td', {"data-stat" : "player"}).find('a')['href']
+                                pos = player.find('td', {"data-stat" : "pos"}).text
+                                height = player.find('td', {"data-stat" : "height"}).text
+                                weight = player.find('td', {"data-stat" : "weight"}).text
+                                birthday = player.find('td', {"data-stat" : "birth_date"}).text
+                                exp = player.find('td', {"data-stat" : "years_experience"}).text
+                                if 'R' in exp:
+                                    exp = 0
+                                else:
+                                    exp = int(exp) 
+                                college = player.find('td', {"data-stat" : "college"}).text
+                                if ',' in college:
+                                    college = college.replace(',',':')
+                                #print("{},{},{},{},{},{},{},{},{},{}".format(name, team, nameSite, number, pos, height, weight, birthday, exp, college))
+                                teamOfile.write("{},{},{},{},{},{},{},{},{},{}\n".format(name, team, nameSite, number, pos, height, weight, birthday, exp, college))
+                    teamOfile.close() 
+            except:
+                print("{} : getPlayers".format(league))
+        print("getPlayers has completed")
 
     def getPlayerData(self, leagues):
         for league in leagues:
@@ -246,79 +271,116 @@ class Reference():
 
     def getGames(self, leagues):
         for league in leagues:
-            if "basketball" in self.getSportReference(league):
-                '''
-                maxDate = open("{}/nbaConfig.conf".format(os.path.dirname(os.path.realpath(__file__))), 'r')
-                maxDate = maxDate.readline().split("=")
-                if len(maxDate) == 2:
-                    print(maxDate[1].strip())
-                    months = []
-                else:
-                '''
-                gamesOfile = open("{}refNbaGames2020.csv".format(self.data_dir), 'w')
-                gamesOfile.write("date,home,visitor,site\n")
-                dates = set()
-                months = ["October", "November", "December", "January", "February", "March", "July", "August", "September"]
-                for month in months:
-                    soup = my.get_soup("https://www.basketball-reference.com/leagues/NBA_2020_games-{}.html".format(month.lower()))
-                    table = soup.find('table', {'id' : 'schedule'})
-                    for game in table.find('tbody').find_all('tr'):
-#                        print(game)                        
-                        ds = 'data-stat'
-                        #Fri, Jul 31, 2020
-                        try:
-                            date = datetime.strptime(game.find('th', {ds : 'date_game'}).find('a').text, "%a, %b %d, %Y").strftime("%Y%m%d")
-                        except:
-                            print("ERROR: Exception getting games: {}".format(game))
-                            continue
-                        visitorTeam = game.find('td', {ds : 'visitor_team_name'})['csk'][:3]
-                        visitorPoints = game.find('td', {ds : 'visitor_pts'}).text
-                        homeTeam = game.find('td', {ds : 'home_team_name'})['csk'][:3]
-                        homePoints = game.find('td', {ds : 'home_pts'}).text
-                        if game.find('td', {ds : 'box_score_text'}).find('a'):
-                            site = "https://www.basketball-reference.com" + game.find('td', {ds : 'box_score_text'}).find('a')['href']
-                        else:
-                            continue
-                        gamesOfile.write("{},{},{},{},{},{}\n".format(date,site,visitorTeam,visitorPoints,homeTeam,homePoints))
-            elif "hockey" in self.getSportReference(league):
-                '''
-                maxDate = open("{}/nbaConfig.conf".format(os.path.dirname(os.path.realpath(__file__))), 'r')
-                maxDate = maxDate.readline().split("=")
-                if len(maxDate) == 2:
-                    print(maxDate[1].strip())
-                    months = []
-                else:
-                '''
-                gamesOfile = open("{}refNhlGames2020.csv".format(self.data_dir), 'w')
-                gamesOfile.write("date,home,visitor,site\n")
-                dates = set()
-                months = [""]
-                for month in months:
-                    soup = my.get_soup("https://www.hockey-reference.com/leagues/NHL_2020_games.html")
+            try:
+                if "basketball" in self.getSportReference(league):
+                    '''
+                    maxDate = open("{}/nbaConfig.conf".format(os.path.dirname(os.path.realpath(__file__))), 'r')
+                    maxDate = maxDate.readline().split("=")
+                    if len(maxDate) == 2:
+                        print(maxDate[1].strip())
+                        months = []
+                    else:
+                    '''
+                    gamesOfile = open("{}refNbaGames2020.csv".format(self.data_dir), 'w')
+                    gamesOfile.write("date,site,visitorTeam,visitorPoints,homeTeam,homePoints\n")
+                    dates = set()
+                    months = ["October 2019", "November", "December", "January", "February", "March", "July", "August", "September","October 2020"]
+                    try:
+                        for month in months:
+                            if month == "October 2019" or month == "October 2020":
+                                month = "october-" + month[-4:]
+                            soup = my.get_soup("https://www.basketball-reference.com/leagues/NBA_2020_games-{}.html".format(month.lower()))
+                            table = soup.find('table', {'id' : 'schedule'})
+                            for game in table.find('tbody').find_all('tr'):
+#                                print(game)                        
+                                ds = 'data-stat'
+                                #Fri, Jul 31, 2020
+                                try:
+                                    date = datetime.strptime(game.find('th', {ds : 'date_game'}).find('a').text, "%a, %b %d, %Y").strftime("%Y%m%d")
+                                except:
+                                    print("ERROR: Exception getting games: {}".format(game))
+                                    continue
+                                visitorTeam = game.find('td', {ds : 'visitor_team_name'})['csk'][:3]
+                                visitorPoints = game.find('td', {ds : 'visitor_pts'}).text
+                                homeTeam = game.find('td', {ds : 'home_team_name'})['csk'][:3]
+                                homePoints = game.find('td', {ds : 'home_pts'}).text
+                                if game.find('td', {ds : 'box_score_text'}).find('a'):
+                                    site = "https://www.basketball-reference.com" + game.find('td', {ds : 'box_score_text'}).find('a')['href']
+                                else:
+                                    continue
+                                gamesOfile.write("{},{},{},{},{},{}\n".format(date,site,visitorTeam,visitorPoints,homeTeam,homePoints))
+                    except:
+                        print("{} : Month was a problem".format(month))
+                elif "hockey" in self.getSportReference(league):
+                    '''
+                    maxDate = open("{}/nbaConfig.conf".format(os.path.dirname(os.path.realpath(__file__))), 'r')
+                    maxDate = maxDate.readline().split("=")
+                    if len(maxDate) == 2:
+                        print(maxDate[1].strip())
+                        months = []
+                    else:
+                    '''
+                    gamesOfile = open("{}refNhlGames2020.csv".format(self.data_dir), 'w')
+                    gamesOfile.write("date,site,visitorTeam,visitorPoints,homeTeam,homePoints\n")
+                    dates = set()
+                    months = [""]
+                    for month in months:
+                        soup = my.get_soup("https://www.hockey-reference.com/leagues/NHL_2020_games.html")
+                        tables = []
+                        tables.append(soup.find('table', {'id' : 'games'}))
+                        tables.append(soup.find('table', {'id' : 'games_playoffs'}))
+                        for table in tables:
+                            for game in table.find('tbody').find_all('tr'):
+#                                print(game)                        
+                                ds = 'data-stat'
+                                visitorTeam = game.find('td', {ds : 'visitor_team_name'})['csk'][:3]
+                                visitorPoints = game.find('td', {ds : 'visitor_goals'}).text
+                                homeTeam = game.find('td', {ds : 'home_team_name'})['csk'][:3]
+                                homePoints = game.find('td', {ds : 'home_goals'}).text
+                                if game.find('th', {ds : 'date_game'}).find('a'):
+                                    #2019-10-24
+                                    if not game.find('th', {ds : 'date_game'}).find('a').has_attr('href'):
+                                        continue
+                                    date = datetime.strptime(game.find('th', {ds : 'date_game'}).find('a').text, "%Y-%m-%d").strftime("%Y%m%d")
+                                    site = "https://www.hockey-reference.com" + game.find('th', {ds : 'date_game'}).find('a')['href'] \
+                                            + "#all_advanced"
+                                else:
+                                    continue
+                                gamesOfile.write("{},{},{},{},{},{}\n".format(date,site,visitorTeam,visitorPoints,homeTeam,homePoints))
+                elif "EPL" == league:
+                    gamesOfile = open("{}refEPLGames2020.csv".format(self.data_dir), 'w')
+                    gamesOfile.write("date,site,visitor,visitorScore,home,homeScore\n")
+                    dates = set()
+                    soup = my.get_soup("https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures")
                     tables = []
-                    tables.append(soup.find('table', {'id' : 'games'}))
-                    tables.append(soup.find('table', {'id' : 'games_playoffs'}))
+                    tables.append(soup.find('table'))
                     for table in tables:
                         for game in table.find('tbody').find_all('tr'):
-#                            print(game)                        
                             ds = 'data-stat'
-                            visitorTeam = game.find('td', {ds : 'visitor_team_name'})['csk'][:3]
-                            visitorPoints = game.find('td', {ds : 'visitor_goals'}).text
-                            homeTeam = game.find('td', {ds : 'home_team_name'})['csk'][:3]
-                            homePoints = game.find('td', {ds : 'home_goals'}).text
-                            if game.find('th', {ds : 'date_game'}).find('a'):
-                                #2019-10-24
-                                if not game.find('th', {ds : 'date_game'}).find('a').has_attr('href'):
-                                    continue
-                                date = datetime.strptime(game.find('th', {ds : 'date_game'}).find('a').text, "%Y-%m-%d").strftime("%Y%m%d")
-                                site = "https://www.hockey-reference.com" + game.find('th', {ds : 'date_game'}).find('a')['href'] \
-                                        + "#all_advanced"
-                            else:
+                            if game.has_attr('class'):
                                 continue
+                            score = game.find('td', {ds : 'score'}).find('a')
+                            if score is None:
+                                continue
+
+                            if not game.find('td', {ds : 'xg_a'}).text:
+                                continue
+
+                            date = datetime.strptime(game.find('td', {ds : 'date'}).find('a').text, "%Y-%m-%d").strftime("%Y%m%d")
+                            score = score.text.split(chr(8211))
+                            visitorTeam = game.find('td', {ds : 'squad_b'}).find('a').text
+                            visitorPoints = score[1]
+                            homeTeam = game.find('td', {ds : 'squad_a'}).find('a').text
+                            homePoints = score[0]
+                            site = "https://fbref.com{}".format(game.find('td', {ds : 'score'}).find('a')['href'])
                             gamesOfile.write("{},{},{},{},{},{}\n".format(date,site,visitorTeam,visitorPoints,homeTeam,homePoints))
+            except:
+                print("{} : getGames".format(league))
+        print("Finished Getting Games")
 
     def getPlayerData2(self, leagues):
         for league in leagues:
+            playerOfile = open("/dev/null", 'w')
             if "basketball" in self.getSportReference(league):
                 playerOfile = open("{}refNbaPlayerData.csv".format(self.data_dir), 'w')
                 playerOfile.write("date,visitor,home,gameSite,player,playerSite,team,started,minutes,fg,fga,fg3,fg3a,ft,fta,orb,drb,ast,stl,blk,turnovers,pf,+/-\n")
@@ -450,12 +512,137 @@ class Reference():
                                 players[playerSite] += player.find('td', {ds : 'shutouts'}).text
                             for key, value in players.items():
                                 playerOfile.write("{}\n".format(value))
+            elif "EPL" == league:
+                playerOfile = open("{}refEPLPlayerData.csv".format(self.data_dir), 'w')
+                playerOfile.write("date,visitor,home,gameSite,player,playerSite,team,position,started,minutes,goals,assists,shots,SOG," \
+                                    "accuratePass,yellowCard,redCard,foulDrawn,foulConceded,passesIntercepted,tackleWon,crosses,assistedShot," \
+                                    "cleanSheet,shootoutGoal,shootoutMiss,saves,goalConceded,win,penaltySave,shootoutSave\n")
+                teamHash = {}
+                with open("{}referenceEPLTeams.csv".format(self.data_dir), 'r') as f:
+                    next(f)
+                    for line in f:
+                        line = line.strip().split(',')
+                        teamRegex = "^.+\/{2}.+\/.+\/.+\/(.+)\/.+$"
+                        m = re.match(teamRegex, line[1])
+                        if m:
+                            teamHash[line[0]] = m.group(1)
+                with open("{}refEPLGames2020.csv".format(self.data_dir), 'r') as f:
+                    next(f)
+                    for line in f:
+                        #20200731,https://www.basketball-reference.com/boxscores/202007310DAL.html,HOU,153,DAL,149
+                        line = line.split(',')
+                        soup = my.get_soup(line[1])
+                        teams = [line[2], line[4]]
+                        print(line[0], teams)
+                        for team in teams:
+                            print(teamHash[team])
+                            table = soup.find('div' , {'id' : "switcher_player_stats_{}".format(teamHash[team])})
+                            summary = table.find('table', {'id' : "stats_{}_summary".format(teamHash[team])})
+                            passingTypes = table.find('table', {'id' : "stats_{}_passing_types".format(teamHash[team])})
+                            misc = table.find('table', {'id' : "stats_{}_misc".format(teamHash[team])})
+                            players = {}
+                            entry = ""
+                            ds = 'data-stat'
+                            for player in summary.find('tbody').find_all('tr'):
+                                entry = line[0] + ',' + line[2] + ',' + line[4] + ',' + line[1]
+                                name = player.find('th', {ds : 'player'}).find('a').text
+                                #print(name)
+                                playerSite = player.find('th', {ds : 'player'}).find('a')['href']
+                                entry += ',' + name + ',https://fbref.com' + playerSite + ',' + team
+                                #print(entry)
+                                stats = []
+                                stats.append(player.find('td', {ds : 'position'}).text)
+                                stats.append(player.find('td', {ds : 'minutes'}).text)
+                                stats.append(player.find('td', {ds : 'goals'}).text)
+                                stats.append(player.find('td', {ds : 'assists'}).text)
+                                stats.append(player.find('td', {ds : 'shots_total'}).text)
+                                stats.append(player.find('td', {ds : 'shots_on_target'}).text)
+                                stats.append(player.find('td', {ds : 'passes_completed'}).text)
+                                stats.append(player.find('td', {ds : 'cards_yellow'}).text)
+                                stats.append(player.find('td', {ds : 'cards_red'}).text)
+                                players[playerSite] = entry + ',' + ",".join(stats)
+                            for player in misc.find('tbody').find_all('tr'):
+                                playerSite = player.find('th', {ds : 'player'}).find('a')['href']
+                                stats = []
+                                stats.append(player.find('td', {ds : 'fouled'}).text)
+                                stats.append(player.find('td', {ds : 'fouls'}).text)
+                                stats.append(player.find('td', {ds : 'interceptions'}).text)
+                                stats.append(player.find('td', {ds : 'tackles_won'}).text)
+                                players[playerSite] = players[playerSite] + "," + ",".join(stats)
+                                print(players[playerSite])
+                            '''
+                            for player in passingTypes.find('tbody').find_all('tr'):
+                                playerSite = player.find('th', {ds : 'player'}).find('a')['href']
+                                stats = []
+                                stats.append(player.find('td', {ds : 'fouled'}).text)
+                                stats.append(player.find('td', {ds : 'fouls'}).text)
+                                stats.append(player.find('td', {ds : 'interceptions'}).text)
+                                stats.append(player.find('td', {ds : 'tackles_won'}).text)
+                                players[playerSite] = players[playerSite] + "," + ",".join(stats)
+                                '''
+                            '''
+                                stats.append(player.find('td', {ds : 'assists_sh'}).text)
+                                stats.append(player.find('td', {ds : 'shots'}).text)
+                            for comment in soup.find_all(text = lambda text: isinstance(text, bs.Comment)):
+                                if comment.find("<table ") > 0:
+                                    comment_soup = bs.BeautifulSoup(comment, 'html.parser')
+                                    tables = comment_soup.find_all('table')
+                            if team in tables[0]['id']:
+                                table = tables[0]
+                            elif team in tables[1]['id']:
+                                table = tables[1]
+                            blocks = {}
+                            for player in table.find_all('tr' , {'class' : "ALLEV hidden"}):
+                                if player.find('th' , {'data-stat' : 'player'}).text != "TOTAL":
+                                    print(line[1], player.find('a').text)
+                                    if player.find('td', {'data-stat' : 'blocks'}).text is not '':
+                                        blocks[player.find('a')['href']] = int(player.find('td', {'data-stat' : 'blocks'}).text)
+                            for player in table.find_all('tr' , {'class' : "ALLPP hidden"}):
+                                if player.find('th' , {'data-stat' : 'player'}).text != "TOTAL":
+                                    print(line[1], player.find('a').text)
+                                    if player.find('td', {'data-stat' : 'blocks'}).text is not '':
+                                        blocks[player.find('a')['href']] += int(player.find('td', {'data-stat' : 'blocks'}).text)
+                            for player in table.find_all('tr' , {'class' : "ALLSH hidden"}):
+                                if player.find('th' , {'data-stat' : 'player'}).text != "TOTAL":
+                                    print(line[1], player.find('a').text)
+                                    if player.find('td', {'data-stat' : 'blocks'}).text is not '':
+                                        blocks[player.find('a')['href']] += int(player.find('td', {'data-stat' : 'blocks'}).text)
+                            for key, value in blocks.items():
+                                players[key] += ',' + str(value) + ',0,0,0,0'
+                            
+                            table = soup.find('table' , {'id' : "{}_goalies".format(team)})
+                            for player in table.find('tbody').find_all('tr'):
+                                if  player.find('td', {ds : 'player'}).find('a'):
+                                    playerSite = player.find('td', {ds : 'player'}).find('a')['href']
+                                else:
+                                    playerSite = "Empty Net"
+                            
+                                if playerSite == "Empty Net":
+                                    players[playerSite] = line[0] + ',' + line[2] + ',' + line[4] + ',' + line[1]
+                                    players[playerSite] += ',' + "Empty Net" + ',' + "Empty Net" + ',' + team + ','
+                                    players[playerSite] += "0,0,0,0,0,0,0,0,0,0,"
+
+                                #This adds the block column as 0 for goalie and empty net
+                                players[playerSite] += "0,"
+                                players[playerSite] += player.find('td', {ds : 'goals_against'}).text + ","
+                                players[playerSite] += player.find('td', {ds : 'shots_against'}).text + ","
+                                players[playerSite] += player.find('td', {ds : 'saves'}).text + ","
+                                players[playerSite] += player.find('td', {ds : 'shutouts'}).text
+                        '''
+                            for key, value in players.items():
+                                playerOfile.write("{}\n".format(value))
+            playerOfile.flush()
 
 #leagues = ["NBA","NHL","Nfl","mlb"]
-leagues = ["NBA"]
+leagues = ["EPL"]
 #getESPN(leagues)
+
+
 ref = Reference(leagues)
 ref.getPlayers(leagues)
 ref.getGames(leagues)
 ref.getPlayerData2(leagues)
+
+
+
 #ref.getReferenceLeagues(leagues)

@@ -163,7 +163,7 @@ with open(stock_list, 'r') as f:
         #driver.execute_script("document.body.style.transform='scale(0.5)';")
         #time.sleep(5)
         #for x in range(len(buttons)-1,-1,-1):
-        for x in range(0,min(20, len(buttons))):
+        for x in range(0,min(23, len(buttons))):
             found = True
             count = 0
             while found:

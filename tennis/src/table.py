@@ -10,11 +10,11 @@ from datetime import timedelta
 
 headers = {'User-Agent': 'Mozilla/5.0'}
 #url = "https://www.espn.com/nhl/scoreboard"
-dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/2168?category=match-lines&subcategory=money-line",
-            "https://sportsbook.draftkings.com/leagues/tennis/2169?category=match-lines&subcategory=money-line" ]
+dk_urls = [ "https://sportsbook.draftkings.com/leagues/tennis/1809?category=match-lines&subcategory=money-line",
+            "https://sportsbook.draftkings.com/leagues/tennis/1808?category=match-lines&subcategory=money-line" ]
 fd_urls = ["https://sportsbook.fanduel.com/sports/navigation/1010.1/9874.3"]
-betUS_urls = [  "https://www.betus.com.pa/sportsbook/us_open_women_2020-tennis-odds.aspx",
-                "https://www.betus.com.pa/sportsbook/us_open_men_2020-tennis-odds.aspx"]
+betUS_urls = [  "https://www.betus.com.pa/sportsbook/australian_open_women_2021-tennis-odds.aspx",
+                "https://www.betus.com.pa/sportsbook/australian_open_men_2021-tennis-odds.aspx"]
                 
 def getSoup(url):
     response = requests.get(url, headers=headers)
